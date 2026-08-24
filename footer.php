@@ -18,16 +18,37 @@
 		<div class="grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-10 pb-16 border-b border-white/10">
 			<div class="col-span-2 lg:col-span-4">
 				<div class="inline-block"><span class="text-2xl font-bold tracking-tight text-primary-foreground">ARQAM <span class="text-gradient">WEB</span></span></div>
-				<p class="mt-6 text-primary-foreground/65 text-sm leading-relaxed max-w-sm"><?php esc_html_e('A senior digital studio building high-performance websites, SEO strategies, brand identities and social-first content for ambitious brands across +10 countries — since 2010.', 'arqamweb'); ?></p>
-				<div class="mt-7 flex items-center gap-2.5"><a href="https://www.facebook.com/ArqamWeb" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e('Facebook', 'arqamweb'); ?>" class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+				<p class="mt-6 text-primary-foreground/65 text-sm leading-relaxed max-w-sm"><?php esc_html_e('A senior digital marketing agency building high-performance websites, SEO strategies, brand identities and social-first content for ambitious brands across +10 countries — since 2010.', 'arqamweb'); ?></p>
+				<div class="mt-7 flex items-center gap-2.5">
+					<a href="https://www.facebook.com/ArqamWeb" target="_blank" rel="noopener noreferrer"
+					   aria-label="<?php esc_attr_e('Facebook', 'arqamweb'); ?>"
+					   class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
 							<path d="M22 12a10 10 0 10-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5v1.8h2.6l-.4 2.9h-2.2v7A10 10 0 0022 12z"></path>
-						</svg></a><a href="https://www.instagram.com/arqamweb/" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e('Instagram', 'arqamweb'); ?>" class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+						</svg>
+					</a>
+					<a href="https://www.instagram.com/arqamweb/" target="_blank" rel="noopener noreferrer"
+					   aria-label="<?php esc_attr_e('Instagram', 'arqamweb'); ?>"
+					   class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
 							<path d="M3 7a4 4 0 014-4h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4zM12 8a4 4 0 100 8 4 4 0 000-8zM18 5.5a1 1 0 110 2 1 1 0 010-2z"></path>
-						</svg></a><a href="https://www.linkedin.com/company/68729209/" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e('LinkedIn', 'arqamweb'); ?>" class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+						</svg>
+					</a>
+					<a href="https://www.linkedin.com/company/68729209/" target="_blank" rel="noopener noreferrer"
+					   aria-label="<?php esc_attr_e('LinkedIn', 'arqamweb'); ?>"
+					   class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
 							<path d="M4 4h4v16H4zM6 2a2 2 0 110 4 2 2 0 010-4zM10 8h4v2c.7-1 2-2 4-2 3 0 4 2 4 5v7h-4v-6c0-2-1-3-2-3s-2 1-2 3v6h-4z"></path>
-						</svg></a><a href="https://www.youtube.com/@ArqamWeb" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e('YouTube', 'arqamweb'); ?>" class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+						</svg>
+					</a>
+					<a href="https://www.youtube.com/@ArqamWeb" target="_blank" rel="noopener noreferrer"
+					   aria-label="<?php esc_attr_e('YouTube', 'arqamweb'); ?>"
+					   class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
 							<path d="M23 7.5a3 3 0 00-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 001 7.5C.6 9.4.6 12 .6 12s0 2.6.4 4.5a3 3 0 002.1 2.1C5 19 12 19 12 19s7 0 8.9-.4a3 3 0 002.1-2.1c.4-1.9.4-4.5.4-4.5s0-2.6-.4-4.5zM10 15.5v-7l6 3.5-6 3.5z"></path>
-						</svg></a></div>
+						</svg>
+					</a>
+				</div>
 			</div>
 			<div class="lg:col-span-2">
 				<h4 class="font-semibold mb-5 text-sm tracking-wider uppercase text-primary-foreground/90"><?php esc_html_e('Company', 'arqamweb'); ?></h4>
