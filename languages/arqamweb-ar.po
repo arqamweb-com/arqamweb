@@ -1,0 +1,2626 @@
+# Copyright (C) 2026 Arqam Web
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Arqam Web 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Arqam-Web-main\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-21T19:51:02+00:00\n"
+"PO-Revision-Date: 2026-06-21T19:51:02+00:00\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: arqamweb\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Arqam-Web"
+msgstr "Arqam-Web"
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://www.arqamweb.com/"
+msgstr "https://www.arqamweb.com/"
+
+#. Description of the theme
+#: style.css
+msgid ""
+"Arqam Web is a custom WordPress theme for the Arqam Web agency, focused on "
+"fast marketing pages, structured SEO output, multilingual support, and "
+"tailored service, project, review, and quote-request experiences."
+msgstr ""
+"Arqam Web هو قالب ووردبريس مخصّص لوكالة Arqam Web، يركّز على صفحات تسويقية "
+"سريعة، ومخرجات SEO منظّمة، ودعم متعدد اللغات، وتجارب مصمّمة خصيصاً للخدمات "
+"والمشاريع والتقييمات وطلبات عرض السعر."
+
+#. Author of the theme
+#: style.css template-parts/frontpage/frontpage-founder.php:30
+msgid "Arqam Web"
+msgstr "Arqam Web"
+
+#: 404.php:45
+msgid "Page not found"
+msgstr "الصفحة غير موجودة"
+
+#: 404.php:50
+msgid "This page took a wrong turn."
+msgstr "هذه الصفحة سلكت طريقاً خاطئاً."
+
+#: 404.php:51
+msgid "Let's get you back."
+msgstr "دعنا نعيدك إلى المسار."
+
+#: 404.php:56
+msgid ""
+"The page you're looking for doesn't exist, was moved, or the URL might be "
+"mistyped."
+msgstr ""
+"الصفحة التي تبحث عنها غير موجودة، أو تم نقلها، أو ربما كُتب الرابط بشكل خاطئ."
+
+#: 404.php:63 archive.php:218
+msgid "Back to home"
+msgstr "العودة إلى الرئيسية"
+
+#: 404.php:70
+msgid "Contact support"
+msgstr "تواصل مع الدعم"
+
+#: 404.php:82
+msgid "Search…"
+msgstr "بحث…"
+
+#: 404.php:84 404.php:87 search.php:85 search.php:88
+msgid "Search"
+msgstr "بحث"
+
+#: 404.php:107 home.php:163 home.php:171
+msgid "Journal"
+msgstr "المجلة"
+
+#: 404.php:108
+msgid "Essays & insights"
+msgstr "مقالات ورؤى"
+
+#: 404.php:124 template-parts/reviews.php:648
+msgid "Projects"
+msgstr "المشاريع"
+
+#: 404.php:125
+msgid "Our portfolio"
+msgstr "أعمالنا"
+
+#: 404.php:141
+msgid "Contact"
+msgstr "تواصل"
+
+#: 404.php:142 footer.php:53
+msgid "Get in touch"
+msgstr "تواصل معنا"
+
+#: 404.php:155
+msgid "Browse by topic"
+msgstr "تصفّح حسب الموضوع"
+
+#: 404.php:177
+msgid "While you're here"
+msgstr "ما دمت هنا"
+
+#: 404.php:179 home.php:251 template-parts/frontpage/frontpage-blog.php:14
+msgid "Latest from the"
+msgstr "أحدث ما في"
+
+#: 404.php:179 home.php:252 template-parts/frontpage/frontpage-blog.php:14
+msgid "studio."
+msgstr "الاستوديو."
+
+#: 404.php:229 archive.php:166 author.php:145 home.php:341 search.php:173
+#: single.php:322
+msgid "Read"
+msgstr "اقرأ"
+
+#: archive.php:25
+msgid "Category"
+msgstr "التصنيف"
+
+#: archive.php:26
+msgid "Tag"
+msgstr "الوسم"
+
+#: archive.php:27 archive.php:84 author.php:48
+msgid "Author"
+msgstr "الكاتب"
+
+#: archive.php:28 archive.php:29
+msgid "Archive"
+msgstr "الأرشيف"
+
+#: archive.php:80 author.php:65
+msgid "essay"
+msgid_plural "essays"
+msgstr[0] "مقالات"
+msgstr[1] "مقال"
+msgstr[2] "مقالان"
+msgstr[3] "مقالات"
+msgstr[4] "مقالاً"
+msgstr[5] "مقال"
+
+#: archive.php:139 home.php:314
+msgid "Trending"
+msgstr "الأكثر رواجاً"
+
+#: archive.php:163 home.php:337
+msgid "By"
+msgstr "بقلم"
+
+#: archive.php:189
+msgid "Posts navigation"
+msgstr "تنقّل المقالات"
+
+#: archive.php:214
+msgid "No posts found"
+msgstr "لا توجد مقالات"
+
+#: archive.php:215
+msgid "Nothing published here yet. Check back soon."
+msgstr "لا يوجد محتوى منشور هنا بعد. عُد قريباً."
+
+#: author.php:23
+msgid "Posts by %s"
+msgstr "مقالات بقلم %s"
+
+#: author.php:167
+msgid "Author posts navigation"
+msgstr "تنقّل مقالات الكاتب"
+
+#. translators: %s: author name
+#: author.php:200
+msgid "%s hasn't published anything yet."
+msgstr "لم ينشر %s أي شيء بعد."
+
+#: author.php:207 search.php:248
+msgid "Browse Journal"
+msgstr "تصفّح المجلة"
+
+#: comments.php:40
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#: comments.php:53
+msgid "Your comment is awaiting moderation."
+msgstr "تعليقك في انتظار المراجعة."
+
+#: comments.php:68
+msgid "Reply"
+msgstr "رد"
+
+#: comments.php:92
+msgid "%s response"
+msgid_plural "%s responses"
+msgstr[0] "%s ردّ"
+msgstr[1] "ردّ واحد"
+msgstr[2] "ردّان"
+msgstr[3] "%s ردود"
+msgstr[4] "%s ردّاً"
+msgstr[5] "%s ردّ"
+
+#. translators: 1: current page, 2: total pages
+#: comments.php:104
+msgid "Page %1$s of %2$s"
+msgstr "الصفحة %1$s من %2$s"
+
+#: comments.php:134
+msgid "Comments navigation"
+msgstr "تنقّل التعليقات"
+
+#: comments.php:154
+msgid "Comments are closed."
+msgstr "التعليقات مغلقة."
+
+#: comments.php:169
+msgid "Leave a reply"
+msgstr "اترك رداً"
+
+#: comments.php:170
+msgid "Reply to %s"
+msgstr "الرد على %s"
+
+#: comments.php:172
+msgid "Cancel reply"
+msgstr "إلغاء الرد"
+
+#: comments.php:180
+msgid "Name"
+msgstr "الاسم"
+
+#: comments.php:182
+msgid "Your name"
+msgstr "اسمك"
+
+#: comments.php:188 template-parts/contact.php:269
+#: template-parts/contact.php:276
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: comments.php:190
+msgid "your@email.com"
+msgstr "your@email.com"
+
+#: comments.php:196
+msgid "Website (optional)"
+msgstr "الموقع الإلكتروني (اختياري)"
+
+#: comments.php:197
+msgid "https://"
+msgstr "https://"
+
+#: comments.php:202
+msgid "Save my name and email in this browser for the next time I comment."
+msgstr "احفظ اسمي وبريدي الإلكتروني في هذا المتصفح للمرة القادمة التي أعلّق فيها."
+
+#: comments.php:208
+msgid "Comment"
+msgstr "التعليق"
+
+#: comments.php:210
+msgid "Share your thoughts…"
+msgstr "شاركنا أفكارك…"
+
+#: comments.php:215
+msgid "Post comment"
+msgstr "نشر التعليق"
+
+#: comments.php:218
+msgid "Logged in as %s."
+msgstr "مسجّل الدخول باسم %s."
+
+#: comments.php:220
+msgid "Log out?"
+msgstr "تسجيل الخروج؟"
+
+#: comments.php:224
+msgid "You must be"
+msgstr "يجب أن تكون"
+
+#: comments.php:226
+msgid "logged in to post a comment"
+msgstr "مسجّل الدخول لنشر تعليق"
+
+#: footer.php:21
+msgid ""
+"A senior digital studio building high-performance websites, SEO strategies, "
+"brand identities and social-first content for ambitious brands across +10 "
+"countries — since 2010."
+msgstr ""
+"استوديو رقمي محترف يبني مواقع عالية الأداء واستراتيجيات تحسين محركات البحث "
+"وهويات بصرية ومحتوى يركّز على السوشيال ميديا للعلامات الطموحة في +10 دول — منذ "
+"عام 2010."
+
+#: footer.php:22
+msgid "Facebook"
+msgstr "Facebook"
+
+#: footer.php:24
+msgid "Instagram"
+msgstr "Instagram"
+
+#: footer.php:26
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: footer.php:28
+msgid "YouTube"
+msgstr "YouTube"
+
+#: footer.php:33
+msgid "Company"
+msgstr "الشركة"
+
+#: footer.php:43
+msgid "Services"
+msgstr "الخدمات"
+
+#: footer.php:65
+msgid "44 Almehwar Almarkazi, Alsaraya"
+msgstr "44 المحور المركزي، السرايا"
+
+#: footer.php:65
+msgid "Mall, Sheikh Zayed, Giza, Egypt."
+msgstr "مول، الشيخ زايد، الجيزة، مصر."
+
+#: footer.php:70
+msgid "Arqam Web. All rights reserved."
+msgstr "Arqam Web. جميع الحقوق محفوظة."
+
+#: footer.php:72
+msgid "Privacy Policy"
+msgstr "سياسة الخصوصية"
+
+#: footer.php:73
+msgid "Terms of Service"
+msgstr "شروط الخدمة"
+
+#: footer.php:74
+msgid "Cookies"
+msgstr "ملفات تعريف الارتباط"
+
+#: header.php:26
+msgid "Skip to content"
+msgstr "تخطَّ إلى المحتوى"
+
+#: header.php:45
+msgid "Main menu"
+msgstr "القائمة الرئيسية"
+
+#: header.php:63 header.php:128
+msgid "Language switcher"
+msgstr "مبدّل اللغة"
+
+#: header.php:69 header.php:134
+#: template-parts/frontpage/frontpage-slider.php:75
+#: template-parts/services.php:304
+msgid "Request a Quote"
+msgstr "اطلب عرض سعر"
+
+#: header.php:76 header.php:77
+msgid "Toggle menu"
+msgstr "إظهار/إخفاء القائمة"
+
+#: header.php:89
+msgid "Mobile menu"
+msgstr "قائمة الجوال"
+
+#: header.php:101
+msgid "Close menu"
+msgstr "إغلاق القائمة"
+
+#: header.php:109
+msgid "Mobile navigation"
+msgstr "تنقّل الجوال"
+
+#: header.php:110
+msgid "Navigation"
+msgstr "التنقّل"
+
+#: header.php:140
+msgid "Crafted by Arqam Web - Premium Digital Agency"
+msgstr "صُنع بإتقان من Arqam Web - وكالة رقمية متميّزة"
+
+#: home.php:161
+msgid "Home"
+msgstr "الرئيسية"
+
+#: home.php:168
+msgid "Issue"
+msgstr "العدد"
+
+#: home.php:168
+msgid "Field Notes"
+msgstr "ملاحظات ميدانية"
+
+#: home.php:170 template-parts/about.php:281
+msgid "The"
+msgstr "ال"
+
+#: home.php:171
+msgid "Ideas worth"
+msgstr "أفكار تستحق"
+
+#: home.php:171
+msgid "building on."
+msgstr "البناء عليها."
+
+#: home.php:175
+msgid ""
+"Essays, breakdowns and field reports from the studio — on design that "
+"converts, SEO that compounds, and brands that age well."
+msgstr ""
+"مقالات وتحليلات وتقارير ميدانية من الاستوديو — عن تصميم يحقّق التحويل، وتحسين "
+"محركات بحث تتراكم نتائجه، وعلامات تجارية تصمد مع الزمن."
+
+#: home.php:177
+msgid "essays"
+msgstr "مقالات"
+
+#: home.php:179
+msgid "Weekly"
+msgstr "أسبوعياً"
+
+#: home.php:194
+msgid "Featured story"
+msgstr "القصة المميّزة"
+
+#: home.php:233
+msgid "Read the essay"
+msgstr "اقرأ المقال"
+
+#: home.php:250
+msgid "The library"
+msgstr "المكتبة"
+
+#: home.php:253
+msgid ""
+"A growing archive of essays, teardowns and frameworks from fifteen years of "
+"shipping high-performance digital work."
+msgstr ""
+"أرشيف متنامٍ من المقالات والتحليلات وأطر العمل من خمسة عشر عاماً من تنفيذ "
+"أعمال رقمية عالية الأداء."
+
+#: home.php:262 template-parts/projects.php:116 template-parts/services.php:115
+msgid "All"
+msgstr "الكل"
+
+#: home.php:365
+msgid "Trending this month"
+msgstr "الأكثر رواجاً هذا الشهر"
+
+#: home.php:366
+msgid "What the studio is"
+msgstr "ما الذي يقرؤه"
+
+#: home.php:367 single.php:267
+msgid "reading."
+msgstr "الاستوديو."
+
+#: home.php:432
+msgid "The dispatch"
+msgstr "النشرة"
+
+#: home.php:434
+msgid "One essay. Every Sunday."
+msgstr "مقال واحد. كل أحد."
+
+#: home.php:436
+msgid "Nothing else."
+msgstr "لا شيء غير ذلك."
+
+#: home.php:439
+msgid ""
+"Join 8,400+ founders, designers and operators reading the quietest, sharpest "
+"newsletter on digital craft."
+msgstr ""
+"انضم إلى أكثر من 8,400 مؤسّس ومصمّم وممارس يقرؤون أهدأ وأذكى نشرة بريدية عن "
+"الحرفة الرقمية."
+
+#: home.php:447
+msgid "you@studio.com"
+msgstr "you@studio.com"
+
+#: home.php:452
+msgid "Subscribe"
+msgstr "اشترك"
+
+#: home.php:456
+msgid ""
+"No spam. Unsubscribe in one click. Read by teams at Aramco, Noon and STC."
+msgstr ""
+"بدون رسائل مزعجة. إلغاء الاشتراك بنقرة واحدة. تقرؤها فرق في Aramco وNoon وSTC."
+
+#: home.php:483
+msgid "Beyond the essay"
+msgstr "ما وراء المقال"
+
+#: home.php:485
+msgid "Ideas are easy."
+msgstr "الأفكار سهلة."
+
+#: home.php:487
+msgid "Execution is the craft."
+msgstr "التنفيذ هو الحرفة."
+
+#: home.php:490
+msgid ""
+"If something here sparked an idea for your brand, let's turn it into a "
+"system that ships, ranks and converts."
+msgstr ""
+"إن أشعل شيء هنا فكرة لعلامتك التجارية، فلنحوّلها إلى نظام يُطلَق ويتصدّر "
+"ويحقّق التحويل."
+
+#: home.php:495 single-service.php:77 single-service.php:149
+#: template-parts/frontpage/frontpage-why_us.php:21
+msgid "Start a project"
+msgstr "ابدأ مشروعاً"
+
+#: home.php:503
+msgid "View our projects"
+msgstr "اطّلع على مشاريعنا"
+
+#: inc/class-project.php:68
+msgid "%s project preview"
+msgstr "معاينة مشروع %s"
+
+#: inc/class-schema.php:623
+msgid "Blog"
+msgstr "المدوّنة"
+
+#: inc/class-schema.php:693
+msgid "Search results for: %s"
+msgstr "نتائج البحث عن: %s"
+
+#: inc/class-schema.php:700
+msgid "404"
+msgstr "404"
+
+#: inc/class-theme-setup.php:22
+msgid "Primary Header Menu"
+msgstr "قائمة الترويسة الرئيسية"
+
+#: inc/class-theme-setup.php:23
+msgid "Footer Quick Links"
+msgstr "روابط سريعة في التذييل"
+
+#: inc/class-theme-setup.php:24
+msgid "Footer Services Menu"
+msgstr "قائمة الخدمات في التذييل"
+
+#: inc/class-theme-setup.php:49
+msgid "Sidebar"
+msgstr "الشريط الجانبي"
+
+#: inc/class-theme-setup.php:51
+msgid "Add widgets here."
+msgstr "أضف الودجات هنا."
+
+#: inc/class-theme-setup.php:72
+msgid ""
+"SVG uploads are disabled in the theme for security. Install the Safe SVG "
+"plugin if you need sanitized SVG support."
+msgstr ""
+"رفع ملفات SVG معطّل في القالب لأسباب أمنية. ثبّت إضافة Safe SVG إن كنت بحاجة "
+"إلى دعم SVG آمن."
+
+#: inc/class-walker-nav-menu.php:127
+msgid "Toggle submenu"
+msgstr "إظهار/إخفاء القائمة الفرعية"
+
+#: inc/helpers/ajax-handlers.php:8
+msgid "Security check failed. Please refresh and try again."
+msgstr "فشل التحقق الأمني. يرجى التحديث والمحاولة مرة أخرى."
+
+#: inc/helpers/ajax-handlers.php:15
+msgid "Please select a service."
+msgstr "يرجى اختيار خدمة."
+
+#: inc/helpers/ajax-handlers.php:34
+msgid "Name and a valid email address are required."
+msgstr "الاسم وعنوان بريد إلكتروني صالح مطلوبان."
+
+#: inc/helpers/ajax-handlers.php:73
+msgid "One of the uploaded files could not be processed."
+msgstr "تعذّرت معالجة أحد الملفات المرفوعة."
+
+#: inc/helpers/ajax-handlers.php:77
+msgid "Uploaded files must be 8 MB or smaller."
+msgstr "يجب ألا يتجاوز حجم الملفات المرفوعة 8 ميجابايت."
+
+#: inc/helpers/ajax-handlers.php:102
+msgid "New Quote Request – %s from %s"
+msgstr "طلب عرض سعر جديد – %s من %s"
+
+#: inc/helpers/ajax-handlers.php:288 inc/helpers/ajax-handlers.php:295
+msgid "Your quote request has been received."
+msgstr "تم استلام طلب عرض السعر الخاص بك."
+
+#: inc/helpers/ajax-handlers.php:297
+msgid "We could not send your request. Please email us directly."
+msgstr "تعذّر إرسال طلبك. يرجى مراسلتنا عبر البريد الإلكتروني مباشرة."
+
+#: inc/helpers/template-helpers.php:28
+msgid "Digital Marketing Agency in Egypt, Cairo | Arqam Web"
+msgstr "وكالة تسويق رقمي في مصر، القاهرة | Arqam Web"
+
+#. translators: %s: post date.
+#: inc/template-tags.php:31
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "نُشر في %s"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:47
+msgctxt "post author"
+msgid "by %s"
+msgstr "بقلم %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:64
+msgid ", "
+msgstr "، "
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:67
+msgid "Posted in %1$s"
+msgstr "نُشر في %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:71
+msgctxt "list item separator"
+msgid ", "
+msgstr "، "
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:74
+msgid "Tagged %1$s"
+msgstr "موسوم بـ %1$s"
+
+#. translators: %s: post title
+#: inc/template-tags.php:84
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "اترك تعليقاً<span class=\"screen-reader-text\"> على %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:101
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "تحرير <span class=\"screen-reader-text\">%s</span>"
+
+#: page.php:89
+msgid "In this section"
+msgstr "في هذا القسم"
+
+#: search.php:41
+msgid "Search results"
+msgstr "نتائج البحث"
+
+#. translators: %s: search query
+#: search.php:50
+msgid "Results for \"%s\""
+msgstr "نتائج \"%s\""
+
+#: search.php:57
+msgid "Search the journal"
+msgstr "ابحث في المجلة"
+
+#: search.php:66
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "تم العثور على %d نتيجة"
+msgstr[1] "تم العثور على نتيجة واحدة"
+msgstr[2] "تم العثور على نتيجتين"
+msgstr[3] "تم العثور على %d نتائج"
+msgstr[4] "تم العثور على %d نتيجة"
+msgstr[5] "تم العثور على %d نتيجة"
+
+#: search.php:83
+msgid "Search essays, topics, authors…"
+msgstr "ابحث في المقالات والمواضيع والكتّاب…"
+
+#: search.php:195
+msgid "Search results navigation"
+msgstr "تنقّل نتائج البحث"
+
+#. translators: %s: search query
+#: search.php:231
+msgid "No results for \"%s\""
+msgstr "لا نتائج لـ \"%s\""
+
+#: search.php:237
+msgid "Try different keywords or browse the journal below."
+msgstr "جرّب كلمات مفتاحية مختلفة أو تصفّح المجلة أدناه."
+
+#: search.php:240
+msgid "What are you looking for?"
+msgstr "عمّ تبحث؟"
+
+#: search.php:241
+msgid "Type a keyword above to search essays, projects and more."
+msgstr "اكتب كلمة مفتاحية بالأعلى للبحث في المقالات والمشاريع وغيرها."
+
+#: search.php:252
+msgid "View Projects"
+msgstr "عرض المشاريع"
+
+#: search.php:256 template-parts/frontpage/frontpage-contact.php:30
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+#: search.php:266
+msgid "Popular topics"
+msgstr "المواضيع الرائجة"
+
+#: single-project.php:134
+msgid "The numbers speak for themselves"
+msgstr "الأرقام تتحدث عن نفسها"
+
+#: single-project.php:220
+msgid "Visual Showcase"
+msgstr "عرض بصري"
+
+#: single-project.php:221
+msgid "Crafted with precision, down to the pixel"
+msgstr "صُنع بدقة، حتى آخر بكسل"
+
+#: single-project.php:420
+msgid "See It In Action"
+msgstr "شاهده أثناء العمل"
+
+#: single-project.php:421
+msgid "Watch the full project walkthrough"
+msgstr "شاهد الجولة الكاملة للمشروع"
+
+#: single-project.php:422
+msgid ""
+"A detailed look at the design decisions, interactions, and results that "
+"brought this project to life."
+msgstr ""
+"نظرة مفصّلة على قرارات التصميم والتفاعلات والنتائج التي بثّت الحياة في هذا "
+"المشروع."
+
+#: single-project.php:429
+msgid "Play video"
+msgstr "تشغيل الفيديو"
+
+#: single-project.php:528
+msgid "Overview"
+msgstr "نظرة عامة"
+
+#: single-project.php:529
+msgid "How we transformed this business"
+msgstr "كيف حوّلنا هذا النشاط التجاري"
+
+#: single-project.php:536 template-parts/services.php:174
+msgid "%s icon"
+msgstr "أيقونة %s"
+
+#: single-project.php:581
+msgid "Project Story"
+msgstr "قصة المشروع"
+
+#: single-project.php:582
+msgid "From vision to launch — every step, intentional"
+msgstr "من الرؤية إلى الإطلاق — كل خطوة مدروسة"
+
+#: single-project.php:636
+msgid "Phase %s"
+msgstr "المرحلة %s"
+
+#: single-project.php:719
+msgid "What We Built"
+msgstr "ما الذي بنيناه"
+
+#: single-project.php:720
+msgid "Performance"
+msgstr "الأداء"
+
+#: single-project.php:720
+msgid "Delivery"
+msgstr "التسليم"
+
+#: single-project.php:760
+msgid "Behind the Results"
+msgstr "وراء النتائج"
+
+#: single-project.php:761
+msgid "Why this project succeeded"
+msgstr "لماذا نجح هذا المشروع"
+
+#: single-project.php:798
+msgid "Sound Familiar?"
+msgstr "يبدو مألوفاً؟"
+
+#: single-project.php:799
+msgid "What This Means For You"
+msgstr "ماذا يعني هذا لك"
+
+#: single-project.php:805
+msgid "Struggling with low traffic and zero visibility?"
+msgstr "تعاني من زيارات منخفضة وانعدام الظهور؟"
+
+#: single-project.php:811
+msgid "Poor conversion rates despite good products?"
+msgstr "معدلات تحويل ضعيفة رغم جودة المنتجات؟"
+
+#: single-project.php:817
+msgid "Slow, outdated website hurting your credibility?"
+msgstr "موقع بطيء وقديم يضرّ بمصداقيتك؟"
+
+#: single-project.php:823
+msgid "Competitors outranking you on every search?"
+msgstr "منافسون يتصدّرونك في كل عملية بحث؟"
+
+#: single-project.php:826
+msgid "Let's achieve similar results for your business."
+msgstr "لنحقّق نتائج مماثلة لنشاطك التجاري."
+
+#: single-project.php:850
+msgid "Start Your Project"
+msgstr "ابدأ مشروعك"
+
+#: single-project.php:856
+msgid "Get a Proposal"
+msgstr "احصل على عرض"
+
+#: single-project.php:871
+msgid "More work"
+msgstr "المزيد من الأعمال"
+
+#: single-project.php:873
+msgid "Related"
+msgstr "مشاريع"
+
+#: single-project.php:873
+msgid "projects."
+msgstr "ذات صلة."
+
+#: single-project.php:937 single-service.php:240
+msgid "View all projects"
+msgstr "عرض كل المشاريع"
+
+#: single-service.php:85
+msgid "View our work"
+msgstr "اطّلع على أعمالنا"
+
+#: single-service.php:136
+msgid "Ready to get started?"
+msgstr "مستعد للبدء؟"
+
+#: single-service.php:138 template-parts/about.php:825
+#: template-parts/contact.php:40
+msgid "Let's build something"
+msgstr "لنبنِ شيئاً"
+
+#: single-service.php:140
+msgid "remarkable together."
+msgstr "استثنائياً معاً."
+
+#: single-service.php:143
+msgid "Tell us about your project and we'll get back to you within 24 hours."
+msgstr "أخبرنا عن مشروعك وسنعاود التواصل معك خلال 24 ساعة."
+
+#: single-service.php:157
+msgid "View our portfolio"
+msgstr "اطّلع على أعمالنا"
+
+#: single-service.php:171
+msgid "Our work"
+msgstr "أعمالنا"
+
+#: single-service.php:173
+msgid "See it in"
+msgstr "شاهدها على"
+
+#: single-service.php:174
+msgid "action."
+msgstr "أرض الواقع."
+
+#: single.php:83
+msgid "read"
+msgstr "قراءة"
+
+#. translators: %s: date
+#: single.php:108
+msgid "Updated %s"
+msgstr "تم التحديث %s"
+
+#: single.php:178
+msgid "Share this essay"
+msgstr "شارك هذا المقال"
+
+#: single.php:200
+msgid "Copy link"
+msgstr "نسخ الرابط"
+
+#: single.php:210
+msgid "Written by"
+msgstr "بقلم"
+
+#: single.php:223
+msgid "Post navigation"
+msgstr "تنقّل المقالات"
+
+#: single.php:233
+msgid "Previous"
+msgstr "السابق"
+
+#: single.php:247
+msgid "Next"
+msgstr "التالي"
+
+#: single.php:265
+msgid "More from the studio"
+msgstr "المزيد من الاستوديو"
+
+#: single.php:267
+msgid "Keep"
+msgstr "واصل"
+
+#: single.php:338
+msgid "Back to Journal"
+msgstr "العودة إلى المجلة"
+
+#: template-parts/about.php:75
+msgid "A 15-YEAR STORY · SINCE 2010"
+msgstr "قصة 15 عاماً · منذ 2010"
+
+#: template-parts/about.php:78
+msgid "We build"
+msgstr "نبني"
+
+#: template-parts/about.php:78
+msgid "digital systems"
+msgstr "أنظمة رقمية"
+
+#: template-parts/about.php:79
+msgid "brands"
+msgstr "تنمو عليها"
+
+#: template-parts/about.php:80
+msgid "grow on."
+msgstr "العلامات التجارية."
+
+#: template-parts/about.php:83
+msgid ""
+"Arqam Web is a senior digital studio shipping web, brand and growth work "
+"across three continents. Quiet craft, loud results."
+msgstr ""
+"Arqam Web استوديو رقمي محترف ينفّذ أعمال الويب والعلامات والنمو عبر ثلاث "
+"قارات. حرفة هادئة، ونتائج صاخبة."
+
+#: template-parts/about.php:89 template-parts/services.php:58
+msgid "Years of craft"
+msgstr "سنوات من الحرفة"
+
+#: template-parts/about.php:96 template-parts/contact.php:160
+#: template-parts/services.php:62
+msgid "Projects shipped"
+msgstr "مشاريع منجزة"
+
+#: template-parts/about.php:103 template-parts/reviews.php:499
+#: template-parts/services.php:66
+msgid "Countries served"
+msgstr "دول خدمناها"
+
+#: template-parts/about.php:110 template-parts/reviews.php:483
+#: template-parts/services.php:70
+msgid "Client retention"
+msgstr "الاحتفاظ بالعملاء"
+
+#: template-parts/about.php:119
+msgid "Our story"
+msgstr "قصتنا"
+
+#: template-parts/about.php:120
+msgid "Fifteen years."
+msgstr "خمسة عشر عاماً."
+
+#: template-parts/about.php:121
+msgid "One obsession."
+msgstr "هوس واحد."
+
+#: template-parts/about.php:122
+msgid ""
+"From a teenager's first line of code to a studio trusted by global brands."
+msgstr ""
+"من أول سطر برمجي لمراهق إلى استوديو تثق به علامات تجارية عالمية."
+
+#: template-parts/about.php:143
+msgid "The first line of code"
+msgstr "أول سطر برمجي"
+
+#: template-parts/about.php:145
+msgid ""
+"Youssef Salah Hassanein starts building websites at 16. The seed of Arqam "
+"Web is planted."
+msgstr ""
+"يوسف صلاح حسانين يبدأ ببناء المواقع في سن 16. وتُزرع بذرة Arqam Web."
+
+#: template-parts/about.php:163
+msgid "Foundation"
+msgstr "التأسيس"
+
+#: template-parts/about.php:165
+msgid ""
+"Arqam Web is officially founded after military service. A small studio with "
+"a global ambition."
+msgstr ""
+"تأسّست Arqam Web رسمياً بعد الخدمة العسكرية. استوديو صغير بطموح عالمي."
+
+#: template-parts/about.php:183
+msgid "First international clients"
+msgstr "أول عملاء دوليين"
+
+#: template-parts/about.php:185
+msgid ""
+"Projects begin shipping to the GCC, UK and Egypt. The agency starts "
+"attracting senior brands."
+msgstr ""
+"بدأت المشاريع تُنفَّذ في دول الخليج والمملكة المتحدة ومصر. وبدأت الوكالة تجذب "
+"علامات تجارية كبرى."
+
+#: template-parts/about.php:203
+msgid "Scaling the craft"
+msgstr "توسيع الحرفة"
+
+#: template-parts/about.php:205
+msgid ""
+"The team grows. SEO, branding and dedicated development pods become full "
+"services."
+msgstr ""
+"ينمو الفريق. ويصبح تحسين محركات البحث والهوية البصرية وفرق التطوير المخصّصة "
+"خدمات متكاملة."
+
+#: template-parts/about.php:223
+msgid "Global recognition"
+msgstr "اعتراف عالمي"
+
+#: template-parts/about.php:225
+msgid "Awards, case studies and 100+ projects shipped across three continents."
+msgstr "جوائز ودراسات حالة وأكثر من 100 مشروع منجز عبر ثلاث قارات."
+
+#: template-parts/about.php:243
+msgid "Today"
+msgstr "اليوم"
+
+#: template-parts/about.php:245
+msgid ""
+"320+ projects. 10+ countries. 4.9★ from verified clients — and still "
+"obsessed with the work."
+msgstr ""
+"أكثر من 320 مشروعاً. أكثر من 10 دول. تقييم 4.9★ من عملاء موثّقين — ولا نزال "
+"مهووسين بالعمل."
+
+#: template-parts/about.php:257
+msgid "The name"
+msgstr "الاسم"
+
+#: template-parts/about.php:258
+msgid "Why"
+msgstr "لماذا"
+
+#: template-parts/about.php:259
+msgid "\"Arqam Web\""
+msgstr "\"Arqam Web\""
+
+#: template-parts/about.php:264
+msgid "/ ar·qam /"
+msgstr "/ أر·قام /"
+
+#: template-parts/about.php:269
+msgid "Arabic root"
+msgstr "أصل عربي"
+
+#: template-parts/about.php:272
+msgid "\"Arqam\""
+msgstr "\"أرقام\""
+
+#: template-parts/about.php:272
+msgid "means"
+msgstr "تعني"
+
+#: template-parts/about.php:273
+msgid "numbers"
+msgstr "الأرقام"
+
+#: template-parts/about.php:273
+msgid "the language of measurement, certainty and proof."
+msgstr "لغة القياس واليقين والبرهان."
+
+#: template-parts/about.php:276
+msgid "The promise"
+msgstr "الوعد"
+
+#: template-parts/about.php:278
+msgid "Everything we build is"
+msgstr "كل ما نبنيه"
+
+#: template-parts/about.php:278
+msgid "measured"
+msgstr "مقيس"
+
+#: template-parts/about.php:278
+msgid ". Speed, revenue, retention, rank."
+msgstr ". السرعة، والإيرادات، والاحتفاظ، والترتيب."
+
+#: template-parts/about.php:280
+msgid "Web"
+msgstr "Web"
+
+#: template-parts/about.php:282
+msgid "canvas"
+msgstr "اللوحة"
+
+#: template-parts/about.php:282
+msgid "where those numbers come alive"
+msgstr "حيث تنبض تلك الأرقام بالحياة"
+
+#: template-parts/about.php:282
+msgid "interfaces, brands, systems."
+msgstr "واجهات، علامات تجارية، أنظمة."
+
+#: template-parts/about.php:286
+msgid ""
+"We named the studio after the only thing that matters when the meeting's over"
+msgstr ""
+"سمّينا الاستوديو على الشيء الوحيد الذي يهم عندما ينتهي الاجتماع"
+
+#: template-parts/about.php:287
+msgid "the numbers."
+msgstr "الأرقام."
+
+#: template-parts/about.php:295
+msgid "The logo"
+msgstr "الشعار"
+
+#: template-parts/about.php:296
+msgid "Built on a"
+msgstr "مبني على"
+
+#: template-parts/about.php:297
+msgid "grid."
+msgstr "شبكة."
+
+#: template-parts/about.php:298
+msgid "Every curve, every angle, every proportion is intentional."
+msgstr "كل منحنى، وكل زاوية، وكل نسبة مقصودة."
+
+#: template-parts/about.php:354
+msgid "Geometry"
+msgstr "الهندسة"
+
+#: template-parts/about.php:356
+msgid "Mathematical balance"
+msgstr "توازن رياضي"
+
+#: template-parts/about.php:357
+msgid ""
+"Constructed on an 8-point grid with golden-ratio proportions. The mark reads "
+"as one shape from any distance — billboard or favicon."
+msgstr ""
+"مبني على شبكة من 8 نقاط بنسب النسبة الذهبية. تُقرأ العلامة كشكل واحد من أي "
+"مسافة — لوحة إعلانية أو أيقونة مفضّلة."
+
+#: template-parts/about.php:359
+msgid "Symbolism"
+msgstr "الرمزية"
+
+#: template-parts/about.php:361
+msgid "Numbers, made visual"
+msgstr "أرقام في صورة بصرية"
+
+#: template-parts/about.php:362
+msgid "The mark abstracts the Arabic word"
+msgstr "تجرّد العلامة الكلمة العربية"
+
+#: template-parts/about.php:362
+msgid "a quiet nod to measurement, the soul of our work."
+msgstr "إيماءة هادئة إلى القياس، روح عملنا."
+
+#: template-parts/about.php:364
+msgid "Motion"
+msgstr "الحركة"
+
+#: template-parts/about.php:366
+msgid "Built to move"
+msgstr "مصمّم للحركة"
+
+#: template-parts/about.php:367
+msgid ""
+"Designed to flex across formats — animated intros, dark/light themes, single-"
+"color print. One identity, infinite contexts."
+msgstr ""
+"مصمّم ليتكيّف عبر الصيغ — مقدّمات متحركة، وأنماط داكنة/فاتحة، وطباعة بلون "
+"واحد. هوية واحدة، وسياقات لا نهائية."
+
+#: template-parts/about.php:375
+msgid "What drives us"
+msgstr "ما الذي يحرّكنا"
+
+#: template-parts/about.php:377
+msgid "Three things we"
+msgstr "ثلاثة أشياء"
+
+#: template-parts/about.php:378
+msgid "never compromise."
+msgstr "لا نساوم عليها أبداً."
+
+#: template-parts/about.php:398
+msgid "Vision"
+msgstr "الرؤية"
+
+#: template-parts/about.php:401
+msgid "To make the Middle East known for digital craft."
+msgstr "أن يُعرَف الشرق الأوسط بالحرفة الرقمية."
+
+#: template-parts/about.php:402
+msgid ""
+"Not just consumption — creation. A region exporting design and engineering "
+"at the level the world watches for."
+msgstr ""
+"ليس مجرد استهلاك — بل إبداع. منطقة تصدّر التصميم والهندسة بالمستوى الذي يترقّبه "
+"العالم."
+
+#: template-parts/about.php:422
+msgid "Mission"
+msgstr "الرسالة"
+
+#: template-parts/about.php:425
+msgid "Ship digital systems that grow brands measurably."
+msgstr "تنفيذ أنظمة رقمية تنمّي العلامات التجارية بشكل قابل للقياس."
+
+#: template-parts/about.php:426
+msgid ""
+"Every project leaves behind compounding traffic, conversion or equity. We "
+"sell outcomes, not retainers."
+msgstr ""
+"يخلّف كل مشروع وراءه زيارات أو تحويلات أو قيمة متراكمة. نحن نبيع النتائج، لا "
+"العقود الشهرية."
+
+#: template-parts/about.php:446
+msgid "Values"
+msgstr "القيم"
+
+#: template-parts/about.php:449
+msgid "Senior craft. Honest counsel. Quiet excellence."
+msgstr "حرفة محترفة. مشورة صادقة. تميّز هادئ."
+
+#: template-parts/about.php:450
+msgid ""
+"We'd rather lose a project than pad a team. The work — and the people behind "
+"it — speak louder than the pitch."
+msgstr ""
+"نفضّل خسارة مشروع على تضخيم فريق. العمل — ومن يقف وراءه — أبلغ من أي عرض."
+
+#: template-parts/about.php:466
+msgid "Craft over volume"
+msgstr "الحرفة قبل الكمّ"
+
+#: template-parts/about.php:467
+msgid ""
+"We ship fewer projects, better. Every pixel, every line of code, every word "
+"is weighed."
+msgstr ""
+"ننفّذ مشاريع أقل وأفضل. كل بكسل، وكل سطر برمجي، وكل كلمة موزونة بعناية."
+
+#: template-parts/about.php:479
+msgid "Senior, always"
+msgstr "محترفون، دائماً"
+
+#: template-parts/about.php:480
+msgid ""
+"No juniors hidden behind invoices. The people who pitch you are the people "
+"who build for you."
+msgstr ""
+"لا مبتدئين مختبئين خلف الفواتير. من يقدّمون لك العرض هم من يبنون لك."
+
+#: template-parts/about.php:492
+msgid "Speed with substance"
+msgstr "سرعة مع جوهر"
+
+#: template-parts/about.php:493
+msgid ""
+"We move fast — but never at the expense of strategy, accessibility or "
+"longevity."
+msgstr ""
+"نتحرك بسرعة — لكن أبداً على حساب الاستراتيجية أو سهولة الوصول أو الاستدامة."
+
+#: template-parts/about.php:506
+msgid "Outcomes, not deliverables"
+msgstr "نتائج، لا مخرجات"
+
+#: template-parts/about.php:507
+msgid ""
+"Traffic, revenue, retention. We don't celebrate launches; we celebrate what "
+"they unlock."
+msgstr ""
+"الزيارات، والإيرادات، والاحتفاظ. لا نحتفل بالإطلاقات؛ بل نحتفل بما تفتحه من "
+"فرص."
+
+#: template-parts/about.php:528 template-parts/reviews.php:206
+msgid "Founder"
+msgstr "المؤسس"
+
+#: template-parts/about.php:528 template-parts/reviews.php:286
+msgid "CEO"
+msgstr "الرئيس التنفيذي"
+
+#: template-parts/about.php:545
+msgid "Recognized"
+msgstr "مُكرَّم"
+
+#: template-parts/about.php:546
+msgid "Top 50 MENA founders"
+msgstr "أفضل 50 مؤسّساً في الشرق الأوسط وشمال أفريقيا"
+
+#: template-parts/about.php:563
+msgid "Building since"
+msgstr "يبني منذ"
+
+#: template-parts/about.php:564
+msgid "Age 16 · 2010"
+msgstr "سن 16 · 2010"
+
+#: template-parts/about.php:569
+msgid "The founder"
+msgstr "المؤسس"
+
+#: template-parts/about.php:571
+msgid "One founder."
+msgstr "مؤسّس واحد."
+
+#: template-parts/about.php:573
+msgid "A 15-year obsession."
+msgstr "هوس استمر 15 عاماً."
+
+#: template-parts/about.php:577
+msgid ""
+"is an Egyptian entrepreneur and web technology specialist with 15+ years of "
+"experience in design and development."
+msgstr ""
+"رائد أعمال مصري ومتخصص في تقنيات الويب يمتلك أكثر من 15 عاماً من الخبرة في "
+"التصميم والتطوير."
+
+#: template-parts/about.php:578
+msgid ""
+"He started building at 16. Founded Arqam Web after military service. Has "
+"since led IT initiatives at the Ministry of Education and served as "
+"Executive Director of the Egyptian Inventors Association."
+msgstr ""
+"بدأ البناء في سن 16. وأسّس Arqam Web بعد الخدمة العسكرية. ومنذ ذلك الحين قاد "
+"مبادرات تقنية المعلومات في وزارة التربية والتعليم وشغل منصب المدير التنفيذي "
+"لجمعية المخترعين المصرية."
+
+#: template-parts/about.php:579
+msgid "Today he leads the studio with one rule:"
+msgstr "اليوم يقود الاستوديو بقاعدة واحدة:"
+
+#: template-parts/about.php:579
+msgid "ship work that compounds."
+msgstr "تنفيذ أعمال تتراكم نتائجها."
+
+#: template-parts/about.php:592
+msgid "Years"
+msgstr "سنوات"
+
+#: template-parts/about.php:608 template-parts/reviews.php:640
+msgid "Countries"
+msgstr "دول"
+
+#: template-parts/about.php:623
+msgid "Clients"
+msgstr "عملاء"
+
+#: template-parts/about.php:637
+msgid "Awards"
+msgstr "جوائز"
+
+#: template-parts/about.php:642 template-parts/about.php:651
+#: template-parts/frontpage/frontpage-founder.php:40
+#: template-parts/frontpage/frontpage-founder.php:50
+msgid "Watch the founder's biography"
+msgstr "شاهد السيرة الذاتية للمؤسس"
+
+#: template-parts/about.php:657
+#: template-parts/frontpage/frontpage-founder.php:56
+msgid "Founder story video"
+msgstr "فيديو قصة المؤسس"
+
+#: template-parts/about.php:660
+#: template-parts/frontpage/frontpage-founder.php:59
+#: template-parts/frontpage/frontpage-testimonials.php:212
+#: template-parts/reviews.php:431
+msgid "Close video"
+msgstr "إغلاق الفيديو"
+
+#: template-parts/about.php:688
+msgid "Our Services"
+msgstr "خدماتنا"
+
+#: template-parts/about.php:691
+msgid "Web · SEO · Branding · Social"
+msgstr "ويب · تحسين محركات البحث · هوية بصرية · سوشيال ميديا"
+
+#: template-parts/about.php:694
+msgid "Senior teams shipping growth systems."
+msgstr "فرق محترفة تنفّذ أنظمة نمو."
+
+#: template-parts/about.php:697 template-parts/about.php:727
+msgid "Explore"
+msgstr "استكشف"
+
+#: template-parts/about.php:721
+msgid "Our Projects"
+msgstr "مشاريعنا"
+
+#: template-parts/about.php:724
+msgid "320+ shipped, 10+ countries."
+msgstr "أكثر من 320 منجزاً، وأكثر من 10 دول."
+
+#: template-parts/about.php:725
+msgid "A portfolio that travels."
+msgstr "أعمال تعبر الحدود."
+
+#: template-parts/about.php:741
+msgid "In their words"
+msgstr "بكلماتهم"
+
+#: template-parts/about.php:743
+msgid "The most honest"
+msgstr "أصدق"
+
+#: template-parts/about.php:744
+msgid "version of us"
+msgstr "صورة لنا"
+
+#: template-parts/about.php:744
+msgid "is told by clients."
+msgstr "يرويها العملاء."
+
+#: template-parts/about.php:792
+msgid "Read all reviews"
+msgstr "اقرأ كل التقييمات"
+
+#: template-parts/about.php:823
+msgid "NOW BOOKING · LIMITED SLOTS"
+msgstr "الحجز متاح الآن · أماكن محدودة"
+
+#: template-parts/about.php:826
+msgid "worth remembering."
+msgstr "يستحق أن يُتذكَّر."
+
+#: template-parts/about.php:828
+msgid ""
+"A 30-minute conversation. Zero pressure. Walk away with a clear plan — "
+"whether you work with us or not."
+msgstr ""
+"محادثة مدتها 30 دقيقة. دون أي ضغط. واخرج بخطة واضحة — سواء عملت معنا أم لا."
+
+#: template-parts/about.php:833
+msgid "Start a conversation with us on WhatsApp"
+msgstr "ابدأ محادثة معنا عبر WhatsApp"
+
+#: template-parts/about.php:834
+msgid "Start a conversation on WhatsApp"
+msgstr "ابدأ محادثة عبر WhatsApp"
+
+#: template-parts/about.php:837
+msgid "Start a conversation"
+msgstr "ابدأ محادثة"
+
+#: template-parts/about.php:856 template-parts/reviews.php:819
+msgid "See our projects"
+msgstr "شاهد مشاريعنا"
+
+#: template-parts/blog/custom-loop-blog.php:55
+msgid "Read article"
+msgstr "اقرأ المقال"
+
+#: template-parts/contact.php:38
+msgid "Studio open · Replies within 1 business day"
+msgstr "الاستوديو مفتوح · ردود خلال يوم عمل واحد"
+
+#: template-parts/contact.php:40
+msgid "worth scaling."
+msgstr "يستحق التوسّع."
+
+#: template-parts/contact.php:42
+msgid ""
+"Whether you're scoping a new flagship site, replatforming, or chasing a "
+"market — we'd love to hear what you're building."
+msgstr ""
+"سواء كنت تخطّط لموقع رئيسي جديد، أو تنتقل إلى منصة أخرى، أو تسعى لاقتحام سوق — "
+"يسعدنا أن نسمع عمّا تبنيه."
+
+#: template-parts/contact.php:50
+msgid "— Reach the studio"
+msgstr "— تواصل مع الاستوديو"
+
+#: template-parts/contact.php:52
+msgid "Four ways in."
+msgstr "أربع طرق للتواصل."
+
+#: template-parts/contact.php:53
+msgid "Pick yours."
+msgstr "اختر ما يناسبك."
+
+#: template-parts/contact.php:69 template-parts/contact.php:308
+msgid "Email the studio"
+msgstr "راسل الاستوديو"
+
+#: template-parts/contact.php:93
+msgid "Call us directly"
+msgstr "اتصل بنا مباشرة"
+
+#: template-parts/contact.php:116 template-parts/contact.php:261
+#: template-parts/contact.php:268
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: template-parts/contact.php:139
+msgid "Visit the studio"
+msgstr "زُر الاستوديو"
+
+#: template-parts/contact.php:155
+msgid "Average reply"
+msgstr "متوسط الرد"
+
+#: template-parts/contact.php:165
+#: template-parts/frontpage/frontpage-slider.php:133
+msgid "Client rating"
+msgstr "تقييم العملاء"
+
+#: template-parts/contact.php:170
+msgid "In market"
+msgstr "في السوق"
+
+#: template-parts/contact.php:174
+msgid "Studio hours"
+msgstr "ساعات عمل الاستوديو"
+
+#: template-parts/contact.php:175
+msgid "Sun – Thu · 10:00 – 19:00"
+msgstr "الأحد – الخميس · 10:00 – 19:00"
+
+#: template-parts/contact.php:175
+msgid "(GMT+2, Cairo)"
+msgstr "(GMT+2، القاهرة)"
+
+#: template-parts/contact.php:187
+msgid "— Start a brief"
+msgstr "— ابدأ موجزاً"
+
+#: template-parts/contact.php:189
+msgid "Tell us about the project."
+msgstr "أخبرنا عن المشروع."
+
+#: template-parts/contact.php:191
+msgid "Encrypted"
+msgstr "مُشفّر"
+
+#: template-parts/contact.php:204
+msgid "— Find the studio"
+msgstr "— اعثر على الاستوديو"
+
+#: template-parts/contact.php:206
+msgid "Sheikh Zayed,"
+msgstr "الشيخ زايد،"
+
+#: template-parts/contact.php:207
+msgid "Giza."
+msgstr "الجيزة."
+
+#: template-parts/contact.php:210
+msgid "Open in Google Maps"
+msgstr "افتح في Google Maps"
+
+#: template-parts/contact.php:218
+msgid "Arqam Web studio location"
+msgstr "موقع استوديو Arqam Web"
+
+#: template-parts/contact.php:240
+msgid "Arqam Web · HQ"
+msgstr "Arqam Web · المقر الرئيسي"
+
+#: template-parts/contact.php:249
+msgid "Get directions"
+msgstr "احصل على الاتجاهات"
+
+#: template-parts/contact.php:277 template-parts/contact.php:284
+msgid "Call"
+msgstr "اتصل"
+
+#: template-parts/contact.php:302
+msgid "— One more step"
+msgstr "— خطوة أخيرة"
+
+#: template-parts/contact.php:303
+msgid "The next great brand"
+msgstr "العلامة العظيمة القادمة"
+
+#: template-parts/contact.php:303
+msgid "starts with a message."
+msgstr "تبدأ برسالة."
+
+#: template-parts/contact.php:304
+msgid ""
+"Send a brief, jump on WhatsApp, or pick up the phone. However you want to "
+"start — we're a reply away."
+msgstr ""
+"أرسل موجزاً، أو تواصل عبر WhatsApp، أو ارفع الهاتف. مهما كانت طريقتك للبدء — "
+"نحن على بُعد رد."
+
+#: template-parts/contact.php:316
+msgid "Chat on WhatsApp"
+msgstr "تحدّث عبر WhatsApp"
+
+#: template-parts/content/content-none.php:21
+msgid "Nothing Found"
+msgstr "لم يُعثر على شيء"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content/content-none.php:31
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"مستعد لنشر أول مقال لك؟ <a href=\"%1$s\">ابدأ من هنا</a>."
+
+#: template-parts/content/content-none.php:44
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"عذراً، لم يتطابق شيء مع كلمات بحثك. يرجى المحاولة مرة أخرى بكلمات مفتاحية "
+"مختلفة."
+
+#: template-parts/content/content-none.php:51
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"يبدو أننا لا نستطيع العثور على ما تبحث عنه. ربما يساعدك البحث."
+
+#: template-parts/content/content-project.php:32
+#: template-parts/frontpage/frontpage-projects.php:191
+msgid "View Project"
+msgstr "عرض المشروع"
+
+#: template-parts/content/content-review.php:25
+msgid "CEO · Riyadh, Saudi Arabia"
+msgstr "الرئيس التنفيذي · الرياض، السعودية"
+
+#: template-parts/content/content.php:38
+msgid "اقرأ المزيد"
+msgstr "اقرأ المزيد"
+
+#: template-parts/frontpage/frontpage-blog.php:11
+msgid "Field notes"
+msgstr "ملاحظات ميدانية"
+
+#: template-parts/frontpage/frontpage-blog.php:18
+msgid "All articles"
+msgstr "كل المقالات"
+
+#: template-parts/frontpage/frontpage-contact.php:21
+msgid "We're online — usually reply in under a minute"
+msgstr "نحن متصلون — عادة نرد في أقل من دقيقة"
+
+#: template-parts/frontpage/frontpage-contact.php:23
+msgid "Chat with Us"
+msgstr "تحدّث معنا"
+
+#: template-parts/frontpage/frontpage-contact.php:23
+msgid "We're here to help."
+msgstr "نحن هنا لمساعدتك."
+
+#: template-parts/frontpage/frontpage-contact.php:24
+msgid ""
+"Whether it's a quick question or a full project brief — our team is ready to "
+"help you all week. Tell us what you're trying to grow."
+msgstr ""
+"سواء كان سؤالاً سريعاً أو موجزاً كاملاً لمشروع — فريقنا جاهز لمساعدتك طوال "
+"الأسبوع. أخبرنا بما تسعى لتنميته."
+
+#: template-parts/frontpage/frontpage-contact.php:27
+msgid "Chat via WhatsApp"
+msgstr "تحدّث عبر WhatsApp"
+
+#: template-parts/frontpage/frontpage-faqs.php:12
+msgid "Questions, answered"
+msgstr "أسئلة بإجابات"
+
+#: template-parts/frontpage/frontpage-faqs.php:15
+msgid "Frequently asked"
+msgstr "الأسئلة"
+
+#: template-parts/frontpage/frontpage-faqs.php:15
+msgid "questions"
+msgstr "الشائعة"
+
+#: template-parts/frontpage/frontpage-find_us.php:25
+msgid "Trusted globally"
+msgstr "موثوق عالمياً"
+
+#: template-parts/frontpage/frontpage-find_us.php:26
+msgid "Partnering with brands across"
+msgstr "نتشارك مع علامات تجارية في"
+
+#: template-parts/frontpage/frontpage-find_us.php:26
+msgid "+10 countries"
+msgstr "+10 دول"
+
+#: template-parts/frontpage/frontpage-find_us.php:28
+msgid ""
+"From Riyadh and Dubai to London, New York, Cairo and beyond — we ship "
+"websites that perform across every market we touch."
+msgstr ""
+"من الرياض ودبي إلى لندن ونيويورك والقاهرة وما بعدها — ننفّذ مواقع تحقّق الأداء "
+"في كل سوق نلامسه."
+
+#: template-parts/frontpage/frontpage-find_us.php:39
+msgid "Clients in"
+msgstr "عملاء في"
+
+#: template-parts/frontpage/frontpage-founder.php:13
+msgid "Youssef Salah Hassanein — Founder of Arqam Web"
+msgstr "يوسف صلاح حسانين — مؤسس Arqam Web"
+
+#: template-parts/frontpage/frontpage-founder.php:19
+msgid "Founder & CEO"
+msgstr "المؤسس والرئيس التنفيذي"
+
+#: template-parts/frontpage/frontpage-founder.php:20
+#: template-parts/frontpage/frontpage-founder.php:33
+msgid "Youssef Salah Hassanein"
+msgstr "يوسف صلاح حسانين"
+
+#: template-parts/frontpage/frontpage-founder.php:27
+msgid "Meet the founder"
+msgstr "تعرّف على المؤسس"
+
+#: template-parts/frontpage/frontpage-founder.php:29
+msgid "The founder behind"
+msgstr "المؤسس وراء"
+
+#: template-parts/frontpage/frontpage-founder.php:33
+msgid ""
+"is an Egyptian entrepreneur and web technology specialist with over 15 years "
+"of experience in web design and development."
+msgstr ""
+"رائد أعمال مصري ومتخصص في تقنيات الويب يمتلك أكثر من 15 عاماً من الخبرة في "
+"تصميم وتطوير الويب."
+
+#: template-parts/frontpage/frontpage-founder.php:34
+msgid ""
+"He started his journey at the age of 16 and later founded Arqam Web after "
+"completing his military service."
+msgstr ""
+"بدأ مسيرته في سن 16 ثم أسّس Arqam Web بعد إكمال خدمته العسكرية."
+
+#: template-parts/frontpage/frontpage-founder.php:35
+msgid ""
+"Throughout his career, he has held leadership roles in scientific and "
+"technology organizations in Egypt — including IT Director at the Supreme "
+"Committee for Scientific Research in the Ministry of Education, and "
+"Executive Director of the Egyptian Inventors Association."
+msgstr ""
+"شغل طوال مسيرته مناصب قيادية في مؤسسات علمية وتقنية في مصر — من بينها مدير "
+"تقنية المعلومات باللجنة العليا للبحث العلمي بوزارة التربية والتعليم، والمدير "
+"التنفيذي لجمعية المخترعين المصرية."
+
+#: template-parts/frontpage/frontpage-founder.php:36
+msgid ""
+"Today, he leads Arqam Web with a focus on building high-performance digital "
+"experiences that help businesses grow globally."
+msgstr ""
+"اليوم يقود Arqam Web مع التركيز على بناء تجارب رقمية عالية الأداء تساعد "
+"الشركات على النمو عالمياً."
+
+#: template-parts/frontpage/frontpage-founder.php:65
+msgid "Founder Story — Youssef Salah Hassanein"
+msgstr "قصة المؤسس — يوسف صلاح حسانين"
+
+#: template-parts/frontpage/frontpage-numbers.php:20
+msgid "By the numbers"
+msgstr "في الأرقام"
+
+#: template-parts/frontpage/frontpage-numbers.php:23
+msgid "Results that"
+msgstr "نتائج"
+
+#: template-parts/frontpage/frontpage-numbers.php:23
+msgid "compound"
+msgstr "تتراكم"
+
+#: template-parts/frontpage/frontpage-numbers.php:23
+msgid "year after year."
+msgstr "عاماً بعد عام."
+
+#: template-parts/frontpage/frontpage-partners.php:24
+msgid "Our success partners"
+msgstr "شركاء نجاحنا"
+
+#: template-parts/frontpage/frontpage-partners.php:27
+msgid "Powered by the platforms that"
+msgstr "مدعوم بالمنصات التي"
+
+#: template-parts/frontpage/frontpage-partners.php:27
+msgid "scale the modern web"
+msgstr "تُوسّع الويب الحديث"
+
+#: template-parts/frontpage/frontpage-partners.php:30
+msgid ""
+"We build, ship and grow on the same stack trusted by world-class brands — "
+"from payments and infrastructure to commerce and search."
+msgstr ""
+"نبني وننفّذ وننمو على نفس التقنيات التي تثق بها علامات تجارية عالمية — من "
+"المدفوعات والبنية التحتية إلى التجارة والبحث."
+
+#: template-parts/frontpage/frontpage-projects.php:90
+msgid "Project"
+msgstr "مشروع"
+
+#: template-parts/frontpage/frontpage-projects.php:133
+msgid "Featured work"
+msgstr "أعمال مميّزة"
+
+#: template-parts/frontpage/frontpage-projects.php:134
+msgid "Projects we're"
+msgstr "مشاريع"
+
+#: template-parts/frontpage/frontpage-projects.php:135
+msgid "proud to ship"
+msgstr "نفخر بتنفيذها"
+
+#: template-parts/frontpage/frontpage-projects.php:156
+#: template-parts/projects.php:250
+msgid "Featured"
+msgstr "مميّز"
+
+#: template-parts/frontpage/frontpage-projects.php:179
+msgid "Case study"
+msgstr "دراسة حالة"
+
+#: template-parts/frontpage/frontpage-projects.php:239
+msgid "View All Projects"
+msgstr "عرض كل المشاريع"
+
+#: template-parts/frontpage/frontpage-reviews.php:11
+msgid "Client voices"
+msgstr "أصوات العملاء"
+
+#: template-parts/frontpage/frontpage-reviews.php:12
+#: template-parts/reviews.php:715
+msgid "The reviews we're"
+msgstr "التقييمات التي"
+
+#: template-parts/frontpage/frontpage-reviews.php:13
+#: template-parts/reviews.php:716
+msgid "most proud of."
+msgstr "نفخر بها أكثر."
+
+#: template-parts/frontpage/frontpage-reviews.php:20
+msgid "Based on 80+ reviews"
+msgstr "بناءً على أكثر من 80 تقييماً"
+
+#: template-parts/frontpage/frontpage-reviews.php:30
+msgid "View All Reviews"
+msgstr "عرض كل التقييمات"
+
+#: template-parts/frontpage/frontpage-services.php:42
+#: template-parts/services.php:94
+msgid "What we do"
+msgstr "ما الذي نقدّمه"
+
+#: template-parts/frontpage/frontpage-services.php:43
+#: template-parts/services.php:97
+msgid "Four disciplines."
+msgstr "أربعة تخصصات."
+
+#: template-parts/frontpage/frontpage-services.php:43
+#: template-parts/services.php:97
+msgid "One growth engine."
+msgstr "محرك نمو واحد."
+
+#: template-parts/frontpage/frontpage-services.php:46
+msgid ""
+"We don't sell deliverables — we ship outcomes. Every engagement is a senior "
+"team obsessing over how design, code, search and social work together."
+msgstr ""
+"لا نبيع مخرجات — بل نحقّق نتائج. كل تعاقد هو فريق محترف يهتم بكيفية تكامل "
+"التصميم والبرمجة والبحث والسوشيال ميديا معاً."
+
+#: template-parts/frontpage/frontpage-services.php:52
+msgid "View All Services"
+msgstr "كل الخدمات"
+
+#: template-parts/frontpage/frontpage-slider.php:63
+msgid "Global Digital Agency · Est. 2010"
+msgstr "وكالة رقمية عالمية · تأسست عام 2010"
+
+#: template-parts/frontpage/frontpage-slider.php:66
+msgid "Digital Marketing"
+msgstr "تسويق رقمي"
+
+#: template-parts/frontpage/frontpage-slider.php:67
+msgid "Agency Helping"
+msgstr "وكالة تساعد"
+
+#: template-parts/frontpage/frontpage-slider.php:68
+msgid "Brands"
+msgstr "العلامات التجارية"
+
+#: template-parts/frontpage/frontpage-slider.php:68
+msgid "Grow."
+msgstr "على النمو."
+
+#: template-parts/frontpage/frontpage-slider.php:69
+msgid "across"
+msgstr "في"
+
+#: template-parts/frontpage/frontpage-slider.php:69
+msgid "+10 markets"
+msgstr "+10 أسواق"
+
+#: template-parts/frontpage/frontpage-slider.php:69
+msgid "worldwide."
+msgstr "حول العالم."
+
+#: template-parts/frontpage/frontpage-slider.php:71
+msgid ""
+"Arqam Web designs, develops, and optimizes high-performance websites built "
+"to rank, convert, and scale your business — from the Gulf to Europe and the "
+"Americas."
+msgstr ""
+"تصمّم Arqam Web وتطوّر وتحسّن مواقع عالية الأداء مبنية لتتصدّر وتحقّق التحويل "
+"وتوسّع نشاطك التجاري — من الخليج إلى أوروبا والأمريكتين."
+
+#: template-parts/frontpage/frontpage-slider.php:77
+msgid "View Our Projects"
+msgstr "اطّلع على مشاريعنا"
+
+#: template-parts/frontpage/frontpage-slider.php:104
+msgid "LIVE"
+msgstr "مباشر"
+
+#: template-parts/frontpage/frontpage-slider.php:128
+msgid "Organic Growth"
+msgstr "نمو عضوي"
+
+#: template-parts/frontpage/frontpage-slider.php:134
+msgid "4.9 / 5 average"
+msgstr "متوسط 4.9 / 5"
+
+#: template-parts/frontpage/frontpage-testimonials.php:46
+msgid "VIDEO TESTIMONIALS"
+msgstr "شهادات بالفيديو"
+
+#: template-parts/frontpage/frontpage-testimonials.php:49
+msgid "Trusted by Clients Across"
+msgstr "موثوق من عملاء في"
+
+#: template-parts/frontpage/frontpage-testimonials.php:50
+msgid "Multiple Industries"
+msgstr "قطاعات متعددة"
+
+#: template-parts/frontpage/frontpage-testimonials.php:53
+msgid ""
+"Real feedback from business owners and brands that worked with Arqam Web on "
+"web design, SEO, branding, and digital growth."
+msgstr ""
+"آراء حقيقية من أصحاب الأعمال والعلامات التجارية الذين تعاملوا مع Arqam Web في "
+"تصميم الويب وتحسين محركات البحث والهوية البصرية والنمو الرقمي."
+
+#: template-parts/frontpage/frontpage-testimonials.php:92
+#: template-parts/frontpage/frontpage-testimonials.php:162
+#: template-parts/partials/video-testimonial-card.php:29
+#: template-parts/reviews.php:352 template-parts/reviews.php:398
+msgid "Play testimonial: %s"
+msgstr "تشغيل الشهادة: %s"
+
+#: template-parts/frontpage/frontpage-testimonials.php:110
+#: template-parts/frontpage/frontpage-testimonials.php:177
+#: template-parts/partials/video-testimonial-card.php:47
+#: template-parts/reviews.php:361 template-parts/reviews.php:406
+msgid "Verified Client"
+msgstr "عميل موثّق"
+
+#: template-parts/frontpage/frontpage-testimonials.php:219
+#: template-parts/frontpage/frontpage-testimonials.php:221
+#: template-parts/reviews.php:438 template-parts/reviews.php:440
+msgid "Video testimonial"
+msgstr "شهادة بالفيديو"
+
+#: template-parts/frontpage/frontpage-why_us.php:16
+msgid "Why Arqam Web"
+msgstr "لماذا Arqam Web"
+
+#: template-parts/frontpage/frontpage-why_us.php:17
+msgid "The studio clients call when"
+msgstr "الاستوديو الذي يتصل به العملاء عندما"
+
+#: template-parts/frontpage/frontpage-why_us.php:18
+msgid "it actually has to work."
+msgstr "يجب أن ينجح العمل حقاً."
+
+#: template-parts/frontpage/frontpage-why_us.php:19
+msgid ""
+"For 15+ years we've helped ambitious teams turn their websites from cost "
+"centers into their most reliable growth channel — across +10 countries."
+msgstr ""
+"على مدى أكثر من 15 عاماً ساعدنا فرقاً طموحة على تحويل مواقعها من مراكز تكلفة "
+"إلى قناة النمو الأكثر موثوقية لديها — في +10 دول."
+
+#: template-parts/headers/header-page.php:27
+msgid ""
+"An Egyptian digital marketing company with over 14 years of experience, "
+"helping businesses achieve real numbers in sales since 2010."
+msgstr ""
+"شركة تسويق رقمي مصرية بخبرة تتجاوز 14 عاماً، تساعد الشركات على تحقيق أرقام "
+"حقيقية في المبيعات منذ عام 2010."
+
+#: template-parts/projects.php:94
+msgid "Selected work · 2023–2026"
+msgstr "أعمال مختارة · 2023–2026"
+
+#: template-parts/projects.php:98
+msgid "Selected digital"
+msgstr "تجارب رقمية"
+
+#: template-parts/projects.php:98
+msgid "experiences"
+msgstr "مختارة"
+
+#: template-parts/projects.php:98
+msgid "built for"
+msgstr "مبنية من أجل"
+
+#: template-parts/projects.php:98
+msgid "growth."
+msgstr "النمو."
+
+#: template-parts/projects.php:101
+msgid ""
+"A small, considered collection. Websites, brands and platforms shipped with "
+"senior teams — measured in rankings, revenue and reputation."
+msgstr ""
+"مجموعة صغيرة ومدروسة. مواقع وعلامات تجارية ومنصات نُفّذت بفرق محترفة — تُقاس "
+"بالترتيب والإيرادات والسمعة."
+
+#: template-parts/projects.php:110
+msgid "Filter projects by category"
+msgstr "تصفية المشاريع حسب التصنيف"
+
+#: template-parts/projects.php:183
+msgid "View %s case study"
+msgstr "عرض دراسة حالة %s"
+
+#: template-parts/projects.php:303
+msgid "View case study"
+msgstr "عرض دراسة الحالة"
+
+#: template-parts/projects.php:326
+msgid "No projects found."
+msgstr "لم يُعثر على مشاريع."
+
+#: template-parts/projects.php:357
+msgid "Next chapter"
+msgstr "الفصل التالي"
+
+#: template-parts/projects.php:360
+msgid "Let's build the next"
+msgstr "لنبنِ قصة"
+
+#: template-parts/projects.php:360
+msgid "success story."
+msgstr "النجاح القادمة."
+
+#: template-parts/projects.php:361
+msgid ""
+"We take on a small number of new engagements each quarter. Tell us about "
+"yours."
+msgstr ""
+"نقبل عدداً محدوداً من التعاقدات الجديدة كل ربع سنة. أخبرنا عن مشروعك."
+
+#: template-parts/projects.php:365 template-parts/quote.php:40
+#: template-parts/reviews.php:808 template-parts/services.php:52
+msgid "Start your project"
+msgstr "ابدأ مشروعك"
+
+#: template-parts/projects.php:374 template-parts/services.php:53
+msgid "Explore services"
+msgstr "استكشف الخدمات"
+
+#: template-parts/quote.php:44
+msgid "Tell us about"
+msgstr "أخبرنا عن"
+
+#: template-parts/quote.php:44
+msgid "your project."
+msgstr "مشروعك."
+
+#: template-parts/quote.php:47
+msgid ""
+"Select your service, answer a few focused questions, and we'll come back "
+"with a clear plan, timeline and investment — usually within 24 hours."
+msgstr ""
+"اختر خدمتك، وأجب عن بضعة أسئلة مركّزة، وسنعود إليك بخطة واضحة وجدول زمني "
+"وتكلفة — عادة خلال 24 ساعة."
+
+#: template-parts/quote.php:63
+msgid "Response in 24h"
+msgstr "رد خلال 24 ساعة"
+
+#: template-parts/quote.php:64
+msgid "Business days"
+msgstr "أيام العمل"
+
+#: template-parts/quote.php:76
+msgid "No commitment"
+msgstr "دون أي التزام"
+
+#: template-parts/quote.php:77
+msgid "Free consultation"
+msgstr "استشارة مجانية"
+
+#: template-parts/quote.php:91
+msgid "Senior team"
+msgstr "فريق محترف"
+
+#: template-parts/quote.php:92
+msgid "No juniors, no handoffs"
+msgstr "لا مبتدئين، ولا تنقّلات"
+
+#: template-parts/quote.php:106
+msgid "120+ projects"
+msgstr "أكثر من 120 مشروعاً"
+
+#: template-parts/quote.php:107
+msgid "Across 32 countries"
+msgstr "في 32 دولة"
+
+#: template-parts/reviews.php:41
+msgid "CLIENT VOICES · VERIFIED"
+msgstr "أصوات العملاء · موثّقة"
+
+#: template-parts/reviews.php:44
+msgid "Real words from"
+msgstr "كلمات حقيقية من"
+
+#: template-parts/reviews.php:45
+msgid "real clients."
+msgstr "عملاء حقيقيين."
+
+#: template-parts/reviews.php:48
+msgid ""
+"Fifteen years. Ten countries. Three hundred brands. Every review on this "
+"page is verified, unedited, and earned the slow way — through work that "
+"actually moved the needle."
+msgstr ""
+"خمسة عشر عاماً. عشر دول. ثلاثمائة علامة تجارية. كل تقييم على هذه الصفحة موثّق "
+"وغير معدّل، اكتُسب بالطريق الطويل — عبر عمل أحدث فرقاً حقيقياً."
+
+#: template-parts/reviews.php:93
+msgid "80+ verified reviews"
+msgstr "أكثر من 80 تقييماً موثّقاً"
+
+#: template-parts/reviews.php:107
+msgid "client retention"
+msgstr "الاحتفاظ بالعملاء"
+
+#: template-parts/reviews.php:122
+msgid "countries served"
+msgstr "دول خدمناها"
+
+#: template-parts/reviews.php:163
+msgid "Traffic tripled in 6 months."
+msgstr "تضاعفت الزيارات ثلاث مرات في 6 أشهر."
+
+#: template-parts/reviews.php:165
+msgid "Marketing Dir."
+msgstr "مدير التسويق"
+
+#: template-parts/reviews.php:203
+msgid "Best agency we've worked with."
+msgstr "أفضل وكالة تعاملنا معها."
+
+#: template-parts/reviews.php:244
+msgid "Charging 30% more, closing faster."
+msgstr "نتقاضى أعلى بنسبة 30%، ونُبرم الصفقات أسرع."
+
+#: template-parts/reviews.php:246
+msgid "Co-founder"
+msgstr "الشريك المؤسس"
+
+#: template-parts/reviews.php:284
+msgid "Senior, strategic, honest."
+msgstr "محترفون، استراتيجيون، صادقون."
+
+#: template-parts/reviews.php:323
+msgid "Video Testimonials"
+msgstr "شهادات بالفيديو"
+
+#: template-parts/reviews.php:325
+msgid "See clients tell the story"
+msgstr "شاهد العملاء يروون القصة"
+
+#: template-parts/reviews.php:326
+msgid "in their own words."
+msgstr "بكلماتهم الخاصة."
+
+#: template-parts/reviews.php:328
+msgid ""
+"Hover any card to preview silently. Click to watch the full conversation."
+msgstr ""
+"مرّر فوق أي بطاقة للمعاينة بصمت. انقر لمشاهدة المحادثة كاملة."
+
+#: template-parts/reviews.php:451
+msgid "Trust by the numbers"
+msgstr "الثقة في الأرقام"
+
+#: template-parts/reviews.php:453
+msgid "Reputation isn't claimed."
+msgstr "السمعة لا تُدّعى."
+
+#: template-parts/reviews.php:454
+msgid "It's measured."
+msgstr "بل تُقاس."
+
+#: template-parts/reviews.php:467
+msgid "Average rating"
+msgstr "متوسط التقييم"
+
+#: template-parts/reviews.php:468
+msgid "out of 5.0 — 80+ reviews"
+msgstr "من 5.0 — أكثر من 80 تقييماً"
+
+#: template-parts/reviews.php:484
+msgid "long-term partnerships"
+msgstr "شراكات طويلة الأمد"
+
+#: template-parts/reviews.php:500
+msgid "GCC · MENA · UK · USA"
+msgstr "دول الخليج · الشرق الأوسط وشمال أفريقيا · المملكة المتحدة · الولايات المتحدة"
+
+#: template-parts/reviews.php:515
+msgid "Projects delivered"
+msgstr "مشاريع مُسلّمة"
+
+#: template-parts/reviews.php:516
+msgid "since 2010"
+msgstr "منذ 2010"
+
+#: template-parts/reviews.php:526
+msgid "Global footprint"
+msgstr "حضور عالمي"
+
+#: template-parts/reviews.php:527
+msgid "Clients across"
+msgstr "عملاء عبر"
+
+#: template-parts/reviews.php:528
+msgid "three continents."
+msgstr "ثلاث قارات."
+
+#: template-parts/reviews.php:529
+msgid "From Riyadh to New York — Arqam Web ships work that travels."
+msgstr "من الرياض إلى نيويورك — تنفّذ Arqam Web أعمالاً تعبر الحدود."
+
+#: template-parts/reviews.php:562
+msgid "Riyadh"
+msgstr "الرياض"
+
+#: template-parts/reviews.php:563
+msgid "Saudi Arabia · 42 clients"
+msgstr "السعودية · 42 عميلاً"
+
+#: template-parts/reviews.php:572
+msgid "Dubai"
+msgstr "دبي"
+
+#: template-parts/reviews.php:573
+msgid "UAE · 38 clients"
+msgstr "الإمارات · 38 عميلاً"
+
+#: template-parts/reviews.php:582
+msgid "Jeddah"
+msgstr "جدة"
+
+#: template-parts/reviews.php:583
+msgid "KSA · 21 clients"
+msgstr "السعودية · 21 عميلاً"
+
+#: template-parts/reviews.php:592
+msgid "Cairo"
+msgstr "القاهرة"
+
+#: template-parts/reviews.php:593
+msgid "Egypt · 29 clients"
+msgstr "مصر · 29 عميلاً"
+
+#: template-parts/reviews.php:602
+msgid "London"
+msgstr "لندن"
+
+#: template-parts/reviews.php:603
+msgid "UK · 14 clients"
+msgstr "المملكة المتحدة · 14 عميلاً"
+
+#: template-parts/reviews.php:612
+msgid "New York"
+msgstr "نيويورك"
+
+#: template-parts/reviews.php:613
+msgid "USA · 11 clients"
+msgstr "الولايات المتحدة · 11 عميلاً"
+
+#: template-parts/reviews.php:622
+msgid "Doha"
+msgstr "الدوحة"
+
+#: template-parts/reviews.php:623
+msgid "Qatar · 9 clients"
+msgstr "قطر · 9 عملاء"
+
+#: template-parts/reviews.php:632
+msgid "Kuwait City"
+msgstr "مدينة الكويت"
+
+#: template-parts/reviews.php:633
+msgid "Kuwait · 7 clients"
+msgstr "الكويت · 7 عملاء"
+
+#: template-parts/reviews.php:644
+msgid "Continents"
+msgstr "قارات"
+
+#: template-parts/reviews.php:652
+msgid "Support"
+msgstr "الدعم"
+
+#: template-parts/reviews.php:660
+msgid "In motion"
+msgstr "في حركة"
+
+#: template-parts/reviews.php:661
+msgid "A constant stream of"
+msgstr "تدفّق مستمر من"
+
+#: template-parts/reviews.php:662
+msgid "kind words."
+msgstr "الكلمات الطيبة."
+
+#: template-parts/reviews.php:714
+msgid "Written reviews"
+msgstr "تقييمات مكتوبة"
+
+#: template-parts/reviews.php:717
+msgid "Verified clients. Unedited words. Real outcomes."
+msgstr "عملاء موثّقون. كلمات غير معدّلة. نتائج حقيقية."
+
+#: template-parts/reviews.php:799
+msgid "NOW BOOKING Q2 PROJECTS"
+msgstr "الحجز متاح الآن لمشاريع الربع الثاني"
+
+#: template-parts/reviews.php:801
+msgid "Ready to become our"
+msgstr "مستعد لتصبح"
+
+#: template-parts/reviews.php:802
+msgid "next success story?"
+msgstr "قصة نجاحنا القادمة؟"
+
+#: template-parts/reviews.php:804
+msgid ""
+"A 30-minute call. Zero pressure. Walk away with a clear plan — whether you "
+"work with us or not."
+msgstr ""
+"مكالمة مدتها 30 دقيقة. دون أي ضغط. واخرج بخطة واضحة — سواء عملت معنا أم لا."
+
+#: template-parts/services.php:48
+msgid "Services that"
+msgstr "خدمات"
+
+#: template-parts/services.php:48
+msgid "grow"
+msgstr "تنمّي"
+
+#: template-parts/services.php:48
+msgid "your business"
+msgstr "نشاطك التجاري"
+
+#: template-parts/services.php:48
+msgid "define"
+msgstr "وتُعرّف"
+
+#: template-parts/services.php:48
+msgid "your brand."
+msgstr "علامتك التجارية."
+
+#: template-parts/services.php:50
+msgid ""
+"Web design, SEO, brand identity and social media — engineered by senior "
+"teams for ambitious brands across SA, UAE, UK and USA."
+msgstr ""
+"تصميم الويب، وتحسين محركات البحث، والهوية البصرية، والسوشيال ميديا — مصمّمة "
+"بإتقان من فرق محترفة لعلامات تجارية طموحة في السعودية والإمارات والمملكة "
+"المتحدة والولايات المتحدة."
+
+#: template-parts/services.php:102
+msgid ""
+"Each service has a dedicated page with full deliverables, process and case "
+"studies — click any card to dive in."
+msgstr ""
+"لكل خدمة صفحة مخصّصة بكامل المخرجات والمنهجية ودراسات الحالة — انقر أي بطاقة "
+"للتعمّق."
+
+#: template-parts/services.php:109
+msgid "Filter services by category"
+msgstr "تصفية الخدمات حسب التصنيف"
+
+#: template-parts/services.php:159
+msgid "View %s service"
+msgstr "عرض خدمة %s"
+
+#: template-parts/services.php:220
+#: template-parts/services/custom-loop-services.php:84
+msgid "Learn more"
+msgstr "اعرف المزيد"
+
+#: template-parts/services.php:237
+msgid "No services found."
+msgstr "لم يُعثر على خدمات."
+
+#: template-parts/services.php:252
+msgid "Why Arqam"
+msgstr "لماذا Arqam"
+
+#: template-parts/services.php:255
+msgid "Built differently."
+msgstr "مبنيون بشكل مختلف."
+
+#: template-parts/services.php:255
+msgid "For brands that mean it."
+msgstr "للعلامات التجارية الجادّة."
+
+#: template-parts/services.php:260
+msgid ""
+"Three principles shape every engagement — from the first call to the day we "
+"hand over the keys. They're why our clients stay with us for years, not "
+"sprints."
+msgstr ""
+"ثلاثة مبادئ تشكّل كل تعاقد — من المكالمة الأولى إلى يوم تسليم المفاتيح. هي "
+"السبب في بقاء عملائنا معنا سنوات، لا أسابيع."
+
+#: template-parts/services.php:269
+msgid "Senior teams only"
+msgstr "فرق محترفة فقط"
+
+#: template-parts/services.php:270
+msgid "No juniors, no handoffs. The team that pitches you ships your project."
+msgstr "لا مبتدئين، ولا تنقّلات. الفريق الذي يقدّم لك العرض هو من ينفّذ مشروعك."
+
+#: template-parts/services.php:276
+msgid "Built for speed"
+msgstr "مبني للسرعة"
+
+#: template-parts/services.php:277
+msgid "Performance is a design decision — not a final-week cleanup task."
+msgstr "الأداء قرار تصميمي — لا مهمة تنظيف في الأسبوع الأخير."
+
+#: template-parts/services.php:283
+msgid "Outcomes, not outputs"
+msgstr "نتائج، لا مخرجات"
+
+#: template-parts/services.php:284
+msgid "Every engagement is tied to KPIs your CFO actually cares about."
+msgstr "كل تعاقد مرتبط بمؤشرات أداء يهتم بها مديرك المالي فعلاً."
+
+#: template-parts/services.php:299
+msgid "Let's talk"
+msgstr "لنتحدث"
+
+#: template-parts/services.php:301
+msgid "Ready to build something"
+msgstr "مستعد لبناء شيء"
+
+#: template-parts/services.php:301
+msgid "worth shipping?"
+msgstr "يستحق التنفيذ؟"
+
+#: template-parts/services.php:302
+msgid ""
+"Tell us about your goals. We'll come back with a clear plan, timeline and "
+"investment."
+msgstr ""
+"أخبرنا عن أهدافك. وسنعود إليك بخطة واضحة وجدول زمني وتكلفة."
+
+#: template-parts/services.php:305
+msgid "Back to Home"
+msgstr "العودة إلى الرئيسية"
+
+#: template-parts/frontpage/frontpage-slider.php
+msgid "Scale."
+msgstr "على التوسّع."
+
+#: template-parts/frontpage/frontpage-slider.php
+msgid "Convert."
+msgstr "على التحويل."
+
+#: template-parts/frontpage (auto-added)
+msgid "Custom-built, never templated"
+msgstr "مصمَّم خصيصًا، مش قوالب جاهزة"
+
+#: template-parts/frontpage (auto-added)
+msgid "SEO-ready from day one"
+msgstr "جاهز للسيو من أول يوم"
+
+#: template-parts/frontpage (auto-added)
+msgid "Conversion-focused UX"
+msgstr "تجربة استخدام مركّزة على التحويل"
+
+#: template-parts/frontpage (auto-added)
+msgid "Performance you can measure"
+msgstr "أداء تقدر تقيسه"
+
+#: template-parts/frontpage (auto-added)
+msgid "Long-term growth mindset"
+msgstr "عقلية نمو طويلة المدى"
+
+#: template-parts/frontpage (auto-added)
+msgid "Senior team, no hand-offs"
+msgstr "فريق خبير بدون تنقّلات"
+
+#: template-parts/frontpage (auto-added)
+msgid "Every line of code, every pixel of design — written for your business, not pulled from a theme library."
+msgstr "كل سطر كود وكل بكسل في التصميم مكتوب لمشروعك تحديدًا، مش مسحوب من مكتبة قوالب."
+
+#: template-parts/frontpage (auto-added)
+msgid "Schema, semantic HTML, Core Web Vitals, indexable architecture — search-engine fundamentals are baked in, not bolted on."
+msgstr "سكيما، وHTML دلالي، وCore Web Vitals، وبنية قابلة للأرشفة — أساسيات محركات البحث مدمجة من الأساس مش مضافة لاحقًا."
+
+#: template-parts/frontpage (auto-added)
+msgid "We design for the action, not just the aesthetic. Every section is engineered to move the user one step closer to yes."
+msgstr "بنصمّم من أجل الفعل مش الشكل بس. كل قسم مهندَس عشان يقرّب المستخدم خطوة من قرار الموافقة."
+
+#: template-parts/frontpage (auto-added)
+msgid "Sub-second loads, 95+ Lighthouse scores, and infrastructure that scales — performance is a feature, not a luxury."
+msgstr "تحميل في أقل من ثانية، ونتائج Lighthouse فوق 95، وبنية تحتية قابلة للتوسّع — الأداء ميزة مش رفاهية."
+
+#: template-parts/frontpage (auto-added)
+msgid "We're not a one-and-done vendor. We partner with clients for years, optimizing as the market — and your business — evolves."
+msgstr "إحنا مش مورّد لمرة واحدة. بنشارك عملاءنا لسنين، ونحسّن مع تطوّر السوق ومشروعك."
+
+#: template-parts/frontpage (auto-added)
+msgid "The strategist who scopes your project also ships it. No junior shuffling, no broken telephone — direct access to expertise."
+msgstr "نفس الخبير اللي بيحدّد نطاق مشروعك هو اللي بينفّذه. مفيش تنقّل بين مبتدئين ولا تشويش — وصول مباشر للخبرة."
+
+#: template-parts/frontpage (auto-added)
+msgid "Website Design & Development"
+msgstr "تصميم وتطوير المواقع"
+
+#: template-parts/frontpage (auto-added)
+msgid "Search Engine Optimization"
+msgstr "تحسين محركات البحث"
+
+#: template-parts/frontpage (auto-added)
+msgid "Brand Identity"
+msgstr "الهوية البصرية"
+
+#: template-parts/frontpage (auto-added)
+msgid "Social Media Marketing"
+msgstr "التسويق عبر السوشيال ميديا"
+
+#: template-parts/frontpage (auto-added)
+msgid "Years of experience"
+msgstr "سنوات الخبرة"
+
+#: template-parts/frontpage (auto-added)
+msgid "Average client rating"
+msgstr "متوسط تقييم العملاء"
+
+#: template-parts/frontpage (auto-added)
+msgid "out of 5.0"
+msgstr "من 5.0"
+
+#: template-parts/frontpage (auto-added)
+msgid "Years experience"
+msgstr "سنوات خبرة"
+
+#: template-parts/frontpage (auto-added)
+msgid "Global client rating"
+msgstr "تقييم العملاء عالميًا"
+
+#: template-parts/frontpage (auto-added)
+msgid "Branding · Social"
+msgstr "هوية · سوشيال"
+
+#: template-parts/frontpage (auto-added)
+msgid "Organic visibility growth across competitive markets"
+msgstr "نمو الظهور العضوي في أسواق تنافسية"
+
+#: template-parts/frontpage (auto-added)
+msgid "Custom UI/UX engineered for speed, precision, and product growth"
+msgstr "واجهة وتجربة استخدام مخصّصة، مهندَسة للسرعة والدقة ونمو المنتج"
+
+#: template-parts/frontpage (auto-added)
+msgid "Conversion-focused travel experience designed for global audiences"
+msgstr "تجربة سفر مركّزة على التحويل، مصمّمة لجمهور عالمي"
+
+#: template-parts/frontpage (auto-added)
+msgid "Bold branding and immersive web experience built for engagement"
+msgstr "هوية جريئة وتجربة ويب غامرة مبنية للتفاعل"
+
+#: template-parts/frontpage (auto-added)
+msgid "Data-driven SEO campaigns focused on measurable business growth"
+msgstr "حملات سيو معتمدة على البيانات، مركّزة على نمو أعمال قابل للقياس"

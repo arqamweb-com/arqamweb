@@ -1,0 +1,28 @@
+# Node.js
+node_modules/
+dist/
+build/
+*.log
+.env*
+
+# PHP
+vendor/
+*.cache
+
+# macOS
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Universal
+*.tmp
+*.swp
+error_log
+.vscode/
+.idea/
+
+# Local browser test artifacts
+.playwright-cli/
+
+# WordPress specific
+wp-config-local.php
