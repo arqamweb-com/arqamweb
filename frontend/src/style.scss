@@ -126,8 +126,11 @@
   }
 }
 
+/* The single site-wide container. Identical to the `container-x max-w-7xl`
+wrapper used on inner pages and to `.aw-header__inner`, so the header, every
+section and the footer line up at the same edges on every viewport. */
 .container {
-  @apply m-auto px-4;
+  @apply w-full max-w-7xl mx-auto px-4;
 }
 
 /* Inner section wrapper used across all page templates (services, projects,
@@ -148,6 +151,34 @@ h3,
 h4,
 h5 {
   font-family: "Dubai", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Brand heading colour. Applied as an element-level default so any Tailwind
+`text-*` utility on the heading itself still wins. */
+:root {
+  --aw-heading-color: #3e5271;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--aw-heading-color);
+}
+
+/* Inverted surfaces (dark sections, footer, dark cards) mark their light text
+with `text-white` / `text-primary-foreground`. Redefining the variable there
+lets their headings keep inheriting that light colour instead of turning navy. */
+.text-white,
+.text-primary-foreground {
+  --aw-heading-color: currentColor;
+}
+
+/* Editor content rendered through @tailwindcss/typography. */
+.prose {
+  --tw-prose-headings: #3e5271;
 }
 
 @layer utilities {
@@ -928,10 +959,15 @@ body.aw-mobile-menu-open .aw-header {
   transform: none;
 }
 
+/* Matches the site-wide section container (`container-x max-w-7xl mx-auto`):
+same 80rem max-width and same 1rem horizontal gutter, so the header aligns
+with every section below it. */
 .aw-header__inner {
-  width: min(100% - 2rem, 80rem);
+  width: 100%;
+  max-width: 80rem;
   min-height: 3.25rem;
   margin-inline: auto;
+  padding-inline: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2109,10 +2145,6 @@ body.aw-video-modal-open {
 
   .aw-header {
     padding: 0.85rem 0;
-  }
-
-  .aw-header__inner {
-    width: min(100% - 1.25rem, 80rem);
   }
 
   .aw-language-switcher {

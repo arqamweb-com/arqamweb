@@ -4,18 +4,6 @@ export default {
   content: ["../*.php", "../**/*.php", "../template-parts/**/*.php", "../inc/**/*.php", "./src/**/*.{js,ts,jsx,tsx,html,scss}"],
   safelist: ["font-[Dubai]"],
   theme: {
-    container: {
-      center: true,
-      padding: "1rem",
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1240px",
-        "2xl": "1240px", // Custom max width
-      },
-    },
-
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -176,5 +164,10 @@ export default {
   ],
   corePlugins: {
     direction: true, // Ensure direction utilities are enabled
+    // Disabled: the core plugin emits stepped max-widths (1024px, 1240px…) that
+    // disagreed with the `container-x max-w-7xl` wrapper used on inner pages.
+    // `.container` is redefined in src/style.scss so the whole site — header,
+    // sections and footer — shares one fluid 80rem container.
+    container: false,
   },
 };
