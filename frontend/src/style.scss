@@ -989,8 +989,10 @@ with every section below it. */
 .aw-logo-link img,
 .aw-logo-link .custom-logo {
   width: auto;
-  height: 2.25rem;
-  max-width: 10.5rem;
+  height: 50px;
+  /* The logo lockup is 433x138 (~3.14:1), so 50px tall renders ~157px wide —
+  inside this guard rail. Raise both together if the logo file changes. */
+  max-width: 11rem;
   object-fit: contain;
 }
 
@@ -2118,7 +2120,7 @@ body.aw-video-modal-open {
 
   .aw-logo-link img,
   .aw-logo-link .custom-logo {
-    height: 2.75rem;
+    height: 50px;
   }
 
   .aw-desktop-nav {
