@@ -218,22 +218,60 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 	<?php endif; ?>
 	<!-- Project Showcase -->
 	<?php if ($showcase_images): ?>
+		<style>
+			/* Visual Showcase. The cards hold full-page screenshots (natural size is
+			   roughly 500-1080 x 2560), so they have to be clipped to a fixed card
+			   height, otherwise they overflow the pinned panel and paint on top of
+			   the section below. */
+			#showcase-panel { overflow: hidden; }
+
+			/* Clear the fixed site header (and the admin bar, when it is showing) so
+			   the eyebrow and the H2 are not cut off in the pinned state. */
+			#showcase-inner { padding-top: calc(var(--aw-header-top, 0px) + 5rem); }
+
+			#showcase-viewport { overflow: hidden; }
+
+			#track { align-items: flex-start; }
+			#track > div { height: 62vh; }
+			#track > div > div { height: 100%; display: flex; flex-direction: column; }
+			#track .demo-img { flex: 1 1 auto; min-height: 0; overflow: hidden; }
+			#track .demo-img img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: top center;
+			}
+
+			/* Below md the script un-pins the panel (position: relative, spacer height
+			   auto, no transform), so the track has to be swipeable on its own. */
+			@media (max-width: 767px) {
+				#showcase-panel { position: relative; height: auto !important; }
+				#showcase-inner { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+				#showcase-viewport { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+				#track > div { height: 55vh; width: 80vw !important; }
+			}
+		</style>
 		<section id="showcase-section" style="position: relative;">
 			<div id="scroll-spacer" style="pointer-events: none;"></div>
 			<div id="showcase-panel" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh;">
-				<div style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+				<div id="showcase-inner" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
 					<div class="px-6 md:px-12 lg:px-24 mb-10">
 						<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Visual Showcase', 'arqamweb'); ?></p>
 						<h2 class="text-3xl md:text-4xl font-bold max-w-xl"><?php esc_html_e('Crafted with precision, down to the pixel', 'arqamweb'); ?></h2>
 					</div>
-					<div style="overflow: hidden;">
+					<div id="showcase-viewport">
 						<div id="track" class="flex gap-6 px-6 md:px-12 lg:px-24" style="will-change: transform;">
 
-							<?php foreach ($showcase_images as $image) : ?>
+							<?php foreach ($showcase_images as $index => $image) : ?>
 								<div class="flex-shrink-0" style="width: 42vw;">
 									<div class="rounded-2xl overflow-hidden bg-white shadow-lg border border-gray-200">
 										<div class="demo-img bg-gradient-to-br from-blue-500 to-purple-600">
-											<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="w-full h-auto object-cover transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy">
+											<img src="<?php echo esc_url($image['url']); ?>"
+												alt="<?php echo esc_attr($image['alt']); ?>"
+												<?php if (!empty($image['width']) && !empty($image['height'])) : ?>width="<?php echo esc_attr($image['width']); ?>" height="<?php echo esc_attr($image['height']); ?>"<?php endif; ?>
+												decoding="async"
+												<?php if ($index >= 2) : ?>loading="lazy"<?php endif; ?>
+												class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
 										</div>
 										<?php if (!empty($image['alt'])) : ?>
 											<div class="p-4">
@@ -380,26 +418,36 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 						onScroll();
 					}
 
-					// Wait for images (if any) before measuring
+					// The cards now have a fixed CSS height, so the track is already the
+					// right size at first paint. Measure straight away instead of waiting
+					// on the images, which is what left the spacer at 0px until scroll.
+					init();
+
+					function remeasure() {
+						measure();
+						onScroll();
+					}
+
+					// Still re-measure as each image resolves, in case a decoded image
+					// changes the layout (a failed load, a differently sized swap).
 					var imgs = track.querySelectorAll("img");
-					var total = imgs.length;
-					var loaded = 0;
-
-					function onImgReady() {
-						loaded++;
-						if (loaded >= total) init();
+					for (var i = 0; i < imgs.length; i++) {
+						if (imgs[i].complete) continue;
+						imgs[i].addEventListener("load", remeasure, {
+							once: true
+						});
+						imgs[i].addEventListener("error", remeasure, {
+							once: true
+						});
 					}
 
-					if (total === 0) {
-						init();
-					} else {
-						for (var i = 0; i < total; i++) {
-							if (imgs[i].complete) onImgReady();
-							else imgs[i].addEventListener("load", onImgReady, {
-								once: true
-							});
-						}
+					// Catch anything else that changes the track's size (font swap,
+					// zoom, a card being added by an editor preview).
+					if (typeof ResizeObserver !== "undefined") {
+						new ResizeObserver(remeasure).observe(track);
 					}
+
+					window.addEventListener("load", remeasure);
 
 					window.addEventListener("scroll", onScroll, {
 						passive: true
