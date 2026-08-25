@@ -18,7 +18,7 @@ $projects_query = new WP_Query([
 	'post_status' => 'publish',
 	'no_found_rows' => true,
 	'orderby' => 'menu_order date',
-	'order' => 'ASC',
+	'order' => 'DESC',
 ]);
 
 $card_gradients = [
