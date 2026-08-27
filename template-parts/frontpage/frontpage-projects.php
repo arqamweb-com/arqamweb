@@ -5,8 +5,9 @@ if (!defined('ABSPATH')) {
 
 $project_query_args = array(
 	'post_type' => 'project',
-	'posts_per_page' => 6,
-	'order' => 'ASC',
+	'posts_per_page' => 50,
+	'orderby' => 'date',
+	'order' => 'DESC',
 	'no_found_rows' => true,
 );
 
@@ -43,7 +44,7 @@ if ($project_query->have_posts()) {
 		if ($category === '') {
 			$category_terms = get_the_terms($project_id, 'project_category');
 			if ($category_terms && !is_wp_error($category_terms)) {
-				$category = implode(' 路 ', wp_list_pluck($category_terms, 'name'));
+				$category = implode(' · ', wp_list_pluck($category_terms, 'name'));
 			}
 		}
 
@@ -122,6 +123,8 @@ $marquee_projects = array_values(array_filter($frontpage_projects, function ($pr
 if (empty($marquee_projects)) {
 	$marquee_projects = array_slice($frontpage_projects, 1);
 }
+
+$marquee_projects = array_slice($marquee_projects, 0, 6);
 ?>
 
 <section id="projects" class="py-28 lg:py-36 bg-secondary/60 overflow-hidden border-y border-border/60">
