@@ -43,7 +43,7 @@ if ($project_query->have_posts()) {
 		if ($category === '') {
 			$category_terms = get_the_terms($project_id, 'project_category');
 			if ($category_terms && !is_wp_error($category_terms)) {
-				$category = implode(' · ', wp_list_pluck($category_terms, 'name'));
+				$category = implode(' 路 ', wp_list_pluck($category_terms, 'name'));
 			}
 		}
 
