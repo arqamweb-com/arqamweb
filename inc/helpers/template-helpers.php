@@ -210,3 +210,125 @@ function fix_svg()
 }
 
 add_action('admin_head', 'fix_svg');
+
+/**
+ * Normalise a single project post into the card shape used by the featured
+ * showcase (front page hero + projects page hero) and the marquee cards.
+ *
+ * @return array{title:string,category:string,copy:string,image:string,imageAlt:string,width:int,height:int,tags:string[],link:string,isFeature:bool}
+ */
+function arqamweb_get_project_card(int $project_id): array
+{
+	$is_feature = false;
+
+	if (function_exists('get_field')) {
+		$is_feature = (bool) get_field('is_feature', $project_id);
+		if (!$is_feature) {
+			$is_feature = (bool) get_field('is_featured', $project_id);
+		}
+	}
+
+	if (!$is_feature) {
+		$is_feature = (bool) get_post_meta($project_id, 'is_feature', true);
+	}
+
+	if (!$is_feature && class_exists('ArqamWeb_Project')) {
+		$is_feature = ArqamWeb_Project::get_is_featured($project_id);
+	}
+
+	$category = class_exists('ArqamWeb_Project') ? ArqamWeb_Project::get_category($project_id) : '';
+
+	if ($category === '') {
+		$category_terms = get_the_terms($project_id, 'project_category');
+		if ($category_terms && !is_wp_error($category_terms)) {
+			$category = implode(' · ', wp_list_pluck($category_terms, 'name'));
+		}
+	}
+
+	$tags = [];
+	$tag_terms = get_the_terms($project_id, 'project_tag');
+	if ($tag_terms && !is_wp_error($tag_terms)) {
+		$tags = wp_list_pluck($tag_terms, 'name');
+	}
+
+	$image = '';
+	$image_alt = get_the_title($project_id);
+	$image_width = 1280;
+	$image_height = 800;
+
+	if (has_post_thumbnail($project_id)) {
+		$image_id = get_post_thumbnail_id($project_id);
+		$image_src = wp_get_attachment_image_src($image_id, 'large');
+		if ($image_src) {
+			$image = $image_src[0];
+			$image_width = (int) $image_src[1];
+			$image_height = (int) $image_src[2];
+		}
+		$thumbnail_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
+		if ($thumbnail_alt !== '') {
+			$image_alt = $thumbnail_alt;
+		}
+	} elseif (class_exists('ArqamWeb_Project')) {
+		$portfolio_image = ArqamWeb_Project::get_portfolio_image($project_id);
+		if ($portfolio_image !== null) {
+			$image = $portfolio_image['url'];
+			$image_alt = $portfolio_image['alt'];
+			$image_width = $portfolio_image['width'];
+			$image_height = $portfolio_image['height'];
+		}
+	}
+
+	$excerpt = get_the_excerpt($project_id);
+	if ($excerpt === '') {
+		$excerpt = wp_trim_words(wp_strip_all_tags(get_the_content(null, false, $project_id)), 24);
+	}
+
+	return [
+		'title'     => get_the_title($project_id),
+		'category'  => $category !== '' ? $category : __('Project', 'arqamweb'),
+		'copy'      => $excerpt,
+		'image'     => $image,
+		'imageAlt'  => $image_alt,
+		'width'     => $image_width,
+		'height'    => $image_height,
+		'tags'      => array_slice($tags, 0, 3),
+		'link'      => get_permalink($project_id),
+		'isFeature' => $is_feature,
+	];
+}
+
+/**
+ * Projects flagged with the `is_featured` ACF toggle, newest first, as cards.
+ * Falls back to the newest projects when nothing is flagged, so the showcase
+ * never renders empty.
+ *
+ * @return array<int, array> Card arrays from arqamweb_get_project_card().
+ */
+function arqamweb_get_featured_project_cards(int $limit = 3): array
+{
+	$featured = new WP_Query([
+		'post_type'      => 'project',
+		'post_status'    => 'publish',
+		'posts_per_page' => $limit,
+		'orderby'        => 'date',
+		'order'          => 'DESC',
+		'no_found_rows'  => true,
+		'meta_query'     => [['key' => 'is_featured', 'value' => '1']],
+	]);
+
+	$ids = wp_list_pluck($featured->posts, 'ID');
+
+	if (empty($ids)) {
+		$fallback = new WP_Query([
+			'post_type'      => 'project',
+			'post_status'    => 'publish',
+			'posts_per_page' => $limit,
+			'orderby'        => 'date',
+			'order'          => 'DESC',
+			'no_found_rows'  => true,
+		]);
+		$ids = wp_list_pluck($fallback->posts, 'ID');
+	}
+
+	return array_map('arqamweb_get_project_card', $ids);
+}

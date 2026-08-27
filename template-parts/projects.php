@@ -103,6 +103,18 @@ $card_gradients = [
 		</div>
 	</section>
 
+	<!-- ── Featured showcase ───────────────────────────────────────────────────── -->
+	<?php $featured_showcase = arqamweb_get_featured_project_cards(3); ?>
+	<?php if (!empty($featured_showcase)) : ?>
+		<section class="relative pb-16 lg:pb-24 bg-background overflow-hidden">
+			<div class="container-x max-w-7xl mx-auto">
+				<?php get_template_part('template-parts/partials/featured-projects-hero', null, [
+					'projects' => $featured_showcase,
+				]); ?>
+			</div>
+		</section>
+	<?php endif; ?>
+
 	<!-- ── Filter bar ──────────────────────────────────────────────────────────── -->
 	<div class="sticky top-[68px] z-20 py-4 backdrop-blur-xl bg-background/70 border-y border-border/60">
 		<div class="container-x max-w-7xl mx-auto">
