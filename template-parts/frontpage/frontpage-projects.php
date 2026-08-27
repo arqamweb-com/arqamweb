@@ -153,10 +153,7 @@ if (empty($marquee_projects)) {
 						<div
 							class="absolute inset-0 bg-gradient-to-t from-foreground/70 via-transparent to-transparent"></div>
 						<div
-							class="absolute top-5 left-5 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-background/90 backdrop-blur text-foreground border border-border"><?php echo esc_html__('Featured', 'arqamweb'); ?>
-							· <span
-								data-frontpage-featured-project-category><?php echo esc_html($heroProject['category']); ?></span>
-						</div>
+							class="absolute top-5 left-5 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-background/90 backdrop-blur text-foreground border border-border"><?php echo esc_html__('Featured', 'arqamweb'); ?></div>
 						<?php if (count($featured_projects) > 1) : ?>
 							<div class="absolute bottom-5 left-5 flex gap-1.5" aria-hidden="true">
 								<?php foreach ($featured_projects as $index => $featured_project) : ?>
