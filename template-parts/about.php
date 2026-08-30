@@ -532,21 +532,6 @@ get_header();
 						</div>
 					</div>
 					<div
-						class="hidden md:flex absolute -right-4 top-10 items-center gap-2 rounded-2xl bg-white/[0.06] backdrop-blur-xl border border-white/15 shadow-2xl px-4 py-3 animate-float-slow">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-						     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-award w-4 h-4 text-primary"
-						     aria-hidden="true">
-							<path
-								d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
-							<circle cx="12" cy="8" r="6"></circle>
-						</svg>
-						<div>
-							<div class="text-[9px] uppercase tracking-wider text-white/60"><?php esc_html_e('Recognized', 'arqamweb'); ?></div>
-							<div class="text-xs font-semibold"><?php esc_html_e('Top 50 MENA founders', 'arqamweb'); ?></div>
-						</div>
-					</div>
-					<div
 						class="hidden md:flex absolute -left-4 bottom-16 items-center gap-2 rounded-2xl bg-white/[0.06] backdrop-blur-xl border border-white/15 shadow-2xl px-4 py-3 animate-float-slow"
 						style="animation-delay: 1s;">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
