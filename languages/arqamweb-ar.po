@@ -1671,6 +1671,10 @@ msgstr "ملاحظات ميدانية"
 msgid "All articles"
 msgstr "كل المقالات"
 
+#: template-parts/frontpage/frontpage-blog.php:27
+msgid "View All Blogs"
+msgstr "شاهد كل المقالات"
+
 #: template-parts/frontpage/frontpage-contact.php:21
 msgid "We're online — usually reply in under a minute"
 msgstr "نحن متصلون — عادة نرد في أقل من دقيقة"

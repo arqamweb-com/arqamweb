@@ -1580,6 +1580,10 @@ msgstr ""
 msgid "All articles"
 msgstr ""
 
+#: template-parts/frontpage/frontpage-blog.php:27
+msgid "View All Blogs"
+msgstr ""
+
 #: template-parts/frontpage/frontpage-contact.php:21
 msgid "We're online — usually reply in under a minute"
 msgstr ""
