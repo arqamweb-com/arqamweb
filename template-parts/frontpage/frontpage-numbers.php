@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) {
+	exit;
+}
 
 $stats = [
 	['value' => '15+', 'label' => 'Years of experience', 'note' => 'since 2010'],

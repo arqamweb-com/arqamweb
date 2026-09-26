@@ -1,4 +1,8 @@
 <?php
+if (!defined('ABSPATH')) {
+	exit;
+}
+
 $whyItems = [
 	['title' => 'Custom-built, never templated', 'copy' => 'Every line of code, every pixel of design — written for your business, not pulled from a theme library.', 'icon' => 'code'],
 	['title' => 'SEO-ready from day one', 'copy' => 'Schema, semantic HTML, Core Web Vitals, indexable architecture — search-engine fundamentals are baked in, not bolted on.', 'icon' => 'search'],

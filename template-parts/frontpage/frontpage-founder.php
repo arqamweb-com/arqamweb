@@ -1,3 +1,9 @@
+<?php
+if (!defined('ABSPATH')) {
+	exit;
+}
+?>
+
 <section id="founder" class="relative py-28 lg:py-36 bg-surface/50 overflow-hidden">
 	<div
 		class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>

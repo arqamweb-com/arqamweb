@@ -1,11 +1,13 @@
 <?php
+if (!defined('ABSPATH')) {
+	exit;
+}
 
 /**
  * Frontpage Slider Section
  *
  * @package Arqam Web
  */
-
 
 $showcase_assets = get_template_directory_uri() . '/frontend/img/ascend/';
 $heroSlides = [

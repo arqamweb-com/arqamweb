@@ -1,4 +1,8 @@
 <?php
+if (!defined('ABSPATH')) {
+	exit;
+}
+
 $partners = [
 	['name' => 'Google', 'image' => 'https://www.arqamweb.com/wp-content/uploads/2026/05/Google.png'],
 	['name' => 'Meta', 'image' => 'https://www.arqamweb.com/wp-content/uploads/2026/05/Meta.png'],

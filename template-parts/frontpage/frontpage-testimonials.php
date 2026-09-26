@@ -1,4 +1,8 @@
 <?php
+if (!defined('ABSPATH')) {
+	exit;
+}
+
 $testimonial_posts = get_posts([
 	'post_type' => 'testimonial',
 	'posts_per_page' => 3,
