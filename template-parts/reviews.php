@@ -304,7 +304,7 @@ get_header();
 			'id' => $_vt->ID,
 			'video' => get_field('video_id', $_vt->ID),
 			'is_short' => (bool)get_field('is_short', $_vt->ID),
-			'category' => get_field('category', $_vt->ID),
+			'category' => arqamweb_get_select_field('category', $_vt->ID),
 			'snippet' => get_field('snippet', $_vt->ID),
 			'client' => $_vt->post_title,
 		];
