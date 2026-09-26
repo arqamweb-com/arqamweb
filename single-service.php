@@ -105,7 +105,7 @@ $related_q = new WP_Query([
 
 	<!-- ── Service content ────────────────────────────────────────────────── -->
 	<?php if ($service_content !== '') : ?>
-		<article id="post-<?php the_ID(); ?>" class="py-16 lg:py-24">
+		<article id="post-<?php echo esc_attr(get_the_ID()); ?>" class="py-16 lg:py-24">
 			<div class="container-x max-w-3xl mx-auto">
 				<div class="prose prose-lg max-w-none
 				            prose-headings:font-semibold prose-headings:tracking-tight
