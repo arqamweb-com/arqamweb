@@ -236,7 +236,7 @@ class ArqamWeb_Project
 	 */
 	public static function get_is_featured(int $post_id): bool
 	{
-		return (bool) get_post_meta($post_id, 'is_featured', true);
+		return arqamweb_get_boolean_field('is_featured', $post_id, false);
 	}
 
 	/**
