@@ -13,7 +13,7 @@ foreach ($testimonial_posts as $t) {
 		'id' => $t->ID,
 		'video' => get_field('video_id', $t->ID),
 		'is_short' => (bool)get_field('is_short', $t->ID),
-		'category' => get_field('category', $t->ID),
+		'category' => arqamweb_get_select_field('category', $t->ID),
 		'snippet' => get_field('snippet', $t->ID),
 		'client' => $t->post_title,
 	];
