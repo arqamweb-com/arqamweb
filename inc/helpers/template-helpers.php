@@ -224,7 +224,7 @@ function arqamweb_get_project_card(int $project_id): array
 	if (function_exists('get_field')) {
 		$is_feature = (bool) get_field('is_feature', $project_id);
 		if (!$is_feature) {
-			$is_feature = (bool) get_field('is_featured', $project_id);
+			$is_feature = arqamweb_get_boolean_field('is_featured', $project_id);
 		}
 	}
 
