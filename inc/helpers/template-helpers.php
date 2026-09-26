@@ -179,7 +179,7 @@ if (!function_exists('arqamweb_clear_home_cache')) {
 
 
 /**
- * Add Svg To Media Library
+ * Add Svg To Media Library with XSS sanitization
  */
 
 add_filter('wp_check_filetype_and_ext', function ($data, $file, $filename, $mimes) {
@@ -198,6 +198,206 @@ function cc_mime_types($mimes)
 }
 
 add_filter('upload_mimes', 'cc_mime_types');
+
+/**
+ * Sanitize SVG uploads to prevent XSS attacks.
+ * Strips dangerous elements like <script>, event handlers, and embedded content.
+ *
+ * @param array $file Uploaded file data
+ * @return array Modified file data or wp_error on failure
+ */
+function arqamweb_sanitize_svg_upload($file)
+{
+	// Only process SVG files
+	if (!isset($file['tmp_name']) || !isset($file['type']) || $file['type'] !== 'image/svg+xml') {
+		return $file;
+	}
+
+	// Read SVG content
+	$svg_content = file_get_contents($file['tmp_name']);
+	if ($svg_content === false) {
+		$file['error'] = __('Failed to read SVG file.', 'arqamweb');
+		return $file;
+	}
+
+	// Check for dangerous patterns
+	$dangerous_patterns = [
+		'/<script/i',
+		'/on\w+\s*=/i', // Event handlers like onclick, onload, etc.
+		'/javascript:/i',
+		'/data:text\/html/i',
+		'/<iframe/i',
+		'/<embed/i',
+		'/<object/i',
+		'/<foreignObject/i', // Can embed HTML
+		'/xlink:href\s*=\s*["\']?\s*data:/i', // Data URIs in xlink:href
+	];
+
+	foreach ($dangerous_patterns as $pattern) {
+		if (preg_match($pattern, $svg_content)) {
+			$file['error'] = __('SVG file contains potentially dangerous content and was rejected for security reasons.', 'arqamweb');
+			return $file;
+		}
+	}
+
+	// Sanitize SVG content using wp_kses with allowed SVG tags
+	$allowed_tags = [
+		'svg' => [
+			'xmlns' => true,
+			'width' => true,
+			'height' => true,
+			'viewbox' => true,
+			'preserveaspectratio' => true,
+			'fill' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'class' => true,
+			'id' => true,
+			'aria-hidden' => true,
+			'role' => true,
+		],
+		'path' => [
+			'd' => true,
+			'fill' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'stroke-linecap' => true,
+			'stroke-linejoin' => true,
+			'class' => true,
+			'id' => true,
+			'transform' => true,
+		],
+		'circle' => [
+			'cx' => true,
+			'cy' => true,
+			'r' => true,
+			'fill' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'class' => true,
+			'id' => true,
+		],
+		'rect' => [
+			'x' => true,
+			'y' => true,
+			'width' => true,
+			'height' => true,
+			'rx' => true,
+			'ry' => true,
+			'fill' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'class' => true,
+			'id' => true,
+		],
+		'ellipse' => [
+			'cx' => true,
+			'cy' => true,
+			'rx' => true,
+			'ry' => true,
+			'fill' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'class' => true,
+			'id' => true,
+		],
+		'line' => [
+			'x1' => true,
+			'y1' => true,
+			'x2' => true,
+			'y2' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'class' => true,
+			'id' => true,
+		],
+		'polyline' => [
+			'points' => true,
+			'fill' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'class' => true,
+			'id' => true,
+		],
+		'polygon' => [
+			'points' => true,
+			'fill' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'class' => true,
+			'id' => true,
+		],
+		'g' => [
+			'fill' => true,
+			'stroke' => true,
+			'stroke-width' => true,
+			'class' => true,
+			'id' => true,
+			'transform' => true,
+		],
+		'defs' => [],
+		'clippath' => [
+			'id' => true,
+		],
+		'lineargradient' => [
+			'id' => true,
+			'x1' => true,
+			'y1' => true,
+			'x2' => true,
+			'y2' => true,
+		],
+		'radialgradient' => [
+			'id' => true,
+			'cx' => true,
+			'cy' => true,
+			'r' => true,
+		],
+		'stop' => [
+			'offset' => true,
+			'stop-color' => true,
+			'stop-opacity' => true,
+		],
+		'title' => [],
+		'desc' => [],
+		'use' => [
+			'href' => true,
+			'xlink:href' => true,
+			'x' => true,
+			'y' => true,
+			'width' => true,
+			'height' => true,
+		],
+		'text' => [
+			'x' => true,
+			'y' => true,
+			'fill' => true,
+			'font-size' => true,
+			'font-family' => true,
+			'text-anchor' => true,
+			'class' => true,
+			'id' => true,
+		],
+		'tspan' => [
+			'x' => true,
+			'y' => true,
+			'dx' => true,
+			'dy' => true,
+		],
+	];
+
+	// Sanitize the SVG content
+	$sanitized_svg = wp_kses($svg_content, $allowed_tags);
+
+	// Write sanitized content back to file
+	if (file_put_contents($file['tmp_name'], $sanitized_svg) === false) {
+		$file['error'] = __('Failed to save sanitized SVG file.', 'arqamweb');
+		return $file;
+	}
+
+	return $file;
+}
+
+add_filter('wp_handle_upload_prefilter', 'arqamweb_sanitize_svg_upload');
 
 function fix_svg()
 {
