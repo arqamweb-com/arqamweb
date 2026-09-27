@@ -23,8 +23,8 @@ $cookie_policy_url = arqamweb_get_page_permalink( ARQAM_COOKIE_PAGE_SLUG );
 	<div class="relative bg-[oklch(0.14_0.03_252)] text-primary-foreground shadow-2xl border-t border-white/10">
 		<!-- Decorative gradients -->
 		<div class="absolute inset-0 grid-bg opacity-[0.05] pointer-events-none"></div>
-		<div class="absolute -top-20 -left-20 w-[300px] h-[300px] rounded-full bg-primary/20 blur-[100px] pointer-events-none"></div>
-		<div class="absolute -bottom-20 -right-20 w-[350px] h-[350px] rounded-full bg-[color:var(--primary-deep)]/25 blur-[100px] pointer-events-none"></div>
+		<div class="absolute -top-20 ltr:-left-20 rtl:-right-20 w-[300px] h-[300px] rounded-full bg-primary/20 blur-[100px] pointer-events-none"></div>
+		<div class="absolute -bottom-20 ltr:-right-20 rtl:-left-20 w-[350px] h-[350px] rounded-full bg-[color:var(--primary-deep)]/25 blur-[100px] pointer-events-none"></div>
 
 		<div class="container relative">
 			<div class="py-6 md:py-8">
@@ -64,7 +64,7 @@ $cookie_policy_url = arqamweb_get_page_permalink( ARQAM_COOKIE_PAGE_SLUG );
 						        id="cookie-settings-btn"
 						        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-primary-foreground/90 bg-white/8 hover:bg-white/12 rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-0.5"
 						        aria-label="<?php esc_attr_e( 'Customize cookie settings', 'arqamweb' ); ?>">
-							<svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<svg class="w-4 h-4 me-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 								<circle cx="12" cy="12" r="3"></circle>
 								<path d="M12 1v6m0 6v6m8.66-10.66-4.24 4.24m-4.24 4.24-4.24 4.24M23 12h-6m-6 0H1m19.07-8.07-4.24 4.24m-4.24 4.24-4.24 4.24"></path>
 							</svg>
@@ -75,7 +75,7 @@ $cookie_policy_url = arqamweb_get_page_permalink( ARQAM_COOKIE_PAGE_SLUG );
 						        id="cookie-reject-btn"
 						        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-primary-foreground/90 bg-white/8 hover:bg-white/12 rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-0.5"
 						        aria-label="<?php esc_attr_e( 'Reject optional cookies', 'arqamweb' ); ?>">
-							<svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<svg class="w-4 h-4 me-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 								<path d="M18 6 6 18"></path>
 								<path d="m6 6 12 12"></path>
 							</svg>
@@ -86,7 +86,7 @@ $cookie_policy_url = arqamweb_get_page_permalink( ARQAM_COOKIE_PAGE_SLUG );
 						        id="cookie-accept-btn"
 						        class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-gradient-primary hover:shadow-glow rounded-lg transition-all duration-300 hover:-translate-y-0.5"
 						        aria-label="<?php esc_attr_e( 'Accept all cookies', 'arqamweb' ); ?>">
-							<svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<svg class="w-4 h-4 me-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 								<path d="M20 6 9 17l-5-5"></path>
 							</svg>
 							<?php esc_html_e( 'Accept All', 'arqamweb' ); ?>
