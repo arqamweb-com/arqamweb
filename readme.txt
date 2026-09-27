@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 6.0
 Tested up to: 6.4
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -29,6 +29,11 @@ Arqam-Web is the bespoke agency theme used by Arqam Web for its marketing site. 
 Yes. The theme includes fallback schema and metadata, and it is designed to work cleanly with Rank Math when that plugin is active.
 
 == Changelog ==
+
+= 1.1.0 =
+* Refactored oversize template files into modular partials for improved maintainability.
+* Split large template files (front-page.php, single-service.php, etc.) into smaller, focused components.
+* Improved code organization and reduced file complexity across all major templates.
 
 = 1.0.0 =
 * Initial publicized release of the custom Arqam Web theme package.
