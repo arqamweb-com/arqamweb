@@ -8,44 +8,384 @@
 
 ## Executive Summary
 
-This comprehensive audit reviews the Arqam Web WordPress theme to identify hard-coded strings that need to be wrapped in WordPress translation functions for proper bilingual support (English/Arabic). The audit covers:
-- **Main template files** (header, footer, index, home, archive, single, search, 404)
-- **Frontpage components** (13 template-parts for homepage sections)
-- **Content & page templates** (15 template-parts for various page types)
+This comprehensive audit reviews the Arqam Web WordPress theme to identify hard-coded strings that need to be wrapped in WordPress translation functions for proper bilingual support (English/Arabic). 
+
+### Scope Coverage
+The audit systematically examined **39 PHP files** across all major theme components:
+- **Main template files** (8 files: header, footer, index, home, archive, single, search, 404)
+- **Frontpage components** (13 files: all homepage section template-parts)
+- **Content & page templates** (15 files: content templates, services, projects, pricing, reviews, about, quote, contact, partials)
+- **Helper files** (3 files: acf-helpers.php, ajax-handlers.php, template-helpers.php)
 
 ### Overall Results
-- **Total files audited:** 36
-- **Files passing:** 26 (72.2%)
-- **Files needing fixes:** 9 (25%)
-- **Total hard-coded strings:** 71
+- **Total files audited:** 39
+- **Files passing:** 28 (71.8%)
+- **Files needing fixes:** 10 (25.6%)
+- **Files with minor issues:** 1 (2.6%)
+- **Total hard-coded strings identified:** 164
 
-### Priority Breakdown
-- 🔴 **High Priority:** 64 strings (frontpage components - arrays with content)
-- 🟡 **Medium Priority:** 4 strings (main templates - fallback text)
-- 🟢 **Low Priority:** 3 strings (1 placeholder, 2 optional platform names)
+### Priority Breakdown by Severity
+- 🔴 **CRITICAL:** 93 strings (email communication system in ajax-handlers.php)
+- 🔴 **HIGH:** 64 strings (frontpage components - user-facing content arrays)
+- 🟡 **MEDIUM:** 4 strings (main templates - category fallback text)
+- 🟢 **LOW:** 3 strings (1 placeholder, 2 optional platform names)
 
-### Audit Status by Template
+### Business Impact
+The most critical finding is the **email communication system** (`inc/helpers/ajax-handlers.php`) which sends English-only emails to all users regardless of site language. This directly impacts:
+- Quote request submissions (primary lead generation channel)
+- Professional perception of bilingual capabilities
+- User experience for Arabic-speaking prospects
+- Brand consistency in customer communications
 
-| Template | Status | Hard-coded Strings Found |
-|----------|--------|--------------------------|
-| header.php | ✅ Pass | 0 |
-| footer.php | ✅ Pass | 0 |
-| index.php | ✅ Pass | 0 |
-| home.php | ⚠️ Issues Found | 4 instances |
-| archive.php | ✅ Pass | 0 |
-| single.php | ⚠️ Issues Found | 2 instances (optional) |
-| search.php | ✅ Pass | 0 |
-| 404.php | ✅ Pass | 0 |
+---
 
-### Template-Parts Audit Summary
+## Files Checked - Complete Audit Status
 
-**Frontpage Components (13 files):**
-- ✅ Pass: 6 files
-- ⚠️ Need fixes: 7 files (64 hard-coded strings)
+### Main Templates (8 files)
 
-**Content & Page Templates (15 files):**
-- ✅ Pass: 14 files
-- ⚠️ Minor issue: 1 file (1 placeholder string)
+| Template | Status | Hard-coded Strings | Severity |
+|----------|--------|-------------------|----------|
+| header.php | ✅ Pass | 0 | - |
+| footer.php | ✅ Pass | 0 | - |
+| index.php | ✅ Pass | 0 | - |
+| home.php | ⚠️ Issues Found | 4 | Medium |
+| archive.php | ✅ Pass | 0 | - |
+| single.php | ⚠️ Optional Review | 2 | Low |
+| search.php | ✅ Pass | 0 | - |
+| 404.php | ✅ Pass | 0 | - |
+
+### Frontpage Components (13 files)
+
+| Component | Status | Hard-coded Strings | Severity |
+|-----------|--------|-------------------|----------|
+| frontpage-blog.php | ✅ Pass | 0 | - |
+| frontpage-contact.php | ⚠️ Issues Found | 8 | High |
+| frontpage-faqs.php | ✅ Pass | 0 | - |
+| frontpage-find_us.php | ⚠️ Issues Found | 11 | High |
+| frontpage-founder.php | ✅ Pass | 0 | - |
+| frontpage-numbers.php | ⚠️ Issues Found | 8 | High |
+| frontpage-partners.php | ✅ Pass | 0 | - |
+| frontpage-projects.php | ✅ Pass | 0 | - |
+| frontpage-reviews.php | ⚠️ Issues Found | 1 | High |
+| frontpage-services.php | ⚠️ Issues Found | 16 | High |
+| frontpage-slider.php | ⚠️ Issues Found | 8 | High |
+| frontpage-testimonials.php | ✅ Pass | 0 | - |
+| frontpage-why_us.php | ⚠️ Issues Found | 12 | High |
+
+### Template Parts - Content & Pages (15 files)
+
+| Template Part | Status | Hard-coded Strings | Severity |
+|---------------|--------|-------------------|----------|
+| content/content-none.php | ✅ Pass | 0 | - |
+| content/content-page.php | ✅ Pass | 0 | - |
+| content/content-project.php | ✅ Pass | 0 | - |
+| content/content-review.php | ⚠️ Minor Issue | 1 | Low |
+| content/content-search.php | ✅ Pass | 0 | - |
+| content/content.php | ✅ Pass | 0 | - |
+| services.php | ✅ Pass | 0 | - |
+| projects.php | ✅ Pass | 0 | - |
+| pricing.php | ✅ Pass | 0 | - |
+| pricing-v2.php | ✅ Pass | 0 | - |
+| reviews.php | ✅ Pass | 0 | - |
+| about.php | ✅ Pass | 0 | - |
+| quote.php | ✅ Pass | 0 | - |
+| contact.php | ✅ Pass | 0 | - |
+| partials/floating-contact.php | ✅ Pass | 0 | - |
+
+### Helper Files (3 files)
+
+| Helper File | Status | Hard-coded Strings | Severity |
+|-------------|--------|-------------------|----------|
+| inc/helpers/acf-helpers.php | ✅ Pass | 0 | - |
+| inc/helpers/ajax-handlers.php | 🔴 CRITICAL | 93 | Critical |
+| inc/helpers/template-helpers.php | ✅ Pass | 0 | - |
+
+### Summary Statistics
+
+- **Total files audited:** 39
+- **Files passing (✅):** 28 (71.8%)
+- **Files requiring fixes (⚠️):** 10 (25.6%)
+- **Files with minor issues:** 1 (2.6%)
+- **Total hard-coded strings:** 164
+
+---
+
+## Critical Issues (93 strings)
+
+### 🔴 Priority: CRITICAL - Email Communication System
+
+**File:** `inc/helpers/ajax-handlers.php`  
+**Function:** `arqamweb_handle_quote_request()`  
+**Lines:** 107-278  
+**Impact:** Business-critical - Primary lead generation channel sends English-only emails
+
+#### Problem Summary
+The quote request handler constructs email bodies with 93 hard-coded English strings, affecting all three quote form types (branding, website, SEO). Arabic-speaking users receive completely English emails regardless of site language.
+
+#### Breakdown of Issues
+
+**Section Headers (25 instances):**
+- `"── Contact ───────────────────────────────"` (Line 107)
+- `"── Project Overview ────────────────────"` (Line 118)
+- `"── Branding Level ───────────────────────"` (Line 131)
+- `"── Logo Status ─────────────────────────"` (Line 134)
+- `"── Brand Assets ─────────────────────────"` (Line 145)
+- `"── Execution Details ──────────────────────"` (Line 150)
+- `"── Strategy ──────────────────────────────"` (Line 156)
+- `"── Decision & Communication ────────────────"` (Line 163)
+- `"── Investment & Timeline ───────────────────"` (Line 168)
+- `"── Website Status ────────────────────────"` (Line 176)
+- `"── Website Type ──────────────────────────"` (Line 182)
+- `"── Project Scope ─────────────────────────"` (Line 188)
+- `"── Features ──────────────────────────────"` (Line 196)
+- `"── Design & Branding ─────────────────────"` (Line 201)
+- `"── Audience & Objectives ────────────────────"` (Line 206)
+- Plus 10 more section headers
+
+**Field Labels (68 instances):**
+
+*Contact Section:*
+- `'Name:    '`, `'Phone:   '`, `'Email:   '`, `'Company: '`, `'Role:    '`
+
+*Project Overview Section:*
+- `'Industry: '`, `'Target Market: '`, `'Business Type: '`, `'Business Stage: '`, `'Has Investment: '`, `'Website/Social Link: '`
+
+*Branding Service Section:*
+- `'Level: '`, `'Logo Status: '`, `'Designer: '`, `'Has Source Files: '`, `'Reason: '`, `'Assets: '`, `'Other: '`, `'Content Writing: '`, `'Translation: '`, `'Product Count: '`, `'Branches Count: '`, `'Objective:'`, `'Audience:'`, `'Competitors:'`, `'Brand Personality: '`, `'Success Metrics: '`, `'Decision Maker: '`, `'Urgency: '`, `'Communication: '`, `'Budget Level: '`, `'Start Date: '`, `'Launch Date: '`, `'Referral: '`
+
+*Website Service Section:*
+- `'Website Status: '`, `'Website URL: '`, `'Website Issue:'`, `'Has Investment: '`, `'Website Type: '`, `'Page Count: '`, `'Expected Sections:'`, `'Require CMS: '`, `'CMS Elements: '`, `'Other: '`, `'Features: '`, `'Has Visual Identity: '`, `'Follow Existing Brand: '`, `'Reference Websites:'`, `'Target Audience:'`, `'Primary Objective: '`, `'Success Measurement:'`, `'Execution Level: '`, `'Has Fixed Launch Date: '`
+
+*SEO Service Section:*
+- `'Website Live: '`, `'Previous SEO Work: '`, `'SEO Challenges:'`, `'Analytics Tools: '`, `'Has Previous Reports: '`, `'Monthly Traffic: '`, `'Primary SEO Goal: '`, `'Target Keywords:'`, `'SEO Focus: '`, `'Knows Ranking Position: '`, `'Internal Content Team: '`, `'Publish Blog Regularly: '`, `'Article Count: '`, `'Content Writing Required: '`, `'Technical SEO Done: '`, `'Website Platform: '`, `'Speed Issues: '`
+
+#### Business Impact
+- **Customer Experience:** Arabic users see unprofessional English emails
+- **Brand Perception:** Undermines bilingual expertise claims
+- **Lead Quality:** Potential confusion for non-English speakers
+- **Conversion Impact:** May deter Arabic-speaking prospects
+
+#### Recommended Fix Pattern
+```php
+// ❌ INCORRECT - Hard-coded English
+$body = "── Contact ───────────────────────────────\n";
+$body .= 'Name:    ' . $full_name . "\n";
+
+// ✅ CORRECT - Translatable
+$body = __('── Contact ───────────────────────────────', 'arqamweb') . "\n";
+$body .= __('Name:', 'arqamweb') . '    ' . $full_name . "\n";
+```
+
+#### Testing Requirements
+1. Submit quote forms in English mode → verify English emails
+2. Switch site to Arabic → submit forms → verify Arabic emails
+3. Check RTL formatting for Arabic email content
+4. Test all three quote types (branding, website, SEO)
+5. Use WP_DEBUG mode to log emails instead of sending during testing
+
+---
+
+## High Priority Issues (64 strings)
+
+### 🔴 Priority: HIGH - Frontpage Component Arrays
+
+All issues found in homepage template-parts with array-based content that's not wrapped in translation functions.
+
+#### Common Pattern Problem
+```php
+// ❌ INCORRECT - Hard-coded array values
+$items = [
+    ['title' => 'Hard-coded Title', 'copy' => 'Hard-coded text']
+];
+foreach ($items as $item) {
+    echo esc_html(__($item['title'], 'arqamweb')); // Double translation
+}
+
+// ✅ CORRECT - Translatable array values
+$items = [
+    ['title' => __('Translatable Title', 'arqamweb'), 'copy' => __('Translatable text', 'arqamweb')]
+];
+foreach ($items as $item) {
+    echo esc_html($item['title']); // Single escaping only
+}
+```
+
+#### Files and String Counts
+
+| File | Strings | Issue Type |
+|------|---------|------------|
+| frontpage-services.php | 16 | Service titles, eyebrows, descriptions, tags |
+| frontpage-why_us.php | 12 | Why item titles and descriptions |
+| frontpage-find_us.php | 11 | Country names |
+| frontpage-contact.php | 8 | Contact stat values and labels |
+| frontpage-numbers.php | 8 | Statistic labels and notes |
+| frontpage-slider.php | 8 | Hero metric values and labels |
+| frontpage-reviews.php | 1 | Rating format string |
+| **TOTAL** | **64** | - |
+
+#### Detailed Breakdown
+
+**1. frontpage-services.php (16 strings) - Lines 6-35**
+- 4 service titles: "Website Design & Development", "Search Engine Optimization", "Brand Identity", "Social Media Marketing"
+- 4 service eyebrows: "Custom-built. Performance-obsessed.", etc.
+- 4 service descriptions (long-form copy)
+- 12 service tags (3 tags × 4 services)
+
+**2. frontpage-why_us.php (12 strings) - Lines 2-9**
+- 6 why item titles: "Custom-built, never templated", "SEO-ready from day one", etc.
+- 6 why item descriptions (long-form copy)
+
+**3. frontpage-find_us.php (11 strings) - Lines 6-18**
+- 11 country names: Egypt, Saudi Arabia, UAE, Kuwait, Oman, Qatar, USA, UK, Ireland, Germany, Spain
+
+**4. frontpage-contact.php (8 strings) - Line 36-44**
+- 4 stat values: "< 1m", "7 days", "AR · EN", "Free"
+- 4 stat labels: "Avg. response time", "Available all week", "Bilingual team", "Discovery call"
+
+**5. frontpage-numbers.php (8 strings) - Lines 3-8**
+- 4 stat labels: "Years of experience", "Countries served", "Client retention", "Average client rating"
+- 4 stat notes: "since 2010", "GCC · MENA · UK · USA", "long-term partnerships", "out of 5.0"
+
+**6. frontpage-slider.php (8 strings) - Line 80**
+- 4 metric values: "+15", "+10", "4.9★", "Web · SEO"
+- 4 metric labels: "Years experience", "Countries served", "Global client rating", "Branding · Social"
+
+**7. frontpage-reviews.php (1 string) - Line 18**
+- Rating format: "4.9 / 5"
+
+#### Impact
+These are all **user-facing homepage content** that Arabic visitors see in English. The homepage is the primary entry point for prospects evaluating Arqam Web's bilingual capabilities.
+
+---
+
+## Medium Priority Issues (4 strings)
+
+### 🟡 Priority: MEDIUM - Template Fallback Text
+
+**File:** `home.php`  
+**Impact:** Displays English fallback text when posts lack categories
+
+#### Issue #1-3: Category Fallback 'General' (Lines 18, 100, 284)
+
+```php
+// ❌ Current code (Line 18):
+return !empty($cats) ? esc_html($cats[0]->name) : 'General';
+
+// ❌ Current code (Line 100):
+'cat' => !empty($fcats) ? esc_html($fcats[0]->name) : 'General',
+
+// ❌ Current code (Line 284):
+$gcat = !empty($gcats) ? esc_html($gcats[0]->name) : 'General';
+```
+
+**Fix:**
+```php
+// ✅ Corrected:
+return !empty($cats) ? esc_html($cats[0]->name) : esc_html__('General', 'arqamweb');
+'cat' => !empty($fcats) ? esc_html($fcats[0]->name) : esc_html__('General', 'arqamweb'),
+$gcat = !empty($gcats) ? esc_html($gcats[0]->name) : esc_html__('General', 'arqamweb');
+```
+
+#### Issue #4: Language Labels (Line 182)
+
+```php
+// ❌ Current code:
+<span>EN / AR</span>
+```
+
+**Fix:**
+```php
+// ✅ Corrected:
+<span><?php esc_html_e('EN / AR', 'arqamweb'); ?></span>
+```
+
+**Note:** Consider making this dynamic based on active languages or using WPML language switcher.
+
+---
+
+## Low Priority Issues (3 strings)
+
+### 🟢 Priority: LOW - Optional/Minor
+
+#### Issue #1: Placeholder Role Text
+
+**File:** `template-parts/content/content-review.php`  
+**Line:** 25  
+**Severity:** LOW - String IS wrapped in translation function, but appears to be placeholder data
+
+```php
+// Current code:
+<div class="text-xs text-muted-foreground">
+    <?php esc_html_e('CEO · Riyadh, Saudi Arabia', 'arqamweb'); ?>
+</div>
+```
+
+**Recommendation:** Verify if this should be dynamic content from ACF field instead:
+```php
+<?php 
+$role_location = get_field('role_location', get_the_ID());
+if ($role_location) {
+    echo esc_html($role_location);
+} else {
+    esc_html_e('CEO · Riyadh, Saudi Arabia', 'arqamweb');
+}
+?>
+```
+
+#### Issue #2-3: Social Media Platform Names
+
+**File:** `single.php`  
+**Lines:** 185, 191  
+**Severity:** LOW - Brand names typically remain in English
+
+```php
+// Line 185:
+X / Twitter
+
+// Line 191:
+LinkedIn
+```
+
+**Note:** These are brand/platform names. Standard practice is to keep brand names untranslated. However, for complete consistency, they could be wrapped:
+
+```php
+<?php esc_html_e('X / Twitter', 'arqamweb'); ?>
+<?php esc_html_e('LinkedIn', 'arqamweb'); ?>
+```
+
+**Alternative:** Keep visible brand names in English but provide translated aria-labels for accessibility.
+
+---
+
+## Total String Count
+
+### Summary by Severity
+
+| Severity | Strings | Files Affected | Business Impact |
+|----------|---------|----------------|-----------------|
+| 🔴 Critical | 93 | 1 | Email communication (primary lead channel) |
+| 🔴 High | 64 | 7 | Homepage content (first impression) |
+| 🟡 Medium | 4 | 1 | Category fallback text (edge case) |
+| 🟢 Low | 3 | 2 | Placeholder text and brand names (optional) |
+| **TOTAL** | **164** | **10** | - |
+
+### Breakdown by Component Type
+
+| Component Type | Files Audited | Files Passing | Files w/ Issues | Total Strings |
+|----------------|---------------|---------------|-----------------|---------------|
+| Helper Files | 3 | 2 (66.7%) | 1 (33.3%) | 93 |
+| Frontpage Components | 13 | 6 (46.2%) | 7 (53.8%) | 64 |
+| Main Templates | 8 | 6 (75.0%) | 2 (25.0%) | 6 |
+| Template Parts | 15 | 14 (93.3%) | 1 (6.7%) | 1 |
+| **TOTAL** | **39** | **28 (71.8%)** | **11 (28.2%)** | **164** |
+
+### Translation Workload Estimate
+
+- **Critical strings (email):** ~2-3 hours (93 strings, complex email formatting)
+- **High priority (homepage):** ~3-4 hours (64 strings, array refactoring)
+- **Medium priority (fallbacks):** ~30 minutes (4 strings, simple)
+- **Low priority (optional):** ~15 minutes (3 strings, review-based)
+- **Total estimated effort:** 6-8 hours for refactoring + testing
 
 ---
 
