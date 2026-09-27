@@ -1,4 +1,12 @@
 	<?php
+	/**
+	 * Template part for displaying project content sections
+	 *
+	 * @package Arqam-Web
+	 */
+
+	if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 	$transform_cards = ArqamWeb_Project::get_transform_cards(get_the_ID());
 	if ($transform_cards) :
 	?>

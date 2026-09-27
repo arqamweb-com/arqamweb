@@ -5,6 +5,8 @@
  * @package Arqam-Web
  */
 
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 // Get project data
 $post_id         = get_the_ID();
 $project_excerpt = trim( get_the_excerpt( $post_id ) );

@@ -5,6 +5,8 @@
  * @package Arqam-Web
  */
 
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 $project_cta = $args['project_cta'] ?? [];
 $has_project_cta = $args['has_project_cta'] ?? false;
 

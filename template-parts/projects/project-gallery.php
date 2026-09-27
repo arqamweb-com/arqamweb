@@ -5,6 +5,8 @@
  * @package Arqam-Web
  */
 
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 $post_id = $post_id ?? get_the_ID();
 $showcase_images = ArqamWeb_Project::get_showcase_images($post_id);
 
