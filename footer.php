@@ -23,30 +23,22 @@
 					<a href="https://www.facebook.com/ArqamWeb" target="_blank" rel="noopener noreferrer"
 					   aria-label="<?php esc_attr_e('Facebook', 'arqamweb'); ?>"
 					   class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent">
-						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M22 12a10 10 0 10-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5v1.8h2.6l-.4 2.9h-2.2v7A10 10 0 0022 12z"></path>
-						</svg>
+						<?php get_template_part('template-parts/icons/facebook'); ?>
 					</a>
 					<a href="https://www.instagram.com/arqamweb/" target="_blank" rel="noopener noreferrer"
 					   aria-label="<?php esc_attr_e('Instagram', 'arqamweb'); ?>"
 					   class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent">
-						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M3 7a4 4 0 014-4h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4zM12 8a4 4 0 100 8 4 4 0 000-8zM18 5.5a1 1 0 110 2 1 1 0 010-2z"></path>
-						</svg>
+						<?php get_template_part('template-parts/icons/instagram'); ?>
 					</a>
 					<a href="https://www.linkedin.com/company/68729209/" target="_blank" rel="noopener noreferrer"
 					   aria-label="<?php esc_attr_e('LinkedIn', 'arqamweb'); ?>"
 					   class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent">
-						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M4 4h4v16H4zM6 2a2 2 0 110 4 2 2 0 010-4zM10 8h4v2c.7-1 2-2 4-2 3 0 4 2 4 5v7h-4v-6c0-2-1-3-2-3s-2 1-2 3v6h-4z"></path>
-						</svg>
+						<?php get_template_part('template-parts/icons/linkedin'); ?>
 					</a>
 					<a href="https://www.youtube.com/@ArqamWeb" target="_blank" rel="noopener noreferrer"
 					   aria-label="<?php esc_attr_e('YouTube', 'arqamweb'); ?>"
 					   class="w-10 h-10 rounded-full bg-white/8 hover:bg-gradient-primary text-primary-foreground flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow border border-white/10 hover:border-transparent">
-						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M23 7.5a3 3 0 00-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 001 7.5C.6 9.4.6 12 .6 12s0 2.6.4 4.5a3 3 0 002.1 2.1C5 19 12 19 12 19s7 0 8.9-.4a3 3 0 002.1-2.1c.4-1.9.4-4.5.4-4.5s0-2.6-.4-4.5zM10 15.5v-7l6 3.5-6 3.5z"></path>
-						</svg>
+						<?php get_template_part('template-parts/icons/youtube'); ?>
 					</a>
 				</div>
 			</div>
@@ -73,17 +65,9 @@
 			<div class="lg:col-span-3">
 				<h4 class="font-semibold mb-5 text-sm tracking-wider uppercase text-primary-foreground/90"><?php esc_html_e('Get in touch', 'arqamweb'); ?></h4>
 				<ul class="space-y-4 text-sm text-primary-foreground/75">
-					<li class="flex items-start gap-3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-primary">
-							<rect x="3" y="5" width="18" height="14" rx="2"></rect>
-							<path d="M3 7l9 6 9-6"></path>
-						</svg><a href="mailto:info@arqamweb.com" class="hover:text-primary transition-colors">info@arqamweb.com</a></li>
-					<li class="flex items-start gap-3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-primary">
-							<path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"></path>
-						</svg><a href="tel:+201118721404" class="hover:text-primary transition-colors" dir="ltr">+201118721404</a></li>
-					<li class="flex items-start gap-3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-primary">
-							<path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1118 0z"></path>
-							<circle cx="12" cy="10" r="3"></circle>
-						</svg><span class="leading-snug text-primary-foreground/65"><?php esc_html_e('44 Almehwar Almarkazi, Alsaraya', 'arqamweb'); ?><br><?php esc_html_e('Mall, Sheikh Zayed, Giza, Egypt.', 'arqamweb'); ?></span></li>
+					<li class="flex items-start gap-3"><span class="mt-0.5 shrink-0 text-primary"><?php get_template_part('template-parts/icons/mail'); ?></span><a href="mailto:info@arqamweb.com" class="hover:text-primary transition-colors">info@arqamweb.com</a></li>
+					<li class="flex items-start gap-3"><span class="mt-0.5 shrink-0 text-primary"><?php get_template_part('template-parts/icons/phone'); ?></span><a href="tel:+201118721404" class="hover:text-primary transition-colors" dir="ltr">+201118721404</a></li>
+					<li class="flex items-start gap-3"><span class="mt-0.5 shrink-0 text-primary"><?php get_template_part('template-parts/icons/map-pin'); ?></span><span class="leading-snug text-primary-foreground/65"><?php esc_html_e('44 Almehwar Almarkazi, Alsaraya', 'arqamweb'); ?><br><?php esc_html_e('Mall, Sheikh Zayed, Giza, Egypt.', 'arqamweb'); ?></span></li>
 				</ul>
 			</div>
 		</div>
