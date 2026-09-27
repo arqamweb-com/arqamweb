@@ -147,6 +147,97 @@ document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("loader");
   if (loader) loader.style.display = "none";
 
+  // إدارة بانر موافقة الكوكيز (Cookie Consent) - GDPR/PDPL compliance.
+  const cookieBanner = document.getElementById("cookie-consent-banner");
+  if (cookieBanner) {
+    const acceptBtn = document.getElementById("cookie-accept-btn");
+    const rejectBtn = document.getElementById("cookie-reject-btn");
+    const settingsBtn = document.getElementById("cookie-settings-btn");
+    const consentCookieName = "arqamweb_cookie_consent";
+    const consentCookieExpiry = 365; // days
+
+    // قراءة قيمة كوكي معينة من متصفح المستخدم.
+    const getCookie = function (name) {
+      const value = "; " + document.cookie;
+      const parts = value.split("; " + name + "=");
+      if (parts.length === 2) {
+        return parts.pop().split(";").shift();
+      }
+      return null;
+    };
+
+    // حفظ كوكي جديدة مع تحديد فترة الصلاحية.
+    const setCookie = function (name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      const expires = "expires=" + date.toUTCString();
+      document.cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=Lax";
+    };
+
+    // إظهار بانر موافقة الكوكيز مع تحديث حالات accessibility.
+    const showBanner = function () {
+      cookieBanner.setAttribute("data-consent-state", "visible");
+      cookieBanner.setAttribute("aria-hidden", "false");
+      cookieBanner.classList.remove("translate-y-full");
+      cookieBanner.classList.add("translate-y-0");
+    };
+
+    // إخفاء بانر موافقة الكوكيز بعد اختيار المستخدم.
+    const hideBanner = function () {
+      cookieBanner.setAttribute("data-consent-state", "hidden");
+      cookieBanner.setAttribute("aria-hidden", "true");
+      cookieBanner.classList.remove("translate-y-0");
+      cookieBanner.classList.add("translate-y-full");
+    };
+
+    // معالجة قبول جميع الكوكيز.
+    const handleAccept = function () {
+      setCookie(consentCookieName, "accepted", consentCookieExpiry);
+      hideBanner();
+    };
+
+    // معالجة رفض الكوكيز غير الضرورية.
+    const handleReject = function () {
+      setCookie(consentCookieName, "rejected", consentCookieExpiry);
+      hideBanner();
+    };
+
+    // معالجة فتح إعدادات الكوكيز المخصصة (placeholder لاستخدام مستقبلي).
+    const handleSettings = function () {
+      // في المستقبل يمكن إضافة modal للإعدادات التفصيلية.
+      // حاليًا نعتبرها قبول جزئي ونفتح صفحة سياسة الكوكيز.
+      setCookie(consentCookieName, "accepted", consentCookieExpiry);
+      hideBanner();
+    };
+
+    // التحقق من وجود موافقة سابقة عند تحميل الصفحة.
+    const existingConsent = getCookie(consentCookieName);
+    if (!existingConsent) {
+      // لو ما فيه موافقة محفوظة، نظهر البانر بعد وقت قصير لتحسين تجربة المستخدم.
+      window.setTimeout(showBanner, 800);
+    }
+
+    // ربط الأزرار بوظائفها.
+    if (acceptBtn) {
+      acceptBtn.addEventListener("click", handleAccept);
+    }
+
+    if (rejectBtn) {
+      rejectBtn.addEventListener("click", handleReject);
+    }
+
+    if (settingsBtn) {
+      settingsBtn.addEventListener("click", handleSettings);
+    }
+
+    // دعم لوحة المفاتيح: زر Escape يخفي البانر ويعتبر رفض.
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && cookieBanner.getAttribute("data-consent-state") === "visible") {
+        handleReject();
+      }
+    });
+  }
+
   // تثبيت شكل الهيدر حسب موضع الاسكرول بنفس فكرة Arqam Ascend.
   if (mainHeader) {
     let lastHeaderScrolledState = null;
