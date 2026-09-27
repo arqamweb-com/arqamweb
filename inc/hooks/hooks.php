@@ -66,6 +66,10 @@ add_action( 'trashed_post', 'arqamweb_clear_home_cache' );
 add_action( 'wp_ajax_arqamweb_quote_request',        'arqamweb_handle_quote_request' );
 add_action( 'wp_ajax_nopriv_arqamweb_quote_request', 'arqamweb_handle_quote_request' );
 
+// ── Image Optimization ─────────────────────────────────────────────────────────
+add_filter( 'wp_generate_attachment_metadata', [ 'ArqamWeb_Image_Optimizer', 'generate_webp_for_all_sizes' ], 10, 2 );
+add_action( 'delete_attachment',               [ 'ArqamWeb_Image_Optimizer', 'delete_webp_versions' ] );
+
 // ── Template ───────────────────────────────────────────────────────────────────
 add_filter( 'body_class',               'arqam_web_body_classes' );
 add_action( 'wp_head',                  'arqam_web_pingback_header' );
