@@ -2628,3 +2628,41 @@ msgstr "هوية جريئة وتجربة ويب غامرة مبنية للتفا
 #: template-parts/frontpage (auto-added)
 msgid "Data-driven SEO campaigns focused on measurable business growth"
 msgstr "حملات سيو معتمدة على البيانات، مركّزة على نمو أعمال قابل للقياس"
+
+#: template-parts/partials/cookie-consent-banner.php:19
+msgid "Cookie consent banner"
+msgstr "إشعار موافقة ملفات تعريف الارتباط"
+
+#: template-parts/partials/cookie-consent-banner.php:42
+#: template-parts/partials/cookie-consent-banner.php:71
+msgid "Cookie Settings"
+msgstr "إعدادات ملفات تعريف الارتباط"
+
+#. translators: %s: link to cookie policy page
+#: template-parts/partials/cookie-consent-banner.php:48
+msgid "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. You can manage your preferences or learn more in our %s."
+msgstr "نستخدم ملفات تعريف الارتباط لتحسين تجربة التصفح الخاصة بك، وتقديم محتوى مخصّص، وتحليل حركة المرور. بالنقر على \"قبول الكل\"، فإنك توافق على استخدامنا لملفات تعريف الارتباط. يمكنك إدارة تفضيلاتك أو معرفة المزيد في %s الخاصة بنا."
+
+#: template-parts/partials/cookie-consent-banner.php:52
+msgid "Cookie Policy"
+msgstr "سياسة ملفات تعريف الارتباط"
+
+#: template-parts/partials/cookie-consent-banner.php:66
+msgid "Customize cookie settings"
+msgstr "تخصيص إعدادات ملفات تعريف الارتباط"
+
+#: template-parts/partials/cookie-consent-banner.php:77
+msgid "Reject optional cookies"
+msgstr "رفض ملفات تعريف الارتباط الاختيارية"
+
+#: template-parts/partials/cookie-consent-banner.php:82
+msgid "Reject All"
+msgstr "رفض الكل"
+
+#: template-parts/partials/cookie-consent-banner.php:88
+msgid "Accept all cookies"
+msgstr "قبول جميع ملفات تعريف الارتباط"
+
+#: template-parts/partials/cookie-consent-banner.php:92
+msgid "Accept All"
+msgstr "قبول الكل"

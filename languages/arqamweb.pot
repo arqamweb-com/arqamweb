@@ -2338,3 +2338,41 @@ msgstr ""
 #: template-parts/services.php:305
 msgid "Back to Home"
 msgstr ""
+
+#: template-parts/partials/cookie-consent-banner.php:19
+msgid "Cookie consent banner"
+msgstr ""
+
+#: template-parts/partials/cookie-consent-banner.php:42
+#: template-parts/partials/cookie-consent-banner.php:71
+msgid "Cookie Settings"
+msgstr ""
+
+#. translators: %s: link to cookie policy page
+#: template-parts/partials/cookie-consent-banner.php:48
+msgid "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. You can manage your preferences or learn more in our %s."
+msgstr ""
+
+#: template-parts/partials/cookie-consent-banner.php:52
+msgid "Cookie Policy"
+msgstr ""
+
+#: template-parts/partials/cookie-consent-banner.php:66
+msgid "Customize cookie settings"
+msgstr ""
+
+#: template-parts/partials/cookie-consent-banner.php:77
+msgid "Reject optional cookies"
+msgstr ""
+
+#: template-parts/partials/cookie-consent-banner.php:82
+msgid "Reject All"
+msgstr ""
+
+#: template-parts/partials/cookie-consent-banner.php:88
+msgid "Accept all cookies"
+msgstr ""
+
+#: template-parts/partials/cookie-consent-banner.php:92
+msgid "Accept All"
+msgstr ""
