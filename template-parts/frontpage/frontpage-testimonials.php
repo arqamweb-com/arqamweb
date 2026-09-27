@@ -11,10 +11,10 @@ $videoTestimonials = [];
 foreach ($testimonial_posts as $t) {
 	$videoTestimonials[] = [
 		'id' => $t->ID,
-		'video' => get_field('video_id', $t->ID),
-		'is_short' => (bool)get_field('is_short', $t->ID),
-		'category' => get_field('category', $t->ID),
-		'snippet' => get_field('snippet', $t->ID),
+		'video' => arqamweb_get_text_field('video_id', $t->ID, ''),
+		'is_short' => (bool)arqamweb_get_text_field('is_short', $t->ID, ''),
+		'category' => arqamweb_get_text_field('category', $t->ID, ''),
+		'snippet' => arqamweb_get_text_field('snippet', $t->ID, ''),
 		'client' => $t->post_title,
 	];
 }
