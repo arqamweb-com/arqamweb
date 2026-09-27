@@ -302,10 +302,10 @@ get_header();
 	foreach ($_video_testimonial_posts as $_vt) {
 		$_videoTestimonials[] = [
 			'id' => $_vt->ID,
-			'video' => get_field('video_id', $_vt->ID),
-			'is_short' => (bool)get_field('is_short', $_vt->ID),
-			'category' => get_field('category', $_vt->ID),
-			'snippet' => get_field('snippet', $_vt->ID),
+			'video' => arqamweb_get_text_field('video_id', $_vt->ID),
+			'is_short' => (bool)arqamweb_get_text_field('is_short', $_vt->ID),
+			'category' => arqamweb_get_text_field('category', $_vt->ID),
+			'snippet' => arqamweb_get_text_field('snippet', $_vt->ID),
 			'client' => $_vt->post_title,
 		];
 	}
@@ -677,7 +677,7 @@ get_header();
 				     style="animation-duration:<?php echo $_marquee_duration; ?>s;width:fit-content">
 					<?php foreach ($_marquee_double as $_mr) :
 						$_mr_excerpt = !empty($_mr->post_excerpt) ? $_mr->post_excerpt : wp_trim_words(strip_tags($_mr->post_content), 30);
-						$_mr_role = get_field('role_location', $_mr->ID);
+						$_mr_role = arqamweb_get_text_field('role_location', $_mr->ID);
 						?>
 						<article
 							class="w-[380px] shrink-0 rounded-2xl border border-border bg-card/60 backdrop-blur-sm p-6 shadow-card">
@@ -727,9 +727,9 @@ get_header();
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 				<?php foreach ($_grid_reviews as $_gi => $_gr) :
 					$_gr_excerpt = !empty($_gr->post_excerpt) ? $_gr->post_excerpt : wp_trim_words(strip_tags($_gr->post_content), 55);
-					$_gr_role = get_field('role_location', $_gr->ID);
-					$_gr_tag = get_field('service_tag', $_gr->ID);
-					$_gr_initials = get_field('initials', $_gr->ID);
+					$_gr_role = arqamweb_get_text_field('role_location', $_gr->ID);
+					$_gr_tag = arqamweb_get_text_field('service_tag', $_gr->ID);
+					$_gr_initials = arqamweb_get_text_field('initials', $_gr->ID);
 					if (!$_gr_initials) {
 						$_words = explode(' ', $_gr->post_title);
 						$_gr_initials = strtoupper(substr($_words[0], 0, 1) . (isset($_words[1]) ? substr($_words[1], 0, 1) : ''));
