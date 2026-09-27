@@ -26,3 +26,6 @@ error_log
 
 # WordPress specific
 wp-config-local.php
+
+# Auto Claude data directory
+.auto-claude/

@@ -1,0 +1,39 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  },
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read(./**)",
+      "Write(./**)",
+      "Edit(./**)",
+      "Glob(./**)",
+      "Grep(./**)",
+      "Read(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/worktrees/tasks/007-cookie-consent-banner-gdpr-privacy-compliance/**)",
+      "Write(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/worktrees/tasks/007-cookie-consent-banner-gdpr-privacy-compliance/**)",
+      "Edit(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/worktrees/tasks/007-cookie-consent-banner-gdpr-privacy-compliance/**)",
+      "Glob(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/worktrees/tasks/007-cookie-consent-banner-gdpr-privacy-compliance/**)",
+      "Grep(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/worktrees/tasks/007-cookie-consent-banner-gdpr-privacy-compliance/**)",
+      "Read(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/worktrees/tasks/007-cookie-consent-banner-gdpr-privacy-compliance/.auto-claude/specs/007-cookie-consent-banner-gdpr-privacy-compliance/**)",
+      "Write(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/worktrees/tasks/007-cookie-consent-banner-gdpr-privacy-compliance/.auto-claude/specs/007-cookie-consent-banner-gdpr-privacy-compliance/**)",
+      "Edit(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/worktrees/tasks/007-cookie-consent-banner-gdpr-privacy-compliance/.auto-claude/specs/007-cookie-consent-banner-gdpr-privacy-compliance/**)",
+      "Read(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/**)",
+      "Write(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/**)",
+      "Edit(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/**)",
+      "Glob(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/**)",
+      "Grep(/Applications/MAMP/htdocs/arqamweb/wp-content/themes/Arqam-Web-main/.auto-claude/**)",
+      "Bash(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "mcp__context7__resolve-library-id(*)",
+      "mcp__context7__query-docs(*)",
+      "mcp__graphiti-memory__search_nodes(*)",
+      "mcp__graphiti-memory__search_facts(*)",
+      "mcp__graphiti-memory__add_episode(*)",
+      "mcp__graphiti-memory__get_episodes(*)",
+      "mcp__graphiti-memory__get_entity_edge(*)"
+    ]
+  }
+}
