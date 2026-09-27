@@ -100,6 +100,12 @@
 
 </div><!-- #page -->
 
+<?php
+// Cookie consent banner - displayed site-wide before wp_footer()
+// Banner is always in DOM but hidden by default; JavaScript controls visibility based on cookie state
+get_template_part( 'template-parts/partials/cookie-consent-banner' );
+?>
+
 <?php wp_footer(); ?>
 
 </body>
