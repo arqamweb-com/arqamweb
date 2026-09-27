@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2026-06-21T19:51:02+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
-"X-Domain: arqamweb\n"
+"X-Domain: arqam-web\n"
 
 #. Theme Name of the theme
 #: style.css
