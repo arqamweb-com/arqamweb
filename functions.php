@@ -31,6 +31,7 @@ if (! defined('ARQAM_CF7_WEBHOOK_URL'))         define('ARQAM_CF7_WEBHOOK_URL', 
 require get_template_directory() . '/inc/helpers/acf-helpers.php';
 require get_template_directory() . '/inc/helpers/template-helpers.php';
 require get_template_directory() . '/inc/helpers/ajax-handlers.php';
+require get_template_directory() . '/inc/helpers/cookie-consent-helpers.php';
 
 // ── Walker Classes ─────────────────────────────────────────────────────────────
 require get_template_directory() . '/inc/class-walker-nav-menu.php';
