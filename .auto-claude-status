@@ -3,23 +3,23 @@
   "spec": "004-template-refactoring-split-oversize-files-into-par",
   "state": "building",
   "subtasks": {
-    "completed": 18,
+    "completed": 20,
     "total": 33,
     "in_progress": 1,
     "failed": 0
   },
   "phase": {
-    "current": "Add Single Project Partials",
+    "current": "Migrate single-project.php to Partials",
     "id": null,
-    "total": 4
+    "total": 2
   },
   "workers": {
     "active": 0,
     "max": 1
   },
   "session": {
-    "number": 12,
+    "number": 14,
     "started_at": "2026-09-27T19:23:05.020149"
   },
-  "last_update": "2026-09-27T20:04:31.743429"
+  "last_update": "2026-09-27T20:10:55.574922"
 }
