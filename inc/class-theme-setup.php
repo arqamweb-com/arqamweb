@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 class ArqamWeb_Theme_Setup {
 
 	public static function setup(): void {
-		load_theme_textdomain( 'arqamweb', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'arqam-web', get_template_directory() . '/languages' );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
