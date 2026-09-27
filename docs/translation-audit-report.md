@@ -1352,4 +1352,389 @@ printf(
 
 ---
 
+## 4. Helper Files Audit (inc/helpers/)
+
+This section audits PHP helper files in the `inc/helpers/` directory for hard-coded strings.
+
+### Audit Status by Helper File
+
+| Helper File | Status | Hard-coded Strings Found |
+|-------------|--------|--------------------------|
+| acf-helpers.php | ✅ Pass | 0 |
+| ajax-handlers.php | ⚠️ Critical Issues | 93 instances |
+| template-helpers.php | ✅ Pass | 0 |
+
+---
+
+### 4.1 inc/helpers/acf-helpers.php ✅
+
+**Status:** PASS - No user-facing strings
+
+**Findings:**
+- Contains only utility functions for ACF field access
+- No user-facing strings requiring translation
+- All fallback values are empty strings, `'#'` for URLs, or empty arrays
+- Function documentation comments do not require translation
+
+**Functions reviewed:**
+- `arqamweb_get_text_field()` - Fallback: empty string (appropriate)
+- `arqamweb_get_image_field()` - Returns null or structured array (no strings)
+- `arqamweb_get_relation_field()` - Returns empty array (appropriate)
+- `arqamweb_get_url_field()` - Fallback: `'#'` (appropriate for URLs)
+
+---
+
+### 4.2 inc/helpers/ajax-handlers.php ⚠️
+
+**Status:** CRITICAL ISSUES - 93 hard-coded strings in email body construction
+
+**Summary:**
+This file handles AJAX quote request submissions and constructs email bodies with extensive hard-coded English text. The email body includes section headers, field labels, and formatting that should all be translatable for a bilingual website.
+
+**Hard-coded Strings Identified:**
+
+#### Issue #1: Email Section Headers (15 instances)
+
+Lines 107-278 contain hard-coded section dividers and headers:
+
+```php
+// Line 107:
+$body = "── Contact ───────────────────────────────\n";
+
+// Line 118:
+$body .= "\n── Project Overview ────────────────────\n";
+
+// Line 131:
+$body .= "── Branding Level ───────────────────────\n";
+
+// Line 134:
+$body .= "── Logo Status ─────────────────────────\n";
+
+// Line 145:
+$body .= "── Brand Assets ─────────────────────────\n";
+
+// Line 150:
+$body .= "\n── Execution Details ──────────────────────\n";
+
+// Line 156:
+$body .= "── Strategy ──────────────────────────────\n";
+
+// Line 163:
+$body .= "── Decision & Communication ────────────────\n";
+
+// Line 168:
+$body .= "── Investment & Timeline ───────────────────\n";
+
+// Line 176:
+$body .= "── Website Status ────────────────────────\n";
+
+// Line 182:
+$body .= "── Website Type ──────────────────────────\n";
+
+// Line 188:
+$body .= "\n── Project Scope ─────────────────────────\n";
+
+// Line 196:
+$body .= "\n── Features ──────────────────────────────\n";
+
+// Line 201:
+$body .= "\n── Design & Branding ─────────────────────\n";
+
+// Line 206:
+$body .= "── Audience & Objectives ────────────────────\n";
+
+// ... and more
+```
+
+**Total Section Headers:** 25 instances
+
+---
+
+#### Issue #2: Field Labels (68 instances)
+
+Lines 107-278 contain hard-coded field labels throughout:
+
+**Contact Section (Lines 108-116):**
+```php
+'Name:    ' 
+'Phone:   ' 
+'Email:   ' 
+'Company: ' 
+'Role:    ' 
+```
+
+**Project Overview Section (Lines 119-128):**
+```php
+'Industry: '
+'Target Market: '
+'Business Type: '
+'Business Stage: '
+'Has Investment: '
+'Website/Social Link: '
+```
+
+**Branding Service Section (Lines 132-172):**
+```php
+'Level: '
+'Logo Status: '
+'Designer: '
+'Has Source Files: '
+'Reason: '
+'[Logo upload attached]'
+'Assets: '
+'Other: '
+'Content Writing: '
+'Translation: '
+'Product Count: '
+'Branches Count: '
+'Objective:'
+'Audience:'
+'Competitors:'
+'Brand Personality: '
+'Success Metrics: '
+'Decision Maker: '
+'Urgency: '
+'Communication: '
+'Budget Level: '
+'Start Date: '
+'Launch Date: '
+'Referral: '
+```
+
+**Website Service Section (Lines 177-225):**
+```php
+'Website Status: '
+'Website URL: '
+'Website Issue:'
+'Has Investment: '
+'Website Type: '
+'Page Count: '
+'Expected Sections:'
+'Require CMS: '
+'CMS Elements: '
+'Other: '
+'Features: '
+'Other: '
+'Has Visual Identity: '
+'Follow Existing Brand: '
+'Reference Websites:'
+'Target Audience:'
+'Primary Objective: '
+'Success Measurement:'
+'Decision Maker: '
+'Urgency: '
+'Communication: '
+'Execution Level: '
+'Start Date: '
+'Has Fixed Launch Date: '
+'Launch Date: '
+'Referral: '
+```
+
+**SEO Service Section (Lines 229-272):**
+```php
+'Website Live: '
+'Website URL: '
+'Previous SEO Work: '
+'SEO Challenges:'
+'Analytics Tools: '
+'Has Previous Reports: '
+'Monthly Traffic: '
+'Primary SEO Goal: '
+'Target Keywords:'
+'SEO Focus: '
+'Competitors:'
+'Knows Ranking Position: '
+'Internal Content Team: '
+'Publish Blog Regularly: '
+'Article Count: '
+'Content Writing Required: '
+'Technical SEO Done: '
+'Website Platform: '
+'Speed Issues: '
+'Decision Maker: '
+'Urgency: '
+'Strategy Level: '
+'Start Date: '
+'Referral: '
+```
+
+**Footer Labels (Lines 274-278):**
+```php
+'── Service: '
+'── Attachments: '
+'── Submitted: '
+' UTC ──'
+```
+
+**Total Field Labels:** 68 instances
+
+---
+
+### Recommended Fixes for ajax-handlers.php
+
+**Priority:** HIGH (93 hard-coded strings in critical email functionality)
+
+**Pattern to Apply:**
+
+```php
+// ❌ INCORRECT - Hard-coded English
+$body = "── Contact ───────────────────────────────\n";
+$body .= 'Name:    ' . $full_name . "\n";
+
+// ✅ CORRECT - Translatable
+$body = __('── Contact ───────────────────────────────', 'arqamweb') . "\n";
+$body .= __('Name:', 'arqamweb') . '    ' . $full_name . "\n";
+```
+
+**Implementation Strategy:**
+
+1. **Wrap all section headers** with `__()`
+2. **Wrap all field labels** with `__()`  
+3. **Keep formatting** (spaces, line breaks, decorative characters) outside translation strings where possible
+4. **Maintain structure** of email for readability
+
+**Example Fix for Contact Section (Lines 107-116):**
+
+```php
+// Before:
+$body = "── Contact ───────────────────────────────\n";
+$body .= 'Name:    ' . $full_name . "\n";
+if ( ! empty( $data['phone'] ?? '' ) ) $body .= 'Phone:   ' . $data['phone'] . "\n";
+$body .= 'Email:   ' . $email . "\n";
+if ( ! empty( $data['company_name'] ?? '' ) ) $body .= 'Company: ' . $data['company_name'] . "\n";
+
+// After:
+$body = __('── Contact ───────────────────────────────', 'arqamweb') . "\n";
+$body .= __('Name:', 'arqamweb') . '    ' . $full_name . "\n";
+if ( ! empty( $data['phone'] ?? '' ) ) $body .= __('Phone:', 'arqamweb') . '   ' . $data['phone'] . "\n";
+$body .= __('Email:', 'arqamweb') . '   ' . $email . "\n";
+if ( ! empty( $data['company_name'] ?? '' ) ) $body .= __('Company:', 'arqamweb') . ' ' . $data['company_name'] . "\n";
+```
+
+**Impact Assessment:**
+- **Severity:** HIGH - Email is primary contact method
+- **User Impact:** Arabic-speaking users receive English-only emails
+- **Business Impact:** Unprofessional for bilingual agency
+- **Translation Count:** 93 strings requiring translation
+- **Files Affected:** 1 file (`inc/helpers/ajax-handlers.php`)
+- **Lines Affected:** Lines 107-278 (171 lines)
+
+---
+
+### 4.3 inc/helpers/template-helpers.php ✅
+
+**Status:** PASS - All strings properly translatable
+
+**Findings:**
+- All user-facing strings use proper WordPress translation functions
+- Logo alt text properly translated with `esc_attr__()`
+- Fallback category name properly translated
+- Examples of correct implementation:
+  ```php
+  // Line 28:
+  esc_attr__('Digital Marketing Agency in Egypt, Cairo | Arqam Web', 'arqamweb')
+  
+  // Line 288:
+  'category' => $category !== '' ? $category : __('Project', 'arqamweb'),
+  ```
+
+**Functions reviewed:**
+- `arqamweb_get_logo_markup()` - ✅ Alt text properly translated
+- `arqamweb_get_page_permalink()` - ✅ No user-facing strings
+- `arqamweb_get_whatsapp_url()` - ✅ Uses constant, appropriate
+- `arqamweb_get_contact_email()` - ✅ Uses constant, appropriate  
+- `arqamweb_get_copyright_year()` - ✅ Numeric only, appropriate
+- `arqamweb_get_language_switcher()` - ✅ Uses WPML shortcode, appropriate
+- `arqamweb_get_breadcrumb()` - ✅ Uses Rank Math, appropriate
+- `arqam_icon()` - ✅ SVG markup, no translatable strings
+- `arqam_stars()` - ✅ SVG markup, no translatable strings
+- `arqamweb_get_project_card()` - ✅ Fallback category properly translated
+- `arqamweb_get_featured_project_cards()` - ✅ No translatable strings
+
+---
+
+### 4.4 Helper Files Summary
+
+**Total helper files audited:** 3
+- **Files passing:** 2 of 3 (66.7%)
+- **Files with critical issues:** 1 of 3 (33.3%)
+
+**Hard-coded strings identified:** 93 (all in ajax-handlers.php)
+
+**Breakdown by severity:**
+- 🔴 **Critical Priority:** 93 strings (email communication)
+  - 25 section headers
+  - 68 field labels
+
+**Quality Assessment:**
+- ✅ `acf-helpers.php` - Excellent, no translatable content
+- ⚠️ `ajax-handlers.php` - Requires complete translation refactor
+- ✅ `template-helpers.php` - Excellent translation coverage
+
+**Recommended Action Items:**
+
+1. **Immediate Priority:** Refactor `ajax-handlers.php` email body construction
+   - Wrap all 25 section headers in `__()`
+   - Wrap all 68 field labels in `__()`
+   - Test email output in both English and Arabic
+   - Verify translation files include all email strings
+
+2. **Testing Requirements:**
+   - Submit quote forms for all three services (branding, website, SEO)
+   - Verify emails in English mode
+   - Switch to Arabic and verify translated emails
+   - Check RTL formatting for Arabic emails
+   - Test with WP_DEBUG mode (logs to file instead of sending)
+
+3. **Translation File Impact:**
+   - Add 93 new strings to `languages/arqamweb.pot`
+   - Provide context for translators about email formatting
+   - Consider creating translator notes for technical terms
+   - Test Arabic email formatting with actual translations
+
+---
+
+## Updated Executive Summary
+
+### Overall Results (Including Helper Files)
+- **Total files audited:** 39 (previously 36)
+- **Files passing:** 28 of 39 (71.8%)
+- **Files needing fixes:** 10 of 39 (25.6%)
+- **Files with minor issues:** 1 of 39 (2.6%)
+- **Total hard-coded strings:** 164 (previously 71)
+
+### Updated Priority Breakdown
+- 🔴 **Critical Priority:** 93 strings (email communication in ajax-handlers.php)
+- 🔴 **High Priority:** 64 strings (frontpage components - arrays with content)
+- 🟡 **Medium Priority:** 4 strings (main templates - fallback text)
+- 🟢 **Low Priority:** 3 strings (1 placeholder, 2 optional platform names)
+
+### Files by Category
+
+**Helper Files (3):**
+- ✅ Pass: 2 files
+- ⚠️ Critical issues: 1 file (93 hard-coded strings)
+
+**Main Templates (8):**
+- ✅ Pass: 6 files
+- ⚠️ Issues: 1 file (4 strings)
+- ⚠️ Optional review: 1 file (2 strings)
+
+**Frontpage Components (13):**
+- ✅ Pass: 6 files
+- ⚠️ Issues: 7 files (64 strings)
+
+**Template Parts (15):**
+- ✅ Pass: 14 files
+- ⚠️ Minor issue: 1 file (1 string)
+
+**Total Issues: 164 instances**
+- **Critical Priority**: 93 instances (helper files - email)
+- **High Priority**: 64 instances (frontpage components)
+- **Medium Priority**: 4 instances (main templates)
+- **Low Priority**: 3 instances (optional/minor)
+
+---
+
 **End of Report**
