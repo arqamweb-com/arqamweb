@@ -740,8 +740,8 @@ get_header();
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 					<?php foreach ($about_reviews as $about_review) :
 						$review_excerpt = !empty($about_review->post_excerpt) ? $about_review->post_excerpt : wp_trim_words(strip_tags($about_review->post_content), 38);
-						$review_role = function_exists('get_field') ? get_field('role_location', $about_review->ID) : '';
-						$review_initials = function_exists('get_field') ? get_field('initials', $about_review->ID) : '';
+						$review_role = arqamweb_get_text_field('role_location', $about_review->ID);
+						$review_initials = arqamweb_get_text_field('initials', $about_review->ID);
 
 						if (!$review_initials) {
 							$name_parts = preg_split('/\s+/', trim($about_review->post_title));
