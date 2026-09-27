@@ -124,7 +124,7 @@ class ArqamWeb_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$html .= '</a>';
 
 		if ( $has_children ) {
-			$html .= '<button class="submenu-toggle aw-submenu-toggle" type="button" aria-expanded="false" aria-label="' . esc_attr__( 'Toggle submenu', 'arqamweb' ) . '">';
+			$html .= '<button class="submenu-toggle aw-submenu-toggle" type="button" aria-expanded="false" aria-label="' . esc_attr__( 'Toggle submenu', 'arqam-web' ) . '">';
 			$html .= $this->icon( 'chevron-down' );
 			$html .= '</button>';
 		} else {

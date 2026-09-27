@@ -5,14 +5,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function arqamweb_handle_quote_request() {
 	if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'arqamweb_quote_nonce' ) ) {
-		wp_send_json_error( __( 'Security check failed. Please refresh and try again.', 'arqamweb' ) );
+		wp_send_json_error( __( 'Security check failed. Please refresh and try again.', 'arqam-web' ) );
 	}
 
 	$service = sanitize_text_field( wp_unslash( $_POST['service'] ?? '' ) );
 	$allowed_services = [ 'branding', 'website', 'seo' ];
 
 	if ( empty( $service ) || ! in_array( $service, $allowed_services, true ) ) {
-		wp_send_json_error( __( 'Please select a service.', 'arqamweb' ) );
+		wp_send_json_error( __( 'Please select a service.', 'arqam-web' ) );
 	}
 
 	$data = [];
@@ -31,7 +31,7 @@ function arqamweb_handle_quote_request() {
 	$email = sanitize_email( wp_unslash( $_POST['email'] ?? '' ) );
 
 	if ( empty( $full_name ) || ! is_email( $email ) ) {
-		wp_send_json_error( __( 'Name and a valid email address are required.', 'arqamweb' ) );
+		wp_send_json_error( __( 'Name and a valid email address are required.', 'arqam-web' ) );
 	}
 
 	$attachments = [];
@@ -70,11 +70,11 @@ function arqamweb_handle_quote_request() {
 			}
 
 			if ( UPLOAD_ERR_OK !== (int) $file['error'] ) {
-				wp_send_json_error( __( 'One of the uploaded files could not be processed.', 'arqamweb' ) );
+				wp_send_json_error( __( 'One of the uploaded files could not be processed.', 'arqam-web' ) );
 			}
 
 			if ( ! empty( $file['size'] ) && (int) $file['size'] > 8 * 1024 * 1024 ) {
-				wp_send_json_error( __( 'Uploaded files must be 8 MB or smaller.', 'arqamweb' ) );
+				wp_send_json_error( __( 'Uploaded files must be 8 MB or smaller.', 'arqam-web' ) );
 			}
 
 			$uploaded = wp_handle_upload(
@@ -99,7 +99,7 @@ function arqamweb_handle_quote_request() {
 
 	$to = defined( 'ARQAM_CONTACT_EMAIL' ) ? ARQAM_CONTACT_EMAIL : get_option( 'admin_email' );
 	$subject = sprintf(
-		__( 'New Quote Request – %s from %s', 'arqamweb' ),
+		__( 'New Quote Request – %s from %s', 'arqam-web' ),
 		strtoupper( $service ),
 		$full_name
 	);
@@ -285,16 +285,16 @@ function arqamweb_handle_quote_request() {
 	if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
 		$log_file = WP_CONTENT_DIR . '/quote-requests.log';
 		file_put_contents( $log_file, "=== " . gmdate( 'Y-m-d H:i:s' ) . " ===\n" . $body . "\n\n", FILE_APPEND );
-		wp_send_json_success( __( 'Your quote request has been received.', 'arqamweb' ) );
+		wp_send_json_success( __( 'Your quote request has been received.', 'arqam-web' ) );
 		return;
 	}
 
 	$sent = wp_mail( $to, $subject, $body, $headers, $attachments );
 
 	if ( $sent ) {
-		wp_send_json_success( __( 'Your quote request has been received.', 'arqamweb' ) );
+		wp_send_json_success( __( 'Your quote request has been received.', 'arqam-web' ) );
 	} else {
-		wp_send_json_error( __( 'We could not send your request. Please email us directly.', 'arqamweb' ) );
+		wp_send_json_error( __( 'We could not send your request. Please email us directly.', 'arqam-web' ) );
 	}
 }
 

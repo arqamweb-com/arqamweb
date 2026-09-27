@@ -620,7 +620,7 @@ class ArqamWeb_Schema {
 			$items[]       = [
 				'@type'    => 'ListItem',
 				'position' => $position++,
-				'name'     => $posts_page_id ? wp_strip_all_tags( get_the_title( $posts_page_id ) ) : wp_strip_all_tags( __( 'Blog', 'arqamweb' ) ),
+				'name'     => $posts_page_id ? wp_strip_all_tags( get_the_title( $posts_page_id ) ) : wp_strip_all_tags( __( 'Blog', 'arqam-web' ) ),
 				'item'     => $posts_page_id ? get_permalink( $posts_page_id ) : get_post_type_archive_link( 'post' ),
 			];
 		} elseif ( is_singular() ) {
@@ -690,14 +690,14 @@ class ArqamWeb_Schema {
 			$items[] = [
 				'@type'    => 'ListItem',
 				'position' => $position++,
-				'name'     => wp_strip_all_tags( sprintf( __( 'Search results for: %s', 'arqamweb' ), get_search_query() ) ),
+				'name'     => wp_strip_all_tags( sprintf( __( 'Search results for: %s', 'arqam-web' ), get_search_query() ) ),
 				'item'     => get_search_link(),
 			];
 		} elseif ( is_404() ) {
 			$items[] = [
 				'@type'    => 'ListItem',
 				'position' => $position++,
-				'name'     => wp_strip_all_tags( __( '404', 'arqamweb' ) ),
+				'name'     => wp_strip_all_tags( __( '404', 'arqam-web' ) ),
 				'item'     => home_url( add_query_arg( null, null ) ),
 			];
 		}

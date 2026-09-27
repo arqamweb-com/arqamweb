@@ -25,7 +25,7 @@ function arqamweb_get_logo_markup(string $context = 'header'): string
 			. '<source srcset="' . esc_url($uri) . '/frontend/img/Arqam-Web-Logo-White-Title.webp" type="image/webp">'
 			. '<img src="' . esc_url($uri) . '/frontend/img/Arqam-Web-Logo-White-Title.png"'
 			. ' class="custom-logo astra-logo-svg min-w-24"'
-			. ' alt="' . esc_attr__('Digital Marketing Agency in Egypt, Cairo | Arqam Web', 'arqamweb') . '"'
+			. ' alt="' . esc_attr__('Digital Marketing Agency in Egypt, Cairo | Arqam Web', 'arqam-web') . '"'
 			. ' decoding="async" width="200" height="66">'
 			. '</picture>';
 	}
@@ -285,7 +285,7 @@ function arqamweb_get_project_card(int $project_id): array
 
 	return [
 		'title'     => get_the_title($project_id),
-		'category'  => $category !== '' ? $category : __('Project', 'arqamweb'),
+		'category'  => $category !== '' ? $category : __('Project', 'arqam-web'),
 		'copy'      => $excerpt,
 		'image'     => $image,
 		'imageAlt'  => $image_alt,

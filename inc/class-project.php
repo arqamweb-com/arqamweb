@@ -65,7 +65,7 @@ class ArqamWeb_Project
 
 		return [
 			'url'    => $img['url'],
-			'alt'    => $img['alt'] !== '' ? $img['alt'] : sprintf(__('%s project preview', 'arqamweb'), get_the_title($post_id)),
+			'alt'    => $img['alt'] !== '' ? $img['alt'] : sprintf(__('%s project preview', 'arqam-web'), get_the_title($post_id)),
 			'width'  => $img['width']  ?: 1200,
 			'height' => $img['height'] ?: 675,
 		];

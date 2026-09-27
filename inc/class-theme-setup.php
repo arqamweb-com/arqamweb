@@ -19,9 +19,9 @@ class ArqamWeb_Theme_Setup {
 		add_image_size( 'arqam-hero',        1440, 810,  true );
 		add_image_size( 'arqam-og',          1200, 630,  true );
 		register_nav_menus( [
-			'menu-1'     => esc_html__( 'Primary Header Menu', 'arqamweb' ),
-			'quick-links'=> esc_html__( 'Footer Quick Links', 'arqamweb' ),
-			'services'   => esc_html__( 'Footer Services Menu', 'arqamweb' ),
+			'menu-1'     => esc_html__( 'Primary Header Menu', 'arqam-web' ),
+			'quick-links'=> esc_html__( 'Footer Quick Links', 'arqam-web' ),
+			'services'   => esc_html__( 'Footer Services Menu', 'arqam-web' ),
 		] );
 		add_theme_support( 'html5', [
 			'search-form', 'comment-form', 'comment-list',
@@ -46,9 +46,9 @@ class ArqamWeb_Theme_Setup {
 
 	public static function register_widgets(): void {
 		register_sidebar( [
-			'name'          => esc_html__( 'Sidebar', 'arqamweb' ),
+			'name'          => esc_html__( 'Sidebar', 'arqam-web' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'arqamweb' ),
+			'description'   => esc_html__( 'Add widgets here.', 'arqam-web' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -69,7 +69,7 @@ class ArqamWeb_Theme_Setup {
 		?>
 		<div class="notice notice-warning">
 			<p>
-				<?php esc_html_e( 'SVG uploads are disabled in the theme for security. Install the Safe SVG plugin if you need sanitized SVG support.', 'arqamweb' ); ?>
+				<?php esc_html_e( 'SVG uploads are disabled in the theme for security. Install the Safe SVG plugin if you need sanitized SVG support.', 'arqam-web' ); ?>
 			</p>
 		</div>
 		<?php
