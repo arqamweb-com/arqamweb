@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<h3 class="text-xl font-bold mb-2"><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
 	<div class="text-gray-600 dark:text-gray-300 mb-4"><?php the_excerpt() ?></div>
 	<a href="<?php the_permalink(); ?>" class="block text-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 mb-4">
-		<?php echo __('View Project', 'arqamweb'); ?> <i class="fas fa-arrow-right"></i>
+		<?php echo __('View Project', 'arqam-web'); ?> <i class="fas fa-arrow-right"></i>
 	</a>
 	<div class="categories flex flex-wrap gap-2">
 		<?php

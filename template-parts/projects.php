@@ -91,14 +91,14 @@ $card_gradients = [
 					<path d="M22 4h-4"></path>
 					<circle cx="4" cy="20" r="2"></circle>
 				</svg>
-				<?php esc_html_e('Selected work · 2023–2026', 'arqamweb'); ?>
+				<?php esc_html_e('Selected work · 2023–2026', 'arqam-web'); ?>
 			</div>
 			<h1 class="text-5xl md:text-6xl lg:text-7xl xl:text-[6rem] font-semibold leading-[0.98] tracking-[-0.035em] max-w-6xl"
 			    style="transform: translateY(1.42529px); transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);">
-				<?php esc_html_e('Selected digital', 'arqamweb'); ?> <span class="text-gradient"><?php esc_html_e('experiences', 'arqamweb'); ?></span> <?php esc_html_e('built for', 'arqamweb'); ?> <span class="text-gradient"><?php esc_html_e('growth.', 'arqamweb'); ?></span>
+				<?php esc_html_e('Selected digital', 'arqam-web'); ?> <span class="text-gradient"><?php esc_html_e('experiences', 'arqam-web'); ?></span> <?php esc_html_e('built for', 'arqam-web'); ?> <span class="text-gradient"><?php esc_html_e('growth.', 'arqam-web'); ?></span>
 			</h1>
 			<div class="mt-10 grid lg:grid-cols-12 gap-8 items-end">
-				<p class="lg:col-span-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"><?php esc_html_e('A small, considered collection. Websites, brands and platforms shipped with senior teams — measured in rankings, revenue and reputation.', 'arqamweb'); ?></p>
+				<p class="lg:col-span-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"><?php esc_html_e('A small, considered collection. Websites, brands and platforms shipped with senior teams — measured in rankings, revenue and reputation.', 'arqam-web'); ?></p>
 			</div>
 		</div>
 	</section>
@@ -119,13 +119,13 @@ $card_gradients = [
 	<div class="sticky top-[68px] z-20 py-4 backdrop-blur-xl bg-background/70 border-y border-border/60">
 		<div class="container-x max-w-7xl mx-auto">
 			<div class="flex items-center gap-2 overflow-x-auto no-scrollbar" id="projects-filter" role="tablist"
-			     aria-label="<?php esc_attr_e('Filter projects by category', 'arqamweb'); ?>">
+			     aria-label="<?php esc_attr_e('Filter projects by category', 'arqam-web'); ?>">
 				<button
 					data-filter="all"
 					role="tab"
 					aria-selected="true"
 					class="relative shrink-0 px-5 py-2.5 rounded-full text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 will-change-transform text-primary-foreground bg-gradient-primary shadow-glow">
-					<?php esc_html_e('All', 'arqamweb'); ?>
+					<?php esc_html_e('All', 'arqam-web'); ?>
 				</button>
 				<?php foreach ($project_categories as $cat) : ?>
 					<button
@@ -192,7 +192,7 @@ $card_gradients = [
 							<a href="<?php echo esc_url($permalink); ?>"
 							   class="group relative block w-full h-full min-h-[400px] rounded-3xl overflow-hidden border border-border bg-background shadow-card hover:shadow-elevated will-change-transform"
 							   style="transform: perspective(1400px) rotateX(0deg) rotateY(0deg); transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1);"
-							   aria-label="<?php echo esc_attr(sprintf(__('View %s case study', 'arqamweb'), $title)); ?>">
+							   aria-label="<?php echo esc_attr(sprintf(__('View %s case study', 'arqam-web'), $title)); ?>">
 
 								<!-- hover glow -->
 								<div
@@ -259,7 +259,7 @@ $card_gradients = [
 													d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
 												<circle cx="12" cy="8" r="6"></circle>
 											</svg>
-											<?php esc_html_e('Featured', 'arqamweb'); ?>
+											<?php esc_html_e('Featured', 'arqam-web'); ?>
 										</div>
 									<?php endif; ?>
 
@@ -312,7 +312,7 @@ $card_gradients = [
 											     class="lucide lucide-arrow-up-right w-4 h-4"><path
 													d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
 										</span>
-											<?php esc_html_e('View case study', 'arqamweb'); ?>
+											<?php esc_html_e('View case study', 'arqam-web'); ?>
 										</div>
 									</div>
 
@@ -335,7 +335,7 @@ $card_gradients = [
 							<path d="M3 9h18M9 21V9"/>
 						</svg>
 					</div>
-					<p class="text-lg text-muted-foreground"><?php esc_html_e('No projects found.', 'arqamweb'); ?></p>
+					<p class="text-lg text-muted-foreground"><?php esc_html_e('No projects found.', 'arqam-web'); ?></p>
 				</div>
 
 			<?php endif; ?>
@@ -366,15 +366,15 @@ $card_gradients = [
 							<path d="M16 7h6v6"></path>
 							<path d="m22 7-8.5 8.5-5-5L2 17"></path>
 						</svg>
-						<?php esc_html_e('Next chapter', 'arqamweb'); ?>
+						<?php esc_html_e('Next chapter', 'arqam-web'); ?>
 					</div>
 					<h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-[-0.03em] leading-[1.02]">
-						<?php esc_html_e("Let's build the next", 'arqamweb'); ?><br><span class="text-gradient"><?php esc_html_e('success story.', 'arqamweb'); ?></span></h2>
-					<p class="mt-7 text-white/75 text-base lg:text-xl max-w-2xl mx-auto leading-relaxed"><?php esc_html_e('We take on a small number of new engagements each quarter. Tell us about yours.', 'arqamweb'); ?></p>
+						<?php esc_html_e("Let's build the next", 'arqam-web'); ?><br><span class="text-gradient"><?php esc_html_e('success story.', 'arqam-web'); ?></span></h2>
+					<p class="mt-7 text-white/75 text-base lg:text-xl max-w-2xl mx-auto leading-relaxed"><?php esc_html_e('We take on a small number of new engagements each quarter. Tell us about yours.', 'arqam-web'); ?></p>
 					<div class="mt-10 flex flex-wrap justify-center gap-4">
 						<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>"
 						   class="btn-primary">
-							<?php esc_html_e('Start your project', 'arqamweb'); ?>
+							<?php esc_html_e('Start your project', 'arqam-web'); ?>
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 							     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
 							     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -383,7 +383,7 @@ $card_gradients = [
 							</svg>
 						</a>
 						<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_SERVICES_PAGE_SLUG)); ?>"
-						   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full border border-white/25 hover:bg-white/10 transition-all"><?php esc_html_e('Explore services', 'arqamweb'); ?>
+						   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full border border-white/25 hover:bg-white/10 transition-all"><?php esc_html_e('Explore services', 'arqam-web'); ?>
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 							     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
 							     stroke-linejoin="round" class="lucide lucide-arrow-up-right w-4 h-4"

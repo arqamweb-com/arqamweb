@@ -26,7 +26,7 @@ $fallback   = 'https://i.ytimg.com/vi/' . rawurlencode($youtube_id) . '/hqdefaul
 	data-video-testimonial-open
 	data-youtube-id="<?php echo esc_attr($youtube_id); ?>"
 	data-video-short="<?php echo $is_short ? 'true' : 'false'; ?>"
-	aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqamweb'), $snippet)); ?>"
+	aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqam-web'), $snippet)); ?>"
 >
 	<img
 			src="<?php echo esc_url($thumb); ?>"
@@ -44,7 +44,7 @@ $fallback   = 'https://i.ytimg.com/vi/' . rawurlencode($youtube_id) . '/hqdefaul
 	<span class="aw-video-card__meta">
 		<span class="aw-video-card__verified">
 			<?php echo arqam_icon('check'); ?>
-			<?php esc_html_e('Verified Client', 'arqamweb'); ?>
+			<?php esc_html_e('Verified Client', 'arqam-web'); ?>
 		</span>
 		<span class="aw-video-card__category"><?php echo esc_html($category); ?></span>
 	</span>

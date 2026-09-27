@@ -13,35 +13,35 @@ $heroSlides = [
 		'src' => $showcase_assets . 'gsc1.webp',
 		'title' => 'Google Search Console',
 		'path' => 'google-search-console',
-		'caption' => __('Organic visibility growth across competitive markets', 'arqamweb'),
+		'caption' => __('Organic visibility growth across competitive markets', 'arqam-web'),
 		'focus' => 'center 30%',
 	],
 	[
 		'src' => $showcase_assets . 'ridge.webp',
 		'title' => 'Ridge Labs',
 		'path' => 'ridge-labs',
-		'caption' => __('Custom UI/UX engineered for speed, precision, and product growth', 'arqamweb'),
+		'caption' => __('Custom UI/UX engineered for speed, precision, and product growth', 'arqam-web'),
 		'focus' => 'center 25%',
 	],
 	[
 		'src' => $showcase_assets . 'kidana.webp',
 		'title' => 'Kidana Travel',
 		'path' => 'kidana-travel',
-		'caption' => __('Conversion-focused travel experience designed for global audiences', 'arqamweb'),
+		'caption' => __('Conversion-focused travel experience designed for global audiences', 'arqam-web'),
 		'focus' => 'center 30%',
 	],
 	[
 		'src' => $showcase_assets . 'dsgf.webp',
 		'title' => "Don't Sit · Get Fit",
 		'path' => 'don-t-sit-get-fit',
-		'caption' => __('Bold branding and immersive web experience built for engagement', 'arqamweb'),
+		'caption' => __('Bold branding and immersive web experience built for engagement', 'arqam-web'),
 		'focus' => 'center 30%',
 	],
 	[
 		'src' => $showcase_assets . 'gsc2.webp',
 		'title' => 'Google Search Console',
 		'path' => 'google-search-console',
-		'caption' => __('Data-driven SEO campaigns focused on measurable business growth', 'arqamweb'),
+		'caption' => __('Data-driven SEO campaigns focused on measurable business growth', 'arqam-web'),
 		'focus' => 'center 30%',
 	],
 ];
@@ -60,27 +60,27 @@ $heroSlides = [
 			<div class="lg:col-span-7">
 				<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/25 bg-primary/10 backdrop-blur text-xs font-semibold mb-7" style="color:#5e646c">
 					<span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-60 animate-ping"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-primary"></span></span>
-					<?php esc_html_e('Global Digital Agency · Est. 2010', 'arqamweb'); ?>
+					<?php esc_html_e('Global Digital Agency · Est. 2010', 'arqam-web'); ?>
 				</div>
 				<h1 class="font-semibold tracking-[-0.035em] max-w-[760px]">
-					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold"><?php esc_html_e('Digital Marketing', 'arqamweb'); ?></span>
-					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold mt-1"><?php esc_html_e('Agency Helping', 'arqamweb'); ?></span>
-					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold mt-1"><?php esc_html_e('Brands', 'arqamweb'); ?> <span class="relative inline-flex items-baseline"><span data-arqam-hero-word data-words='<?php echo esc_attr(wp_json_encode([__('Grow.', 'arqamweb'), __('Scale.', 'arqamweb'), __('Convert.', 'arqamweb')])); ?>' class="hero-word-rotator text-gradient font-semibold"><?php esc_html_e('Grow.', 'arqamweb'); ?></span><span class="inline-block w-[3px] h-[0.78em] align-[-0.06em] ml-1 bg-primary animate-pulse"></span></span></span>
-					<span class="block mt-4 text-[1.5rem] sm:text-2xl lg:text-[2rem] leading-[1.2] font-light text-muted-foreground tracking-[-0.02em]"><?php esc_html_e('across', 'arqamweb'); ?> <span class="text-foreground font-medium"><?php esc_html_e('+10 markets', 'arqamweb'); ?></span> <?php esc_html_e('worldwide.', 'arqamweb'); ?></span>
+					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold"><?php esc_html_e('Digital Marketing', 'arqam-web'); ?></span>
+					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold mt-1"><?php esc_html_e('Agency Helping', 'arqam-web'); ?></span>
+					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold mt-1"><?php esc_html_e('Brands', 'arqam-web'); ?> <span class="relative inline-flex items-baseline"><span data-arqam-hero-word data-words='<?php echo esc_attr(wp_json_encode([__('Grow.', 'arqam-web'), __('Scale.', 'arqam-web'), __('Convert.', 'arqam-web')])); ?>' class="hero-word-rotator text-gradient font-semibold"><?php esc_html_e('Grow.', 'arqam-web'); ?></span><span class="inline-block w-[3px] h-[0.78em] align-[-0.06em] ml-1 bg-primary animate-pulse"></span></span></span>
+					<span class="block mt-4 text-[1.5rem] sm:text-2xl lg:text-[2rem] leading-[1.2] font-light text-muted-foreground tracking-[-0.02em]"><?php esc_html_e('across', 'arqam-web'); ?> <span class="text-foreground font-medium"><?php esc_html_e('+10 markets', 'arqam-web'); ?></span> <?php esc_html_e('worldwide.', 'arqam-web'); ?></span>
 				</h1>
-				<p class="mt-8 text-base lg:text-lg text-muted-foreground max-w-lg leading-relaxed"><?php esc_html_e('Arqam Web designs, develops, and optimizes high-performance websites built to rank, convert, and scale your business — from the Gulf to Europe and the Americas.', 'arqamweb'); ?></p>
+				<p class="mt-8 text-base lg:text-lg text-muted-foreground max-w-lg leading-relaxed"><?php esc_html_e('Arqam Web designs, develops, and optimizes high-performance websites built to rank, convert, and scale your business — from the Gulf to Europe and the Americas.', 'arqam-web'); ?></p>
 				<div class="mt-9 flex flex-wrap items-center gap-3">
 					<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>" class="group relative inline-flex items-center justify-center gap-2 whitespace-nowrap px-8 py-4 text-sm font-semibold leading-none text-primary-foreground bg-gradient-primary rounded-full overflow-hidden transition-[transform,box-shadow] duration-300 ease-out shadow-glow">
 						<span aria-hidden="true" class="pointer-events-none absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-[900ms] ease-out bg-[linear-gradient(110deg,transparent_35%,rgba(255,255,255,0.45)_50%,transparent_65%)]"></span>
-						<span class="relative inline-flex items-center gap-2"><?php esc_html_e('Request a Quote', 'arqamweb'); ?> <?php echo arqam_icon('arrow'); ?></span>
+						<span class="relative inline-flex items-center gap-2"><?php esc_html_e('Request a Quote', 'arqam-web'); ?> <?php echo arqam_icon('arrow'); ?></span>
 					</a>
-					<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>" class="group relative inline-flex items-center gap-2 px-7 py-4 text-sm font-semibold text-foreground bg-background/70 backdrop-blur border border-border rounded-full hover:border-primary/60 hover:text-primary transition-[color,border-color,box-shadow,transform] duration-300 ease-out"><?php esc_html_e('View Our Projects', 'arqamweb'); ?> <?php echo arqam_icon('arrow'); ?></a>
+					<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>" class="group relative inline-flex items-center gap-2 px-7 py-4 text-sm font-semibold text-foreground bg-background/70 backdrop-blur border border-border rounded-full hover:border-primary/60 hover:text-primary transition-[color,border-color,box-shadow,transform] duration-300 ease-out"><?php esc_html_e('View Our Projects', 'arqam-web'); ?> <?php echo arqam_icon('arrow'); ?></a>
 				</div>
 				<div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-5 max-w-2xl">
 					<?php foreach ([['+15', 'Years experience'], ['+10', 'Countries served'], ['4.9★', 'Global client rating'], ['Web · SEO', 'Branding · Social']] as $metric) : ?>
 						<div class="border-l-2 border-primary/40 pl-3.5">
 							<div class="text-lg sm:text-xl font-semibold text-foreground tracking-tight"><?php echo $metric[0]; ?></div>
-							<div class="text-xs text-muted-foreground leading-snug mt-0.5"><?php echo esc_html(__($metric[1], 'arqamweb')); ?></div>
+							<div class="text-xs text-muted-foreground leading-snug mt-0.5"><?php echo esc_html(__($metric[1], 'arqam-web')); ?></div>
 						</div>
 					<?php endforeach; ?>
 				</div>
@@ -101,7 +101,7 @@ $heroSlides = [
 							<div class="relative flex items-center justify-between mb-3 px-2">
 								<div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#febc2e]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#28c840]"></span></div>
 								<div class="text-[10px] font-mono text-white/40 tracking-wider truncate max-w-[200px]">arqamweb.com / <span data-arqam-hero-path><?php echo esc_html($heroSlides[0]['path']); ?></span></div>
-								<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-400/30"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span><span class="text-[10px] font-semibold text-emerald-300"><?php esc_html_e('LIVE', 'arqamweb'); ?></span></div>
+								<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-400/30"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span><span class="text-[10px] font-semibold text-emerald-300"><?php esc_html_e('LIVE', 'arqam-web'); ?></span></div>
 							</div>
 							<div class="relative aspect-[16/11] rounded-2xl overflow-hidden bg-black/40">
 								<img data-arqam-hero-slide src="<?php echo esc_url($heroSlides[0]['src']); ?>" alt="<?php echo esc_attr($heroSlides[0]['title']); ?>" width="1280" height="896" loading="eager" decoding="async" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover scale-110 duration-[6000ms]" style="object-position:<?php echo esc_attr($heroSlides[0]['focus']); ?>">
@@ -125,13 +125,13 @@ $heroSlides = [
 								</div>
 							</div>
 						</div>
-						<div class="hidden md:flex absolute -left-6 top-10 items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-primary text-primary-foreground shadow-glow text-xs font-semibold animate-float" style="animation-delay:-2s"><?php esc_html_e('Organic Growth', 'arqamweb'); ?></div>
+						<div class="hidden md:flex absolute -left-6 top-10 items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-primary text-primary-foreground shadow-glow text-xs font-semibold animate-float" style="animation-delay:-2s"><?php esc_html_e('Organic Growth', 'arqam-web'); ?></div>
 						<div class="hidden md:block absolute -right-3 -bottom-3 rounded-xl p-2 pr-3 bg-background/90 backdrop-blur-xl border border-border shadow-elevated animate-float">
 							<div class="flex items-center gap-2">
 								<div class="w-7 h-7 rounded-lg bg-gradient-primary text-primary-foreground flex items-center justify-center shadow-glow">★</div>
 								<div>
-									<div class="text-[8px] text-muted-foreground uppercase tracking-wider leading-none"><?php esc_html_e('Client rating', 'arqamweb'); ?></div>
-									<div class="text-[11px] font-semibold leading-tight mt-0.5"><?php esc_html_e('4.9 / 5 average', 'arqamweb'); ?></div>
+									<div class="text-[8px] text-muted-foreground uppercase tracking-wider leading-none"><?php esc_html_e('Client rating', 'arqam-web'); ?></div>
+									<div class="text-[11px] font-semibold leading-tight mt-0.5"><?php esc_html_e('4.9 / 5 average', 'arqam-web'); ?></div>
 								</div>
 							</div>
 						</div>

@@ -18,16 +18,16 @@ if (!defined('ABSPATH')) {
 						class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 backdrop-blur text-xs font-semibold border border-white/20">
 								<span class="relative flex h-2.5 w-2.5"><span
 										class="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span><span
-										class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 pulse-green"></span></span><?php esc_html_e("We're online — usually reply in under a minute", 'arqamweb'); ?>
+										class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 pulse-green"></span></span><?php esc_html_e("We're online — usually reply in under a minute", 'arqam-web'); ?>
 					</div>
-					<h2 class="mt-6 text-4xl lg:text-6xl font-semibold tracking-tight leading-[1.05]"><?php esc_html_e('Chat with Us', 'arqamweb'); ?><br><?php esc_html_e("We're here to help.", 'arqamweb'); ?></h2>
-					<p class="mt-5 text-primary-foreground/85 text-lg max-w-xl"><?php esc_html_e("Whether it's a quick question or a full project brief — our team is ready to help you all week. Tell us what you're trying to grow.", 'arqamweb'); ?></p>
+					<h2 class="mt-6 text-4xl lg:text-6xl font-semibold tracking-tight leading-[1.05]"><?php esc_html_e('Chat with Us', 'arqam-web'); ?><br><?php esc_html_e("We're here to help.", 'arqam-web'); ?></h2>
+					<p class="mt-5 text-primary-foreground/85 text-lg max-w-xl"><?php esc_html_e("Whether it's a quick question or a full project brief — our team is ready to help you all week. Tell us what you're trying to grow.", 'arqam-web'); ?></p>
 					<div class="mt-8 flex flex-wrap items-center gap-3">
 						<a href="https://wa.me/201118721404" target="_blank" rel="noopener noreferrer"
-						   class="group inline-flex items-center gap-2.5 px-6 py-3.5 text-sm font-semibold text-foreground bg-background rounded-full shadow-lg hover:-translate-y-0.5 transition-all"><?php esc_html_e('Chat via WhatsApp', 'arqamweb'); ?></a>
+						   class="group inline-flex items-center gap-2.5 px-6 py-3.5 text-sm font-semibold text-foreground bg-background rounded-full shadow-lg hover:-translate-y-0.5 transition-all"><?php esc_html_e('Chat via WhatsApp', 'arqam-web'); ?></a>
 						<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 						   class="inline-flex items-center gap-2.5 px-6 py-3.5 text-sm font-semibold text-primary-foreground bg-white/10 backdrop-blur border border-white/25 rounded-full hover:bg-white/15 transition-colors">
-							<?php esc_html_e('Contact Us', 'arqamweb'); ?>
+							<?php esc_html_e('Contact Us', 'arqam-web'); ?>
 						</a>
 					</div>
 				</div>

@@ -35,11 +35,11 @@ get_header();
 				<div class="lg:col-span-8">
 					<div
 						class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-primary/10 text-primary border border-primary/20 mb-6">
-						<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 pulse-green"></span><?php esc_html_e('Studio open · Replies within 1 business day', 'arqamweb'); ?>
+						<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 pulse-green"></span><?php esc_html_e('Studio open · Replies within 1 business day', 'arqam-web'); ?>
 					</div>
-					<h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-semibold tracking-tight leading-[0.95]"><?php esc_html_e("Let's build something", 'arqamweb'); ?> <br><span class="text-gradient italic font-light"><?php esc_html_e('worth scaling.', 'arqamweb'); ?></span></h1>
+					<h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-semibold tracking-tight leading-[0.95]"><?php esc_html_e("Let's build something", 'arqam-web'); ?> <br><span class="text-gradient italic font-light"><?php esc_html_e('worth scaling.', 'arqam-web'); ?></span></h1>
 				</div>
-				<div class="lg:col-span-4"><p class="text-lg text-muted-foreground leading-relaxed max-w-md"><?php esc_html_e("Whether you're scoping a new flagship site, replatforming, or chasing a market — we'd love to hear what you're building.", 'arqamweb'); ?></p></div>
+				<div class="lg:col-span-4"><p class="text-lg text-muted-foreground leading-relaxed max-w-md"><?php esc_html_e("Whether you're scoping a new flagship site, replatforming, or chasing a market — we'd love to hear what you're building.", 'arqam-web'); ?></p></div>
 			</div>
 		</div>
 	</section>
@@ -47,10 +47,10 @@ get_header();
 		<div class="reveal container-x max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 in">
 			<div class="lg:col-span-5 flex flex-col gap-8">
 				<div>
-					<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4"><?php esc_html_e('— Reach the studio', 'arqamweb'); ?>
+					<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4"><?php esc_html_e('— Reach the studio', 'arqam-web'); ?>
 					</div>
-					<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight leading-[1.1]"><?php esc_html_e('Four ways in.', 'arqamweb'); ?> <span
-							class="italic font-light text-muted-foreground"><?php esc_html_e('Pick yours.', 'arqamweb'); ?></span></h2></div>
+					<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight leading-[1.1]"><?php esc_html_e('Four ways in.', 'arqam-web'); ?> <span
+							class="italic font-light text-muted-foreground"><?php esc_html_e('Pick yours.', 'arqam-web'); ?></span></h2></div>
 				<ul class="space-y-3">
 					<li><a href="mailto:info@arqamweb.com"
 					       class="group relative flex items-start gap-4 p-5 rounded-2xl border border-border bg-card hover:border-primary/40 hover:shadow-elevated hover:-translate-y-0.5 transition-all duration-300 overflow-hidden">
@@ -66,7 +66,7 @@ get_header();
 								</svg>
 							</div>
 							<div class="relative flex-1 min-w-0">
-								<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Email the studio', 'arqamweb'); ?>
+								<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Email the studio', 'arqam-web'); ?>
 								</div>
 								<div class="mt-1 font-semibold truncate">info@arqamweb.com</div>
 							</div>
@@ -90,7 +90,7 @@ get_header();
 								</svg>
 							</div>
 							<div class="relative flex-1 min-w-0">
-								<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Call us directly', 'arqamweb'); ?>
+								<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Call us directly', 'arqam-web'); ?>
 								</div>
 								<div class="mt-1 font-semibold truncate">+201118721404</div>
 							</div>
@@ -113,7 +113,7 @@ get_header();
 								</svg>
 							</div>
 							<div class="relative flex-1 min-w-0">
-								<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('WhatsApp', 'arqamweb'); ?></div>
+								<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('WhatsApp', 'arqam-web'); ?></div>
 								<div class="mt-1 font-semibold truncate">+201118721404</div>
 							</div>
 							<svg
@@ -136,7 +136,7 @@ get_header();
 								</svg>
 							</div>
 							<div class="relative flex-1 min-w-0">
-								<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Visit the studio', 'arqamweb'); ?>
+								<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Visit the studio', 'arqam-web'); ?>
 								</div>
 								<div class="mt-1 font-semibold truncate">44 Al Mehwar Al Markazy, Al Saraya Mall, Sheikh
 									Zayed, Giza, Egypt
@@ -152,27 +152,27 @@ get_header();
 				<div class="grid grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden border border-border">
 					<div class="bg-card p-5 text-center">
 						<div class="text-2xl font-semibold tracking-tight text-gradient">&lt;1 day</div>
-						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Average reply', 'arqamweb'); ?>
+						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Average reply', 'arqam-web'); ?>
 						</div>
 					</div>
 					<div class="bg-card p-5 text-center">
 						<div class="text-2xl font-semibold tracking-tight text-gradient">120+</div>
-						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Projects shipped', 'arqamweb'); ?>
+						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Projects shipped', 'arqam-web'); ?>
 						</div>
 					</div>
 					<div class="bg-card p-5 text-center">
 						<div class="text-2xl font-semibold tracking-tight text-gradient">4.9</div>
-						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Client rating', 'arqamweb'); ?>
+						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Client rating', 'arqam-web'); ?>
 						</div>
 					</div>
 					<div class="bg-card p-5 text-center">
 						<div class="text-2xl font-semibold tracking-tight text-gradient">14 yrs</div>
-						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('In market', 'arqamweb'); ?></div>
+						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('In market', 'arqam-web'); ?></div>
 					</div>
 				</div>
 				<div class="rounded-2xl border border-border bg-surface p-5">
-					<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Studio hours', 'arqamweb'); ?></div>
-					<div class="mt-2 text-sm"><?php esc_html_e('Sun – Thu · 10:00 – 19:00', 'arqamweb'); ?> <span class="text-muted-foreground"><?php esc_html_e('(GMT+2, Cairo)', 'arqamweb'); ?></span>
+					<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Studio hours', 'arqam-web'); ?></div>
+					<div class="mt-2 text-sm"><?php esc_html_e('Sun – Thu · 10:00 – 19:00', 'arqam-web'); ?> <span class="text-muted-foreground"><?php esc_html_e('(GMT+2, Cairo)', 'arqam-web'); ?></span>
 					</div>
 				</div>
 			</div>
@@ -184,11 +184,11 @@ get_header();
 						class="relative rounded-[calc(2rem-1px)] bg-card/95 backdrop-blur-xl border border-white/10 p-8 lg:p-10 shadow-elevated">
 						<div class="flex items-center justify-between gap-4 mb-7">
 							<div>
-								<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-2"><?php esc_html_e('— Start a brief', 'arqamweb'); ?>
+								<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-2"><?php esc_html_e('— Start a brief', 'arqam-web'); ?>
 								</div>
-								<h3 class="text-2xl lg:text-3xl font-semibold tracking-tight"><?php esc_html_e('Tell us about the project.', 'arqamweb'); ?></h3></div>
+								<h3 class="text-2xl lg:text-3xl font-semibold tracking-tight"><?php esc_html_e('Tell us about the project.', 'arqam-web'); ?></h3></div>
 							<div class="hidden md:flex items-center gap-2 text-xs text-muted-foreground"><span
-									class="w-1.5 h-1.5 rounded-full bg-emerald-500 pulse-green"></span> <?php esc_html_e('Encrypted', 'arqamweb'); ?>
+									class="w-1.5 h-1.5 rounded-full bg-emerald-500 pulse-green"></span> <?php esc_html_e('Encrypted', 'arqam-web'); ?>
 							</div>
 						</div>
 						<?php echo do_shortcode('[contact-form-7 id="4f85ced" title="Contact Us"]'); ?>
@@ -201,13 +201,13 @@ get_header();
 		<div class="reveal container-x max-w-7xl mx-auto in">
 			<div class="flex items-end justify-between mb-10">
 				<div>
-					<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-3"><?php esc_html_e('— Find the studio', 'arqamweb'); ?>
+					<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-3"><?php esc_html_e('— Find the studio', 'arqam-web'); ?>
 					</div>
-					<h2 class="text-3xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e('Sheikh Zayed,', 'arqamweb'); ?> <span
-							class="italic font-light"><?php esc_html_e('Giza.', 'arqamweb'); ?></span></h2></div>
+					<h2 class="text-3xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e('Sheikh Zayed,', 'arqam-web'); ?> <span
+							class="italic font-light"><?php esc_html_e('Giza.', 'arqam-web'); ?></span></h2></div>
 				<a href="https://maps.google.com/?q=44%20Al%20Mehwar%20Al%20Markazy%2C%20Al%20Saraya%20Mall%2C%20Sheikh%20Zayed%2C%20Giza%2C%20Egypt"
 				   target="_blank" rel="noopener noreferrer"
-				   class="hidden md:inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all"><?php esc_html_e('Open in Google Maps', 'arqamweb'); ?>
+				   class="hidden md:inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all"><?php esc_html_e('Open in Google Maps', 'arqam-web'); ?>
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 					     stroke-width="2.5">
 						<path d="M5 12h14M13 5l7 7-7 7"></path>
@@ -215,7 +215,7 @@ get_header();
 				</a></div>
 			<div
 				class="relative rounded-[2rem] overflow-hidden border border-border shadow-elevated aspect-[16/10] lg:aspect-[21/9] bg-gradient-dark">
-				<iframe title="<?php esc_attr_e('Arqam Web studio location', 'arqamweb'); ?>"
+				<iframe title="<?php esc_attr_e('Arqam Web studio location', 'arqam-web'); ?>"
 				        src="https://www.google.com/maps?q=44%20Al%20Mehwar%20Al%20Markazy%2C%20Al%20Saraya%20Mall%2C%20Sheikh%20Zayed%2C%20Giza%2C%20Egypt&amp;output=embed"
 				        class="absolute inset-0 w-full h-full grayscale-[20%] contrast-110 saturate-90" loading="lazy"
 				        referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -237,7 +237,7 @@ get_header();
 									</svg>
 								</div>
 								<div class="flex-1">
-									<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Arqam Web · HQ', 'arqamweb'); ?>
+									<div class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Arqam Web · HQ', 'arqam-web'); ?>
 									</div>
 									<div class="mt-1 text-sm font-semibold leading-snug">44 Al Mehwar Al Markazy, Al
 										Saraya Mall, Sheikh Zayed, Giza, Egypt
@@ -246,7 +246,7 @@ get_header();
 							</div>
 							<a href="https://maps.google.com/?q=44%20Al%20Mehwar%20Al%20Markazy%2C%20Al%20Saraya%20Mall%2C%20Sheikh%20Zayed%2C%20Giza%2C%20Egypt"
 							   target="_blank" rel="noopener noreferrer"
-							   class="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-primary"><?php esc_html_e('Get directions', 'arqamweb'); ?>
+							   class="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-primary"><?php esc_html_e('Get directions', 'arqam-web'); ?>
 								<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 								     stroke-width="2.5">
 									<path d="M5 12h14M13 5l7 7-7 7"></path>
@@ -273,13 +273,13 @@ get_header();
 			     style="width: 110px; height: 110px; left: 82%; top: 25%; background: radial-gradient(circle at 30% 30%, rgba(57, 158, 208, 0.19), rgba(57, 158, 208, 0.03) 60%, transparent 80%); border: 1px solid rgba(57, 158, 208, 0.12); backdrop-filter: blur(6px); box-shadow: rgba(172, 215, 236, 0.08) 0px 0px 40px inset, rgba(57, 158, 208, 0.06) 0px 0px 60px; animation: 11s ease-in-out -6s infinite normal none running glass-float-1; transform: translate(0px, 0px); will-change: transform; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
 		</div>
 		<div class="reveal container-x max-w-5xl mx-auto text-center relative in">
-			<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-6"><?php esc_html_e('— One more step', 'arqamweb'); ?></div>
-			<h2 class="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02]"><?php esc_html_e('The next great brand', 'arqamweb'); ?> <br><span class="text-gradient italic font-light"><?php esc_html_e('starts with a message.', 'arqamweb'); ?></span></h2>
-			<p class="mt-7 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"><?php esc_html_e("Send a brief, jump on WhatsApp, or pick up the phone. However you want to start — we're a reply away.", 'arqamweb'); ?></p>
+			<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-6"><?php esc_html_e('— One more step', 'arqam-web'); ?></div>
+			<h2 class="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02]"><?php esc_html_e('The next great brand', 'arqam-web'); ?> <br><span class="text-gradient italic font-light"><?php esc_html_e('starts with a message.', 'arqam-web'); ?></span></h2>
+			<p class="mt-7 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"><?php esc_html_e("Send a brief, jump on WhatsApp, or pick up the phone. However you want to start — we're a reply away.", 'arqam-web'); ?></p>
 			<div class="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center"><a
 					href="mailto:info@arqamweb.com"
 					class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-primary text-primary-foreground font-semibold shadow-glow hover:scale-[1.02] transition-transform">
-					<?php esc_html_e('Email the studio', 'arqamweb'); ?>
+					<?php esc_html_e('Email the studio', 'arqam-web'); ?>
 					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 					     stroke-width="2.5">
 						<path d="M5 12h14M13 5l7 7-7 7"></path>
@@ -287,7 +287,7 @@ get_header();
 				</a>
 				<a href="https://wa.me/201118721404" target="_blank" rel="noopener noreferrer"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors">
-					<?php esc_html_e('Chat on WhatsApp', 'arqamweb'); ?>
+					<?php esc_html_e('Chat on WhatsApp', 'arqam-web'); ?>
 				</a>
 			</div>
 		</div>

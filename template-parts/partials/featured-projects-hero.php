@@ -26,9 +26,9 @@ if (empty($featured_projects)) {
 }
 
 $hero_project = $featured_projects[0];
-$eyebrow      = $args['eyebrow']   ?? __('Featured work', 'arqamweb');
-$heading      = $args['heading']   ?? __("Projects we're", 'arqamweb');
-$highlight    = $args['highlight'] ?? __('proud to ship', 'arqamweb');
+$eyebrow      = $args['eyebrow']   ?? __('Featured work', 'arqam-web');
+$heading      = $args['heading']   ?? __("Projects we're", 'arqam-web');
+$highlight    = $args['highlight'] ?? __('proud to ship', 'arqam-web');
 ?>
 
 <div class="reveal">
@@ -54,7 +54,7 @@ $highlight    = $args['highlight'] ?? __('proud to ship', 'arqamweb');
 					<?php endif; ?>
 				<?php endforeach; ?>
 				<div class="absolute inset-0 bg-gradient-to-t from-foreground/70 via-transparent to-transparent"></div>
-				<div class="absolute top-5 left-5 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-background/90 backdrop-blur text-foreground border border-border"><?php echo esc_html__('Featured', 'arqamweb'); ?></div>
+				<div class="absolute top-5 left-5 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-background/90 backdrop-blur text-foreground border border-border"><?php echo esc_html__('Featured', 'arqam-web'); ?></div>
 				<?php if (count($featured_projects) > 1) : ?>
 					<div class="absolute bottom-5 left-5 flex gap-1.5" aria-hidden="true">
 						<?php foreach ($featured_projects as $index => $featured_project) : ?>
@@ -72,7 +72,7 @@ $highlight    = $args['highlight'] ?? __('proud to ship', 'arqamweb');
 						         data-project-category="<?php echo esc_attr($featured_project['category']); ?>"
 						         aria-hidden="<?php echo $index === 0 ? 'false' : 'true'; ?>"
 						         class="<?php echo $index === 0 ? 'relative opacity-100 translate-y-0' : 'absolute inset-0 opacity-0 translate-y-2 pointer-events-none'; ?> transition-all duration-500 ease-out">
-							<div class="text-xs font-semibold tracking-[0.18em] uppercase text-primary mb-3"><?php echo esc_html__('Case study', 'arqamweb'); ?></div>
+							<div class="text-xs font-semibold tracking-[0.18em] uppercase text-primary mb-3"><?php echo esc_html__('Case study', 'arqam-web'); ?></div>
 							<h3 class="text-3xl lg:text-4xl font-semibold tracking-tight"><?php echo esc_html($featured_project['title']); ?></h3>
 							<p class="mt-4 text-base text-muted-foreground leading-relaxed"><?php echo esc_html($featured_project['copy']); ?></p>
 							<?php if (!empty($featured_project['tags'])) : ?>
@@ -82,7 +82,7 @@ $highlight    = $args['highlight'] ?? __('proud to ship', 'arqamweb');
 									<?php endforeach; ?>
 								</div>
 							<?php endif; ?>
-							<span class="mt-7 inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold text-primary-foreground bg-gradient-primary rounded-full shadow-glow group-hover:-translate-y-0.5 transition-transform self-start"><?php echo esc_html__('View Project', 'arqamweb'); ?><?php echo arqam_icon('arrow'); ?></span>
+							<span class="mt-7 inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold text-primary-foreground bg-gradient-primary rounded-full shadow-glow group-hover:-translate-y-0.5 transition-transform self-start"><?php echo esc_html__('View Project', 'arqam-web'); ?><?php echo arqam_icon('arrow'); ?></span>
 						</article>
 					<?php endforeach; ?>
 				</div>

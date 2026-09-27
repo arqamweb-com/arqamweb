@@ -43,14 +43,14 @@ if (empty($videoTestimonials)) {
 							class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-70 animate-ping"></span>
 						<span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-primary"></span>
 					</span>
-				<?php esc_html_e('VIDEO TESTIMONIALS', 'arqamweb'); ?>
+				<?php esc_html_e('VIDEO TESTIMONIALS', 'arqam-web'); ?>
 			</div>
 			<h2 class="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-[-0.035em] leading-[1.05]">
-				<?php esc_html_e('Trusted by Clients Across', 'arqamweb'); ?> <span
-					class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('Multiple Industries', 'arqamweb'); ?></span>
+				<?php esc_html_e('Trusted by Clients Across', 'arqam-web'); ?> <span
+					class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('Multiple Industries', 'arqam-web'); ?></span>
 			</h2>
 			<p class="mt-6 text-base lg:text-lg text-white/60 leading-relaxed max-w-2xl">
-				<?php esc_html_e('Real feedback from business owners and brands that worked with Arqam Web on web design, SEO, branding, and digital growth.', 'arqamweb'); ?>
+				<?php esc_html_e('Real feedback from business owners and brands that worked with Arqam Web on web design, SEO, branding, and digital growth.', 'arqam-web'); ?>
 			</p>
 		</div>
 
@@ -89,7 +89,7 @@ if (empty($videoTestimonials)) {
 					data-video-testimonial-open
 					data-youtube-id="<?php echo esc_attr($youtube_id); ?>"
 					data-video-short="<?php echo $is_short ? 'true' : 'false'; ?>"
-					aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqamweb'), $snippet)); ?>"
+					aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqam-web'), $snippet)); ?>"
 				>
 					<img
 						src="<?php echo esc_url($thumb); ?>"
@@ -107,7 +107,7 @@ if (empty($videoTestimonials)) {
 					<span class="aw-video-card__meta">
 		<span class="aw-video-card__verified">
 			<?php echo arqam_icon('check'); ?>
-			<?php esc_html_e('Verified Client', 'arqamweb'); ?>
+			<?php esc_html_e('Verified Client', 'arqam-web'); ?>
 		</span>
 		<span class="aw-video-card__category"><?php echo esc_html($category); ?></span>
 	</span>
@@ -159,7 +159,7 @@ if (empty($videoTestimonials)) {
 							data-video-testimonial-open
 							data-youtube-id="<?php echo esc_attr($youtube_id); ?>"
 							data-video-short="<?php echo $is_short ? 'true' : 'false'; ?>"
-							aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqamweb'), $snippet)); ?>">
+							aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqam-web'), $snippet)); ?>">
 							<img src="<?php echo esc_url($thumb); ?>"
 							     alt=""
 							     loading="lazy"
@@ -174,7 +174,7 @@ if (empty($videoTestimonials)) {
 							<span class="aw-video-card__meta">
 		<span class="aw-video-card__verified">
 			<?php echo arqam_icon('check'); ?>
-			<?php esc_html_e('Verified Client', 'arqamweb'); ?>
+			<?php esc_html_e('Verified Client', 'arqam-web'); ?>
 		</span>
 		<span class="aw-video-card__category"><?php echo esc_html($category); ?></span>
 	</span>
@@ -209,16 +209,16 @@ if (empty($videoTestimonials)) {
 <!--Model-->
 <div class="aw-video-modal" data-video-testimonial-modal hidden>
 	<div class="aw-video-modal__backdrop" data-video-testimonial-close></div>
-	<button type="button" class="aw-video-modal__close" data-video-testimonial-close aria-label="<?php esc_attr_e('Close video', 'arqamweb'); ?>">
+	<button type="button" class="aw-video-modal__close" data-video-testimonial-close aria-label="<?php esc_attr_e('Close video', 'arqam-web'); ?>">
 		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
 		     aria-hidden="true">
 			<path d="M6 6l12 12M6 18L18 6"></path>
 		</svg>
 	</button>
 	<div class="aw-video-modal__frame" data-video-testimonial-frame role="dialog" aria-modal="true"
-	     aria-label="<?php esc_attr_e('Video testimonial', 'arqamweb'); ?>">
+	     aria-label="<?php esc_attr_e('Video testimonial', 'arqam-web'); ?>">
 		<div class="aw-video-modal__glow"></div>
-		<iframe data-video-testimonial-iframe title="<?php esc_attr_e('Video testimonial', 'arqamweb'); ?>"
+		<iframe data-video-testimonial-iframe title="<?php esc_attr_e('Video testimonial', 'arqam-web'); ?>"
 		        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		        allowfullscreen></iframe>
 	</div>

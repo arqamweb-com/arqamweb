@@ -17,10 +17,10 @@ $stats = [
 		<div class="max-w-3xl mb-16">
 			<div
 				class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-primary-foreground/70 mb-4">
-				<span class="w-8 h-px bg-primary-foreground/50"></span><?php esc_html_e('By the numbers', 'arqamweb'); ?>
+				<span class="w-8 h-px bg-primary-foreground/50"></span><?php esc_html_e('By the numbers', 'arqam-web'); ?>
 			</div>
 			<h2 class="text-4xl lg:text-6xl font-semibold tracking-[-0.03em] text-primary-foreground leading-[1.05]">
-				<?php esc_html_e('Results that', 'arqamweb'); ?> <span class="text-gradient"><?php esc_html_e('compound', 'arqamweb'); ?></span>,<br><?php esc_html_e('year after year.', 'arqamweb'); ?></h2>
+				<?php esc_html_e('Results that', 'arqam-web'); ?> <span class="text-gradient"><?php esc_html_e('compound', 'arqam-web'); ?></span>,<br><?php esc_html_e('year after year.', 'arqam-web'); ?></h2>
 		</div>
 		<div class="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
 			<?php foreach ($stats as $index => $stat) : ?>
@@ -53,8 +53,8 @@ $stats = [
 								class="bg-gradient-to-br from-[color:var(--brand-primary)] to-[color:var(--brand-secondary)] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(49,152,212,0.5)]"><?php echo esc_html($stat_suffix); ?></span>
 						</div>
 						<div
-							class="relative mt-5 text-base font-semibold text-primary-foreground"><?php echo esc_html(__($stat['label'], 'arqamweb')); ?></div>
-						<div class="relative text-sm text-primary-foreground/55 mt-1"><?php echo esc_html(__($stat['note'], 'arqamweb')); ?></div>
+							class="relative mt-5 text-base font-semibold text-primary-foreground"><?php echo esc_html(__($stat['label'], 'arqam-web')); ?></div>
+						<div class="relative text-sm text-primary-foreground/55 mt-1"><?php echo esc_html(__($stat['note'], 'arqam-web')); ?></div>
 					</div>
 				</div>
 			<?php endforeach; ?>

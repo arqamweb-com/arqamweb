@@ -38,14 +38,14 @@ get_header();
 						class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md text-[11px] font-bold tracking-[0.22em] text-white/85 mb-7 animate-[fade-in_0.6s_ease-out]">
 						<span class="relative flex h-1.5 w-1.5"><span
 								class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-70 animate-ping"></span><span
-								class="relative inline-flex h-1.5 w-1.5 rounded-full bg-primary"></span></span><?php esc_html_e('CLIENT VOICES · VERIFIED', 'arqamweb'); ?>
+								class="relative inline-flex h-1.5 w-1.5 rounded-full bg-primary"></span></span><?php esc_html_e('CLIENT VOICES · VERIFIED', 'arqam-web'); ?>
 					</div>
 					<h1 class="text-5xl sm:text-6xl lg:text-[5.5rem] font-semibold tracking-[-0.04em] leading-[0.98]">
-						<?php esc_html_e('Real words from', 'arqamweb'); ?> <span class="relative inline-block"><span
-								class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('real clients.', 'arqamweb'); ?></span><span
+						<?php esc_html_e('Real words from', 'arqam-web'); ?> <span class="relative inline-block"><span
+								class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('real clients.', 'arqam-web'); ?></span><span
 								class="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent"></span></span>
 					</h1>
-					<p class="mt-7 text-lg lg:text-xl text-primary-foreground/65 max-w-2xl leading-relaxed"><?php esc_html_e('Fifteen years. Ten countries. Three hundred brands. Every review on this page is verified, unedited, and earned the slow way — through work that actually moved the needle.', 'arqamweb'); ?></p>
+					<p class="mt-7 text-lg lg:text-xl text-primary-foreground/65 max-w-2xl leading-relaxed"><?php esc_html_e('Fifteen years. Ten countries. Three hundred brands. Every review on this page is verified, unedited, and earned the slow way — through work that actually moved the needle.', 'arqam-web'); ?></p>
 					<div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5">
 						<div class="flex items-center gap-3">
 							<div class="relative">
@@ -90,7 +90,7 @@ get_header();
 							</div>
 							<div>
 								<div class="text-2xl font-semibold tabular-nums">4.9 / 5</div>
-								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('80+ verified reviews', 'arqamweb'); ?></div>
+								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('80+ verified reviews', 'arqam-web'); ?></div>
 							</div>
 						</div>
 						<div class="h-12 w-px bg-white/10"></div>
@@ -104,7 +104,7 @@ get_header();
 							</svg>
 							<div>
 								<div class="text-2xl font-semibold tabular-nums">98%</div>
-								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('client retention', 'arqamweb'); ?></div>
+								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('client retention', 'arqam-web'); ?></div>
 							</div>
 						</div>
 						<div class="h-12 w-px bg-white/10 hidden sm:block"></div>
@@ -119,7 +119,7 @@ get_header();
 							</svg>
 							<div>
 								<div class="text-2xl font-semibold tabular-nums">10+</div>
-								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('countries served', 'arqamweb'); ?></div>
+								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('countries served', 'arqam-web'); ?></div>
 							</div>
 						</div>
 					</div>
@@ -160,9 +160,9 @@ get_header();
 									d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
 							</svg>
 						</div>
-						<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Traffic tripled in 6 months.', 'arqamweb'); ?>"</p>
+						<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Traffic tripled in 6 months.', 'arqam-web'); ?>"</p>
 						<div class="mt-4 flex items-center gap-2 text-xs text-white/60"><span
-								class="text-lg leading-none">🇸🇦</span><span class="font-semibold text-white/85">Khalid A.</span><span>·</span><span><?php esc_html_e('Marketing Dir.', 'arqamweb'); ?></span>
+								class="text-lg leading-none">🇸🇦</span><span class="font-semibold text-white/85">Khalid A.</span><span>·</span><span><?php esc_html_e('Marketing Dir.', 'arqam-web'); ?></span>
 						</div>
 					</div>
 					<div
@@ -200,10 +200,10 @@ get_header();
 									d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
 							</svg>
 						</div>
-						<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e("Best agency we've worked with.", 'arqamweb'); ?>"</p>
+						<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e("Best agency we've worked with.", 'arqam-web'); ?>"</p>
 						<div class="mt-4 flex items-center gap-2 text-xs text-white/60"><span
 								class="text-lg leading-none">🇬🇧</span><span
-								class="font-semibold text-white/85">Sarah W.</span><span>·</span><span><?php esc_html_e('Founder', 'arqamweb'); ?></span>
+								class="font-semibold text-white/85">Sarah W.</span><span>·</span><span><?php esc_html_e('Founder', 'arqam-web'); ?></span>
 						</div>
 					</div>
 					<div
@@ -241,9 +241,9 @@ get_header();
 									d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
 							</svg>
 						</div>
-						<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Charging 30% more, closing faster.', 'arqamweb'); ?>"</p>
+						<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Charging 30% more, closing faster.', 'arqam-web'); ?>"</p>
 						<div class="mt-4 flex items-center gap-2 text-xs text-white/60"><span
-								class="text-lg leading-none">🇺🇸</span><span class="font-semibold text-white/85">Jennifer P.</span><span>·</span><span><?php esc_html_e('Co-founder', 'arqamweb'); ?></span>
+								class="text-lg leading-none">🇺🇸</span><span class="font-semibold text-white/85">Jennifer P.</span><span>·</span><span><?php esc_html_e('Co-founder', 'arqam-web'); ?></span>
 						</div>
 					</div>
 					<div
@@ -281,9 +281,9 @@ get_header();
 									d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
 							</svg>
 						</div>
-						<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Senior, strategic, honest.', 'arqamweb'); ?>"</p>
+						<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Senior, strategic, honest.', 'arqam-web'); ?>"</p>
 						<div class="mt-4 flex items-center gap-2 text-xs text-white/60"><span
-								class="text-lg leading-none">🇦🇪</span><span class="font-semibold text-white/85">Mohammed H.</span><span>·</span><span><?php esc_html_e('CEO', 'arqamweb'); ?></span>
+								class="text-lg leading-none">🇦🇪</span><span class="font-semibold text-white/85">Mohammed H.</span><span>·</span><span><?php esc_html_e('CEO', 'arqam-web'); ?></span>
 						</div>
 					</div>
 				</div>
@@ -320,12 +320,12 @@ get_header();
 			</div>
 			<div class="container relative">
 				<div class="max-w-3xl mb-14">
-					<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Video Testimonials', 'arqamweb'); ?>
+					<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Video Testimonials', 'arqam-web'); ?>
 					</div>
-					<h2 class="text-4xl lg:text-[3.5rem] font-semibold tracking-[-0.035em] leading-[1.05]"><?php esc_html_e('See clients tell the story', 'arqamweb'); ?> <span
-							class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('in their own words.', 'arqamweb'); ?></span>
+					<h2 class="text-4xl lg:text-[3.5rem] font-semibold tracking-[-0.035em] leading-[1.05]"><?php esc_html_e('See clients tell the story', 'arqam-web'); ?> <span
+							class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('in their own words.', 'arqam-web'); ?></span>
 					</h2>
-					<p class="mt-5 text-white/60 text-lg max-w-2xl"><?php esc_html_e('Hover any card to preview silently. Click to watch the full conversation.', 'arqamweb'); ?></p>
+					<p class="mt-5 text-white/60 text-lg max-w-2xl"><?php esc_html_e('Hover any card to preview silently. Click to watch the full conversation.', 'arqam-web'); ?></p>
 				</div>
 				<div class="grid lg:grid-cols-12 gap-6 lg:items-stretch">
 					<?php
@@ -349,7 +349,7 @@ get_header();
 						        data-video-testimonial-open
 						        data-youtube-id="<?php echo esc_attr($youtube_id); ?>"
 						        data-video-short="<?php echo $is_short ? 'true' : 'false'; ?>"
-						        aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqamweb'), $snippet)); ?>">
+						        aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqam-web'), $snippet)); ?>">
 							<img src="<?php echo esc_url($thumb); ?>" alt="" loading="lazy" decoding="async"
 							     class="aw-video-card__image"
 							     onerror="this.onerror=null;this.src='<?php echo esc_url($fallback); ?>';">
@@ -358,7 +358,7 @@ get_header();
 							<span class="aw-video-card__sweep" aria-hidden="true"></span>
 							<span class="aw-video-card__meta">
 							<span
-								class="aw-video-card__verified"><?php echo arqam_icon('check'); ?> <?php esc_html_e('Verified Client', 'arqamweb'); ?></span>
+								class="aw-video-card__verified"><?php echo arqam_icon('check'); ?> <?php esc_html_e('Verified Client', 'arqam-web'); ?></span>
 							<span class="aw-video-card__category"><?php echo esc_html($category); ?></span>
 						</span>
 							<span class="aw-video-card__play-wrap">
@@ -395,7 +395,7 @@ get_header();
 								        data-video-testimonial-open
 								        data-youtube-id="<?php echo esc_attr($youtube_id); ?>"
 								        data-video-short="<?php echo $is_short ? 'true' : 'false'; ?>"
-								        aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqamweb'), $snippet)); ?>">
+								        aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqam-web'), $snippet)); ?>">
 									<img src="<?php echo esc_url($thumb); ?>" alt="" loading="lazy" decoding="async"
 									     class="aw-video-card__image"
 									     onerror="this.onerror=null;this.src='<?php echo esc_url($fallback); ?>';">
@@ -403,7 +403,7 @@ get_header();
 									<span class="aw-video-card__tint" aria-hidden="true"></span>
 									<span class="aw-video-card__sweep" aria-hidden="true"></span>
 									<span class="aw-video-card__meta">
-									<span class="aw-video-card__verified"><?php echo arqam_icon('check'); ?> <?php esc_html_e('Verified Client', 'arqamweb'); ?></span>
+									<span class="aw-video-card__verified"><?php echo arqam_icon('check'); ?> <?php esc_html_e('Verified Client', 'arqam-web'); ?></span>
 									<span class="aw-video-card__category"><?php echo esc_html($category); ?></span>
 								</span>
 									<span class="aw-video-card__play-wrap">
@@ -428,16 +428,16 @@ get_header();
 		</section>
 		<div class="aw-video-modal" data-video-testimonial-modal hidden>
 			<div class="aw-video-modal__backdrop" data-video-testimonial-close></div>
-			<button type="button" class="aw-video-modal__close" data-video-testimonial-close aria-label="<?php esc_attr_e('Close video', 'arqamweb'); ?>">
+			<button type="button" class="aw-video-modal__close" data-video-testimonial-close aria-label="<?php esc_attr_e('Close video', 'arqam-web'); ?>">
 				<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
 				     aria-hidden="true">
 					<path d="M6 6l12 12M6 18L18 6"></path>
 				</svg>
 			</button>
 			<div class="aw-video-modal__frame" data-video-testimonial-frame role="dialog" aria-modal="true"
-			     aria-label="<?php esc_attr_e('Video testimonial', 'arqamweb'); ?>">
+			     aria-label="<?php esc_attr_e('Video testimonial', 'arqam-web'); ?>">
 				<div class="aw-video-modal__glow"></div>
-				<iframe data-video-testimonial-iframe title="<?php esc_attr_e('Video testimonial', 'arqamweb'); ?>"
+				<iframe data-video-testimonial-iframe title="<?php esc_attr_e('Video testimonial', 'arqam-web'); ?>"
 				        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				        allowfullscreen></iframe>
 			</div>
@@ -448,10 +448,10 @@ get_header();
 		<div class="absolute -top-40 right-0 w-[600px] h-[600px] rounded-full bg-primary/20 blur-3xl"></div>
 		<div class="container-x max-w-7xl mx-auto relative">
 			<div class="max-w-3xl mb-16">
-				<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Trust by the numbers', 'arqamweb'); ?>
+				<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Trust by the numbers', 'arqam-web'); ?>
 				</div>
-				<h2 class="text-4xl lg:text-6xl font-semibold tracking-[-0.035em] leading-[1.05]"><?php esc_html_e("Reputation isn't claimed.", 'arqamweb'); ?> <span
-						class="bg-gradient-to-r from-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e("It's measured.", 'arqamweb'); ?></span>
+				<h2 class="text-4xl lg:text-6xl font-semibold tracking-[-0.035em] leading-[1.05]"><?php esc_html_e("Reputation isn't claimed.", 'arqam-web'); ?> <span
+						class="bg-gradient-to-r from-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e("It's measured.", 'arqam-web'); ?></span>
 				</h2></div>
 			<div class="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
 				<div class="relative">
@@ -464,8 +464,8 @@ get_header();
 								4.9<span
 									class="bg-gradient-to-br from-[color:var(--brand-primary)] to-[color:var(--brand-secondary)] bg-clip-text text-transparent">★</span>
 							</div>
-							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Average rating', 'arqamweb'); ?></div>
-							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('out of 5.0 — 80+ reviews', 'arqamweb'); ?></div>
+							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Average rating', 'arqam-web'); ?></div>
+							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('out of 5.0 — 80+ reviews', 'arqam-web'); ?></div>
 						</div>
 					</div>
 				</div>
@@ -480,8 +480,8 @@ get_header();
 								98<span
 									class="bg-gradient-to-br from-[color:var(--brand-primary)] to-[color:var(--brand-secondary)] bg-clip-text text-transparent">%</span>
 							</div>
-							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Client retention', 'arqamweb'); ?></div>
-							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('long-term partnerships', 'arqamweb'); ?></div>
+							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Client retention', 'arqam-web'); ?></div>
+							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('long-term partnerships', 'arqam-web'); ?></div>
 						</div>
 					</div>
 				</div>
@@ -496,8 +496,8 @@ get_header();
 								10<span
 									class="bg-gradient-to-br from-[color:var(--brand-primary)] to-[color:var(--brand-secondary)] bg-clip-text text-transparent">+</span>
 							</div>
-							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Countries served', 'arqamweb'); ?></div>
-							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('GCC · MENA · UK · USA', 'arqamweb'); ?></div>
+							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Countries served', 'arqam-web'); ?></div>
+							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('GCC · MENA · UK · USA', 'arqam-web'); ?></div>
 						</div>
 					</div>
 				</div>
@@ -512,8 +512,8 @@ get_header();
 								320<span
 									class="bg-gradient-to-br from-[color:var(--brand-primary)] to-[color:var(--brand-secondary)] bg-clip-text text-transparent">+</span>
 							</div>
-							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Projects delivered', 'arqamweb'); ?></div>
-							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('since 2010', 'arqamweb'); ?></div>
+							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Projects delivered', 'arqam-web'); ?></div>
+							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('since 2010', 'arqam-web'); ?></div>
 						</div>
 					</div>
 				</div>
@@ -523,10 +523,10 @@ get_header();
 	<section class="relative py-28 lg:py-36 bg-surface overflow-hidden">
 		<div class="container-x max-w-7xl mx-auto">
 			<div class="max-w-3xl mb-14">
-				<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Global footprint', 'arqamweb'); ?></div>
-				<h2 class="text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-[1.05]"><?php esc_html_e('Clients across', 'arqamweb'); ?> <span
-						class="text-gradient"><?php esc_html_e('three continents.', 'arqamweb'); ?></span></h2>
-				<p class="mt-5 text-muted-foreground text-lg max-w-2xl"><?php esc_html_e('From Riyadh to New York — Arqam Web ships work that travels.', 'arqamweb'); ?>
+				<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Global footprint', 'arqam-web'); ?></div>
+				<h2 class="text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-[1.05]"><?php esc_html_e('Clients across', 'arqam-web'); ?> <span
+						class="text-gradient"><?php esc_html_e('three continents.', 'arqam-web'); ?></span></h2>
+				<p class="mt-5 text-muted-foreground text-lg max-w-2xl"><?php esc_html_e('From Riyadh to New York — Arqam Web ships work that travels.', 'arqam-web'); ?>
 					</p></div>
 			<div
 				class="relative rounded-3xl border border-border bg-gradient-to-br from-card via-card to-background p-6 lg:p-10 shadow-card">
@@ -559,8 +559,8 @@ get_header();
 							class="relative block w-3 h-3 rounded-full bg-gradient-primary shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_70%,transparent)] ring-2 ring-background"></span>
 						<div
 							class="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full whitespace-nowrap rounded-xl border border-border bg-card px-3 py-2 shadow-card transition-all duration-300 opacity-0 pointer-events-none group-hover:opacity-100 z-[999]">
-							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Riyadh', 'arqamweb'); ?></div>
-							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('Saudi Arabia · 42 clients', 'arqamweb'); ?></div>
+							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Riyadh', 'arqam-web'); ?></div>
+							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('Saudi Arabia · 42 clients', 'arqam-web'); ?></div>
 						</div>
 					</div>
 					<div class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer hover:z-[999]"
@@ -569,8 +569,8 @@ get_header();
 							class="relative block w-3 h-3 rounded-full bg-gradient-primary shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_70%,transparent)] ring-2 ring-background"></span>
 						<div
 							class="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full whitespace-nowrap rounded-xl border border-border bg-card px-3 py-2 shadow-card transition-all duration-300 opacity-0 pointer-events-none group-hover:opacity-100 z-[999]">
-							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Dubai', 'arqamweb'); ?></div>
-							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('UAE · 38 clients', 'arqamweb'); ?></div>
+							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Dubai', 'arqam-web'); ?></div>
+							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('UAE · 38 clients', 'arqam-web'); ?></div>
 						</div>
 					</div>
 					<div class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer hover:z-[999]"
@@ -579,8 +579,8 @@ get_header();
 							class="relative block w-3 h-3 rounded-full bg-gradient-primary shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_70%,transparent)] ring-2 ring-background"></span>
 						<div
 							class="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full whitespace-nowrap rounded-xl border border-border bg-card px-3 py-2 shadow-card transition-all duration-300 opacity-0 pointer-events-none group-hover:opacity-100 z-[999]">
-							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Jeddah', 'arqamweb'); ?></div>
-							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('KSA · 21 clients', 'arqamweb'); ?></div>
+							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Jeddah', 'arqam-web'); ?></div>
+							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('KSA · 21 clients', 'arqam-web'); ?></div>
 						</div>
 					</div>
 					<div class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer hover:z-[999]"
@@ -589,8 +589,8 @@ get_header();
 							class="relative block w-3 h-3 rounded-full bg-gradient-primary shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_70%,transparent)] ring-2 ring-background"></span>
 						<div
 							class="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full whitespace-nowrap rounded-xl border border-border bg-card px-3 py-2 shadow-card transition-all duration-300 opacity-0 pointer-events-none group-hover:opacity-100 z-[999]">
-							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Cairo', 'arqamweb'); ?></div>
-							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('Egypt · 29 clients', 'arqamweb'); ?></div>
+							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Cairo', 'arqam-web'); ?></div>
+							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('Egypt · 29 clients', 'arqam-web'); ?></div>
 						</div>
 					</div>
 					<div class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer hover:z-[999]"
@@ -599,8 +599,8 @@ get_header();
 							class="relative block w-3 h-3 rounded-full bg-gradient-primary shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_70%,transparent)] ring-2 ring-background"></span>
 						<div
 							class="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full whitespace-nowrap rounded-xl border border-border bg-card px-3 py-2 shadow-card transition-all duration-300 opacity-0 pointer-events-none group-hover:opacity-100 z-[999]">
-							<div class="text-xs font-bold text-foreground"><?php esc_html_e('London', 'arqamweb'); ?></div>
-							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('UK · 14 clients', 'arqamweb'); ?></div>
+							<div class="text-xs font-bold text-foreground"><?php esc_html_e('London', 'arqam-web'); ?></div>
+							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('UK · 14 clients', 'arqam-web'); ?></div>
 						</div>
 					</div>
 					<div class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer hover:z-[999]"
@@ -609,8 +609,8 @@ get_header();
 							class="relative block w-3 h-3 rounded-full bg-gradient-primary shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_70%,transparent)] ring-2 ring-background"></span>
 						<div
 							class="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full whitespace-nowrap rounded-xl border border-border bg-card px-3 py-2 shadow-card transition-all duration-300 opacity-0 pointer-events-none group-hover:opacity-100 z-[999]">
-							<div class="text-xs font-bold text-foreground"><?php esc_html_e('New York', 'arqamweb'); ?></div>
-							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('USA · 11 clients', 'arqamweb'); ?></div>
+							<div class="text-xs font-bold text-foreground"><?php esc_html_e('New York', 'arqam-web'); ?></div>
+							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('USA · 11 clients', 'arqam-web'); ?></div>
 						</div>
 					</div>
 					<div class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer hover:z-[999]"
@@ -619,8 +619,8 @@ get_header();
 							class="relative block w-3 h-3 rounded-full bg-gradient-primary shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_70%,transparent)] ring-2 ring-background"></span>
 						<div
 							class="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full whitespace-nowrap rounded-xl border border-border bg-card px-3 py-2 shadow-card transition-all duration-300 opacity-0 pointer-events-none group-hover:opacity-100 z-[999]">
-							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Doha', 'arqamweb'); ?></div>
-							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('Qatar · 9 clients', 'arqamweb'); ?></div>
+							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Doha', 'arqam-web'); ?></div>
+							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('Qatar · 9 clients', 'arqam-web'); ?></div>
 						</div>
 					</div>
 					<div class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer hover:z-[999]"
@@ -629,27 +629,27 @@ get_header();
 							class="relative block w-3 h-3 rounded-full bg-gradient-primary shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_70%,transparent)] ring-2 ring-background"></span>
 						<div
 							class="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full whitespace-nowrap rounded-xl border border-border bg-card px-3 py-2 shadow-card transition-all duration-300 opacity-0 pointer-events-none group-hover:opacity-100 z-[999]">
-							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Kuwait City', 'arqamweb'); ?></div>
-							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('Kuwait · 7 clients', 'arqamweb'); ?></div>
+							<div class="text-xs font-bold text-foreground"><?php esc_html_e('Kuwait City', 'arqam-web'); ?></div>
+							<div class="text-[10px] text-muted-foreground"><?php esc_html_e('Kuwait · 7 clients', 'arqam-web'); ?></div>
 						</div>
 					</div>
 				</div>
 				<div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-border">
 					<div>
 						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">10+</div>
-						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Countries', 'arqamweb'); ?></div>
+						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Countries', 'arqam-web'); ?></div>
 					</div>
 					<div>
 						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">3</div>
-						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Continents', 'arqamweb'); ?></div>
+						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Continents', 'arqam-web'); ?></div>
 					</div>
 					<div>
 						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">320+</div>
-						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Projects', 'arqamweb'); ?></div>
+						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Projects', 'arqam-web'); ?></div>
 					</div>
 					<div>
 						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">24/7</div>
-						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Support', 'arqamweb'); ?></div>
+						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Support', 'arqam-web'); ?></div>
 					</div>
 				</div>
 			</div>
@@ -657,9 +657,9 @@ get_header();
 	</section>
 	<section class="py-24 lg:py-28 bg-background border-t border-b border-border/60 overflow-hidden">
 		<div class="container-x max-w-7xl mx-auto mb-12">
-			<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-3"><?php esc_html_e('In motion', 'arqamweb'); ?></div>
-			<h2 class="text-3xl lg:text-4xl font-semibold tracking-[-0.025em]"><?php esc_html_e('A constant stream of', 'arqamweb'); ?> <span
-					class="text-gradient"><?php esc_html_e('kind words.', 'arqamweb'); ?></span></h2></div>
+			<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-3"><?php esc_html_e('In motion', 'arqam-web'); ?></div>
+			<h2 class="text-3xl lg:text-4xl font-semibold tracking-[-0.025em]"><?php esc_html_e('A constant stream of', 'arqam-web'); ?> <span
+					class="text-gradient"><?php esc_html_e('kind words.', 'arqam-web'); ?></span></h2></div>
 		<?php
 		$_marquee_reviews = get_posts([
 			'post_type' => 'review',
@@ -711,10 +711,10 @@ get_header();
 	<section class="py-28 lg:py-36 bg-surface">
 		<div class="container-x max-w-7xl mx-auto">
 			<div class="max-w-3xl mb-14">
-				<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Written reviews', 'arqamweb'); ?></div>
-				<h2 class="text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-[1.05]"><?php esc_html_e("The reviews we're", 'arqamweb'); ?> <span
-						class="text-gradient"><?php esc_html_e('most proud of.', 'arqamweb'); ?></span></h2>
-				<p class="mt-5 text-muted-foreground text-lg max-w-2xl"><?php esc_html_e('Verified clients. Unedited words. Real outcomes.', 'arqamweb'); ?></p></div>
+				<div class="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Written reviews', 'arqam-web'); ?></div>
+				<h2 class="text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-[1.05]"><?php esc_html_e("The reviews we're", 'arqam-web'); ?> <span
+						class="text-gradient"><?php esc_html_e('most proud of.', 'arqam-web'); ?></span></h2>
+				<p class="mt-5 text-muted-foreground text-lg max-w-2xl"><?php esc_html_e('Verified clients. Unedited words. Real outcomes.', 'arqam-web'); ?></p></div>
 			<?php
 			$_grid_reviews = get_posts([
 				'post_type' => 'review',
@@ -796,16 +796,16 @@ get_header();
 		<div class="container-x max-w-5xl mx-auto relative text-center">
 			<div
 				class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md text-[11px] font-bold tracking-[0.22em] text-white/85 mb-8">
-				<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><?php esc_html_e('NOW BOOKING Q2 PROJECTS', 'arqamweb'); ?>
+				<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><?php esc_html_e('NOW BOOKING Q2 PROJECTS', 'arqam-web'); ?>
 			</div>
-			<h2 class="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] leading-[1.02]"><?php esc_html_e('Ready to become our', 'arqamweb'); ?> <span
-					class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('next success story?', 'arqamweb'); ?></span>
+			<h2 class="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] leading-[1.02]"><?php esc_html_e('Ready to become our', 'arqam-web'); ?> <span
+					class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('next success story?', 'arqam-web'); ?></span>
 			</h2>
-			<p class="mt-7 text-lg lg:text-xl text-primary-foreground/65 max-w-2xl mx-auto"><?php esc_html_e('A 30-minute call. Zero pressure. Walk away with a clear plan — whether you work with us or not.', 'arqamweb'); ?></p>
+			<p class="mt-7 text-lg lg:text-xl text-primary-foreground/65 max-w-2xl mx-auto"><?php esc_html_e('A 30-minute call. Zero pressure. Walk away with a clear plan — whether you work with us or not.', 'arqam-web'); ?></p>
 			<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>"
 				   class="group inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-primary-foreground bg-gradient-primary rounded-full shadow-glow hover:-translate-y-0.5 transition-all">
-					<?php esc_html_e('Start your project', 'arqamweb'); ?>
+					<?php esc_html_e('Start your project', 'arqam-web'); ?>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 					     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 					     class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
@@ -816,7 +816,7 @@ get_header();
 				</a>
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white border border-white/20 rounded-full hover:bg-white/5 hover:border-white/40 transition-all">
-					<?php esc_html_e('See our projects', 'arqamweb'); ?>
+					<?php esc_html_e('See our projects', 'arqam-web'); ?>
 				</a>
 			</div>
 		</div>

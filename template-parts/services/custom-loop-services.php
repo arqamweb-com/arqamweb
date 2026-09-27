@@ -81,7 +81,7 @@ if (! defined('ABSPATH')) {
 						</div>
 					</div>
 					<a href="<?php echo get_permalink(); ?>">
-						<div class="mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-all duration-500 group-hover/card:gap-3"><?php esc_html_e('Learn more', 'arqamweb'); ?> <?php echo arqam_icon('arrow'); ?></div>
+						<div class="mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-all duration-500 group-hover/card:gap-3"><?php esc_html_e('Learn more', 'arqam-web'); ?> <?php echo arqam_icon('arrow'); ?></div>
 					</a>
 				</div>
 			</article>

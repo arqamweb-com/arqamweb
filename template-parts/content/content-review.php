@@ -22,7 +22,7 @@ $rating = max(0, min(5, $rating));
 		<div>
 			<h3 class="font-semibold text-sm"><?php the_title(); ?></h3>
 			<div class="text-xs text-muted-foreground">
-				<?php esc_html_e('CEO · Riyadh, Saudi Arabia', 'arqamweb'); ?>
+				<?php esc_html_e('CEO · Riyadh, Saudi Arabia', 'arqam-web'); ?>
 			</div>
 		</div>
 	</div>

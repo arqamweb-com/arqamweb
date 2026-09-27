@@ -95,243 +95,243 @@ $aw_services = [
 	[
 		'id'             => 'websites',
 		'num'            => '01',
-		'label'          => __('Websites pricing', 'arqamweb'),
-		'title'          => __('Websites', 'arqamweb'),
-		'subtitle'       => __('Fixed-specification websites, custom-coded and live in one week — the same price for every client, in every market.', 'arqamweb'),
+		'label'          => __('Websites pricing', 'arqam-web'),
+		'title'          => __('Websites', 'arqam-web'),
+		'subtitle'       => __('Fixed-specification websites, custom-coded and live in one week — the same price for every client, in every market.', 'arqam-web'),
 		'icon'           => 'rocket',
 		'from_usd'       => 490,
-		'ships_in'       => __('Live in 5 working days', 'arqamweb'),
+		'ships_in'       => __('Live in 5 working days', 'arqam-web'),
 		'note_highlight' => true,
 		'tiers'          => [
 			[
 				'id'             => 'launch-informative',
-				'name'           => __('Launch — Informative', 'arqamweb'),
-				'tagline'        => __('A complete site, live in one week.', 'arqamweb'),
+				'name'           => __('Launch — Informative', 'arqam-web'),
+				'tagline'        => __('A complete site, live in one week.', 'arqam-web'),
 				'price'          => 490,
-				'period'         => __('one-time', 'arqamweb'),
+				'period'         => __('one-time', 'arqam-web'),
 				'checkout'       => true,
-				'checkout_label' => __('Buy Launch now', 'arqamweb'),
+				'checkout_label' => __('Buy Launch now', 'arqam-web'),
 				'features'       => [
-					__('Fixed proven structure, shown as a live demo before you buy', 'arqamweb'),
-					__('Custom-coded, no templates and no page builders', 'arqamweb'),
-					__('Up to 5 pages', 'arqamweb'),
-					__('Your logo, two colours, one font, your images and text', 'arqamweb'),
-					__('1 content review round, on content only', 'arqamweb'),
-					__('Domain and first year of hosting included', 'arqamweb'),
-					__('Delivery: 5 working days from receiving your content', 'arqamweb'),
+					__('Fixed proven structure, shown as a live demo before you buy', 'arqam-web'),
+					__('Custom-coded, no templates and no page builders', 'arqam-web'),
+					__('Up to 5 pages', 'arqam-web'),
+					__('Your logo, two colours, one font, your images and text', 'arqam-web'),
+					__('1 content review round, on content only', 'arqam-web'),
+					__('Domain and first year of hosting included', 'arqam-web'),
+					__('Delivery: 5 working days from receiving your content', 'arqam-web'),
 				],
 			],
 			[
 				'id'             => 'launch-ecommerce',
-				'name'           => __('Launch — E-commerce', 'arqamweb'),
-				'tagline'        => __('A working store, live in one week.', 'arqamweb'),
+				'name'           => __('Launch — E-commerce', 'arqam-web'),
+				'tagline'        => __('A working store, live in one week.', 'arqam-web'),
 				'price'          => 885,
-				'period'         => __('one-time', 'arqamweb'),
+				'period'         => __('one-time', 'arqam-web'),
 				'popular'        => true,
 				'checkout'       => true,
-				'checkout_label' => __('Buy Launch Store now', 'arqamweb'),
+				'checkout_label' => __('Buy Launch Store now', 'arqam-web'),
 				'features'       => [
-					__('Everything in Launch Informative', 'arqamweb'),
-					__('Full store with cart and checkout', 'arqamweb'),
-					__('Cash on delivery and one payment gateway', 'arqamweb'),
-					__('Customer accounts and order history', 'arqamweb'),
-					__('First 20 products entered by us', 'arqamweb'),
-					__('Admin dashboard for products, stock and orders', 'arqamweb'),
-					__('Delivery: 5 working days from receiving your content', 'arqamweb'),
+					__('Everything in Launch Informative', 'arqam-web'),
+					__('Full store with cart and checkout', 'arqam-web'),
+					__('Cash on delivery and one payment gateway', 'arqam-web'),
+					__('Customer accounts and order history', 'arqam-web'),
+					__('First 20 products entered by us', 'arqam-web'),
+					__('Admin dashboard for products, stock and orders', 'arqam-web'),
+					__('Delivery: 5 working days from receiving your content', 'arqam-web'),
 				],
 			],
 		],
 		'reassure'       => [
-			'heading' => __('Need more than a Launch site?', 'arqamweb'),
-			'body'    => __("Most businesses do. Corporate sites, full online stores and custom web platforms are built to your requirements — the number of pages, the languages, the integrations and the systems you need to connect. Tell us what you're working with and we'll map the exact specification your project needs, then send you the price for it. It takes one conversation, and there's no obligation at the end of it.", 'arqamweb'),
-			'cta'     => __('Tell us about your project', 'arqamweb'),
+			'heading' => __('Need more than a Launch site?', 'arqam-web'),
+			'body'    => __("Most businesses do. Corporate sites, full online stores and custom web platforms are built to your requirements — the number of pages, the languages, the integrations and the systems you need to connect. Tell us what you're working with and we'll map the exact specification your project needs, then send you the price for it. It takes one conversation, and there's no obligation at the end of it.", 'arqam-web'),
+			'cta'     => __('Tell us about your project', 'arqam-web'),
 			'href'    => $aw_quote_url,
 		],
-		'note'           => __('We take on a limited number of Launch projects each month to protect delivery quality. When the month is full, new projects move to the following month, and a deposit reserves your slot in the queue. Need it sooner? A rush slot is available at +50%.', 'arqamweb'),
+		'note'           => __('We take on a limited number of Launch projects each month to protect delivery quality. When the month is full, new projects move to the following month, and a deposit reserves your slot in the queue. Need it sooner? A rush slot is available at +50%.', 'arqam-web'),
 	],
 	[
 		'id'           => 'seo',
 		'num'          => '02',
-		'label'        => __('SEO / AEO pricing', 'arqamweb'),
-		'title'        => __('SEO / AEO', 'arqamweb'),
-		'subtitle'     => __('Search engine optimisation and AI answer optimisation — so your business is found in Google, and cited by AI assistants when people ask.', 'arqamweb'),
+		'label'        => __('SEO / AEO pricing', 'arqam-web'),
+		'title'        => __('SEO / AEO', 'arqam-web'),
+		'subtitle'     => __('Search engine optimisation and AI answer optimisation — so your business is found in Google, and cited by AI assistants when people ask.', 'arqam-web'),
 		'icon'         => 'search',
 		'from_usd'     => 235,
-		'ships_in'     => __('Foundation work starts in week one', 'arqamweb'),
+		'ships_in'     => __('Foundation work starts in week one', 'arqam-web'),
 		'service_slug' => 'seo',
 		'tiers'        => [
 			[
 				'id'       => 'seo-essential',
-				'name'     => __('Essential', 'arqamweb'),
-				'tagline'  => __('The steady baseline that compounds.', 'arqamweb'),
+				'name'     => __('Essential', 'arqam-web'),
+				'tagline'  => __('The steady baseline that compounds.', 'arqam-web'),
 				'price'    => 235,
-				'period'   => __('/month', 'arqamweb'),
+				'period'   => __('/month', 'arqam-web'),
 				'features' => [
-					__('3-month commitment, paid upfront', 'arqamweb'),
-					__('Available for up to 6 months, then we review and recommend the right tier', 'arqamweb'),
-					__('2 articles per month', 'arqamweb'),
-					__('3 external links from vetted sources', 'arqamweb'),
-					__('25 tracked keywords', 'arqamweb'),
-					__('1 hour of technical follow-up per month', 'arqamweb'),
-					__('Monthly performance report', 'arqamweb'),
+					__('3-month commitment, paid upfront', 'arqam-web'),
+					__('Available for up to 6 months, then we review and recommend the right tier', 'arqam-web'),
+					__('2 articles per month', 'arqam-web'),
+					__('3 external links from vetted sources', 'arqam-web'),
+					__('25 tracked keywords', 'arqam-web'),
+					__('1 hour of technical follow-up per month', 'arqam-web'),
+					__('Monthly performance report', 'arqam-web'),
 				],
 			],
 		],
-		'extra_note'   => __('At this size, expect meaningful movement in nine to twelve months. If your competitors publish four times this much, Essential keeps you in the race rather than moving you up it.', 'arqamweb'),
+		'extra_note'   => __('At this size, expect meaningful movement in nine to twelve months. If your competitors publish four times this much, Essential keeps you in the race rather than moving you up it.', 'arqam-web'),
 		'reassure'     => [
-			'heading' => __('Most brands need more than Essential.', 'arqamweb'),
-			'body'    => __("How much more depends on your market, your competitors, and how far ahead or behind you already are. And there is a real cost to starting too small: six months on a plan below what your situation needs is six months you then spend catching up — and in most businesses, time is customers. We look at your site and the people you're competing with, define the level of coverage that will actually move you, and send you the price for exactly that.", 'arqamweb'),
-			'cta'     => __('Get your SEO plan priced', 'arqamweb'),
+			'heading' => __('Most brands need more than Essential.', 'arqam-web'),
+			'body'    => __("How much more depends on your market, your competitors, and how far ahead or behind you already are. And there is a real cost to starting too small: six months on a plan below what your situation needs is six months you then spend catching up — and in most businesses, time is customers. We look at your site and the people you're competing with, define the level of coverage that will actually move you, and send you the price for exactly that.", 'arqam-web'),
+			'cta'     => __('Get your SEO plan priced', 'arqam-web'),
 			'href'    => $aw_quote_url,
 		],
-		'note'         => __('AI search optimisation (AEO) can be added to any tier. We do not sell guaranteed rankings — we are accountable for executing every item in the plan, measurably and reviewably.', 'arqamweb'),
+		'note'         => __('AI search optimisation (AEO) can be added to any tier. We do not sell guaranteed rankings — we are accountable for executing every item in the plan, measurably and reviewably.', 'arqam-web'),
 	],
 	[
 		'id'       => 'hosting',
 		'num'      => '03',
-		'label'    => __('Hosting pricing', 'arqamweb'),
-		'title'    => __('Managed Hosting', 'arqamweb'),
-		'subtitle' => __('Monitored, backed-up hosting with human support in Arabic and English — billed annually.', 'arqamweb'),
+		'label'    => __('Hosting pricing', 'arqam-web'),
+		'title'    => __('Managed Hosting', 'arqam-web'),
+		'subtitle' => __('Monitored, backed-up hosting with human support in Arabic and English — billed annually.', 'arqam-web'),
 		'icon'     => 'server',
 		'from_usd' => 15,
-		'ships_in' => __('Free migration up to 10 GB', 'arqamweb'),
+		'ships_in' => __('Free migration up to 10 GB', 'arqam-web'),
 		'tiers'    => [
 			[
 				'id'         => 'hosting-essential',
-				'name'       => __('Essential', 'arqamweb'),
-				'audience'   => __('for an informative site', 'arqamweb'),
-				'tagline'    => __('Monitored hosting for a simple site.', 'arqamweb'),
+				'name'       => __('Essential', 'arqam-web'),
+				'audience'   => __('for an informative site', 'arqam-web'),
+				'tagline'    => __('Monitored hosting for a simple site.', 'arqam-web'),
 				'price'      => 15,
-				'period'     => __('/month', 'arqamweb'),
-				'price_note' => __('billed annually — 12 months', 'arqamweb'),
+				'period'     => __('/month', 'arqam-web'),
+				'price_note' => __('billed annually — 12 months', 'arqam-web'),
 				'features'   => [
-					__('Up to 5 GB', 'arqamweb'),
-					__('SSL certificate', 'arqamweb'),
-					__('Daily backup, 30-day retention', 'arqamweb'),
-					__('Full site copy handed to you at launch', 'arqamweb'),
-					__('Automated uptime check every minute', 'arqamweb'),
-					__('Email on your own domain', 'arqamweb'),
-					__('WhatsApp support in Arabic and English', 'arqamweb'),
-					__('24-hour response time', 'arqamweb'),
+					__('Up to 5 GB', 'arqam-web'),
+					__('SSL certificate', 'arqam-web'),
+					__('Daily backup, 30-day retention', 'arqam-web'),
+					__('Full site copy handed to you at launch', 'arqam-web'),
+					__('Automated uptime check every minute', 'arqam-web'),
+					__('Email on your own domain', 'arqam-web'),
+					__('WhatsApp support in Arabic and English', 'arqam-web'),
+					__('24-hour response time', 'arqam-web'),
 				],
 			],
 		],
 		'reassure' => [
-			'heading' => __('A bigger site needs a bigger home.', 'arqamweb'),
-			'body'    => __("If your site outgrows Essential — more storage, more traffic, a store that needs staging and hourly database backups — we'll look at what you're actually running and recommend the plan that fits it, with its price. We won't move you up a level you don't need.", 'arqamweb'),
-			'cta'     => __('Ask about larger plans', 'arqamweb'),
+			'heading' => __('A bigger site needs a bigger home.', 'arqam-web'),
+			'body'    => __("If your site outgrows Essential — more storage, more traffic, a store that needs staging and hourly database backups — we'll look at what you're actually running and recommend the plan that fits it, with its price. We won't move you up a level you don't need.", 'arqam-web'),
+			'cta'     => __('Ask about larger plans', 'arqam-web'),
 			'href'    => $aw_contact_url,
 		],
-		'note'     => __('Hosting faults — the server, the certificate, email, downtime — are always fixed in full at no cost. That is our responsibility, not yours. Work on the site itself, including plugin updates, content changes and new features, is covered by a Care & Support plan. Moving your site from your current provider is free with an annual plan, up to 10 GB; larger sites are quoted by size and type.', 'arqamweb'),
+		'note'     => __('Hosting faults — the server, the certificate, email, downtime — are always fixed in full at no cost. That is our responsibility, not yours. Work on the site itself, including plugin updates, content changes and new features, is covered by a Care & Support plan. Moving your site from your current provider is free with an annual plan, up to 10 GB; larger sites are quoted by size and type.', 'arqam-web'),
 	],
 	[
 		'id'       => 'care',
 		'num'      => '04',
-		'label'    => __('Care & Support pricing', 'arqamweb'),
-		'title'    => __('Care & Support', 'arqamweb'),
-		'subtitle' => __('An hours-based retainer with published task pricing — every request estimated and approved first.', 'arqamweb'),
+		'label'    => __('Care & Support pricing', 'arqam-web'),
+		'title'    => __('Care & Support', 'arqam-web'),
+		'subtitle' => __('An hours-based retainer with published task pricing — every request estimated and approved first.', 'arqam-web'),
 		'icon'     => 'life-buoy',
 		'from_usd' => 30,
-		'ships_in' => __('Tasks scheduled the same week', 'arqamweb'),
+		'ships_in' => __('Tasks scheduled the same week', 'arqam-web'),
 		'tiers'    => [
 			[
 				'id'             => 'care-essentials',
-				'name'           => __('Essentials', 'arqamweb'),
-				'tagline'        => __('Your site, quietly looked after.', 'arqamweb'),
+				'name'           => __('Essentials', 'arqam-web'),
+				'tagline'        => __('Your site, quietly looked after.', 'arqam-web'),
 				'price'          => 30,
-				'period'         => __('/month', 'arqamweb'),
+				'period'         => __('/month', 'arqam-web'),
 				'checkout'       => true,
-				'checkout_label' => __('Buy Essentials now', 'arqamweb'),
+				'checkout_label' => __('Buy Essentials now', 'arqam-web'),
 				'features'       => [
-					__('A weekly check that your site is up and working', 'arqamweb'),
-					__('Plugin, theme and core updates kept current', 'arqamweb'),
-					__('A backup taken before every update', 'arqamweb'),
-					__('If an update causes a problem, we roll the site back straight away', 'arqamweb'),
-					__('Security and uptime monitoring', 'arqamweb'),
-					__('A short monthly summary of what was done', 'arqamweb'),
-					__('Up to 1 hour per month of routine care', 'arqamweb'),
-					__('Development work is estimated and quoted separately', 'arqamweb'),
+					__('A weekly check that your site is up and working', 'arqam-web'),
+					__('Plugin, theme and core updates kept current', 'arqam-web'),
+					__('A backup taken before every update', 'arqam-web'),
+					__('If an update causes a problem, we roll the site back straight away', 'arqam-web'),
+					__('Security and uptime monitoring', 'arqam-web'),
+					__('A short monthly summary of what was done', 'arqam-web'),
+					__('Up to 1 hour per month of routine care', 'arqam-web'),
+					__('Development work is estimated and quoted separately', 'arqam-web'),
 				],
 			],
 		],
 		'reassure' => [
-			'heading' => __('When you need more than routine care.', 'arqamweb'),
-			'body'    => __("Larger retainers give you a monthly bank of hours for real development work — every task estimated and approved by you before it starts, and charged at the approved estimate whether it takes us more time or less. We'll look at what you've actually been asking for over a few months and recommend the size that fits.", 'arqamweb'),
-			'cta'     => __('Ask about larger retainers', 'arqamweb'),
+			'heading' => __('When you need more than routine care.', 'arqam-web'),
+			'body'    => __("Larger retainers give you a monthly bank of hours for real development work — every task estimated and approved by you before it starts, and charged at the approved estimate whether it takes us more time or less. We'll look at what you've actually been asking for over a few months and recommend the size that fits.", 'arqam-web'),
+			'cta'     => __('Ask about larger retainers', 'arqam-web'),
 			'href'    => $aw_contact_url,
 		],
-		'note'     => __('Essentials covers routine care, not development. If an update causes a problem we roll the site back at no cost, but fixing the underlying conflict is development work and is quoted separately. For larger sites we agree the visit frequency that suits them. Anything above 8 hours becomes its own quoted project.', 'arqamweb'),
+		'note'     => __('Essentials covers routine care, not development. If an update causes a problem we roll the site back at no cost, but fixing the underlying conflict is development work and is quoted separately. For larger sites we agree the visit frequency that suits them. Anything above 8 hours becomes its own quoted project.', 'arqam-web'),
 	],
 	[
 		'id'       => 'video',
 		'num'      => '05',
-		'label'    => __('AI video production pricing', 'arqamweb'),
-		'title'    => __('AI Video Production', 'arqamweb'),
-		'subtitle' => __('Finished video, produced with AI direction and human editing — priced per video, the same everywhere.', 'arqamweb'),
+		'label'    => __('AI video production pricing', 'arqam-web'),
+		'title'    => __('AI Video Production', 'arqam-web'),
+		'subtitle' => __('Finished video, produced with AI direction and human editing — priced per video, the same everywhere.', 'arqam-web'),
 		'icon'     => 'clapperboard',
 		'from_usd' => 35,
-		'ships_in' => __('Most clips delivered in 2–4 days', 'arqamweb'),
+		'ships_in' => __('Most clips delivered in 2–4 days', 'arqam-web'),
 		'tiers'    => [
 			[
 				'id'       => 'video-spark',
-				'name'     => __('Spark', 'arqamweb'),
-				'tagline'  => __('A steady stream of social clips.', 'arqamweb'),
+				'name'     => __('Spark', 'arqam-web'),
+				'tagline'  => __('A steady stream of social clips.', 'arqam-web'),
 				'price'    => 35,
-				'period'   => __('per video', 'arqamweb'),
+				'period'   => __('per video', 'arqam-web'),
 				'features' => [
-					__('Single-concept clip', 'arqamweb'),
-					__('Simple, energetic movement', 'arqamweb'),
-					__('Native background sound', 'arqamweb'),
-					__('720p HD', 'arqamweb'),
-					__('Best for Reels, TikTok and Stories', 'arqamweb'),
-					__('Revisions $5 per 5-second segment', 'arqamweb'),
+					__('Single-concept clip', 'arqam-web'),
+					__('Simple, energetic movement', 'arqam-web'),
+					__('Native background sound', 'arqam-web'),
+					__('720p HD', 'arqam-web'),
+					__('Best for Reels, TikTok and Stories', 'arqam-web'),
+					__('Revisions $5 per 5-second segment', 'arqam-web'),
 				],
 			],
 		],
 		'reassure' => [
-			'heading' => __('When a clip needs to be a film.', 'arqamweb'),
-			'body'    => __("Higher tiers add real dialogue with lip-sync, consistent characters and products across every shot, full sound design and 4K. Tell us what the video has to do and we'll recommend the right level and price it for you.", 'arqamweb'),
-			'cta'     => __('Discuss your video', 'arqamweb'),
+			'heading' => __('When a clip needs to be a film.', 'arqam-web'),
+			'body'    => __("Higher tiers add real dialogue with lip-sync, consistent characters and products across every shot, full sound design and 4K. Tell us what the video has to do and we'll recommend the right level and price it for you.", 'arqam-web'),
+			'cta'     => __('Discuss your video', 'arqam-web'),
 			'href'    => $aw_contact_url,
 		],
-		'note'     => __('Spark is priced per finished video for the 0–15 second bracket; longer clips are quoted to your brief. On-location filming at your premises is quoted separately.', 'arqamweb'),
+		'note'     => __('Spark is priced per finished video for the 0–15 second bracket; longer clips are quoted to your brief. On-location filming at your premises is quoted separately.', 'arqam-web'),
 	],
 	[
 		'id'       => 'apps',
 		'num'      => '06',
-		'label'    => __('Mobile apps pricing', 'arqamweb'),
-		'title'    => __('Mobile Apps', 'arqamweb'),
-		'subtitle' => __('iOS and Android apps built with Flutter, published under your own store accounts and followed up until acceptance.', 'arqamweb'),
+		'label'    => __('Mobile apps pricing', 'arqam-web'),
+		'title'    => __('Mobile Apps', 'arqam-web'),
+		'subtitle' => __('iOS and Android apps built with Flutter, published under your own store accounts and followed up until acceptance.', 'arqam-web'),
 		'icon'     => 'smartphone',
 		'from_usd' => null,
-		'ships_in' => __('Typically 2–10 weeks', 'arqamweb'),
+		'ships_in' => __('Typically 2–10 weeks', 'arqam-web'),
 		'tiers'    => [],
 		'reassure' => [
-			'heading' => __('Every app starts with a specification.', 'arqamweb'),
-			'body'    => __("Whether you need your existing store on the app stores quickly, or a complete app built from the ground up with its own API, the work is defined before it's priced. We write a detailed scope document first — screens, features, what's included and what isn't — and the price follows from it. Your store accounts and source code stay in your name throughout.", 'arqamweb'),
-			'cta'     => __('Scope your app', 'arqamweb'),
+			'heading' => __('Every app starts with a specification.', 'arqam-web'),
+			'body'    => __("Whether you need your existing store on the app stores quickly, or a complete app built from the ground up with its own API, the work is defined before it's priced. We write a detailed scope document first — screens, features, what's included and what isn't — and the price follows from it. Your store accounts and source code stay in your name throughout.", 'arqam-web'),
+			'cta'     => __('Scope your app', 'arqam-web'),
 			'href'    => $aw_quote_url,
 		],
-		'note'     => __('Annual maintenance applies from year two. Google requires an annual Target API update — without it an app stops appearing in the store.', 'arqamweb'),
+		'note'     => __('Annual maintenance applies from year two. Google requires an annual Target API update — without it an app stops appearing in the store.', 'arqam-web'),
 	],
 	[
 		'id'           => 'social',
 		'num'          => '07',
-		'label'        => __('Social media marketing pricing', 'arqamweb'),
-		'title'        => __('Social Media Marketing', 'arqamweb'),
-		'subtitle'     => __('Reels, designs and shoots produced on a monthly rhythm by a dedicated account team.', 'arqamweb'),
+		'label'        => __('Social media marketing pricing', 'arqam-web'),
+		'title'        => __('Social Media Marketing', 'arqam-web'),
+		'subtitle'     => __('Reels, designs and shoots produced on a monthly rhythm by a dedicated account team.', 'arqam-web'),
 		'icon'         => 'share-2',
 		'from_usd'     => null,
-		'ships_in'     => __('First content live within 7–10 days', 'arqamweb'),
+		'ships_in'     => __('First content live within 7–10 days', 'arqam-web'),
 		'service_slug' => 'social-media',
 		'tiers'        => [],
 		'reassure'     => [
-			'heading' => __('Priced to your brand, not to a package.', 'arqamweb'),
-			'body'    => __('Content volume, video production, shooting sessions and community management vary enormously between brands — a single-location business and a national retailer need very different things. We look at where you are now, agree what a month should look like, and price that. You will see exactly what each part costs before anything starts.', 'arqamweb'),
-			'cta'     => __('Tell us about your brand', 'arqamweb'),
+			'heading' => __('Priced to your brand, not to a package.', 'arqam-web'),
+			'body'    => __('Content volume, video production, shooting sessions and community management vary enormously between brands — a single-location business and a national retailer need very different things. We look at where you are now, agree what a month should look like, and price that. You will see exactly what each part costs before anything starts.', 'arqam-web'),
+			'cta'     => __('Tell us about your brand', 'arqam-web'),
 			'href'    => $aw_quote_url,
 		],
-		'note'         => __('Paid media management is quoted separately from ad spend, which you pay directly to the platform. Ad accounts and pages are created in your name and remain yours.', 'arqamweb'),
+		'note'         => __('Paid media management is quoted separately from ad spend, which you pay directly to the platform. Ad accounts and pages are created in your name and remain yours.', 'arqam-web'),
 	],
 ];
 
@@ -359,7 +359,7 @@ if (!function_exists('arqamweb_v2_card')) {
 				<div class="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
 					<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow">
 						<?php echo arqamweb_v2_icon('sparkles', 'w-3 h-3'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-						<?php echo esc_html($tier['badge'] ?? __('Most Popular', 'arqamweb')); ?>
+						<?php echo esc_html($tier['badge'] ?? __('Most Popular', 'arqam-web')); ?>
 					</span>
 				</div>
 				<div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
@@ -384,11 +384,11 @@ if (!function_exists('arqamweb_v2_card')) {
 						<span class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold tracking-tight <?php echo $dark
 							? 'bg-white/10 text-white border border-white/20'
 							: 'bg-primary/[0.06] text-primary border border-primary/25'; ?>">
-							<?php esc_html_e('Quoted to scope', 'arqamweb'); ?>
+							<?php esc_html_e('Quoted to scope', 'arqam-web'); ?>
 						</span>
 					<?php else : ?>
 						<p class="mb-1.5 text-[11px] font-semibold tracking-[0.18em] uppercase <?php echo $dark ? 'text-white/60' : 'text-primary/80'; ?>">
-							<?php esc_html_e('Starting from', 'arqamweb'); ?>
+							<?php esc_html_e('Starting from', 'arqam-web'); ?>
 						</p>
 						<div class="flex items-baseline gap-2 flex-wrap">
 							<span class="text-4xl lg:text-5xl font-semibold tracking-tight <?php echo $dark ? 'text-white' : 'text-gradient'; ?>">
@@ -430,19 +430,19 @@ if (!function_exists('arqamweb_v2_card')) {
 					<a href="<?php echo esc_url(add_query_arg('plan', $tier['id'], $contact_url)); ?>"
 					   class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 <?php echo esc_attr($cta_classes); ?>">
 						<?php echo arqamweb_v2_icon('shopping-cart'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-						<?php echo esc_html($tier['checkout_label'] ?? __('Get started', 'arqamweb')); ?>
+						<?php echo esc_html($tier['checkout_label'] ?? __('Get started', 'arqam-web')); ?>
 					</a>
 				<?php else : ?>
 					<a href="<?php echo esc_url(add_query_arg('plan', $tier['id'], $contact_url)); ?>"
 					   class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 <?php echo esc_attr($cta_classes); ?>">
-						<?php esc_html_e('Request a Quote', 'arqamweb'); ?>
+						<?php esc_html_e('Request a Quote', 'arqam-web'); ?>
 						<?php echo arqamweb_v2_icon('arrow-right'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</a>
 				<?php endif; ?>
 
 				<a href="<?php echo esc_url($contact_url); ?>"
 				   class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors <?php echo $dark ? 'text-white/70 hover:text-white' : 'text-muted-foreground hover:text-primary'; ?>">
-					<?php esc_html_e('or talk to us', 'arqamweb'); ?>
+					<?php esc_html_e('or talk to us', 'arqam-web'); ?>
 					<?php echo arqamweb_v2_icon('arrow-right', 'w-3 h-3'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</a>
 			</div>
@@ -509,7 +509,7 @@ if (!function_exists('arqamweb_v2_note')) {
 				   class="shrink-0 inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:gap-2.5 transition-all">
 					<?php
 					/* translators: %s: service name, e.g. "SEO / AEO". */
-					printf(esc_html__('Explore the %s page', 'arqamweb'), esc_html($svc['title']));
+					printf(esc_html__('Explore the %s page', 'arqam-web'), esc_html($svc['title']));
 					?>
 					<?php echo arqamweb_v2_icon('arrow-right', 'w-3.5 h-3.5'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</a>
@@ -539,11 +539,11 @@ get_header();
 							<?php echo arqamweb_v2_icon('tag', 'w-3 h-3'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						</span>
 						<span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-muted-foreground truncate">
-							<?php esc_html_e('Pricing', 'arqamweb'); ?>
+							<?php esc_html_e('Pricing', 'arqam-web'); ?>
 						</span>
 					</div>
 					<div class="flex items-center gap-2">
-						<span class="text-[10px] font-medium text-muted-foreground shrink-0"><?php esc_html_e('Prices in', 'arqamweb'); ?></span>
+						<span class="text-[10px] font-medium text-muted-foreground shrink-0"><?php esc_html_e('Prices in', 'arqam-web'); ?></span>
 						<?php do_action('wcml_currency_switcher', ['format' => '%name% (%symbol%)']); ?>
 					</div>
 				</div>
@@ -573,28 +573,28 @@ get_header();
 				</div>
 
 				<h1 class="text-5xl md:text-6xl lg:text-7xl xl:text-[5.25rem] font-semibold leading-[1.02] tracking-[-0.03em] max-w-5xl">
-					<?php esc_html_e('Clear prices where we can.', 'arqamweb'); ?><!-- --> <span
-						class="text-gradient"><?php esc_html_e('Honest quotes where we should.', 'arqamweb'); ?></span></h1>
+					<?php esc_html_e('Clear prices where we can.', 'arqam-web'); ?><!-- --> <span
+						class="text-gradient"><?php esc_html_e('Honest quotes where we should.', 'arqam-web'); ?></span></h1>
 
-				<p class="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"><?php esc_html_e('Our productised services carry one published price worldwide — the same for a client in Cairo, Riyadh or London. Everything custom is scoped and quoted, because no two custom projects are the same.', 'arqamweb'); ?></p>
+				<p class="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"><?php esc_html_e('Our productised services carry one published price worldwide — the same for a client in Cairo, Riyadh or London. Everything custom is scoped and quoted, because no two custom projects are the same.', 'arqam-web'); ?></p>
 
 				<div class="mt-8 flex items-start gap-3 max-w-2xl rounded-2xl border border-border bg-secondary/40 px-5 py-4">
 					<span class="text-primary shrink-0 mt-0.5"><?php echo arqamweb_v2_icon('info'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
-					<p class="text-xs lg:text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('All prices are shown in USD as a reference currency. You can pay in Egyptian Pounds, Saudi Riyal, UAE Dirham, Euro or US Dollar — whichever is easiest for you.', 'arqamweb'); ?></p>
+					<p class="text-xs lg:text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('All prices are shown in USD as a reference currency. You can pay in Egyptian Pounds, Saudi Riyal, UAE Dirham, Euro or US Dollar — whichever is easiest for you.', 'arqam-web'); ?></p>
 				</div>
 
 				<div class="mt-10 flex flex-wrap items-center gap-4">
 					<a href="#service-websites"
-					   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary-foreground bg-gradient-primary rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('See all plans', 'arqamweb'); ?>
+					   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary-foreground bg-gradient-primary rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('See all plans', 'arqam-web'); ?>
 						<?php echo arqamweb_v2_icon('arrow-right'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</a>
 					<a href="<?php echo esc_url($aw_contact_url); ?>"
 					   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-foreground rounded-full border border-border hover:bg-accent transition-all">
-						<?php esc_html_e('Talk to a strategist', 'arqamweb'); ?>
+						<?php esc_html_e('Talk to a strategist', 'arqam-web'); ?>
 					</a>
 				</div>
 
-				<nav aria-label="<?php esc_attr_e('Pricing sections', 'arqamweb'); ?>" class="mt-12 flex flex-wrap gap-2.5">
+				<nav aria-label="<?php esc_attr_e('Pricing sections', 'arqam-web'); ?>" class="mt-12 flex flex-wrap gap-2.5">
 					<?php foreach ($aw_services as $aw_nav) : ?>
 						<a href="#service-<?php echo esc_attr($aw_nav['id']); ?>"
 						   class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background/70 backdrop-blur text-xs font-semibold text-muted-foreground hover:text-primary hover:border-primary/40 transition-all">
@@ -611,12 +611,12 @@ get_header();
 				<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
 					<div>
 						<div
-							class="text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-3"><?php esc_html_e('Trusted globally', 'arqamweb'); ?>
+							class="text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-3"><?php esc_html_e('Trusted globally', 'arqam-web'); ?>
 						</div>
-						<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight"><?php esc_html_e('Partnering with brands across', 'arqamweb'); ?>
-							<span class="text-gradient"><?php esc_html_e('+10 countries', 'arqamweb'); ?></span></h2>
+						<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight"><?php esc_html_e('Partnering with brands across', 'arqam-web'); ?>
+							<span class="text-gradient"><?php esc_html_e('+10 countries', 'arqam-web'); ?></span></h2>
 					</div>
-					<p class="text-muted-foreground max-w-md text-sm"><?php esc_html_e('From Riyadh and Dubai to London, New York, Cairo and beyond — we ship websites that perform across every market we touch.', 'arqamweb'); ?></p>
+					<p class="text-muted-foreground max-w-md text-sm"><?php esc_html_e('From Riyadh and Dubai to London, New York, Cairo and beyond — we ship websites that perform across every market we touch.', 'arqam-web'); ?></p>
 				</div>
 			</div>
 			<div class="relative marquee-mask overflow-hidden">
@@ -628,16 +628,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/eg.png"
 									     srcset="https://flagcdn.com/w160/eg.png 1x, https://flagcdn.com/w320/eg.png 2x"
-									     alt="<?php esc_attr_e('Egypt flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Egypt flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Egypt', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Egypt', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -650,16 +650,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/sa.png"
 									     srcset="https://flagcdn.com/w160/sa.png 1x, https://flagcdn.com/w320/sa.png 2x"
-									     alt="<?php esc_attr_e('Saudi Arabia flag', 'arqamweb'); ?>" width="72"
+									     alt="<?php esc_attr_e('Saudi Arabia flag', 'arqam-web'); ?>" width="72"
 									     height="48" loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Saudi Arabia', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Saudi Arabia', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -672,16 +672,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/ae.png"
 									     srcset="https://flagcdn.com/w160/ae.png 1x, https://flagcdn.com/w320/ae.png 2x"
-									     alt="<?php esc_attr_e('United Arab Emirates flag', 'arqamweb'); ?>" width="72"
+									     alt="<?php esc_attr_e('United Arab Emirates flag', 'arqam-web'); ?>" width="72"
 									     height="48" loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United Arab Emirates', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United Arab Emirates', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -694,16 +694,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/kw.png"
 									     srcset="https://flagcdn.com/w160/kw.png 1x, https://flagcdn.com/w320/kw.png 2x"
-									     alt="<?php esc_attr_e('Kuwait flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Kuwait flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Kuwait', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Kuwait', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -716,16 +716,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/om.png"
 									     srcset="https://flagcdn.com/w160/om.png 1x, https://flagcdn.com/w320/om.png 2x"
-									     alt="<?php esc_attr_e('Oman flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Oman flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Oman', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Oman', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -738,16 +738,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/qa.png"
 									     srcset="https://flagcdn.com/w160/qa.png 1x, https://flagcdn.com/w320/qa.png 2x"
-									     alt="<?php esc_attr_e('Qatar flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Qatar flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Qatar', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Qatar', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -760,16 +760,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/us.png"
 									     srcset="https://flagcdn.com/w160/us.png 1x, https://flagcdn.com/w320/us.png 2x"
-									     alt="<?php esc_attr_e('United States flag', 'arqamweb'); ?>" width="72"
+									     alt="<?php esc_attr_e('United States flag', 'arqam-web'); ?>" width="72"
 									     height="48" loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United States', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United States', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -782,16 +782,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/gb.png"
 									     srcset="https://flagcdn.com/w160/gb.png 1x, https://flagcdn.com/w320/gb.png 2x"
-									     alt="<?php esc_attr_e('United Kingdom flag', 'arqamweb'); ?>" width="72"
+									     alt="<?php esc_attr_e('United Kingdom flag', 'arqam-web'); ?>" width="72"
 									     height="48" loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United Kingdom', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United Kingdom', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -804,16 +804,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/ie.png"
 									     srcset="https://flagcdn.com/w160/ie.png 1x, https://flagcdn.com/w320/ie.png 2x"
-									     alt="<?php esc_attr_e('Ireland flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Ireland flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5">
-										<?php esc_html_e('Ireland', 'arqamweb'); ?>
+										<?php esc_html_e('Ireland', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -826,16 +826,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/de.png"
 									     srcset="https://flagcdn.com/w160/de.png 1x, https://flagcdn.com/w320/de.png 2x"
-									     alt="<?php esc_attr_e('Germany flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Germany flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5">
-										<?php esc_html_e('Germany', 'arqamweb'); ?>
+										<?php esc_html_e('Germany', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -848,16 +848,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/es.png"
 									     srcset="https://flagcdn.com/w160/es.png 1x, https://flagcdn.com/w320/es.png 2x"
-									     alt="<?php esc_attr_e('Spain flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Spain flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Spain', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Spain', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -870,16 +870,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/eg.png"
 									     srcset="https://flagcdn.com/w160/eg.png 1x, https://flagcdn.com/w320/eg.png 2x"
-									     alt="<?php esc_attr_e('Egypt flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Egypt flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Egypt', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Egypt', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -892,16 +892,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/sa.png"
 									     srcset="https://flagcdn.com/w160/sa.png 1x, https://flagcdn.com/w320/sa.png 2x"
-									     alt="<?php esc_attr_e('Saudi Arabia flag', 'arqamweb'); ?>" width="72"
+									     alt="<?php esc_attr_e('Saudi Arabia flag', 'arqam-web'); ?>" width="72"
 									     height="48" loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Saudi Arabia', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Saudi Arabia', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -914,16 +914,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/ae.png"
 									     srcset="https://flagcdn.com/w160/ae.png 1x, https://flagcdn.com/w320/ae.png 2x"
-									     alt="<?php esc_attr_e('United Arab Emirates flag', 'arqamweb'); ?>" width="72"
+									     alt="<?php esc_attr_e('United Arab Emirates flag', 'arqam-web'); ?>" width="72"
 									     height="48" loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United Arab Emirates', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United Arab Emirates', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -936,16 +936,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/kw.png"
 									     srcset="https://flagcdn.com/w160/kw.png 1x, https://flagcdn.com/w320/kw.png 2x"
-									     alt="<?php esc_attr_e('Kuwait flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Kuwait flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Kuwait', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Kuwait', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -958,16 +958,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/om.png"
 									     srcset="https://flagcdn.com/w160/om.png 1x, https://flagcdn.com/w320/om.png 2x"
-									     alt="<?php esc_attr_e('Oman flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Oman flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Oman', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Oman', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -980,16 +980,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/qa.png"
 									     srcset="https://flagcdn.com/w160/qa.png 1x, https://flagcdn.com/w320/qa.png 2x"
-									     alt="<?php esc_attr_e('Qatar flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Qatar flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Qatar', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Qatar', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -1002,16 +1002,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/us.png"
 									     srcset="https://flagcdn.com/w160/us.png 1x, https://flagcdn.com/w320/us.png 2x"
-									     alt="<?php esc_attr_e('United States flag', 'arqamweb'); ?>" width="72"
+									     alt="<?php esc_attr_e('United States flag', 'arqam-web'); ?>" width="72"
 									     height="48" loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United States', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United States', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -1024,16 +1024,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/gb.png"
 									     srcset="https://flagcdn.com/w160/gb.png 1x, https://flagcdn.com/w320/gb.png 2x"
-									     alt="<?php esc_attr_e('United Kingdom flag', 'arqamweb'); ?>" width="72"
+									     alt="<?php esc_attr_e('United Kingdom flag', 'arqam-web'); ?>" width="72"
 									     height="48" loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United Kingdom', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('United Kingdom', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -1046,16 +1046,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/ie.png"
 									     srcset="https://flagcdn.com/w160/ie.png 1x, https://flagcdn.com/w320/ie.png 2x"
-									     alt="<?php esc_attr_e('Ireland flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Ireland flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5">
-										<?php esc_html_e('Ireland', 'arqamweb'); ?>
+										<?php esc_html_e('Ireland', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -1068,16 +1068,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/de.png"
 									     srcset="https://flagcdn.com/w160/de.png 1x, https://flagcdn.com/w320/de.png 2x"
-									     alt="<?php esc_attr_e('Germany flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Germany flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5">
-										<?php esc_html_e('Germany', 'arqamweb'); ?>
+										<?php esc_html_e('Germany', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -1090,16 +1090,16 @@ get_header();
 									class="w-[72px] h-12 rounded-md overflow-hidden ring-1 ring-border/80 shadow-sm shrink-0 bg-muted">
 									<img src="https://flagcdn.com/w160/es.png"
 									     srcset="https://flagcdn.com/w160/es.png 1x, https://flagcdn.com/w320/es.png 2x"
-									     alt="<?php esc_attr_e('Spain flag', 'arqamweb'); ?>" width="72" height="48"
+									     alt="<?php esc_attr_e('Spain flag', 'arqam-web'); ?>" width="72" height="48"
 									     loading="lazy"
 									     class="block w-full h-full object-cover"></div>
 								<div class="min-w-0">
 									<div
 										class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground/80 font-medium">
-										<?php esc_html_e('Clients in', 'arqamweb'); ?>
+										<?php esc_html_e('Clients in', 'arqam-web'); ?>
 									</div>
 									<div
-										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Spain', 'arqamweb'); ?>
+										class="font-semibold text-foreground text-lg whitespace-nowrap mt-0.5"><?php esc_html_e('Spain', 'arqam-web'); ?>
 									</div>
 								</div>
 							</div>
@@ -1142,9 +1142,9 @@ get_header();
 										<?php
 										if (null !== $aw_svc['from_usd']) {
 											/* translators: %s: lowest published price for the service. */
-											printf(esc_html__('From %s', 'arqamweb'), esc_html(arqamweb_v2_price((int) $aw_svc['from_usd'])));
+											printf(esc_html__('From %s', 'arqam-web'), esc_html(arqamweb_v2_price((int) $aw_svc['from_usd'])));
 										} else {
-											esc_html_e('Quoted to scope', 'arqamweb');
+											esc_html_e('Quoted to scope', 'arqam-web');
 										}
 										?>
 									</span>
@@ -1191,18 +1191,18 @@ get_header();
 		<?php endforeach; ?>
 
 		<div class="container-x max-w-7xl mx-auto pt-4">
-			<p class="text-center text-xs text-muted-foreground max-w-3xl mx-auto leading-relaxed"><?php esc_html_e('Prices exclude VAT. 50% deposit to start, 50% on delivery (one-time services) or monthly upfront (retainers). Prices are subject to update. Any change is communicated by email at least 60 days before renewal and never affects a contract term already in progress.', 'arqamweb'); ?></p>
+			<p class="text-center text-xs text-muted-foreground max-w-3xl mx-auto leading-relaxed"><?php esc_html_e('Prices exclude VAT. 50% deposit to start, 50% on delivery (one-time services) or monthly upfront (retainers). Prices are subject to update. Any change is communicated by email at least 60 days before renewal and never affects a contract term already in progress.', 'arqam-web'); ?></p>
 		</div>
 
 		<section class="py-20 lg:py-28 bg-secondary/30">
 			<div class="reveal container-x max-w-7xl mx-auto in">
 				<div class="text-center mb-14">
 					<div class="inline-flex items-center gap-3 mb-5"><span class="h-px w-10 bg-primary/60"></span><span
-							class="text-[11px] font-semibold tracking-[0.22em] uppercase text-primary"><?php esc_html_e('Why it works', 'arqamweb'); ?></span><span
+							class="text-[11px] font-semibold tracking-[0.22em] uppercase text-primary"><?php esc_html_e('Why it works', 'arqam-web'); ?></span><span
 							class="h-px w-10 bg-primary/60"></span></div>
 					<h2 class="text-4xl lg:text-5xl xl:text-[3.5rem] font-semibold tracking-[-0.025em] leading-[1.05] max-w-3xl mx-auto">
-						<?php esc_html_e('Priced on scope,', 'arqamweb'); ?><!-- --> <span
-							class="text-gradient"><?php esc_html_e('confirmed in writing.', 'arqamweb'); ?></span></h2>
+						<?php esc_html_e('Priced on scope,', 'arqam-web'); ?><!-- --> <span
+							class="text-gradient"><?php esc_html_e('confirmed in writing.', 'arqam-web'); ?></span></h2>
 				</div>
 
 				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -1210,18 +1210,18 @@ get_header();
 					$aw_why = [
 						[
 							'icon'  => 'trophy',
-							'title' => __('Senior team on every engagement.', 'arqamweb'),
-							'body'  => __('The people who scope your project are the ones who build it — no hand-off to a junior bench after the kickoff call.', 'arqamweb'),
+							'title' => __('Senior team on every engagement.', 'arqam-web'),
+							'body'  => __('The people who scope your project are the ones who build it — no hand-off to a junior bench after the kickoff call.', 'arqam-web'),
 						],
 						[
 							'icon'  => 'target',
-							'title' => __('Scope-priced, not hour-priced.', 'arqamweb'),
-							'body'  => __('We count the units of work — templates, languages, integrations, roles — and quote the exact figure before anything starts.', 'arqamweb'),
+							'title' => __('Scope-priced, not hour-priced.', 'arqam-web'),
+							'body'  => __('We count the units of work — templates, languages, integrations, roles — and quote the exact figure before anything starts.', 'arqam-web'),
 						],
 						[
 							'icon'  => 'zap',
-							'title' => __('Built to scale, not to lock you in.', 'arqamweb'),
-							'body'  => __('Short minimum terms, published task pricing, and accounts and source code that stay in your name.', 'arqamweb'),
+							'title' => __('Built to scale, not to lock you in.', 'arqam-web'),
+							'body'  => __('Short minimum terms, published task pricing, and accounts and source code that stay in your name.', 'arqam-web'),
 						],
 					];
 					foreach ($aw_why as $aw_item) :
@@ -1242,9 +1242,9 @@ get_header();
 			<div class="container-x max-w-4xl mx-auto">
 				<div class="mb-12 text-center">
 					<div class="inline-flex items-center gap-3 mb-5"><span class="h-px w-10 bg-primary/60"></span><span
-							class="text-[11px] font-semibold tracking-[0.22em] uppercase text-primary"><?php esc_html_e('FAQ', 'arqamweb'); ?></span><span
+							class="text-[11px] font-semibold tracking-[0.22em] uppercase text-primary"><?php esc_html_e('FAQ', 'arqam-web'); ?></span><span
 							class="h-px w-10 bg-primary/60"></span></div>
-					<h2 class="text-4xl lg:text-5xl font-semibold tracking-[-0.025em] leading-[1.05]"><?php esc_html_e('Questions, answered.', 'arqamweb'); ?></h2>
+					<h2 class="text-4xl lg:text-5xl font-semibold tracking-[-0.025em] leading-[1.05]"><?php esc_html_e('Questions, answered.', 'arqam-web'); ?></h2>
 				</div>
 
 				<?php
@@ -1264,20 +1264,20 @@ get_header();
 					<div class="relative text-center">
 						<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-[11px] font-semibold tracking-[0.18em] uppercase text-white/80 mb-6">
 							<?php echo arqamweb_v2_icon('sparkles', 'w-3 h-3'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-							<?php esc_html_e('Let\'s talk', 'arqamweb'); ?>
+							<?php esc_html_e('Let\'s talk', 'arqam-web'); ?>
 						</div>
 						<h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-[-0.025em] leading-[1.05]">
-							<?php esc_html_e('Not sure which plan', 'arqamweb'); ?><br><span
-								class="text-gradient"><?php esc_html_e('fits your brand?', 'arqamweb'); ?></span></h2>
-						<p class="mt-6 text-white/75 text-base lg:text-lg max-w-2xl mx-auto"><?php esc_html_e('Book a free 30-minute call. We\'ll recommend the right tier and send a written quote with the exact figure.', 'arqamweb'); ?></p>
+							<?php esc_html_e('Not sure which plan', 'arqam-web'); ?><br><span
+								class="text-gradient"><?php esc_html_e('fits your brand?', 'arqam-web'); ?></span></h2>
+						<p class="mt-6 text-white/75 text-base lg:text-lg max-w-2xl mx-auto"><?php esc_html_e('Book a free 30-minute call. We\'ll recommend the right tier and send a written quote with the exact figure.', 'arqam-web'); ?></p>
 						<div class="mt-10 flex flex-wrap justify-center gap-4">
 							<a href="<?php echo esc_url($aw_contact_url); ?>"
-							   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary bg-white rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('Request a Quote', 'arqamweb'); ?>
+							   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary bg-white rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('Request a Quote', 'arqam-web'); ?>
 								<?php echo arqamweb_v2_icon('arrow-right'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 							</a>
 							<a href="<?php echo esc_url($aw_contact_url); ?>"
 							   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full border border-white/30 hover:bg-white/10 transition-all">
-								<?php esc_html_e('Book a free call', 'arqamweb'); ?>
+								<?php esc_html_e('Book a free call', 'arqam-web'); ?>
 							</a>
 						</div>
 					</div>
@@ -1287,11 +1287,11 @@ get_header();
 
 		<section class="py-20 lg:py-24 bg-secondary/30 border-t border-border">
 			<div class="container-x max-w-4xl mx-auto text-center">
-				<p class="text-[11px] font-semibold tracking-[0.22em] uppercase text-muted-foreground"><?php esc_html_e('Client Partnership Program', 'arqamweb'); ?></p>
-				<h2 class="mt-5 text-3xl lg:text-4xl font-semibold tracking-[-0.02em] leading-[1.1]"><?php esc_html_e('Clients who grow with us, grow with us.', 'arqamweb'); ?></h2>
-				<p class="mt-5 text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto"><?php esc_html_e('Clients who share their experience — a short video, a case study, or a referral — take part in our partnership program. Ask us about it when we scope your project.', 'arqamweb'); ?></p>
+				<p class="text-[11px] font-semibold tracking-[0.22em] uppercase text-muted-foreground"><?php esc_html_e('Client Partnership Program', 'arqam-web'); ?></p>
+				<h2 class="mt-5 text-3xl lg:text-4xl font-semibold tracking-[-0.02em] leading-[1.1]"><?php esc_html_e('Clients who grow with us, grow with us.', 'arqam-web'); ?></h2>
+				<p class="mt-5 text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto"><?php esc_html_e('Clients who share their experience — a short video, a case study, or a referral — take part in our partnership program. Ask us about it when we scope your project.', 'arqam-web'); ?></p>
 				<a href="<?php echo esc_url($aw_contact_url); ?>"
-				   class="mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"><?php esc_html_e('Talk to us', 'arqamweb'); ?>
+				   class="mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"><?php esc_html_e('Talk to us', 'arqam-web'); ?>
 					<?php echo arqamweb_v2_icon('arrow-right', 'w-3.5 h-3.5'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</a>
 			</div>

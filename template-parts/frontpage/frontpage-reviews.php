@@ -8,16 +8,16 @@ if (!defined('ABSPATH')) {
 		<div class="reveal mb-12">
 			<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 ">
 				<div class="max-w-2xl">
-					<div class="text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-3"><?php esc_html_e('Client voices', 'arqamweb'); ?></div>
-					<h2 class="text-4xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e("The reviews we're", 'arqamweb'); ?> <span
-							class="text-gradient"><?php esc_html_e('most proud of.', 'arqamweb'); ?></span></h2>
+					<div class="text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-3"><?php esc_html_e('Client voices', 'arqam-web'); ?></div>
+					<h2 class="text-4xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e("The reviews we're", 'arqam-web'); ?> <span
+							class="text-gradient"><?php esc_html_e('most proud of.', 'arqam-web'); ?></span></h2>
 				</div>
 				<div class="flex items-center gap-3 text-sm text-muted-foreground">
 					<div class="flex items-center gap-1.5">
 						<div class="flex gap-0.5 text-primary"><?php echo arqam_stars(); ?></div>
 						<span class="font-semibold text-foreground">4.9 / 5</span>
 					</div>
-					<span>·</span><span><?php esc_html_e('Based on 80+ reviews', 'arqamweb'); ?></span>
+					<span>·</span><span><?php esc_html_e('Based on 80+ reviews', 'arqam-web'); ?></span>
 				</div>
 			</div>
 		</div>
@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) {
 		<div class="flex justify-center mt-12">
 			<a href="<?php echo arqamweb_get_page_permalink(ARQAM_REVIEWS_PAGE_SLUG); ?>"
 			   class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-primary-foreground bg-gradient-primary rounded-full shadow-soft hover:shadow-glow transition-all hover:-translate-y-0.5">
-				<?php esc_html_e('View All Reviews', 'arqamweb'); ?> <?php echo arqam_icon('arrow'); ?>
+				<?php esc_html_e('View All Reviews', 'arqam-web'); ?> <?php echo arqam_icon('arrow'); ?>
 			</a>
 		</div>
 	</div>

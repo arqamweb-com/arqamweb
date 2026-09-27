@@ -89,7 +89,7 @@ $marquee_projects = array_slice($marquee_projects, 0, 6);
 
 		<div class="mt-14 flex justify-center">
 			<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>"
-			   class="btn-primary"><?php echo esc_html__('View All Projects', 'arqamweb'); ?><?php echo arqam_icon('arrow'); ?></a>
+			   class="btn-primary"><?php echo esc_html__('View All Projects', 'arqam-web'); ?><?php echo arqam_icon('arrow'); ?></a>
 		</div>
 	</div>
 </section>

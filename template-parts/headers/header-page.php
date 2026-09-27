@@ -24,7 +24,7 @@ $remaining_words    = array_slice( $words, 1 );
 			if ( ! empty( $header_description ) ) {
 				echo esc_html( $header_description );
 			} else {
-				echo esc_html__( 'An Egyptian digital marketing company with over 14 years of experience, helping businesses achieve real numbers in sales since 2010.', 'arqamweb' );
+				echo esc_html__( 'An Egyptian digital marketing company with over 14 years of experience, helping businesses achieve real numbers in sales since 2010.', 'arqam-web' );
 			}
 			?>
 		</p>

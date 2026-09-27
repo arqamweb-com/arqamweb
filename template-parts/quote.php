@@ -37,14 +37,14 @@ get_header();
 				     class="w-3 h-3 text-primary" aria-hidden="true">
 					<path d="M5 12h14M12 5l7 7-7 7"></path>
 				</svg>
-				<?php esc_html_e('Start your project', 'arqamweb'); ?>
+				<?php esc_html_e('Start your project', 'arqam-web'); ?>
 			</div>
 
 			<h1 class="text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-semibold leading-[1.02] tracking-[-0.03em] max-w-4xl">
-				<?php esc_html_e('Tell us about', 'arqamweb'); ?><br><span class="text-gradient"><?php esc_html_e('your project.', 'arqamweb'); ?></span>
+				<?php esc_html_e('Tell us about', 'arqam-web'); ?><br><span class="text-gradient"><?php esc_html_e('your project.', 'arqam-web'); ?></span>
 			</h1>
 			<p class="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-				<?php esc_html_e("Select your service, answer a few focused questions, and we'll come back with a clear plan, timeline and investment — usually within 24 hours.", 'arqamweb'); ?>
+				<?php esc_html_e("Select your service, answer a few focused questions, and we'll come back with a clear plan, timeline and investment — usually within 24 hours.", 'arqam-web'); ?>
 			</p>
 
 			<!-- Trust signals -->
@@ -60,8 +60,8 @@ get_header();
 						</svg>
 					</div>
 					<div>
-						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('Response in 24h', 'arqamweb'); ?></div>
-						<div class="text-xs text-muted-foreground"><?php esc_html_e('Business days', 'arqamweb'); ?></div>
+						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('Response in 24h', 'arqam-web'); ?></div>
+						<div class="text-xs text-muted-foreground"><?php esc_html_e('Business days', 'arqam-web'); ?></div>
 					</div>
 				</div>
 				<div class="flex items-center gap-3">
@@ -73,8 +73,8 @@ get_header();
 						</svg>
 					</div>
 					<div>
-						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('No commitment', 'arqamweb'); ?></div>
-						<div class="text-xs text-muted-foreground"><?php esc_html_e('Free consultation', 'arqamweb'); ?></div>
+						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('No commitment', 'arqam-web'); ?></div>
+						<div class="text-xs text-muted-foreground"><?php esc_html_e('Free consultation', 'arqam-web'); ?></div>
 					</div>
 				</div>
 				<div class="flex items-center gap-3">
@@ -88,8 +88,8 @@ get_header();
 						</svg>
 					</div>
 					<div>
-						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('Senior team', 'arqamweb'); ?></div>
-						<div class="text-xs text-muted-foreground"><?php esc_html_e('No juniors, no handoffs', 'arqamweb'); ?></div>
+						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('Senior team', 'arqam-web'); ?></div>
+						<div class="text-xs text-muted-foreground"><?php esc_html_e('No juniors, no handoffs', 'arqam-web'); ?></div>
 					</div>
 				</div>
 				<div class="flex items-center gap-3">
@@ -103,8 +103,8 @@ get_header();
 						</svg>
 					</div>
 					<div>
-						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('120+ projects', 'arqamweb'); ?></div>
-						<div class="text-xs text-muted-foreground"><?php esc_html_e('Across 32 countries', 'arqamweb'); ?></div>
+						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('120+ projects', 'arqam-web'); ?></div>
+						<div class="text-xs text-muted-foreground"><?php esc_html_e('Across 32 countries', 'arqam-web'); ?></div>
 					</div>
 				</div>
 			</div>

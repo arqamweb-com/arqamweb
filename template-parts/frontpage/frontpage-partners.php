@@ -21,13 +21,13 @@ $partners = [
 	<div class="reveal container">
 		<div class="text-center max-w-2xl mx-auto mb-14">
 			<div class="text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-3">
-				<?php esc_html_e('Our success partners', 'arqamweb'); ?>
+				<?php esc_html_e('Our success partners', 'arqam-web'); ?>
 			</div>
 			<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight">
-				<?php esc_html_e('Powered by the platforms that', 'arqamweb'); ?> <span class="text-gradient"><?php esc_html_e('scale the modern web', 'arqamweb'); ?></span>
+				<?php esc_html_e('Powered by the platforms that', 'arqam-web'); ?> <span class="text-gradient"><?php esc_html_e('scale the modern web', 'arqam-web'); ?></span>
 			</h2>
 			<p class="mt-4 text-muted-foreground">
-				<?php esc_html_e('We build, ship and grow on the same stack trusted by world-class brands — from payments and infrastructure to commerce and search.', 'arqamweb'); ?>
+				<?php esc_html_e('We build, ship and grow on the same stack trusted by world-class brands — from payments and infrastructure to commerce and search.', 'arqam-web'); ?>
 			</p>
 		</div>
 		<div

@@ -45,29 +45,29 @@ $services_query = new WP_Query( [
 				<?php if ( function_exists( 'rank_math_the_breadcrumbs' ) ) rank_math_the_breadcrumbs(); ?>
 			</div>
 			<h1 class="text-5xl md:text-6xl lg:text-7xl xl:text-[5.25rem] font-semibold leading-[1.02] tracking-[-0.03em] max-w-5xl">
-				<?php esc_html_e('Services that', 'arqamweb'); ?> <span class="text-gradient"><?php esc_html_e('grow', 'arqamweb'); ?></span> <?php esc_html_e('your business', 'arqamweb'); ?> &amp; <span class="text-gradient"><?php esc_html_e('define', 'arqamweb'); ?></span> <?php esc_html_e('your brand.', 'arqamweb'); ?>
+				<?php esc_html_e('Services that', 'arqam-web'); ?> <span class="text-gradient"><?php esc_html_e('grow', 'arqam-web'); ?></span> <?php esc_html_e('your business', 'arqam-web'); ?> &amp; <span class="text-gradient"><?php esc_html_e('define', 'arqam-web'); ?></span> <?php esc_html_e('your brand.', 'arqam-web'); ?>
 			</h1>
-			<p class="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"><?php esc_html_e('Web design, SEO, brand identity and social media — engineered by senior teams for ambitious brands across SA, UAE, UK and USA.', 'arqamweb'); ?></p>
+			<p class="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"><?php esc_html_e('Web design, SEO, brand identity and social media — engineered by senior teams for ambitious brands across SA, UAE, UK and USA.', 'arqam-web'); ?></p>
 			<div class="mt-10 flex flex-wrap items-center gap-4">
-				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>" class="btn-primary"><?php esc_html_e('Start your project', 'arqamweb'); ?> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-				<a href="#services-grid" class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-foreground rounded-full border border-border hover:bg-accent transition-all"><?php esc_html_e('Explore services', 'arqamweb'); ?></a>
+				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>" class="btn-primary"><?php esc_html_e('Start your project', 'arqam-web'); ?> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+				<a href="#services-grid" class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-foreground rounded-full border border-border hover:bg-accent transition-all"><?php esc_html_e('Explore services', 'arqam-web'); ?></a>
 			</div>
 			<div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 border-t border-border/60 pt-10">
 				<div class="group">
 					<div class="text-4xl lg:text-5xl font-semibold tracking-tight text-gradient">14+</div>
-					<div class="mt-2 text-xs font-semibold tracking-[0.18em] uppercase text-muted-foreground"><?php esc_html_e('Years of craft', 'arqamweb'); ?></div>
+					<div class="mt-2 text-xs font-semibold tracking-[0.18em] uppercase text-muted-foreground"><?php esc_html_e('Years of craft', 'arqam-web'); ?></div>
 				</div>
 				<div class="group">
 					<div class="text-4xl lg:text-5xl font-semibold tracking-tight text-gradient">120+</div>
-					<div class="mt-2 text-xs font-semibold tracking-[0.18em] uppercase text-muted-foreground"><?php esc_html_e('Projects shipped', 'arqamweb'); ?></div>
+					<div class="mt-2 text-xs font-semibold tracking-[0.18em] uppercase text-muted-foreground"><?php esc_html_e('Projects shipped', 'arqam-web'); ?></div>
 				</div>
 				<div class="group">
 					<div class="text-4xl lg:text-5xl font-semibold tracking-tight text-gradient">32</div>
-					<div class="mt-2 text-xs font-semibold tracking-[0.18em] uppercase text-muted-foreground"><?php esc_html_e('Countries served', 'arqamweb'); ?></div>
+					<div class="mt-2 text-xs font-semibold tracking-[0.18em] uppercase text-muted-foreground"><?php esc_html_e('Countries served', 'arqam-web'); ?></div>
 				</div>
 				<div class="group">
 					<div class="text-4xl lg:text-5xl font-semibold tracking-tight text-gradient">98%</div>
-					<div class="mt-2 text-xs font-semibold tracking-[0.18em] uppercase text-muted-foreground"><?php esc_html_e('Client retention', 'arqamweb'); ?></div>
+					<div class="mt-2 text-xs font-semibold tracking-[0.18em] uppercase text-muted-foreground"><?php esc_html_e('Client retention', 'arqam-web'); ?></div>
 				</div>
 			</div>
 		</div>
@@ -91,28 +91,28 @@ $services_query = new WP_Query( [
 				<div class="lg:col-span-7">
 					<div class="inline-flex items-center gap-3 mb-5">
 						<span class="h-px w-10 bg-primary/60"></span>
-						<span class="text-[11px] font-semibold tracking-[0.22em] uppercase text-primary"><?php esc_html_e('What we do', 'arqamweb'); ?></span>
+						<span class="text-[11px] font-semibold tracking-[0.22em] uppercase text-primary"><?php esc_html_e('What we do', 'arqam-web'); ?></span>
 					</div>
 					<h2 class="text-4xl lg:text-5xl xl:text-[3.5rem] font-semibold tracking-[-0.025em] leading-[1.05]">
-						<?php esc_html_e('Four disciplines.', 'arqamweb'); ?><br><span class="text-gradient"><?php esc_html_e('One growth engine.', 'arqamweb'); ?></span>
+						<?php esc_html_e('Four disciplines.', 'arqam-web'); ?><br><span class="text-gradient"><?php esc_html_e('One growth engine.', 'arqam-web'); ?></span>
 					</h2>
 				</div>
 				<div class="lg:col-span-5">
 					<p class="text-muted-foreground text-base lg:text-lg leading-relaxed border-l-2 border-primary/30 pl-5">
-						<?php esc_html_e('Each service has a dedicated page with full deliverables, process and case studies — click any card to dive in.', 'arqamweb'); ?>
+						<?php esc_html_e('Each service has a dedicated page with full deliverables, process and case studies — click any card to dive in.', 'arqam-web'); ?>
 					</p>
 				</div>
 			</div>
 
 			<!-- Category filter bar -->
 			<?php if ( $service_categories ) : ?>
-			<div class="flex items-center gap-2 overflow-x-auto no-scrollbar mb-8" id="services-filter" role="tablist" aria-label="<?php esc_attr_e('Filter services by category', 'arqamweb'); ?>">
+			<div class="flex items-center gap-2 overflow-x-auto no-scrollbar mb-8" id="services-filter" role="tablist" aria-label="<?php esc_attr_e('Filter services by category', 'arqam-web'); ?>">
 				<button
 					data-filter="all"
 					role="tab"
 					aria-selected="true"
 					class="relative shrink-0 px-5 py-2.5 rounded-full text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 text-primary-foreground bg-gradient-primary shadow-glow">
-					<?php esc_html_e('All', 'arqamweb'); ?>
+					<?php esc_html_e('All', 'arqam-web'); ?>
 				</button>
 				<?php foreach ( $service_categories as $cat ) : ?>
 				<button
@@ -156,7 +156,7 @@ $services_query = new WP_Query( [
 				<div data-categories="<?php echo esc_attr( $term_slugs ); ?>">
 					<a href="<?php echo esc_url( $permalink ); ?>"
 					   class="group/card relative overflow-hidden rounded-3xl border border-white/10 bg-[#124f85] text-white p-8 lg:p-10 shadow-card transition-all duration-500 hover:shadow-elevated hover:border-primary/40 hover:-translate-y-1.5 hover:scale-[1.015] group-hover/grid:opacity-50 hover:!opacity-100 block"
-					   aria-label="<?php echo esc_attr( sprintf( __( 'View %s service', 'arqamweb' ), $title ) ); ?>">
+					   aria-label="<?php echo esc_attr( sprintf( __( 'View %s service', 'arqam-web' ), $title ) ); ?>">
 
 						<!-- hover glow blob -->
 						<div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/0 group-hover/card:bg-primary/25 blur-3xl transition-all duration-700" aria-hidden="true"></div>
@@ -171,7 +171,7 @@ $services_query = new WP_Query( [
 									<?php if ( $service_icon ) : ?>
 									<img
 										src="<?php echo esc_url( $service_icon['url'] ); ?>"
-										alt="<?php echo esc_attr( $service_icon['alt'] ?: sprintf( __( '%s icon', 'arqamweb' ), $title ) ); ?>"
+										alt="<?php echo esc_attr( $service_icon['alt'] ?: sprintf( __( '%s icon', 'arqam-web' ), $title ) ); ?>"
 										loading="lazy"
 										width="24"
 										height="24"
@@ -217,7 +217,7 @@ $services_query = new WP_Query( [
 
 							<!-- CTA row -->
 							<div class="mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-all duration-500 group-hover/card:gap-3">
-								<?php esc_html_e('Learn more', 'arqamweb'); ?>
+								<?php esc_html_e('Learn more', 'arqam-web'); ?>
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 							</div>
 
@@ -234,7 +234,7 @@ $services_query = new WP_Query( [
 				<div class="w-16 h-16 rounded-2xl bg-surface border border-border flex items-center justify-center mx-auto mb-6">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-muted-foreground" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
 				</div>
-				<p class="text-lg text-muted-foreground"><?php esc_html_e('No services found.', 'arqamweb'); ?></p>
+				<p class="text-lg text-muted-foreground"><?php esc_html_e('No services found.', 'arqam-web'); ?></p>
 			</div>
 
 			<?php endif; ?>
@@ -249,15 +249,15 @@ $services_query = new WP_Query( [
 				<div class="lg:col-span-7">
 					<div class="inline-flex items-center gap-3 mb-5">
 						<span class="h-px w-10 bg-primary/60"></span>
-						<span class="text-[11px] font-semibold tracking-[0.22em] uppercase text-primary"><?php esc_html_e('Why Arqam', 'arqamweb'); ?></span>
+						<span class="text-[11px] font-semibold tracking-[0.22em] uppercase text-primary"><?php esc_html_e('Why Arqam', 'arqam-web'); ?></span>
 					</div>
 					<h2 class="text-4xl lg:text-5xl xl:text-[3.5rem] font-semibold tracking-[-0.025em] leading-[1.05]">
-						<?php esc_html_e('Built differently.', 'arqamweb'); ?><br><span class="text-gradient"><?php esc_html_e('For brands that mean it.', 'arqamweb'); ?></span>
+						<?php esc_html_e('Built differently.', 'arqam-web'); ?><br><span class="text-gradient"><?php esc_html_e('For brands that mean it.', 'arqam-web'); ?></span>
 					</h2>
 				</div>
 				<div class="lg:col-span-5">
 					<p class="text-muted-foreground text-base lg:text-lg leading-relaxed border-l-2 border-primary/30 pl-5">
-						<?php esc_html_e("Three principles shape every engagement — from the first call to the day we hand over the keys. They're why our clients stay with us for years, not sprints.", 'arqamweb'); ?>
+						<?php esc_html_e("Three principles shape every engagement — from the first call to the day we hand over the keys. They're why our clients stay with us for years, not sprints.", 'arqam-web'); ?>
 					</p>
 				</div>
 			</div>
@@ -266,22 +266,22 @@ $services_query = new WP_Query( [
 					<div class="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-primary text-primary-foreground shadow-soft">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy w-5 h-5" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
 					</div>
-					<h3 class="mt-5 text-lg font-semibold tracking-tight"><?php esc_html_e('Senior teams only', 'arqamweb'); ?></h3>
-					<p class="mt-2 text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('No juniors, no handoffs. The team that pitches you ships your project.', 'arqamweb'); ?></p>
+					<h3 class="mt-5 text-lg font-semibold tracking-tight"><?php esc_html_e('Senior teams only', 'arqam-web'); ?></h3>
+					<p class="mt-2 text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('No juniors, no handoffs. The team that pitches you ships your project.', 'arqam-web'); ?></p>
 				</div>
 				<div class="p-7 rounded-3xl border border-border bg-background">
 					<div class="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-primary text-primary-foreground shadow-soft">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-5 h-5" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
 					</div>
-					<h3 class="mt-5 text-lg font-semibold tracking-tight"><?php esc_html_e('Built for speed', 'arqamweb'); ?></h3>
-					<p class="mt-2 text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('Performance is a design decision — not a final-week cleanup task.', 'arqamweb'); ?></p>
+					<h3 class="mt-5 text-lg font-semibold tracking-tight"><?php esc_html_e('Built for speed', 'arqam-web'); ?></h3>
+					<p class="mt-2 text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('Performance is a design decision — not a final-week cleanup task.', 'arqam-web'); ?></p>
 				</div>
 				<div class="p-7 rounded-3xl border border-border bg-background">
 					<div class="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-primary text-primary-foreground shadow-soft">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-5 h-5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
 					</div>
-					<h3 class="mt-5 text-lg font-semibold tracking-tight"><?php esc_html_e('Outcomes, not outputs', 'arqamweb'); ?></h3>
-					<p class="mt-2 text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('Every engagement is tied to KPIs your CFO actually cares about.', 'arqamweb'); ?></p>
+					<h3 class="mt-5 text-lg font-semibold tracking-tight"><?php esc_html_e('Outcomes, not outputs', 'arqam-web'); ?></h3>
+					<p class="mt-2 text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('Every engagement is tied to KPIs your CFO actually cares about.', 'arqam-web'); ?></p>
 				</div>
 			</div>
 		</div>
@@ -296,13 +296,13 @@ $services_query = new WP_Query( [
 				<div class="relative text-center">
 					<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-[11px] font-semibold tracking-[0.18em] uppercase text-white/80 mb-6">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
-						<?php esc_html_e("Let's talk", 'arqamweb'); ?>
+						<?php esc_html_e("Let's talk", 'arqam-web'); ?>
 					</div>
-					<h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-[-0.025em] leading-[1.05]"><?php esc_html_e('Ready to build something', 'arqamweb'); ?><br><span class="text-gradient"><?php esc_html_e('worth shipping?', 'arqamweb'); ?></span></h2>
-					<p class="mt-6 text-white/75 text-base lg:text-lg max-w-2xl mx-auto"><?php esc_html_e("Tell us about your goals. We'll come back with a clear plan, timeline and investment.", 'arqamweb'); ?></p>
+					<h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-[-0.025em] leading-[1.05]"><?php esc_html_e('Ready to build something', 'arqam-web'); ?><br><span class="text-gradient"><?php esc_html_e('worth shipping?', 'arqam-web'); ?></span></h2>
+					<p class="mt-6 text-white/75 text-base lg:text-lg max-w-2xl mx-auto"><?php esc_html_e("Tell us about your goals. We'll come back with a clear plan, timeline and investment.", 'arqam-web'); ?></p>
 					<div class="mt-10 flex flex-wrap justify-center gap-4">
-						<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary bg-white rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('Request a Quote', 'arqamweb'); ?> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full border border-white/30 hover:bg-white/10 transition-all"><?php esc_html_e('Back to Home', 'arqamweb'); ?></a>
+						<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary bg-white rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('Request a Quote', 'arqam-web'); ?> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full border border-white/30 hover:bg-white/10 transition-all"><?php esc_html_e('Back to Home', 'arqam-web'); ?></a>
 					</div>
 				</div>
 			</div>

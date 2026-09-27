@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<p class="text-gray-600 text-sm mt-2"><?php the_excerpt(); ?></p>
 		<a href="<?php the_permalink(); ?>" class="text-blue-500 font-medium mt-4 inline-block">
-			<?php esc_html_e( 'اقرأ المزيد', 'arqamweb' ); ?> &larr;
+			<?php esc_html_e( 'اقرأ المزيد', 'arqam-web' ); ?> &larr;
 		</a>
 	</div>
 </article>
