@@ -1,0 +1,12 @@
+<?php
+/**
+ * Icon: Star
+ *
+ * @package Arqam-Web
+ */
+
+if (!defined('ABSPATH')) exit;
+?>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+	<path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path>
+</svg>
