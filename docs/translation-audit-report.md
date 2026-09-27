@@ -8,7 +8,21 @@
 
 ## Executive Summary
 
-This audit reviews the main template files of the Arqam Web WordPress theme to identify hard-coded strings that need to be wrapped in WordPress translation functions for proper bilingual support (English/Arabic).
+This comprehensive audit reviews the Arqam Web WordPress theme to identify hard-coded strings that need to be wrapped in WordPress translation functions for proper bilingual support (English/Arabic). The audit covers:
+- **Main template files** (header, footer, index, home, archive, single, search, 404)
+- **Frontpage components** (13 template-parts for homepage sections)
+- **Content & page templates** (15 template-parts for various page types)
+
+### Overall Results
+- **Total files audited:** 36
+- **Files passing:** 26 (72.2%)
+- **Files needing fixes:** 9 (25%)
+- **Total hard-coded strings:** 71
+
+### Priority Breakdown
+- 🔴 **High Priority:** 64 strings (frontpage components - arrays with content)
+- 🟡 **Medium Priority:** 4 strings (main templates - fallback text)
+- 🟢 **Low Priority:** 3 strings (1 placeholder, 2 optional platform names)
 
 ### Audit Status by Template
 
@@ -19,9 +33,19 @@ This audit reviews the main template files of the Arqam Web WordPress theme to i
 | index.php | ✅ Pass | 0 |
 | home.php | ⚠️ Issues Found | 4 instances |
 | archive.php | ✅ Pass | 0 |
-| single.php | ⚠️ Issues Found | 2 instances |
+| single.php | ⚠️ Issues Found | 2 instances (optional) |
 | search.php | ✅ Pass | 0 |
 | 404.php | ✅ Pass | 0 |
+
+### Template-Parts Audit Summary
+
+**Frontpage Components (13 files):**
+- ✅ Pass: 6 files
+- ⚠️ Need fixes: 7 files (64 hard-coded strings)
+
+**Content & Page Templates (15 files):**
+- ✅ Pass: 14 files
+- ⚠️ Minor issue: 1 file (1 placeholder string)
 
 ---
 
@@ -923,6 +947,323 @@ $whyItems = [
 
 ---
 
+## 3. Template Parts Audit (content & other)
+
+This section audits template-parts/content/* files and other major template-parts (services, projects, pricing, reviews, contact, about, quote, etc.) for hard-coded strings.
+
+### Audit Status by Template Part
+
+| Template Part | Status | Hard-coded Strings Found |
+|---------------|--------|--------------------------|
+| content/content-none.php | ✅ Pass | 0 |
+| content/content-page.php | ✅ Pass | 0 |
+| content/content-project.php | ✅ Pass | 0 |
+| content/content-review.php | ⚠️ Minor Issue | 1 instance |
+| content/content-search.php | ✅ Pass | 0 |
+| content/content.php | ✅ Pass | 0 |
+| services.php | ✅ Pass | 0 |
+| projects.php | ✅ Pass | 0 |
+| pricing.php | ✅ Pass | 0 |
+| pricing-v2.php | ✅ Pass | 0 |
+| reviews.php | ✅ Pass | 0 |
+| about.php | ✅ Pass | 0 |
+| quote.php | ✅ Pass | 0 |
+| contact.php | ✅ Pass | 0 |
+| partials/floating-contact.php | ✅ Pass | 0 |
+
+---
+
+### 3.1 content/content-none.php ✅
+
+**Status:** PASS - All strings are properly translatable
+
+**Findings:**
+- All user-facing strings use proper WordPress translation functions
+- Examples:
+  ```php
+  esc_html_e('Nothing Found', 'arqamweb');
+  __('Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'arqamweb');
+  esc_html_e('Sorry, but nothing matched your search terms...', 'arqamweb');
+  ```
+
+---
+
+### 3.2 content/content-page.php ✅
+
+**Status:** PASS - No user-facing strings
+
+**Findings:**
+- Template uses WordPress functions to output content
+- No hard-coded strings requiring translation
+
+---
+
+### 3.3 content/content-project.php ✅
+
+**Status:** PASS - All strings are properly translatable
+
+**Findings:**
+- View Project button properly translatable:
+  ```php
+  echo __('View Project', 'arqamweb');
+  ```
+
+---
+
+### 3.4 content/content-review.php ⚠️
+
+**Status:** MINOR ISSUE - 1 instance of hard-coded placeholder text
+
+**Hard-coded String Identified:**
+
+#### Issue #1: Placeholder Role/Location (Line 25)
+```php
+// Current code:
+<div class="text-xs text-muted-foreground">
+    <?php esc_html_e('CEO · Riyadh, Saudi Arabia', 'arqamweb'); ?>
+</div>
+```
+
+**Problem:** This appears to be placeholder text that should be replaced with dynamic content from ACF field `role_location` or similar  
+**Impact:** LOW - The string is wrapped in `esc_html_e()`, so it IS translatable, but appears to be hardcoded placeholder text rather than actual dynamic content  
+**Severity:** LOW - More of a data issue than translation issue
+
+**Recommended Fix:**
+Consider replacing with dynamic field if available, or confirm this is intentional placeholder text:
+```php
+<div class="text-xs text-muted-foreground">
+    <?php 
+    $role_location = get_field('role_location', get_the_ID());
+    if ($role_location) {
+        echo esc_html($role_location);
+    } else {
+        esc_html_e('CEO · Riyadh, Saudi Arabia', 'arqamweb');
+    }
+    ?>
+</div>
+```
+
+---
+
+### 3.5 content/content-search.php ✅
+
+**Status:** PASS - No user-facing strings in this file
+
+---
+
+### 3.6 content/content.php ✅
+
+**Status:** PASS - All strings are properly translatable
+
+**Findings:**
+- Read more link properly translatable:
+  ```php
+  esc_html_e( 'اقرأ المزيد', 'arqamweb' );
+  ```
+
+---
+
+### 3.7 services.php ✅
+
+**Status:** PASS - All strings are properly translatable  
+**File Size:** Large (351 lines)
+
+**Findings:**
+- Excellent implementation of translation functions throughout
+- All section headings, CTAs, service cards properly translated
+- Filter labels properly translated
+- Examples:
+  ```php
+  esc_html_e('Services that', 'arqamweb');
+  esc_html_e('grow', 'arqamweb');
+  esc_html_e('Start your project', 'arqamweb');
+  esc_html_e('All', 'arqamweb');
+  esc_html_e('Learn more', 'arqamweb');
+  esc_attr_e('Filter services by category', 'arqamweb');
+  ```
+
+---
+
+### 3.8 projects.php ✅
+
+**Status:** PASS - All strings are properly translatable  
+**File Size:** Large (441 lines)
+
+**Findings:**
+- Comprehensive translation coverage
+- Complex aria-labels properly translated
+- Dynamic content properly handled with `sprintf()` and `__()`:
+  ```php
+  esc_html_e('Selected work · 2023–2026', 'arqamweb');
+  esc_html_e('Selected digital', 'arqamweb');
+  esc_html_e('experiences', 'arqamweb');
+  esc_attr_e('Filter projects by category', 'arqamweb');
+  esc_html_e('Featured', 'arqamweb');
+  esc_html_e('View case study', 'arqamweb');
+  sprintf(__('View %s case study', 'arqamweb'), $title);
+  ```
+
+---
+
+### 3.9 pricing.php ✅
+
+**Status:** PASS - All strings are properly translatable  
+**File Size:** Very Large (2466 lines)
+
+**Findings:**
+- Extensive translation coverage across all pricing tiers
+- All package features, descriptions, and CTAs properly translated
+- Country names in marquee section properly translated
+- Currency labels properly handled
+- Examples:
+  ```php
+  esc_html_e('Transparent pricing for', 'arqamweb');
+  esc_html_e('ambitious brands.', 'arqamweb');
+  esc_html_e('Trusted globally', 'arqamweb');
+  esc_html_e('Partnering with brands across', 'arqamweb');
+  esc_html_e('Clients in', 'arqamweb');
+  esc_html_e('Egypt', 'arqamweb');
+  esc_html_e('Starting from', 'arqamweb');
+  ```
+
+---
+
+### 3.10 pricing-v2.php ✅
+
+**Status:** PASS - All strings are properly translatable  
+**File Size:** Very Large (1304 lines)
+
+**Findings:**
+- New pricing page with comprehensive translation support
+- All service tiers, features, and descriptions properly wrapped
+- Helper functions properly implement translations:
+  ```php
+  __('Websites pricing', 'arqamweb'),
+  __('Launch — Informative', 'arqamweb'),
+  __('A complete site, live in one week.', 'arqamweb'),
+  __('Buy Launch now', 'arqamweb'),
+  __('SEO / AEO pricing', 'arqamweb'),
+  esc_html_e('Quoted to scope', 'arqamweb');
+  ```
+
+---
+
+### 3.11 reviews.php ✅
+
+**Status:** PASS - All strings are properly translatable  
+**File Size:** Large (828 lines)
+
+**Findings:**
+- All testimonial-related content properly translated
+- Video testimonial modal labels properly translated
+- Statistics and trust signals properly wrapped
+- Examples:
+  ```php
+  esc_html_e('Real words from', 'arqamweb');
+  esc_html_e('real clients.', 'arqamweb');
+  esc_html_e('CLIENT VOICES · VERIFIED', 'arqamweb');
+  esc_html_e('80+ verified reviews', 'arqamweb');
+  esc_html_e('Verified Client', 'arqamweb');
+  esc_attr_e('Close video', 'arqamweb');
+  ```
+
+---
+
+### 3.12 about.php ✅
+
+**Status:** PASS - All strings are properly translatable  
+**File Size:** Very Large (849 lines)
+
+**Findings:**
+- Company history timeline properly translated
+- All biographical content properly wrapped
+- Mission, vision, values sections fully translatable
+- Examples:
+  ```php
+  esc_html_e('A 15-YEAR STORY · SINCE 2010', 'arqamweb');
+  esc_html_e('We build', 'arqamweb');
+  esc_html_e('digital systems', 'arqamweb');
+  esc_html_e('Our story', 'arqamweb');
+  esc_html_e('The first line of code', 'arqamweb');
+  esc_html_e('Vision', 'arqamweb');
+  esc_html_e('Mission', 'arqamweb');
+  ```
+
+---
+
+### 3.13 quote.php ✅
+
+**Status:** PASS - All strings are properly translatable  
+**File Size:** Small (126 lines)
+
+**Findings:**
+- All form-related labels and trust signals properly translated
+- Examples:
+  ```php
+  esc_html_e('Start your project', 'arqamweb');
+  esc_html_e('Tell us about', 'arqamweb');
+  esc_html_e('your project.', 'arqamweb');
+  esc_html_e('Response in 24h', 'arqamweb');
+  esc_html_e('No commitment', 'arqamweb');
+  ```
+
+---
+
+### 3.14 contact.php ✅
+
+**Status:** PASS - All strings are properly translatable  
+**File Size:** Very Large (reviewed in pattern file)
+
+**Findings:**
+- All contact methods properly translated
+- Office hours, contact stats properly wrapped
+- Examples from pattern:
+  ```php
+  esc_html_e('Let's build something', 'arqamweb');
+  esc_html_e('worth scaling.', 'arqamweb');
+  esc_html_e('Email the studio', 'arqamweb');
+  esc_html_e('Call us directly', 'arqamweb');
+  ```
+
+---
+
+### 3.15 partials/floating-contact.php ✅
+
+**Status:** PASS - All strings are properly translatable
+
+**Findings:**
+- All aria-labels and tooltips properly translated:
+  ```php
+  esc_attr_e('WhatsApp', 'arqamweb');
+  esc_attr_e('Email', 'arqamweb');
+  esc_attr_e('Call', 'arqamweb');
+  esc_html_e('WhatsApp', 'arqamweb');
+  ```
+
+---
+
+### 3.16 Template Parts Summary
+
+**Total template-parts files audited:** 15
+- **Content templates:** 6 files
+- **Major page templates:** 7 files (services, projects, pricing, pricing-v2, reviews, about, quote)
+- **Partials:** 2 files (contact, floating-contact)
+
+**Files passing audit:** 14 of 15 (93.3%)
+**Files with minor issues:** 1 of 15 (6.7%)
+
+**Hard-coded strings identified:** 1 (placeholder text in content-review.php - low severity)
+
+**Quality Assessment:**
+- ✅ Excellent overall translation coverage
+- ✅ Consistent use of proper WordPress translation functions
+- ✅ Proper escaping with `esc_html()` and `esc_attr()`
+- ✅ Complex templates (pricing, services, projects) fully translatable
+- ✅ Aria-labels and accessibility text properly handled
+- ⚠️ One placeholder text issue (minor)
+
+---
+
 ## 7. Files Affected Summary
 
 ### Main Templates
@@ -960,12 +1301,25 @@ $whyItems = [
 - `template-parts/frontpage/frontpage-projects.php` ✅
 - `template-parts/frontpage/frontpage-testimonials.php` ✅
 
+### Template Parts
+
+**Files audited: 15**
+- Content templates (6 files) - 5 pass, 1 minor issue
+- Major page templates (7 files) - all pass ✅
+- Partials (2 files) - all pass ✅
+
+**Hard-coded strings identified:** 1 (placeholder text, low severity)
+
 ### Overall Statistics
-- **Total files audited:** 21 (8 main templates + 13 frontpage components)
-- **Files passing:** 12 (57%)
-- **Files requiring fixes:** 8 (38%)
-- **Files for optional review:** 1 (5%)
-- **Total hard-coded strings identified:** 70 (4 in main templates + 64 in frontpage + 2 optional)
+- **Total files audited:** 36 (8 main templates + 13 frontpage components + 15 template-parts)
+- **Files passing:** 26 (72.2%)
+- **Files requiring fixes:** 8 (22.2%)
+- **Files with minor issues:** 1 (2.8%)
+- **Files for optional review:** 1 (2.8%)
+- **Total hard-coded strings identified:** 71
+  - Main templates: 4 (medium priority) + 2 (optional)
+  - Frontpage components: 64 (high priority)
+  - Template-parts: 1 (low priority)
 
 ---
 
