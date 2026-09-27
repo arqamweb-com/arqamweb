@@ -335,7 +335,7 @@ get_header();
 								class="absolute top-0 left-0 w-3 h-px bg-current"></span><span
 								class="absolute top-0 left-0 h-3 w-px bg-current"></span></div>
 						<div class="relative h-full w-full grid place-items-center">
-							<img alt="Arqam Web logo"
+							<img alt="<?php echo esc_attr__('Arqam Web logo', 'arqam-web'); ?>"
 							     class="w-2/3 max-w-[260px] drop-shadow-[0_20px_60px_color-mix(in_oklab,var(--primary)_40%,transparent)]"
 							     src="<?php echo get_template_directory_uri(); ?>/frontend/img/Arqam-Web-Logo.png">
 						</div>
@@ -519,7 +519,7 @@ get_header();
 					<div class="absolute -inset-6 rounded-[2.5rem] bg-gradient-primary opacity-20 blur-2xl"></div>
 					<div
 						class="relative rounded-[2rem] overflow-hidden border border-white/10 aspect-[4/5] shadow-[0_60px_120px_-30px_rgba(0,0,0,0.8)]">
-						<img alt="Youssef Salah Hassanein — Founder of Arqam Web" loading="lazy"
+						<img alt="<?php echo esc_attr__('Youssef Salah Hassanein — Founder of Arqam Web', 'arqam-web'); ?>" loading="lazy"
 						     class="absolute inset-0 w-full h-full object-cover"
 						     src="https://www.arqamweb.com/wp-content/uploads/2026/05/Youssef-Salah-Hassanein-Photo.jpg">
 						<div
@@ -648,7 +648,7 @@ get_header();
 						<path d="M6 6l12 12M18 6L6 18"></path>
 					</svg>
 				</button>
-				<iframe data-founder-video-iframe title="Founder Story — Youssef Salah Hassanein"
+				<iframe data-founder-video-iframe title="<?php echo esc_attr__('Founder Story — Youssef Salah Hassanein', 'arqam-web'); ?>"
 				        class="aw-founder-video-modal__iframe"
 				        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				        allowfullscreen></iframe>
