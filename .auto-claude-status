@@ -1,0 +1,25 @@
+{
+  "active": true,
+  "spec": "004-template-refactoring-split-oversize-files-into-par",
+  "state": "building",
+  "subtasks": {
+    "completed": 18,
+    "total": 33,
+    "in_progress": 1,
+    "failed": 0
+  },
+  "phase": {
+    "current": "Add Single Project Partials",
+    "id": null,
+    "total": 4
+  },
+  "workers": {
+    "active": 0,
+    "max": 1
+  },
+  "session": {
+    "number": 12,
+    "started_at": "2026-09-27T19:23:05.020149"
+  },
+  "last_update": "2026-09-27T20:04:31.743429"
+}
