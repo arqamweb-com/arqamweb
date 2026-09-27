@@ -191,7 +191,7 @@ get_header();
 									class="w-1.5 h-1.5 rounded-full bg-emerald-500 pulse-green"></span> <?php esc_html_e('Encrypted', 'arqamweb'); ?>
 							</div>
 						</div>
-						<?php echo do_shortcode('[contact-form-7 id="4f85ced" title="Contact Us"]'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="4f85ced" title="' . esc_attr__('Contact Us', 'arqamweb') . '"]'); ?>
 					</div>
 				</div>
 			</div>
