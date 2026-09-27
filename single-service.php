@@ -74,7 +74,7 @@ $related_q = new WP_Query([
 			<div class="flex flex-wrap gap-4">
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>"
 				   class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-primary text-primary-foreground font-semibold shadow-glow hover:scale-[1.02] transition-transform text-sm">
-					<?php esc_html_e('Start a project', 'arqamweb'); ?>
+					<?php esc_html_e('Start a project', 'arqam-web'); ?>
 					<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
 					     aria-hidden="true">
 						<path d="M5 12h14M13 5l7 7-7 7"/>
@@ -82,7 +82,7 @@ $related_q = new WP_Query([
 				</a>
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>"
 				   class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors text-sm">
-					<?php esc_html_e('View our work', 'arqamweb'); ?>
+					<?php esc_html_e('View our work', 'arqam-web'); ?>
 				</a>
 			</div>
 
@@ -133,20 +133,20 @@ $related_q = new WP_Query([
 				<div class="relative grid lg:grid-cols-12 gap-10 items-center">
 					<div class="lg:col-span-7">
 						<div class="text-[11px] font-semibold tracking-[0.3em] uppercase text-white/60 mb-4">
-							— <?php esc_html_e('Ready to get started?', 'arqamweb'); ?></div>
+							— <?php esc_html_e('Ready to get started?', 'arqam-web'); ?></div>
 						<h2 class="text-3xl lg:text-5xl font-semibold tracking-tight leading-[1.05]">
-							<?php esc_html_e("Let's build something", 'arqamweb'); ?><br>
+							<?php esc_html_e("Let's build something", 'arqam-web'); ?><br>
 							<span
-								class="text-white/70 font-light italic"><?php esc_html_e('remarkable together.', 'arqamweb'); ?></span>
+								class="text-white/70 font-light italic"><?php esc_html_e('remarkable together.', 'arqam-web'); ?></span>
 						</h2>
 						<p class="mt-5 text-white/70 text-base lg:text-lg leading-relaxed max-w-lg">
-							<?php esc_html_e("Tell us about your project and we'll get back to you within 24 hours.", 'arqamweb'); ?>
+							<?php esc_html_e("Tell us about your project and we'll get back to you within 24 hours.", 'arqam-web'); ?>
 						</p>
 					</div>
 					<div class="lg:col-span-5 flex flex-col gap-4">
 						<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>"
 						   class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-foreground font-semibold hover:bg-white/90 transition-colors">
-							<?php esc_html_e('Start a project', 'arqamweb'); ?>
+							<?php esc_html_e('Start a project', 'arqam-web'); ?>
 							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							     stroke-width="2.5" aria-hidden="true">
 								<path d="M5 12h14M13 5l7 7-7 7"/>
@@ -154,7 +154,7 @@ $related_q = new WP_Query([
 						</a>
 						<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>"
 						   class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-colors">
-							<?php esc_html_e('View our portfolio', 'arqamweb'); ?>
+							<?php esc_html_e('View our portfolio', 'arqam-web'); ?>
 						</a>
 					</div>
 				</div>
@@ -168,10 +168,10 @@ $related_q = new WP_Query([
 			<div class="container-x max-w-7xl mx-auto">
 				<div class="reveal mb-12 in">
 					<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4">
-						— <?php esc_html_e('Our work', 'arqamweb'); ?></div>
+						— <?php esc_html_e('Our work', 'arqam-web'); ?></div>
 					<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight">
-						<?php esc_html_e('See it in', 'arqamweb'); ?> <span
-							class="text-gradient"><?php esc_html_e('action.', 'arqamweb'); ?></span>
+						<?php esc_html_e('See it in', 'arqam-web'); ?> <span
+							class="text-gradient"><?php esc_html_e('action.', 'arqam-web'); ?></span>
 					</h2>
 				</div>
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7">
@@ -237,7 +237,7 @@ $related_q = new WP_Query([
 				<div class="mt-12 text-center">
 					<a href="<?php echo esc_url(home_url('/projects')); ?>"
 					   class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors">
-						<?php esc_html_e('View all projects', 'arqamweb'); ?>
+						<?php esc_html_e('View all projects', 'arqam-web'); ?>
 						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 						     stroke-width="2.5" aria-hidden="true">
 							<path d="M5 12h14M13 5l7 7-7 7"/>

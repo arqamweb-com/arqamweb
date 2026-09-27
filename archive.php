@@ -22,11 +22,11 @@ if ( is_month() )     $archive_label = get_the_date( 'F Y', get_queried_object_i
 
 // Archive type badge
 $archive_type = '';
-if ( is_category() )   $archive_type = __( 'Category',   'arqamweb' );
-elseif ( is_tag() )    $archive_type = __( 'Tag',        'arqamweb' );
-elseif ( is_author() ) $archive_type = __( 'Author',     'arqamweb' );
-elseif ( is_date() )   $archive_type = __( 'Archive',    'arqamweb' );
-else                   $archive_type = __( 'Archive',    'arqamweb' );
+if ( is_category() )   $archive_type = __( 'Category',   'arqam-web' );
+elseif ( is_tag() )    $archive_type = __( 'Tag',        'arqam-web' );
+elseif ( is_author() ) $archive_type = __( 'Author',     'arqam-web' );
+elseif ( is_date() )   $archive_type = __( 'Archive',    'arqam-web' );
+else                   $archive_type = __( 'Archive',    'arqam-web' );
 
 // Read-time helper
 $read_time_fn = function ( $post_id ) {
@@ -77,11 +77,11 @@ $read_time_fn = function ( $post_id ) {
 					<div class="flex items-center gap-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
 						<span>
 							<?php echo esc_html( $total_posts ); ?>
-							<?php echo esc_html( _n( 'essay', 'essays', $total_posts, 'arqamweb' ) ); ?>
+							<?php echo esc_html( _n( 'essay', 'essays', $total_posts, 'arqam-web' ) ); ?>
 						</span>
 						<?php if ( is_author() ) : ?>
 							<span class="w-1 h-1 rounded-full bg-muted-foreground/50"></span>
-							<span><?php esc_html_e( 'Author', 'arqamweb' ); ?></span>
+							<span><?php esc_html_e( 'Author', 'arqam-web' ); ?></span>
 						<?php endif; ?>
 					</div>
 				</div>
@@ -136,7 +136,7 @@ $read_time_fn = function ( $post_id ) {
 								<?php if ( $sticky ) : ?>
 								<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-primary/10 text-primary border border-primary/20">
 									<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-									<?php esc_html_e( 'Trending', 'arqamweb' ); ?>
+									<?php esc_html_e( 'Trending', 'arqam-web' ); ?>
 								</span>
 								<?php endif; ?>
 							</div>
@@ -160,10 +160,10 @@ $read_time_fn = function ( $post_id ) {
 							</p>
 							<div class="mt-5 flex items-center justify-between">
 								<span class="text-xs uppercase tracking-[0.15em] text-muted-foreground">
-									<?php esc_html_e( 'By', 'arqamweb' ); ?> <?php the_author(); ?>
+									<?php esc_html_e( 'By', 'arqam-web' ); ?> <?php the_author(); ?>
 								</span>
 								<span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-transform duration-300 group-hover:translate-x-1">
-									<?php esc_html_e( 'Read', 'arqamweb' ); ?>
+									<?php esc_html_e( 'Read', 'arqam-web' ); ?>
 									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
 										<path d="M5 12h14M13 5l7 7-7 7"/>
 									</svg>
@@ -186,7 +186,7 @@ $read_time_fn = function ( $post_id ) {
 			] );
 
 			if ( $pagination ) : ?>
-			<nav class="mt-16 flex items-center justify-center gap-2" aria-label="<?php esc_attr_e( 'Posts navigation', 'arqamweb' ); ?>">
+			<nav class="mt-16 flex items-center justify-center gap-2" aria-label="<?php esc_attr_e( 'Posts navigation', 'arqam-web' ); ?>">
 				<?php foreach ( $pagination as $page_link ) :
 					$is_current = strpos( $page_link, 'current' ) !== false;
 					$is_dots    = strpos( $page_link, 'dots' ) !== false;
@@ -211,11 +211,11 @@ $read_time_fn = function ( $post_id ) {
 			<!-- ── Empty state ────────────────────────────────────────────── -->
 			<div class="text-center py-24">
 				<div class="text-6xl mb-6">📭</div>
-				<h2 class="text-2xl font-semibold mb-3"><?php esc_html_e( 'No posts found', 'arqamweb' ); ?></h2>
-				<p class="text-muted-foreground mb-8"><?php esc_html_e( 'Nothing published here yet. Check back soon.', 'arqamweb' ); ?></p>
+				<h2 class="text-2xl font-semibold mb-3"><?php esc_html_e( 'No posts found', 'arqam-web' ); ?></h2>
+				<p class="text-muted-foreground mb-8"><?php esc_html_e( 'Nothing published here yet. Check back soon.', 'arqam-web' ); ?></p>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors">
-					<?php esc_html_e( 'Back to home', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Back to home', 'arqam-web' ); ?>
 					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
 						<path d="M5 12h14M13 5l7 7-7 7"/>
 					</svg>

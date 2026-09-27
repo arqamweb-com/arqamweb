@@ -86,7 +86,7 @@ $parent  = wp_get_post_parent_id( $post_id );
 			?>
 			<div class="mt-16 pt-10 border-t border-border/60">
 				<p class="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-6">
-					<?php esc_html_e( 'In this section', 'arqamweb' ); ?>
+					<?php esc_html_e( 'In this section', 'arqam-web' ); ?>
 				</p>
 				<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 					<?php foreach ( $children as $child ) : ?>

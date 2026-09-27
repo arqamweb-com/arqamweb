@@ -37,7 +37,7 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 						<a href="<?php comment_author_url(); ?>"
 						   target="_blank" rel="noopener noreferrer nofollow"
 						   class="text-[10px] uppercase tracking-[0.15em] text-primary hover:opacity-70 transition-opacity">
-							<?php esc_html_e( 'Website', 'arqamweb' ); ?>
+							<?php esc_html_e( 'Website', 'arqam-web' ); ?>
 						</a>
 						<?php endif; ?>
 					</div>
@@ -50,7 +50,7 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 				<!-- Moderation notice -->
 				<?php if ( '0' === $comment->comment_approved ) : ?>
 				<p class="text-xs text-muted-foreground italic mb-3">
-					<?php esc_html_e( 'Your comment is awaiting moderation.', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Your comment is awaiting moderation.', 'arqam-web' ); ?>
 				</p>
 				<?php endif; ?>
 
@@ -65,7 +65,7 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 					<?php comment_reply_link( array_merge( $args, [
 						'depth'      => $depth,
 						'max_depth'  => $args['max_depth'],
-						'reply_text' => '<span class="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:opacity-70 transition-opacity">↩ ' . esc_html__( 'Reply', 'arqamweb' ) . '</span>',
+						'reply_text' => '<span class="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:opacity-70 transition-opacity">↩ ' . esc_html__( 'Reply', 'arqam-web' ) . '</span>',
 						'before'     => '',
 						'after'      => '',
 					] ) ); ?>
@@ -89,7 +89,7 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 			<?php
 			$count = get_comments_number();
 			printf(
-				esc_html( _n( '%s response', '%s responses', $count, 'arqamweb' ) ),
+				esc_html( _n( '%s response', '%s responses', $count, 'arqam-web' ) ),
 				'<span class="text-primary">' . number_format_i18n( $count ) . '</span>'
 			);
 			?>
@@ -101,7 +101,7 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 			<?php
 			printf(
 				/* translators: 1: current page, 2: total pages */
-				esc_html__( 'Page %1$s of %2$s', 'arqamweb' ),
+				esc_html__( 'Page %1$s of %2$s', 'arqam-web' ),
 				get_query_var( 'cpage' ) ?: 1,
 				get_comment_pages_count()
 			);
@@ -131,7 +131,7 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 		'type'      => 'array',
 	] );
 	if ( $comments_pagination ) : ?>
-	<nav class="mt-8 flex items-center justify-center gap-2" aria-label="<?php esc_attr_e( 'Comments navigation', 'arqamweb' ); ?>">
+	<nav class="mt-8 flex items-center justify-center gap-2" aria-label="<?php esc_attr_e( 'Comments navigation', 'arqam-web' ); ?>">
 		<?php foreach ( $comments_pagination as $link ) :
 			$is_current = strpos( $link, 'current' ) !== false;
 			if ( $is_current ) : ?>
@@ -151,7 +151,7 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 	<!-- Comments closed notice -->
 	<?php if ( ! comments_open() ) : ?>
 	<p class="mt-8 text-sm text-muted-foreground text-center py-4 rounded-2xl border border-border bg-surface">
-		<?php esc_html_e( 'Comments are closed.', 'arqamweb' ); ?>
+		<?php esc_html_e( 'Comments are closed.', 'arqam-web' ); ?>
 	</p>
 	<?php endif; ?>
 
@@ -166,10 +166,10 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 	comment_form( [
 		'title_reply_before'   => '<h3 id="reply-title" class="text-2xl font-semibold tracking-tight mt-12 mb-8">',
 		'title_reply_after'    => '</h3>',
-		'title_reply'          => esc_html__( 'Leave a reply', 'arqamweb' ),
-		'title_reply_to'       => esc_html__( 'Reply to %s', 'arqamweb' ),
+		'title_reply'          => esc_html__( 'Leave a reply', 'arqam-web' ),
+		'title_reply_to'       => esc_html__( 'Reply to %s', 'arqam-web' ),
 		'cancel_reply_before'  => ' <span class="text-muted-foreground text-sm">—</span> ',
-		'cancel_reply_link'    => esc_html__( 'Cancel reply', 'arqamweb' ),
+		'cancel_reply_link'    => esc_html__( 'Cancel reply', 'arqam-web' ),
 		'comment_notes_before' => '',
 		'comment_notes_after'  => '',
 		'class_form'           => 'space-y-0',
@@ -177,53 +177,53 @@ function arqam_comment_callback( $comment, $args, $depth ) {
 			'author'  => sprintf(
 				'<div class="grid sm:grid-cols-2 gap-4 mt-0"><div><label for="author" class="%s">%s%s</label><input id="author" name="author" type="text" required autocomplete="name" placeholder="%s" class="%s"></div>',
 				esc_attr( $label_class ),
-				esc_html__( 'Name', 'arqamweb' ),
+				esc_html__( 'Name', 'arqam-web' ),
 				$required_star,
-				esc_attr__( 'Your name', 'arqamweb' ),
+				esc_attr__( 'Your name', 'arqam-web' ),
 				esc_attr( $input_class )
 			),
 			'email'   => sprintf(
 				'<div><label for="email" class="%s">%s%s</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="%s" class="%s"></div></div>',
 				esc_attr( $label_class ),
-				esc_html__( 'Email', 'arqamweb' ),
+				esc_html__( 'Email', 'arqam-web' ),
 				$required_star,
-				esc_attr__( 'your@email.com', 'arqamweb' ),
+				esc_attr__( 'your@email.com', 'arqam-web' ),
 				esc_attr( $input_class )
 			),
 			'url'     => sprintf(
 				'<div class="mt-4"><label for="url" class="%s">%s</label><input id="url" name="url" type="url" autocomplete="url" placeholder="%s" class="%s"></div>',
 				esc_attr( $label_class ),
-				esc_html__( 'Website (optional)', 'arqamweb' ),
-				esc_attr__( 'https://', 'arqamweb' ),
+				esc_html__( 'Website (optional)', 'arqam-web' ),
+				esc_attr__( 'https://', 'arqam-web' ),
 				esc_attr( $input_class )
 			),
 			'cookies' => sprintf(
 				'<div class="mt-4 flex items-start gap-3"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" class="mt-0.5 w-4 h-4 rounded border-border text-primary accent-primary"><label for="wp-comment-cookies-consent" class="text-xs text-muted-foreground leading-relaxed">%s</label></div>',
-				esc_html__( 'Save my name and email in this browser for the next time I comment.', 'arqamweb' )
+				esc_html__( 'Save my name and email in this browser for the next time I comment.', 'arqam-web' )
 			),
 		],
 		'comment_field'        => sprintf(
 			'<div class="mt-4"><label for="comment" class="%s">%s%s</label><textarea id="comment" name="comment" rows="5" required placeholder="%s" class="%s" style="resize:none;"></textarea></div>',
 			esc_attr( $label_class ),
-			esc_html__( 'Comment', 'arqamweb' ),
+			esc_html__( 'Comment', 'arqam-web' ),
 			$required_star,
-			esc_attr__( 'Share your thoughts…', 'arqamweb' ),
+			esc_attr__( 'Share your thoughts…', 'arqam-web' ),
 			esc_attr( $input_class )
 		),
 		'submit_button'        => '<button type="%1$s" id="%2$s" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-primary text-primary-foreground font-semibold shadow-glow hover:opacity-90 active:scale-[0.97] transition-all text-sm">%4$s <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>',
 		'submit_field'         => '<div class="mt-6">%1$s %2$s</div>',
-		'label_submit'         => esc_html__( 'Post comment', 'arqamweb' ),
+		'label_submit'         => esc_html__( 'Post comment', 'arqam-web' ),
 		'logged_in_as'         => sprintf(
 			'<p class="mb-6 text-sm text-muted-foreground">%s <a href="%s" class="text-primary hover:opacity-70 transition-opacity">%s</a></p>',
-			sprintf( esc_html__( 'Logged in as %s.', 'arqamweb' ), '<strong>' . esc_html( wp_get_current_user()->display_name ) . '</strong>' ),
+			sprintf( esc_html__( 'Logged in as %s.', 'arqam-web' ), '<strong>' . esc_html( wp_get_current_user()->display_name ) . '</strong>' ),
 			esc_url( wp_logout_url( get_permalink() ) ),
-			esc_html__( 'Log out?', 'arqamweb' )
+			esc_html__( 'Log out?', 'arqam-web' )
 		),
 		'must_log_in'          => sprintf(
 			'<p class="text-sm text-muted-foreground">%s <a href="%s" class="text-primary hover:opacity-70 transition-opacity">%s</a>.</p>',
-			esc_html__( 'You must be', 'arqamweb' ),
+			esc_html__( 'You must be', 'arqam-web' ),
 			esc_url( wp_login_url( get_permalink() ) ),
-			esc_html__( 'logged in to post a comment', 'arqamweb' )
+			esc_html__( 'logged in to post a comment', 'arqam-web' )
 		),
 	] );
 	?>

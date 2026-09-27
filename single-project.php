@@ -20,10 +20,10 @@ $has_project_stats = !empty($project_stats);
 $showcase_images = ArqamWeb_Project::get_showcase_images($post_id);
 $project_cta = ArqamWeb_Project::get_cta($post_id);
 if ($project_cta['title'] === '') {
-	$project_cta['title'] = __('Ready to Build a Website That Actually Makes You Money?', 'arqamweb');
+	$project_cta['title'] = __('Ready to Build a Website That Actually Makes You Money?', 'arqam-web');
 }
 if ($project_cta['description'] === '') {
-	$project_cta['description'] = __('We build high-performance websites engineered for growth, revenue, and measurable business results.', 'arqamweb');
+	$project_cta['description'] = __('We build high-performance websites engineered for growth, revenue, and measurable business results.', 'arqam-web');
 }
 $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !== '';
 
@@ -137,7 +137,7 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 			<?php endif; ?>
 			<?php if ($has_project_stats) : ?>
 				<div class="text-center mb-16 transition-all duration-700 translate-y-6">
-					<h2 class="text-3xl md:text-5xl font-display font-bold"><?php esc_html_e('The numbers speak for themselves', 'arqamweb'); ?></h2>
+					<h2 class="text-3xl md:text-5xl font-display font-bold"><?php esc_html_e('The numbers speak for themselves', 'arqam-web'); ?></h2>
 				</div>
 				<div class="grid grid-cols-2 md:grid-cols-4 gap-12 transition-all duration-700 translate-y-6">
 					<?php foreach ($project_stats as $stat) : ?>
@@ -256,8 +256,8 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 			<div id="showcase-panel" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh;">
 				<div id="showcase-inner" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
 					<div class="px-6 md:px-12 lg:px-24 mb-10">
-						<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Visual Showcase', 'arqamweb'); ?></p>
-						<h2 class="text-3xl md:text-4xl font-bold max-w-xl"><?php esc_html_e('Crafted with precision, down to the pixel', 'arqamweb'); ?></h2>
+						<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Visual Showcase', 'arqam-web'); ?></p>
+						<h2 class="text-3xl md:text-4xl font-bold max-w-xl"><?php esc_html_e('Crafted with precision, down to the pixel', 'arqam-web'); ?></h2>
 					</div>
 					<div id="showcase-viewport">
 						<div id="track" class="flex gap-6 px-6 md:px-12 lg:px-24" style="will-change: transform;">
@@ -471,16 +471,16 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 			</div>
 			<div class="relative z-10 container">
 				<div class="text-center mb-12 transition-all duration-700 opacity-100 translate-y-0">
-					<p class="text-sm font-medium tracking-widest uppercase mb-4" style="color: rgb(94, 178, 237);"><?php esc_html_e('See It In Action', 'arqamweb'); ?></p>
-					<h2 class="text-3xl md:text-5xl font-display font-bold mb-4 text-white" style="line-height: 1.1;"><?php esc_html_e('Watch the full project walkthrough', 'arqamweb'); ?></h2>
-					<p class="max-w-lg mx-auto" style="color: rgb(148, 163, 184);"><?php esc_html_e('A detailed look at the design decisions, interactions, and results that brought this project to life.', 'arqamweb'); ?></p>
+					<p class="text-sm font-medium tracking-widest uppercase mb-4" style="color: rgb(94, 178, 237);"><?php esc_html_e('See It In Action', 'arqam-web'); ?></p>
+					<h2 class="text-3xl md:text-5xl font-display font-bold mb-4 text-white" style="line-height: 1.1;"><?php esc_html_e('Watch the full project walkthrough', 'arqam-web'); ?></h2>
+					<p class="max-w-lg mx-auto" style="color: rgb(148, 163, 184);"><?php esc_html_e('A detailed look at the design decisions, interactions, and results that brought this project to life.', 'arqam-web'); ?></p>
 				</div>
 				<div class="transition-all duration-700 delay-150 opacity-100 translate-y-0 scale-100 max-w-3xl mx-auto">
 					<div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-foreground/[0.08] border border-border/40 bg-foreground/5">
 
 
 						<div class="aspect-video w-full relative" id="video-wrapper" data-video-id="<?php echo esc_attr($video_id); ?>">
-							<button class="group absolute inset-0 w-full h-full cursor-pointer" aria-label="<?php esc_attr_e('Play video', 'arqamweb'); ?>">
+							<button class="group absolute inset-0 w-full h-full cursor-pointer" aria-label="<?php esc_attr_e('Play video', 'arqam-web'); ?>">
 								<img src="https://img.youtube.com/vi/<?php echo esc_attr($video_id); ?>/maxresdefault.jpg"
 									alt="<?php echo esc_attr(get_the_title() . ' — project walkthrough video'); ?>"
 									width="1280"
@@ -579,15 +579,15 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 	?>
 		<section class="section-padding py-32 surface-elevated">
 			<div class="container">
-				<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Overview', 'arqamweb'); ?></p>
-				<h2 class="text-3xl md:text-4xl font-display font-bold mb-16 max-w-2xl"><?php esc_html_e('How we transformed this business', 'arqamweb'); ?></h2>
+				<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Overview', 'arqam-web'); ?></p>
+				<h2 class="text-3xl md:text-4xl font-display font-bold mb-16 max-w-2xl"><?php esc_html_e('How we transformed this business', 'arqam-web'); ?></h2>
 				<div class="grid md:grid-cols-3 gap-8 lg:gap-12">
 
 					<?php
 
 					foreach ($transform_cards as $card) :
 						$icon_url = $card['icon'];
-						$icon_alt = sprintf( __( '%s icon', 'arqamweb' ), $card['title'] );
+						$icon_alt = sprintf( __( '%s icon', 'arqam-web' ), $card['title'] );
 						$tag = $card['tag'];
 						$title = $card['title'];
 						$description = $card['desc'];
@@ -632,8 +632,8 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 		<section id="phases" class="section-padding py-32">
 			<div class="container">
 				<div class="mb-16 transition-all duration-700 translate-y-6">
-					<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Project Story', 'arqamweb'); ?></p>
-					<h2 class="text-3xl md:text-4xl font-display font-bold max-w-xl"><?php esc_html_e('From vision to launch — every step, intentional', 'arqamweb'); ?></h2>
+					<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Project Story', 'arqam-web'); ?></p>
+					<h2 class="text-3xl md:text-4xl font-display font-bold max-w-xl"><?php esc_html_e('From vision to launch — every step, intentional', 'arqam-web'); ?></h2>
 				</div>
 				<div class="space-y-4">
 
@@ -687,7 +687,7 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 										<div class="flex-1 min-w-0">
 
 											<span class="text-[11px] font-bold uppercase text-primary">
-												<?php echo esc_html( sprintf( __( 'Phase %s', 'arqamweb' ), str_pad($index, 2, '0', STR_PAD_LEFT) ) ); ?>
+												<?php echo esc_html( sprintf( __( 'Phase %s', 'arqam-web' ), str_pad($index, 2, '0', STR_PAD_LEFT) ) ); ?>
 											</span>
 
 											<h3 class="text-xl md:text-2xl font-display font-bold mb-2">
@@ -770,8 +770,8 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 		<section class="section-padding py-32 surface-elevated">
 			<div class="container">
 				<div class="mb-16 transition-all duration-700 translate-y-6">
-					<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('What We Built', 'arqamweb'); ?></p>
-					<h2 class="text-3xl md:text-4xl font-display font-bold max-w-xl"><?php esc_html_e('Performance', 'arqamweb'); ?> &amp; <?php esc_html_e('Delivery', 'arqamweb'); ?></h2>
+					<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('What We Built', 'arqam-web'); ?></p>
+					<h2 class="text-3xl md:text-4xl font-display font-bold max-w-xl"><?php esc_html_e('Performance', 'arqam-web'); ?> &amp; <?php esc_html_e('Delivery', 'arqam-web'); ?></h2>
 				</div>
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -811,8 +811,8 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 		<section class="section-padding py-32">
 			<div class="container">
 				<div class="mb-16 transition-all duration-700 translate-y-6">
-					<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Behind the Results', 'arqamweb'); ?></p>
-					<h2 class="text-3xl md:text-4xl font-display font-bold max-w-xl"><?php esc_html_e('Why this project succeeded', 'arqamweb'); ?></h2>
+					<p class="text-sm font-medium tracking-widest uppercase text-primary mb-4"><?php esc_html_e('Behind the Results', 'arqam-web'); ?></p>
+					<h2 class="text-3xl md:text-4xl font-display font-bold max-w-xl"><?php esc_html_e('Why this project succeeded', 'arqam-web'); ?></h2>
 				</div>
 				<div class="grid md:grid-cols-2 gap-6">
 
@@ -849,35 +849,35 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 	<section class="section-padding pt-32 pb-16 surface-elevated">
 		<div class="container text-center">
 			<div class="space-y-8 transition-all duration-700 translate-y-6">
-				<p class="text-sm font-medium tracking-widest uppercase text-primary"><?php esc_html_e('Sound Familiar?', 'arqamweb'); ?></p>
-				<h2 class="text-3xl md:text-5xl font-display font-bold"><?php esc_html_e('What This Means For You', 'arqamweb'); ?></h2>
+				<p class="text-sm font-medium tracking-widest uppercase text-primary"><?php esc_html_e('Sound Familiar?', 'arqam-web'); ?></p>
+				<h2 class="text-3xl md:text-5xl font-display font-bold"><?php esc_html_e('What This Means For You', 'arqam-web'); ?></h2>
 				<ul class="space-y-4 text-left max-w-md mx-auto pt-4">
 					<li class="flex items-start gap-3 text-muted-foreground text-[16px] leading-relaxed transition-all duration-500 -translate-x-4" style="transition-delay: 200ms;">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-primary mt-0.5 flex-shrink-0">
 							<circle cx="12" cy="12" r="10"></circle>
 							<path d="m9 12 2 2 4-4"></path>
-						</svg><?php esc_html_e('Struggling with low traffic and zero visibility?', 'arqamweb'); ?>
+						</svg><?php esc_html_e('Struggling with low traffic and zero visibility?', 'arqam-web'); ?>
 					</li>
 					<li class="flex items-start gap-3 text-muted-foreground text-[16px] leading-relaxed transition-all duration-500 -translate-x-4" style="transition-delay: 280ms;">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-primary mt-0.5 flex-shrink-0">
 							<circle cx="12" cy="12" r="10"></circle>
 							<path d="m9 12 2 2 4-4"></path>
-						</svg><?php esc_html_e('Poor conversion rates despite good products?', 'arqamweb'); ?>
+						</svg><?php esc_html_e('Poor conversion rates despite good products?', 'arqam-web'); ?>
 					</li>
 					<li class="flex items-start gap-3 text-muted-foreground text-[16px] leading-relaxed transition-all duration-500 -translate-x-4" style="transition-delay: 360ms;">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-primary mt-0.5 flex-shrink-0">
 							<circle cx="12" cy="12" r="10"></circle>
 							<path d="m9 12 2 2 4-4"></path>
-						</svg><?php esc_html_e('Slow, outdated website hurting your credibility?', 'arqamweb'); ?>
+						</svg><?php esc_html_e('Slow, outdated website hurting your credibility?', 'arqam-web'); ?>
 					</li>
 					<li class="flex items-start gap-3 text-muted-foreground text-[16px] leading-relaxed transition-all duration-500 -translate-x-4" style="transition-delay: 440ms;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-primary mt-0.5 flex-shrink-0">
 							<circle cx="12" cy="12" r="10"></circle>
 							<path d="m9 12 2 2 4-4"></path>
 						</svg>
-						<span><?php esc_html_e('Competitors outranking you on every search?', 'arqamweb'); ?></span>
+						<span><?php esc_html_e('Competitors outranking you on every search?', 'arqam-web'); ?></span>
 					</li>
 				</ul>
-				<p class="text-lg md:text-xl font-display font-semibold text-foreground pt-4 transition-all duration-700 translate-y-4" style="transition-delay: 600ms;"><?php esc_html_e("Let's achieve similar results for your business.", 'arqamweb'); ?></p>
+				<p class="text-lg md:text-xl font-display font-semibold text-foreground pt-4 transition-all duration-700 translate-y-4" style="transition-delay: 600ms;"><?php esc_html_e("Let's achieve similar results for your business.", 'arqam-web'); ?></p>
 			</div>
 		</div>
 	</section>
@@ -901,13 +901,13 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 				<?php endif; ?>
 				<div class="flex flex-wrap gap-4 justify-center pt-6">
 					<a href="<?php echo arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG); ?>" class="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-background text-foreground font-semibold text-sm tracking-wide hover:opacity-90 active:scale-[0.97] transition-all duration-200 shadow-lg">
-						<span><?php esc_html_e('Start Your Project', 'arqamweb'); ?></span>
+						<span><?php esc_html_e('Start Your Project', 'arqam-web'); ?></span>
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-4 h-4">
 							<path d="M7 7h10v10"></path>
 							<path d="M7 17 17 7"></path>
 						</svg>
 					</a>
-					<a href="<?php echo arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG); ?>" class="inline-flex items-center gap-2 px-10 py-4 rounded-full border border-primary-foreground/30 font-semibold text-sm tracking-wide text-white hover:bg-primary-foreground/10 active:scale-[0.97] transition-all duration-200"><?php esc_html_e('Get a Proposal', 'arqamweb'); ?></a>
+					<a href="<?php echo arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG); ?>" class="inline-flex items-center gap-2 px-10 py-4 rounded-full border border-primary-foreground/30 font-semibold text-sm tracking-wide text-white hover:bg-primary-foreground/10 active:scale-[0.97] transition-all duration-200"><?php esc_html_e('Get a Proposal', 'arqam-web'); ?></a>
 				</div>
 			</div>
 		</div>
@@ -922,9 +922,9 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 	<section class="py-24 lg:py-32 border-t border-border/60">
 		<div class="container-x max-w-7xl mx-auto">
 			<div class="reveal mb-12 in">
-				<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4">— <?php esc_html_e( 'More work', 'arqamweb' ); ?></div>
+				<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4">— <?php esc_html_e( 'More work', 'arqam-web' ); ?></div>
 				<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight">
-					<?php esc_html_e( 'Related', 'arqamweb' ); ?> <span class="text-gradient"><?php esc_html_e( 'projects.', 'arqamweb' ); ?></span>
+					<?php esc_html_e( 'Related', 'arqam-web' ); ?> <span class="text-gradient"><?php esc_html_e( 'projects.', 'arqam-web' ); ?></span>
 				</h2>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7">
@@ -988,7 +988,7 @@ $has_project_cta = $project_cta['title'] !== '' || $project_cta['description'] !
 			<div class="mt-12 text-center">
 				<a href="<?php echo esc_url( home_url( '/projects' ) ); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors">
-					<?php esc_html_e( 'View all projects', 'arqamweb' ); ?>
+					<?php esc_html_e( 'View all projects', 'arqam-web' ); ?>
 					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
 						<path d="M5 12h14M13 5l7 7-7 7"/>
 					</svg>

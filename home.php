@@ -159,25 +159,25 @@ $grid_layouts = [
 		<div class="reveal container-x max-w-7xl mx-auto relative in">
 			<nav class="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-10">
 				<a href="<?php echo esc_url(home_url('/')); ?>"
-				   class="hover:text-primary transition-colors"><?php esc_html_e('Home', 'arqamweb'); ?></a>
+				   class="hover:text-primary transition-colors"><?php esc_html_e('Home', 'arqam-web'); ?></a>
 				<span>/</span>
-				<span class="text-foreground"><?php esc_html_e('Journal', 'arqamweb'); ?></span>
+				<span class="text-foreground"><?php esc_html_e('Journal', 'arqam-web'); ?></span>
 			</nav>
 			<div class="grid lg:grid-cols-12 gap-10 items-end">
 				<div class="lg:col-span-8">
 					<div class="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-6">
-						<?php esc_html_e('Issue', 'arqamweb'); ?> <?php echo esc_html($issue_number); ?> &middot; <?php esc_html_e('Field Notes', 'arqamweb'); ?>
+						<?php esc_html_e('Issue', 'arqam-web'); ?> <?php echo esc_html($issue_number); ?> &middot; <?php esc_html_e('Field Notes', 'arqam-web'); ?>
 					</div>
-					<h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-semibold tracking-tight leading-[0.95]"><?php esc_html_e('The', 'arqamweb'); ?>
-						<span class="italic font-light"><?php esc_html_e('Journal', 'arqamweb'); ?></span>.<br><?php esc_html_e('Ideas worth', 'arqamweb'); ?> <span class="text-gradient"><?php esc_html_e('building on.', 'arqamweb'); ?></span>
+					<h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-semibold tracking-tight leading-[0.95]"><?php esc_html_e('The', 'arqam-web'); ?>
+						<span class="italic font-light"><?php esc_html_e('Journal', 'arqam-web'); ?></span>.<br><?php esc_html_e('Ideas worth', 'arqam-web'); ?> <span class="text-gradient"><?php esc_html_e('building on.', 'arqam-web'); ?></span>
 					</h1>
 				</div>
 				<div class="lg:col-span-4">
-					<p class="text-lg text-muted-foreground leading-relaxed max-w-md"><?php esc_html_e('Essays, breakdowns and field reports from the studio — on design that converts, SEO that compounds, and brands that age well.', 'arqamweb'); ?></p>
+					<p class="text-lg text-muted-foreground leading-relaxed max-w-md"><?php esc_html_e('Essays, breakdowns and field reports from the studio — on design that converts, SEO that compounds, and brands that age well.', 'arqam-web'); ?></p>
 					<div class="mt-6 flex items-center gap-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-						<span><?php echo esc_html($total_posts); ?><?php esc_html_e('essays', 'arqamweb'); ?></span>
+						<span><?php echo esc_html($total_posts); ?><?php esc_html_e('essays', 'arqam-web'); ?></span>
 						<span class="w-1 h-1 rounded-full bg-muted-foreground/50"></span>
-						<span><?php esc_html_e('Weekly', 'arqamweb'); ?></span>
+						<span><?php esc_html_e('Weekly', 'arqam-web'); ?></span>
 						<span class="w-1 h-1 rounded-full bg-muted-foreground/50"></span>
 						<span>EN / AR</span>
 					</div>
@@ -192,7 +192,7 @@ $grid_layouts = [
 			<div class="container-x max-w-7xl mx-auto">
 				<div class="flex items-end justify-between mb-8">
 					<div class="text-xs font-semibold tracking-[0.3em] uppercase text-muted-foreground">
-						— <?php esc_html_e('Featured story', 'arqamweb'); ?></div>
+						— <?php esc_html_e('Featured story', 'arqam-web'); ?></div>
 					<div
 						class="hidden md:block text-xs text-muted-foreground"><?php echo esc_html($featured_data['date']); ?></div>
 				</div>
@@ -231,7 +231,7 @@ $grid_layouts = [
 							<?php echo esc_html($featured_data['excerpt']); ?>
 						</p>
 						<div class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-primary">
-							<?php esc_html_e('Read the essay', 'arqamweb'); ?>
+							<?php esc_html_e('Read the essay', 'arqam-web'); ?>
 							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							     stroke-width="2.5" class="transition-transform duration-300 group-hover:translate-x-1">
 								<path d="M5 12h14M13 5l7 7-7 7"></path>
@@ -248,10 +248,10 @@ $grid_layouts = [
 		<div class="container-x max-w-7xl mx-auto">
 			<div class="reveal max-w-3xl mb-12 in">
 				<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4">
-					— <?php esc_html_e('The library', 'arqamweb'); ?></div>
-				<h2 class="text-4xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e('Latest from the', 'arqamweb'); ?>
-					<span class="text-gradient"><?php esc_html_e('studio.', 'arqamweb'); ?></span></h2>
-				<p class="mt-4 text-muted-foreground text-lg leading-relaxed"><?php esc_html_e('A growing archive of essays, teardowns and frameworks from fifteen years of shipping high-performance digital work.', 'arqamweb'); ?></p>
+					— <?php esc_html_e('The library', 'arqam-web'); ?></div>
+				<h2 class="text-4xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e('Latest from the', 'arqam-web'); ?>
+					<span class="text-gradient"><?php esc_html_e('studio.', 'arqam-web'); ?></span></h2>
+				<p class="mt-4 text-muted-foreground text-lg leading-relaxed"><?php esc_html_e('A growing archive of essays, teardowns and frameworks from fifteen years of shipping high-performance digital work.', 'arqam-web'); ?></p>
 			</div>
 
 			<!-- Category filter tabs -->
@@ -260,7 +260,7 @@ $grid_layouts = [
 					<a href="<?php echo esc_url(get_post_type_archive_link('post') ?: home_url('/')); ?>"
 					   class="relative px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-primary-foreground">
 						<span class="absolute inset-0 rounded-full bg-gradient-primary shadow-glow"></span>
-						<span class="relative"><?php esc_html_e('All', 'arqamweb'); ?></span>
+						<span class="relative"><?php esc_html_e('All', 'arqam-web'); ?></span>
 					</a>
 					<?php foreach ($nav_cats as $nav_cat) : ?>
 						<a href="<?php echo esc_url(get_category_link($nav_cat->term_id)); ?>"
@@ -312,7 +312,7 @@ $grid_layouts = [
 									<span
 										class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-primary/10 text-primary border border-primary/20">
 										<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-										<?php esc_html_e('Trending', 'arqamweb'); ?>
+										<?php esc_html_e('Trending', 'arqam-web'); ?>
 									</span>
 								<?php endif; ?>
 							</div>
@@ -335,11 +335,11 @@ $grid_layouts = [
 							</p>
 							<div class="mt-auto pt-5 flex items-center justify-between gap-4">
 								<span class="text-xs uppercase tracking-[0.15em] text-muted-foreground">
-									<?php esc_html_e('By', 'arqamweb'); ?><?php the_author(); ?>
+									<?php esc_html_e('By', 'arqam-web'); ?><?php the_author(); ?>
 								</span>
 								<span
 									class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-transform duration-300 group-hover:translate-x-1">
-									<?php esc_html_e('Read', 'arqamweb'); ?>
+									<?php esc_html_e('Read', 'arqam-web'); ?>
 									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 									     stroke-width="2.5">
 										<path d="M5 12h14M13 5l7 7-7 7"></path>
@@ -363,9 +363,9 @@ $grid_layouts = [
 			<div class="flex items-end justify-between mb-10">
 				<div>
 					<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-3">
-						— <?php esc_html_e('Trending this month', 'arqamweb'); ?></div>
-					<h2 class="text-3xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e('What the studio is', 'arqamweb'); ?>
-						<span class="italic font-light"><?php esc_html_e('reading.', 'arqamweb'); ?></span></h2>
+						— <?php esc_html_e('Trending this month', 'arqam-web'); ?></div>
+					<h2 class="text-3xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e('What the studio is', 'arqam-web'); ?>
+						<span class="italic font-light"><?php esc_html_e('reading.', 'arqam-web'); ?></span></h2>
 				</div>
 			</div>
 			<ol class="divide-y divide-border border-y border-border">
@@ -430,14 +430,14 @@ $grid_layouts = [
 				<div class="relative grid lg:grid-cols-12 gap-10 items-center">
 					<div class="lg:col-span-7">
 						<div class="text-[11px] font-semibold tracking-[0.3em] uppercase text-white/60 mb-4">
-							— <?php esc_html_e('The dispatch', 'arqamweb'); ?></div>
+							— <?php esc_html_e('The dispatch', 'arqam-web'); ?></div>
 						<h2 class="text-3xl lg:text-5xl font-semibold tracking-tight leading-[1.05]">
-							<?php esc_html_e('One essay. Every Sunday.', 'arqamweb'); ?><br>
+							<?php esc_html_e('One essay. Every Sunday.', 'arqam-web'); ?><br>
 							<span
-								class="text-white/70 font-light italic"><?php esc_html_e('Nothing else.', 'arqamweb'); ?></span>
+								class="text-white/70 font-light italic"><?php esc_html_e('Nothing else.', 'arqam-web'); ?></span>
 						</h2>
 						<p class="mt-5 text-white/70 text-base lg:text-lg leading-relaxed max-w-lg">
-							<?php esc_html_e('Join 8,400+ founders, designers and operators reading the quietest, sharpest newsletter on digital craft.', 'arqamweb'); ?>
+							<?php esc_html_e('Join 8,400+ founders, designers and operators reading the quietest, sharpest newsletter on digital craft.', 'arqam-web'); ?>
 						</p>
 					</div>
 					<div class="lg:col-span-5">
@@ -445,16 +445,16 @@ $grid_layouts = [
 							<div
 								class="flex items-center gap-2 p-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-xl">
 								<input required
-								       placeholder="<?php esc_attr_e('you@studio.com', 'arqamweb'); ?>"
+								       placeholder="<?php esc_attr_e('you@studio.com', 'arqam-web'); ?>"
 								       class="flex-1 bg-transparent px-5 py-3 text-white placeholder:text-white/40 focus:outline-none text-sm"
 								       type="email" value="">
 								<button type="submit"
 								        class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white text-foreground text-sm font-semibold hover:bg-white/90 transition-colors">
-									<?php esc_html_e('Subscribe', 'arqamweb'); ?>
+									<?php esc_html_e('Subscribe', 'arqam-web'); ?>
 								</button>
 							</div>
 							<p class="text-xs text-white/50 px-2">
-								<?php esc_html_e('No spam. Unsubscribe in one click. Read by teams at Aramco, Noon and STC.', 'arqamweb'); ?>
+								<?php esc_html_e('No spam. Unsubscribe in one click. Read by teams at Aramco, Noon and STC.', 'arqam-web'); ?>
 							</p>
 						</form>
 					</div>
@@ -481,19 +481,19 @@ $grid_layouts = [
 		</div>
 		<div class="reveal container-x max-w-5xl mx-auto text-center relative in">
 			<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-6">
-				— <?php esc_html_e('Beyond the essay', 'arqamweb'); ?></div>
+				— <?php esc_html_e('Beyond the essay', 'arqam-web'); ?></div>
 			<h2 class="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02]">
-				<?php esc_html_e('Ideas are easy.', 'arqamweb'); ?><br>
+				<?php esc_html_e('Ideas are easy.', 'arqam-web'); ?><br>
 				<span
-					class="text-gradient italic font-light"><?php esc_html_e('Execution is the craft.', 'arqamweb'); ?></span>
+					class="text-gradient italic font-light"><?php esc_html_e('Execution is the craft.', 'arqam-web'); ?></span>
 			</h2>
 			<p class="mt-7 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-				<?php esc_html_e('If something here sparked an idea for your brand, let\'s turn it into a system that ships, ranks and converts.', 'arqamweb'); ?>
+				<?php esc_html_e('If something here sparked an idea for your brand, let\'s turn it into a system that ships, ranks and converts.', 'arqam-web'); ?>
 			</p>
 			<div class="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center">
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-primary text-primary-foreground font-semibold shadow-glow hover:scale-[1.02] transition-transform">
-					<?php esc_html_e('Start a project', 'arqamweb'); ?>
+					<?php esc_html_e('Start a project', 'arqam-web'); ?>
 					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 					     stroke-width="2.5">
 						<path d="M5 12h14M13 5l7 7-7 7"></path>
@@ -501,7 +501,7 @@ $grid_layouts = [
 				</a>
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors">
-					<?php esc_html_e('View our projects', 'arqamweb'); ?>
+					<?php esc_html_e('View our projects', 'arqam-web'); ?>
 				</a>
 			</div>
 		</div>

@@ -20,7 +20,7 @@ $read_time_fn = function ( $post_id ) {
 };
 ?>
 
-<main class="bg-background" aria-label="<?php echo esc_attr( sprintf( __( 'Posts by %s', 'arqamweb' ), $author_name ) ); ?>">
+<main class="bg-background" aria-label="<?php echo esc_attr( sprintf( __( 'Posts by %s', 'arqam-web' ), $author_name ) ); ?>">
 
 	<!-- ── Author Hero ───────────────────────────────────────────────────── -->
 	<section class="relative pt-32 pb-16 lg:pt-44 lg:pb-24 overflow-hidden bg-hero">
@@ -45,7 +45,7 @@ $read_time_fn = function ( $post_id ) {
 				<!-- Author identity -->
 				<div class="flex-1">
 					<div class="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-6">
-						— <?php esc_html_e( 'Author', 'arqamweb' ); ?>
+						— <?php esc_html_e( 'Author', 'arqam-web' ); ?>
 					</div>
 
 					<div class="flex items-center gap-5 mb-6">
@@ -62,7 +62,7 @@ $read_time_fn = function ( $post_id ) {
 								<?php
 								echo esc_html( $total_posts );
 								echo ' ';
-								echo esc_html( _n( 'essay', 'essays', $total_posts, 'arqamweb' ) );
+								echo esc_html( _n( 'essay', 'essays', $total_posts, 'arqam-web' ) );
 								?>
 							</div>
 						</div>
@@ -142,7 +142,7 @@ $read_time_fn = function ( $post_id ) {
 								<?php echo esc_html( get_the_excerpt() ); ?>
 							</p>
 							<div class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-transform duration-300 group-hover:translate-x-1">
-								<?php esc_html_e( 'Read', 'arqamweb' ); ?>
+								<?php esc_html_e( 'Read', 'arqam-web' ); ?>
 								<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
 									<path d="M5 12h14M13 5l7 7-7 7"/>
 								</svg>
@@ -164,7 +164,7 @@ $read_time_fn = function ( $post_id ) {
 			] );
 
 			if ( $pagination ) : ?>
-			<nav class="mt-16 flex items-center justify-center gap-2" aria-label="<?php esc_attr_e( 'Author posts navigation', 'arqamweb' ); ?>">
+			<nav class="mt-16 flex items-center justify-center gap-2" aria-label="<?php esc_attr_e( 'Author posts navigation', 'arqam-web' ); ?>">
 				<?php foreach ( $pagination as $page_link ) :
 					$is_current = strpos( $page_link, 'current' ) !== false;
 					$is_dots    = strpos( $page_link, 'dots' )    !== false;
@@ -197,14 +197,14 @@ $read_time_fn = function ( $post_id ) {
 					<?php
 					printf(
 						/* translators: %s: author name */
-						esc_html__( '%s hasn\'t published anything yet.', 'arqamweb' ),
+						esc_html__( '%s hasn\'t published anything yet.', 'arqam-web' ),
 						esc_html( $author_name )
 					);
 					?>
 				</h2>
 				<a href="<?php echo esc_url( home_url( '/blog' ) ); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors mt-6">
-					<?php esc_html_e( 'Browse Journal', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Browse Journal', 'arqam-web' ); ?>
 				</a>
 			</div>
 

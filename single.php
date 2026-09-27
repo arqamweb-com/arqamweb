@@ -80,7 +80,7 @@ $read_time_fn = function ( $pid ) {
 						<?php echo esc_html( $cat->name ); ?>
 					</a>
 				<?php endif; ?>
-				<span class="text-xs text-muted-foreground"><?php echo esc_html( $read_time ); ?> <?php esc_html_e( 'read', 'arqamweb' ); ?></span>
+				<span class="text-xs text-muted-foreground"><?php echo esc_html( $read_time ); ?> <?php esc_html_e( 'read', 'arqam-web' ); ?></span>
 			</div>
 
 			<!-- Title -->
@@ -105,7 +105,7 @@ $read_time_fn = function ( $pid ) {
 						<?php
 						printf(
 							/* translators: %s: date */
-							esc_html__( 'Updated %s', 'arqamweb' ),
+							esc_html__( 'Updated %s', 'arqam-web' ),
 							esc_html( get_the_modified_date( 'M j, Y' ) )
 						);
 						?>
@@ -175,7 +175,7 @@ $read_time_fn = function ( $pid ) {
 			<!-- Share -->
 			<div class="mt-10 pt-8 border-t border-border/60">
 				<p class="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-					<?php esc_html_e( 'Share this essay', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Share this essay', 'arqam-web' ); ?>
 				</p>
 				<div class="flex items-center gap-3">
 					<a href="https://twitter.com/intent/tweet?url=<?php echo rawurlencode( $post_permalink ); ?>&text=<?php echo rawurlencode( get_the_title() ); ?>"
@@ -197,7 +197,7 @@ $read_time_fn = function ( $pid ) {
 							<rect x="9" y="9" width="13" height="13" rx="2"/>
 							<path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
 						</svg>
-						<?php esc_html_e( 'Copy link', 'arqamweb' ); ?>
+						<?php esc_html_e( 'Copy link', 'arqam-web' ); ?>
 					</button>
 				</div>
 			</div>
@@ -207,7 +207,7 @@ $read_time_fn = function ( $pid ) {
 				<?php echo get_avatar( get_the_author_meta( 'ID' ), 64, '', esc_attr( $author_name ), [ 'class' => 'w-16 h-16 rounded-2xl object-cover border border-border flex-shrink-0' ] ); ?>
 				<div>
 					<p class="text-[11px] font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-1">
-						<?php esc_html_e( 'Written by', 'arqamweb' ); ?>
+						<?php esc_html_e( 'Written by', 'arqam-web' ); ?>
 					</p>
 					<p class="font-semibold text-foreground"><?php echo esc_html( $author_name ); ?></p>
 					<?php
@@ -220,7 +220,7 @@ $read_time_fn = function ( $pid ) {
 			</div>
 
 			<!-- Prev / Next navigation -->
-			<nav class="mt-12 grid grid-cols-2 gap-4" aria-label="<?php esc_attr_e( 'Post navigation', 'arqamweb' ); ?>">
+			<nav class="mt-12 grid grid-cols-2 gap-4" aria-label="<?php esc_attr_e( 'Post navigation', 'arqam-web' ); ?>">
 				<?php
 				$prev = get_previous_post();
 				$next = get_next_post();
@@ -230,7 +230,7 @@ $read_time_fn = function ( $pid ) {
 				   class="group flex flex-col gap-1 p-4 rounded-2xl border border-border bg-card hover:border-primary/40 transition-colors col-span-1">
 					<span class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground flex items-center gap-1">
 						<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M11 5l-7 7 7 7"/></svg>
-						<?php esc_html_e( 'Previous', 'arqamweb' ); ?>
+						<?php esc_html_e( 'Previous', 'arqam-web' ); ?>
 					</span>
 					<span class="text-sm font-medium leading-snug group-hover:text-primary transition-colors line-clamp-2">
 						<?php echo esc_html( get_the_title( $prev ) ); ?>
@@ -244,7 +244,7 @@ $read_time_fn = function ( $pid ) {
 				<a href="<?php echo esc_url( get_permalink( $next ) ); ?>"
 				   class="group flex flex-col gap-1 p-4 rounded-2xl border border-border bg-card hover:border-primary/40 transition-colors col-span-1 text-right">
 					<span class="text-[11px] uppercase tracking-[0.2em] text-muted-foreground flex items-center justify-end gap-1">
-						<?php esc_html_e( 'Next', 'arqamweb' ); ?>
+						<?php esc_html_e( 'Next', 'arqam-web' ); ?>
 						<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
 					</span>
 					<span class="text-sm font-medium leading-snug group-hover:text-primary transition-colors line-clamp-2">
@@ -262,9 +262,9 @@ $read_time_fn = function ( $pid ) {
 	<section class="py-24 lg:py-32 bg-surface border-t border-border/60">
 		<div class="container-x max-w-7xl mx-auto">
 			<div class="reveal mb-12 in">
-				<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4">— <?php esc_html_e( 'More from the studio', 'arqamweb' ); ?></div>
+				<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4">— <?php esc_html_e( 'More from the studio', 'arqam-web' ); ?></div>
 				<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight">
-					<?php esc_html_e( 'Keep', 'arqamweb' ); ?> <span class="text-gradient"><?php esc_html_e( 'reading.', 'arqamweb' ); ?></span>
+					<?php esc_html_e( 'Keep', 'arqam-web' ); ?> <span class="text-gradient"><?php esc_html_e( 'reading.', 'arqam-web' ); ?></span>
 				</h2>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7">
@@ -319,7 +319,7 @@ $read_time_fn = function ( $pid ) {
 								<?php echo esc_html( get_the_excerpt() ); ?>
 							</p>
 							<div class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-transform duration-300 group-hover:translate-x-1">
-								<?php esc_html_e( 'Read', 'arqamweb' ); ?>
+								<?php esc_html_e( 'Read', 'arqam-web' ); ?>
 								<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
 									<path d="M5 12h14M13 5l7 7-7 7"></path>
 								</svg>
@@ -335,7 +335,7 @@ $read_time_fn = function ( $pid ) {
 			<div class="mt-12 text-center">
 				<a href="<?php echo esc_url( get_post_type_archive_link( 'post' ) ?: home_url( '/blog' ) ); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors">
-					<?php esc_html_e( 'Back to Journal', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Back to Journal', 'arqam-web' ); ?>
 					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
 						<path d="M5 12h14M13 5l7 7-7 7"></path>
 					</svg>

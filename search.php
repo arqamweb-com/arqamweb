@@ -38,7 +38,7 @@ $read_time_fn = function ( $post_id ) {
 
 			<!-- Label -->
 			<div class="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-6">
-				— <?php esc_html_e( 'Search results', 'arqamweb' ); ?>
+				— <?php esc_html_e( 'Search results', 'arqam-web' ); ?>
 			</div>
 
 			<!-- Title -->
@@ -47,14 +47,14 @@ $read_time_fn = function ( $post_id ) {
 				<?php
 				printf(
 					/* translators: %s: search query */
-					esc_html__( 'Results for "%s"', 'arqamweb' ),
+					esc_html__( 'Results for "%s"', 'arqam-web' ),
 					'<span class="text-gradient">' . esc_html( $search_query ) . '</span>'
 				);
 				?>
 			</h1>
 			<?php else : ?>
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.05] mb-3">
-				<?php esc_html_e( 'Search the journal', 'arqamweb' ); ?>
+				<?php esc_html_e( 'Search the journal', 'arqam-web' ); ?>
 			</h1>
 			<?php endif; ?>
 
@@ -63,7 +63,7 @@ $read_time_fn = function ( $post_id ) {
 			<p class="text-muted-foreground text-base mb-10">
 				<?php
 				printf(
-					esc_html( _n( '%d result found', '%d results found', $total_results, 'arqamweb' ) ),
+					esc_html( _n( '%d result found', '%d results found', $total_results, 'arqam-web' ) ),
 					$total_results
 				);
 				?>
@@ -80,12 +80,12 @@ $read_time_fn = function ( $post_id ) {
 				<input type="search"
 				       name="s"
 				       value="<?php echo esc_attr( $search_query ); ?>"
-				       placeholder="<?php esc_attr_e( 'Search essays, topics, authors…', 'arqamweb' ); ?>"
+				       placeholder="<?php esc_attr_e( 'Search essays, topics, authors…', 'arqam-web' ); ?>"
 				       class="flex-1 bg-transparent px-3 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
-				       aria-label="<?php esc_attr_e( 'Search', 'arqamweb' ); ?>">
+				       aria-label="<?php esc_attr_e( 'Search', 'arqam-web' ); ?>">
 				<button type="submit"
 				        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-primary text-primary-foreground text-sm font-semibold shadow-glow hover:opacity-90 transition-opacity flex-shrink-0">
-					<?php esc_html_e( 'Search', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Search', 'arqam-web' ); ?>
 				</button>
 			</form>
 
@@ -170,7 +170,7 @@ $read_time_fn = function ( $post_id ) {
 									<?php the_author(); ?>
 								</span>
 								<span class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-transform duration-300 group-hover:translate-x-1">
-									<?php esc_html_e( 'Read', 'arqamweb' ); ?>
+									<?php esc_html_e( 'Read', 'arqam-web' ); ?>
 									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
 										<path d="M5 12h14M13 5l7 7-7 7"/>
 									</svg>
@@ -192,7 +192,7 @@ $read_time_fn = function ( $post_id ) {
 				'type'      => 'array',
 			] );
 			if ( $pagination ) : ?>
-			<nav class="mt-16 flex items-center justify-center gap-2" aria-label="<?php esc_attr_e( 'Search results navigation', 'arqamweb' ); ?>">
+			<nav class="mt-16 flex items-center justify-center gap-2" aria-label="<?php esc_attr_e( 'Search results navigation', 'arqam-web' ); ?>">
 				<?php foreach ( $pagination as $page_link ) :
 					$is_current = strpos( $page_link, 'current' ) !== false;
 					$is_dots    = strpos( $page_link, 'dots' ) !== false;
@@ -228,32 +228,32 @@ $read_time_fn = function ( $post_id ) {
 					<?php
 					printf(
 						/* translators: %s: search query */
-						esc_html__( 'No results for "%s"', 'arqamweb' ),
+						esc_html__( 'No results for "%s"', 'arqam-web' ),
 						esc_html( $search_query )
 					);
 					?>
 				</h2>
 				<p class="text-muted-foreground mb-8">
-					<?php esc_html_e( 'Try different keywords or browse the journal below.', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Try different keywords or browse the journal below.', 'arqam-web' ); ?>
 				</p>
 				<?php else : ?>
-				<h2 class="text-2xl font-semibold mb-3"><?php esc_html_e( 'What are you looking for?', 'arqamweb' ); ?></h2>
-				<p class="text-muted-foreground mb-8"><?php esc_html_e( 'Type a keyword above to search essays, projects and more.', 'arqamweb' ); ?></p>
+				<h2 class="text-2xl font-semibold mb-3"><?php esc_html_e( 'What are you looking for?', 'arqam-web' ); ?></h2>
+				<p class="text-muted-foreground mb-8"><?php esc_html_e( 'Type a keyword above to search essays, projects and more.', 'arqam-web' ); ?></p>
 				<?php endif; ?>
 
 				<!-- Suggested links -->
 				<div class="flex flex-wrap gap-3 justify-center mb-10">
 					<a href="<?php echo esc_url( home_url( '/blog' ) ); ?>"
 					   class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card text-sm font-medium hover:border-primary/40 hover:text-primary transition-colors">
-						<?php esc_html_e( 'Browse Journal', 'arqamweb' ); ?>
+						<?php esc_html_e( 'Browse Journal', 'arqam-web' ); ?>
 					</a>
 					<a href="<?php echo esc_url( home_url( '/projects' ) ); ?>"
 					   class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card text-sm font-medium hover:border-primary/40 hover:text-primary transition-colors">
-						<?php esc_html_e( 'View Projects', 'arqamweb' ); ?>
+						<?php esc_html_e( 'View Projects', 'arqam-web' ); ?>
 					</a>
 					<a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>"
 					   class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card text-sm font-medium hover:border-primary/40 hover:text-primary transition-colors">
-						<?php esc_html_e( 'Contact Us', 'arqamweb' ); ?>
+						<?php esc_html_e( 'Contact Us', 'arqam-web' ); ?>
 					</a>
 				</div>
 
@@ -263,7 +263,7 @@ $read_time_fn = function ( $post_id ) {
 				if ( $pop_cats ) : ?>
 				<div>
 					<p class="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-						<?php esc_html_e( 'Popular topics', 'arqamweb' ); ?>
+						<?php esc_html_e( 'Popular topics', 'arqam-web' ); ?>
 					</p>
 					<div class="flex flex-wrap gap-2 justify-center">
 						<?php foreach ( $pop_cats as $pop_cat ) : ?>

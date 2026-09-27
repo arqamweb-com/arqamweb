@@ -23,7 +23,7 @@
 	<?php wp_body_open(); ?>
 
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'arqamweb'); ?></a>
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'arqam-web'); ?></a>
 
 		<?php
 		$quote_url         = arqamweb_get_page_permalink( ARQAM_QUOTE_PAGE_SLUG );
@@ -42,7 +42,7 @@
 					</a>
 				<?php endif; ?>
 
-				<nav class="aw-desktop-nav" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'arqamweb' ); ?>" itemscope itemtype="https://schema.org/SiteNavigationElement">
+				<nav class="aw-desktop-nav" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'arqam-web' ); ?>" itemscope itemtype="https://schema.org/SiteNavigationElement">
 					<?php
 					wp_nav_menu(
 						[
@@ -60,21 +60,21 @@
 
 				<div class="aw-header__actions">
 					<?php if ( '' !== $language_switcher ) : ?>
-						<div class="aw-language-switcher" role="group" aria-label="<?php esc_attr_e( 'Language switcher', 'arqamweb' ); ?>">
+						<div class="aw-language-switcher" role="group" aria-label="<?php esc_attr_e( 'Language switcher', 'arqam-web' ); ?>">
 							<?php echo $language_switcher; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						</div>
 					<?php endif; ?>
 
 					<a href="<?php echo esc_url( $quote_url ); ?>" class="aw-quote-link aw-quote-link--desktop">
-						<span><?php esc_html_e( 'Request a Quote', 'arqamweb' ); ?></span>
+						<span><?php esc_html_e( 'Request a Quote', 'arqam-web' ); ?></span>
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 							<path d="M5 12h14"></path>
 							<path d="m12 5 7 7-7 7"></path>
 						</svg>
 					</a>
 
-					<button id="menu-btn" class="aw-menu-button" type="button" aria-label="<?php esc_attr_e( 'Toggle menu', 'arqamweb' ); ?>" aria-expanded="false" aria-controls="mobile-menu-panel">
-						<span class="screen-reader-text"><?php esc_html_e( 'Toggle menu', 'arqamweb' ); ?></span>
+					<button id="menu-btn" class="aw-menu-button" type="button" aria-label="<?php esc_attr_e( 'Toggle menu', 'arqam-web' ); ?>" aria-expanded="false" aria-controls="mobile-menu-panel">
+						<span class="screen-reader-text"><?php esc_html_e( 'Toggle menu', 'arqam-web' ); ?></span>
 						<span class="aw-menu-button__lines" aria-hidden="true">
 							<span></span>
 							<span></span>
@@ -86,7 +86,7 @@
 
 			<div class="aw-mobile-overlay" data-mobile-menu-close aria-hidden="true"></div>
 
-			<aside id="mobile-menu-panel" class="aw-mobile-drawer" aria-hidden="true" aria-label="<?php esc_attr_e( 'Mobile menu', 'arqamweb' ); ?>">
+			<aside id="mobile-menu-panel" class="aw-mobile-drawer" aria-hidden="true" aria-label="<?php esc_attr_e( 'Mobile menu', 'arqam-web' ); ?>">
 				<div class="aw-mobile-drawer__header">
 					<?php if ( has_custom_logo() ) : ?>
 						<div class="aw-logo-link aw-logo-link--custom">
@@ -98,7 +98,7 @@
 						</a>
 					<?php endif; ?>
 
-					<button class="aw-drawer-close" type="button" data-mobile-menu-close aria-label="<?php esc_attr_e( 'Close menu', 'arqamweb' ); ?>">
+					<button class="aw-drawer-close" type="button" data-mobile-menu-close aria-label="<?php esc_attr_e( 'Close menu', 'arqam-web' ); ?>">
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 							<path d="M18 6 6 18"></path>
 							<path d="m6 6 12 12"></path>
@@ -106,8 +106,8 @@
 					</button>
 				</div>
 
-				<nav class="aw-mobile-nav" role="navigation" aria-label="<?php esc_attr_e( 'Mobile navigation', 'arqamweb' ); ?>" itemscope itemtype="https://schema.org/SiteNavigationElement">
-					<p class="aw-mobile-nav__eyebrow"><?php esc_html_e( 'Navigation', 'arqamweb' ); ?></p>
+				<nav class="aw-mobile-nav" role="navigation" aria-label="<?php esc_attr_e( 'Mobile navigation', 'arqam-web' ); ?>" itemscope itemtype="https://schema.org/SiteNavigationElement">
+					<p class="aw-mobile-nav__eyebrow"><?php esc_html_e( 'Navigation', 'arqam-web' ); ?></p>
 					<?php
 					wp_nav_menu(
 						[
@@ -125,19 +125,19 @@
 
 				<div class="aw-mobile-drawer__footer">
 					<?php if ( '' !== $language_switcher ) : ?>
-						<div class="aw-language-switcher aw-language-switcher--mobile" role="group" aria-label="<?php esc_attr_e( 'Language switcher', 'arqamweb' ); ?>">
+						<div class="aw-language-switcher aw-language-switcher--mobile" role="group" aria-label="<?php esc_attr_e( 'Language switcher', 'arqam-web' ); ?>">
 							<?php echo $language_switcher; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						</div>
 					<?php endif; ?>
 
 					<a href="<?php echo esc_url( $quote_url ); ?>" class="aw-quote-link aw-quote-link--mobile">
-						<span><?php esc_html_e( 'Request a Quote', 'arqamweb' ); ?></span>
+						<span><?php esc_html_e( 'Request a Quote', 'arqam-web' ); ?></span>
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 							<path d="M5 12h14"></path>
 							<path d="m12 5 7 7-7 7"></path>
 						</svg>
 					</a>
-					<p><?php esc_html_e( 'Crafted by Arqam Web - Premium Digital Agency', 'arqamweb' ); ?></p>
+					<p><?php esc_html_e( 'Crafted by Arqam Web - Premium Digital Agency', 'arqam-web' ); ?></p>
 				</div>
 			</aside>
 		</header>

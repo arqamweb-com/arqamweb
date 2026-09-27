@@ -42,32 +42,32 @@ $pop_cats = get_categories( [ 'hide_empty' => true, 'number' => 5, 'orderby' => 
 
 			<!-- Label -->
 			<div class="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4 -mt-4">
-				— <?php esc_html_e( 'Page not found', 'arqamweb' ); ?>
+				— <?php esc_html_e( 'Page not found', 'arqam-web' ); ?>
 			</div>
 
 			<!-- Heading -->
 			<h1 class="text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05] mb-5">
-				<?php esc_html_e( "This page took a wrong turn.", 'arqamweb' ); ?><br>
-				<span class="text-gradient italic font-light"><?php esc_html_e( "Let's get you back.", 'arqamweb' ); ?></span>
+				<?php esc_html_e( "This page took a wrong turn.", 'arqam-web' ); ?><br>
+				<span class="text-gradient italic font-light"><?php esc_html_e( "Let's get you back.", 'arqam-web' ); ?></span>
 			</h1>
 
 			<!-- Description -->
 			<p class="text-muted-foreground text-lg leading-relaxed max-w-md mx-auto mb-10">
-				<?php esc_html_e( "The page you're looking for doesn't exist, was moved, or the URL might be mistyped.", 'arqamweb' ); ?>
+				<?php esc_html_e( "The page you're looking for doesn't exist, was moved, or the URL might be mistyped.", 'arqam-web' ); ?>
 			</p>
 
 			<!-- CTA buttons -->
 			<div class="flex flex-col sm:flex-row gap-4 items-center justify-center mb-10">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-primary text-primary-foreground font-semibold shadow-glow hover:scale-[1.02] transition-transform">
-					<?php esc_html_e( 'Back to home', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Back to home', 'arqam-web' ); ?>
 					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
 						<path d="M5 12h14M13 5l7 7-7 7"/>
 					</svg>
 				</a>
 				<a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>"
 				   class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border bg-card font-semibold hover:bg-surface transition-colors">
-					<?php esc_html_e( 'Contact support', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Contact support', 'arqam-web' ); ?>
 				</a>
 			</div>
 
@@ -79,12 +79,12 @@ $pop_cats = get_categories( [ 'hide_empty' => true, 'number' => 5, 'orderby' => 
 					<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>
 				</svg>
 				<input type="search" name="s"
-				       placeholder="<?php esc_attr_e( 'Search…', 'arqamweb' ); ?>"
+				       placeholder="<?php esc_attr_e( 'Search…', 'arqam-web' ); ?>"
 				       class="flex-1 bg-transparent px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
-				       aria-label="<?php esc_attr_e( 'Search', 'arqamweb' ); ?>">
+				       aria-label="<?php esc_attr_e( 'Search', 'arqam-web' ); ?>">
 				<button type="submit"
 				        class="inline-flex items-center px-5 py-2.5 rounded-full bg-gradient-primary text-primary-foreground text-sm font-semibold flex-shrink-0 hover:opacity-90 transition-opacity">
-					<?php esc_html_e( 'Search', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Search', 'arqam-web' ); ?>
 				</button>
 			</form>
 
@@ -104,8 +104,8 @@ $pop_cats = get_categories( [ 'hide_empty' => true, 'number' => 5, 'orderby' => 
 						</svg>
 					</div>
 					<div>
-						<p class="font-semibold text-sm group-hover:text-primary transition-colors"><?php esc_html_e( 'Journal', 'arqamweb' ); ?></p>
-						<p class="text-xs text-muted-foreground mt-0.5"><?php esc_html_e( 'Essays & insights', 'arqamweb' ); ?></p>
+						<p class="font-semibold text-sm group-hover:text-primary transition-colors"><?php esc_html_e( 'Journal', 'arqam-web' ); ?></p>
+						<p class="text-xs text-muted-foreground mt-0.5"><?php esc_html_e( 'Essays & insights', 'arqam-web' ); ?></p>
 					</div>
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
 					     class="ml-auto text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all" aria-hidden="true">
@@ -121,8 +121,8 @@ $pop_cats = get_categories( [ 'hide_empty' => true, 'number' => 5, 'orderby' => 
 						</svg>
 					</div>
 					<div>
-						<p class="font-semibold text-sm group-hover:text-primary transition-colors"><?php esc_html_e( 'Projects', 'arqamweb' ); ?></p>
-						<p class="text-xs text-muted-foreground mt-0.5"><?php esc_html_e( 'Our portfolio', 'arqamweb' ); ?></p>
+						<p class="font-semibold text-sm group-hover:text-primary transition-colors"><?php esc_html_e( 'Projects', 'arqam-web' ); ?></p>
+						<p class="text-xs text-muted-foreground mt-0.5"><?php esc_html_e( 'Our portfolio', 'arqam-web' ); ?></p>
 					</div>
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
 					     class="ml-auto text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all" aria-hidden="true">
@@ -138,8 +138,8 @@ $pop_cats = get_categories( [ 'hide_empty' => true, 'number' => 5, 'orderby' => 
 						</svg>
 					</div>
 					<div>
-						<p class="font-semibold text-sm group-hover:text-primary transition-colors"><?php esc_html_e( 'Contact', 'arqamweb' ); ?></p>
-						<p class="text-xs text-muted-foreground mt-0.5"><?php esc_html_e( 'Get in touch', 'arqamweb' ); ?></p>
+						<p class="font-semibold text-sm group-hover:text-primary transition-colors"><?php esc_html_e( 'Contact', 'arqam-web' ); ?></p>
+						<p class="text-xs text-muted-foreground mt-0.5"><?php esc_html_e( 'Get in touch', 'arqam-web' ); ?></p>
 					</div>
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
 					     class="ml-auto text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all" aria-hidden="true">
@@ -152,7 +152,7 @@ $pop_cats = get_categories( [ 'hide_empty' => true, 'number' => 5, 'orderby' => 
 			<?php if ( $pop_cats ) : ?>
 			<div class="mb-16 text-center">
 				<p class="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-5">
-					<?php esc_html_e( 'Browse by topic', 'arqamweb' ); ?>
+					<?php esc_html_e( 'Browse by topic', 'arqam-web' ); ?>
 				</p>
 				<div class="flex flex-wrap gap-2 justify-center">
 					<?php foreach ( $pop_cats as $pop_cat ) : ?>
@@ -174,9 +174,9 @@ $pop_cats = get_categories( [ 'hide_empty' => true, 'number' => 5, 'orderby' => 
 	<section class="py-16 lg:py-24 bg-surface border-t border-border/60">
 		<div class="container-x max-w-7xl mx-auto">
 			<div class="reveal mb-10 in">
-				<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4">— <?php esc_html_e( 'While you\'re here', 'arqamweb' ); ?></div>
+				<div class="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-4">— <?php esc_html_e( 'While you\'re here', 'arqam-web' ); ?></div>
 				<h2 class="text-3xl lg:text-4xl font-semibold tracking-tight">
-					<?php esc_html_e( 'Latest from the', 'arqamweb' ); ?> <span class="text-gradient"><?php esc_html_e( 'studio.', 'arqamweb' ); ?></span>
+					<?php esc_html_e( 'Latest from the', 'arqam-web' ); ?> <span class="text-gradient"><?php esc_html_e( 'studio.', 'arqam-web' ); ?></span>
 				</h2>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7">
@@ -226,7 +226,7 @@ $pop_cats = get_categories( [ 'hide_empty' => true, 'number' => 5, 'orderby' => 
 								<?php the_title(); ?>
 							</h3>
 							<div class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-transform duration-300 group-hover:translate-x-1">
-								<?php esc_html_e( 'Read', 'arqamweb' ); ?>
+								<?php esc_html_e( 'Read', 'arqam-web' ); ?>
 								<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
 									<path d="M5 12h14M13 5l7 7-7 7"/>
 								</svg>
