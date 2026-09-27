@@ -88,7 +88,7 @@
 			</div>
 		</div>
 		<div class="pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-primary-foreground/55">
-			<div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3"><span>© <?php echo esc_html(arqamweb_get_copyright_year()); ?> <?php esc_html_e('Arqam Web. All rights reserved.', 'arqamweb'); ?></span></div>
+			<div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3"><span><?php printf( esc_html__( '© %s Arqam Web. All rights reserved.', 'arqamweb' ), esc_html( arqamweb_get_copyright_year() ) ); ?></span></div>
 			<div class="flex items-center gap-6">
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PRIVACY_PAGE_SLUG)); ?>" class="hover:text-primary transition-colors"><?php esc_html_e('Privacy Policy', 'arqamweb'); ?></a>
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_TERMS_PAGE_SLUG)); ?>" class="hover:text-primary transition-colors"><?php esc_html_e('Terms of Service', 'arqamweb'); ?></a>

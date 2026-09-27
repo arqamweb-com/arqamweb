@@ -64,14 +64,18 @@ if ( ! function_exists( 'arqam_web_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'arqamweb' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'arqamweb' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo '<span class="cat-links">';
+				printf( esc_html__( 'Posted in %1$s', 'arqamweb' ), $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo '</span>';
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'arqamweb' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'arqamweb' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo '<span class="tags-links">';
+				printf( esc_html__( 'Tagged %1$s', 'arqamweb' ), $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo '</span>';
 			}
 		}
 
