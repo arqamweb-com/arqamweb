@@ -50,42 +50,10 @@ if (!defined('ABSPATH')) {
 				<div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5">
 					<div class="flex items-center gap-3">
 						<div class="relative">
-							<div class="flex gap-0.5 text-primary">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-								     fill="currentColor" stroke="currentColor" stroke-width="1.5"
-								     stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"
-								     aria-hidden="true">
-									<path
-										d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-								</svg>
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-								     fill="currentColor" stroke="currentColor" stroke-width="1.5"
-								     stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"
-								     aria-hidden="true">
-									<path
-										d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-								</svg>
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-								     fill="currentColor" stroke="currentColor" stroke-width="1.5"
-								     stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"
-								     aria-hidden="true">
-									<path
-										d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-								</svg>
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-								     fill="currentColor" stroke="currentColor" stroke-width="1.5"
-								     stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"
-								     aria-hidden="true">
-									<path
-										d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-								</svg>
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-								     fill="currentColor" stroke="currentColor" stroke-width="1.5"
-								     stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"
-								     aria-hidden="true">
-									<path
-										d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-								</svg>
+							<div class="flex gap-0.5 text-primary [&>svg]:w-[18px] [&>svg]:h-[18px]">
+								<?php for ($i = 0; $i < 5; $i++) : ?>
+									<?php get_template_part('template-parts/icons/star'); ?>
+								<?php endfor; ?>
 							</div>
 							<div class="absolute -inset-2 bg-primary/30 blur-xl rounded-full -z-10"></div>
 						</div>
@@ -129,38 +97,7 @@ if (!defined('ABSPATH')) {
 				<div
 					class="absolute w-[280px] rounded-2xl border border-white/15 bg-white/[0.04] backdrop-blur-xl p-5 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)] animate-float-slow"
 					style="top: 0%; left: 10%; transform: rotate(-4deg); animation-delay: 0s;">
-					<div class="flex gap-0.5 text-primary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-					</div>
+					<div class="flex gap-0.5 text-primary"><?php echo arqam_stars(); ?></div>
 					<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Traffic tripled in 6 months.', 'arqamweb'); ?>"</p>
 					<div class="mt-4 flex items-center gap-2 text-xs text-white/60"><span
 							class="text-lg leading-none">🇸🇦</span><span class="font-semibold text-white/85">Khalid A.</span><span>·</span><span><?php esc_html_e('Marketing Dir.', 'arqamweb'); ?></span>
@@ -169,38 +106,7 @@ if (!defined('ABSPATH')) {
 				<div
 					class="absolute w-[280px] rounded-2xl border border-white/15 bg-white/[0.04] backdrop-blur-xl p-5 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)] animate-float-slow"
 					style="top: 22%; left: 45%; transform: rotate(3deg); animation-delay: 0.4s;">
-					<div class="flex gap-0.5 text-primary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-					</div>
+					<div class="flex gap-0.5 text-primary"><?php echo arqam_stars(); ?></div>
 					<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e("Best agency we've worked with.", 'arqamweb'); ?>"</p>
 					<div class="mt-4 flex items-center gap-2 text-xs text-white/60"><span
 							class="text-lg leading-none">🇬🇧</span><span
@@ -210,38 +116,7 @@ if (!defined('ABSPATH')) {
 				<div
 					class="absolute w-[280px] rounded-2xl border border-white/15 bg-white/[0.04] backdrop-blur-xl p-5 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)] animate-float-slow"
 					style="top: 52%; left: 5%; transform: rotate(2deg); animation-delay: 0.8s;">
-					<div class="flex gap-0.5 text-primary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-					</div>
+					<div class="flex gap-0.5 text-primary"><?php echo arqam_stars(); ?></div>
 					<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Charging 30% more, closing faster.', 'arqamweb'); ?>"</p>
 					<div class="mt-4 flex items-center gap-2 text-xs text-white/60"><span
 							class="text-lg leading-none">🇺🇸</span><span class="font-semibold text-white/85">Jennifer P.</span><span>·</span><span><?php esc_html_e('Co-founder', 'arqamweb'); ?></span>
@@ -250,38 +125,7 @@ if (!defined('ABSPATH')) {
 				<div
 					class="absolute w-[280px] rounded-2xl border border-white/15 bg-white/[0.04] backdrop-blur-xl p-5 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)] animate-float-slow"
 					style="top: 72%; left: 40%; transform: rotate(-3deg); animation-delay: 1.2s;">
-					<div class="flex gap-0.5 text-primary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-						     fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-							<path
-								d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-						</svg>
-					</div>
+					<div class="flex gap-0.5 text-primary"><?php echo arqam_stars(); ?></div>
 					<p class="mt-3 text-sm text-white/90 leading-relaxed">"<?php esc_html_e('Senior, strategic, honest.', 'arqamweb'); ?>"</p>
 					<div class="mt-4 flex items-center gap-2 text-xs text-white/60"><span
 							class="text-lg leading-none">🇦🇪</span><span class="font-semibold text-white/85">Mohammed H.</span><span>·</span><span><?php esc_html_e('CEO', 'arqamweb'); ?></span>

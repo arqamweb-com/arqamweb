@@ -46,13 +46,7 @@ if (!defined('ABSPATH')) {
 				<div class="lg:col-span-8 lg:pt-8">
 					<div
 						class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.22em] uppercase text-primary mb-5">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-						     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-target w-4 h-4" aria-hidden="true">
-							<circle cx="12" cy="12" r="10"></circle>
-							<circle cx="12" cy="12" r="6"></circle>
-							<circle cx="12" cy="12" r="2"></circle>
-						</svg>
+						<div class="w-4 h-4"><?php get_template_part('template-parts/icons/target'); ?></div>
 						<?php esc_html_e('Mission', 'arqamweb'); ?>
 					</div>
 					<h3 class="text-3xl lg:text-5xl font-semibold tracking-[-0.025em] leading-[1.1] max-w-3xl">
@@ -71,12 +65,7 @@ if (!defined('ABSPATH')) {
 				<div class="lg:col-span-8 lg:pt-8">
 					<div
 						class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.22em] uppercase text-primary mb-5">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-						     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-heart w-4 h-4" aria-hidden="true">
-							<path
-								d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
-						</svg>
+						<div class="w-4 h-4"><?php get_template_part('template-parts/icons/heart'); ?></div>
 						<?php esc_html_e('Values', 'arqamweb'); ?>
 					</div>
 					<h3 class="text-3xl lg:text-5xl font-semibold tracking-[-0.025em] leading-[1.1] max-w-3xl">
@@ -89,13 +78,7 @@ if (!defined('ABSPATH')) {
 				class="group relative rounded-2xl border border-border bg-card p-6 lg:p-7 shadow-card hover:border-primary/30 hover:shadow-[0_20px_60px_-20px_color-mix(in_oklab,var(--primary)_40%,transparent)] hover:-translate-y-1 transition-all duration-500">
 				<div
 					class="w-11 h-11 rounded-xl bg-gradient-primary text-primary-foreground grid place-items-center mb-5 shadow-soft">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-					     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-					     stroke-linejoin="round" class="lucide lucide-target w-5 h-5" aria-hidden="true">
-						<circle cx="12" cy="12" r="10"></circle>
-						<circle cx="12" cy="12" r="6"></circle>
-						<circle cx="12" cy="12" r="2"></circle>
-					</svg>
+					<div class="w-5 h-5"><?php get_template_part('template-parts/icons/target'); ?></div>
 				</div>
 				<h4 class="text-lg font-semibold tracking-tight"><?php esc_html_e('Craft over volume', 'arqamweb'); ?></h4>
 				<p class="mt-2 text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('We ship fewer projects, better. Every pixel, every line of code, every word is weighed.', 'arqamweb'); ?></p></div>
@@ -103,12 +86,7 @@ if (!defined('ABSPATH')) {
 				class="group relative rounded-2xl border border-border bg-card p-6 lg:p-7 shadow-card hover:border-primary/30 hover:shadow-[0_20px_60px_-20px_color-mix(in_oklab,var(--primary)_40%,transparent)] hover:-translate-y-1 transition-all duration-500">
 				<div
 					class="w-11 h-11 rounded-xl bg-gradient-primary text-primary-foreground grid place-items-center mb-5 shadow-soft">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-					     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-					     stroke-linejoin="round" class="lucide lucide-heart w-5 h-5" aria-hidden="true">
-						<path
-							d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
-					</svg>
+					<div class="w-5 h-5"><?php get_template_part('template-parts/icons/heart'); ?></div>
 				</div>
 				<h4 class="text-lg font-semibold tracking-tight"><?php esc_html_e('Senior, always', 'arqamweb'); ?></h4>
 				<p class="mt-2 text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('No juniors hidden behind invoices. The people who pitch you are the people who build for you.', 'arqamweb'); ?></p></div>

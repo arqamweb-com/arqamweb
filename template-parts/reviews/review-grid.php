@@ -51,14 +51,9 @@ if (!defined('ABSPATH')) {
 						</div>
 					<?php endif; ?>
 					<div class="flex gap-0.5 text-primary"><?php echo arqam_stars(); ?></div>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-					     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-					     class="lucide lucide-quote w-6 h-6 text-primary/30 mt-5" aria-hidden="true">
-						<path
-							d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
-						<path
-							d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
-					</svg>
+					<div class="w-6 h-6 text-primary/30 mt-5">
+						<?php get_template_part('template-parts/icons/quote'); ?>
+					</div>
 					<p class="mt-3 text-foreground/85 leading-relaxed text-[15px] lg:text-base">
 						"<?php echo esc_html($_gr_excerpt); ?>"</p>
 					<div class="mt-7 pt-6 border-t border-border flex items-center gap-3">
