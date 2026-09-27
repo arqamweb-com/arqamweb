@@ -16,39 +16,6 @@ if (!$showcase_images) {
 ?>
 
 <!-- Project Showcase -->
-<style>
-	/* Visual Showcase. The cards hold full-page screenshots (natural size is
-	   roughly 500-1080 x 2560), so they have to be clipped to a fixed card
-	   height, otherwise they overflow the pinned panel and paint on top of
-	   the section below. */
-	#showcase-panel { overflow: hidden; }
-
-	/* Clear the fixed site header (and the admin bar, when it is showing) so
-	   the eyebrow and the H2 are not cut off in the pinned state. */
-	#showcase-inner { padding-top: calc(var(--aw-header-top, 0px) + 5rem); }
-
-	#showcase-viewport { overflow: hidden; }
-
-	#track { align-items: flex-start; }
-	#track > div { height: 62vh; }
-	#track > div > div { height: 100%; display: flex; flex-direction: column; }
-	#track .demo-img { flex: 1 1 auto; min-height: 0; overflow: hidden; }
-	#track .demo-img img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		object-position: top center;
-	}
-
-	/* Below md the script un-pins the panel (position: relative, spacer height
-	   auto, no transform), so the track has to be swipeable on its own. */
-	@media (max-width: 767px) {
-		#showcase-panel { position: relative; height: auto !important; }
-		#showcase-inner { padding-top: 2.5rem; padding-bottom: 2.5rem; }
-		#showcase-viewport { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-		#track > div { height: 55vh; width: 80vw !important; }
-	}
-</style>
 <section id="showcase-section" style="position: relative;">
 	<div id="scroll-spacer" style="pointer-events: none;"></div>
 	<div id="showcase-panel" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh;">
