@@ -53,6 +53,12 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// ── WP-CLI Commands ────────────────────────────────────────────────────────────
+if (defined('WP_CLI') && WP_CLI) {
+	require get_template_directory() . '/inc/cli/class-webp-converter.php';
+	ArqamWeb_CLI_WebP_Converter::register();
+}
+
 // ── Hooks — MUST be last ───────────────────────────────────────────────────────
 require get_template_directory() . '/inc/hooks/hooks.php';
 
