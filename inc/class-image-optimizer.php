@@ -69,22 +69,20 @@ class ArqamWeb_Image_Optimizer {
 			return false;
 		}
 
-		// Get WebP output path
-		$webp_path = self::get_webp_path( $file_path );
-
 		// Set WebP quality (85 provides good balance between quality and file size)
 		$quality = apply_filters( 'arqamweb_webp_quality', 85 );
+		if ( method_exists( $image_editor, 'set_quality' ) ) {
+			$image_editor->set_quality( $quality );
+		}
+
+		// Get WebP output path
+		$webp_path = self::get_webp_path( $file_path );
 
 		// Save as WebP
 		$saved = $image_editor->save( $webp_path, 'image/webp' );
 
 		if ( is_wp_error( $saved ) ) {
 			return false;
-		}
-
-		// Set quality for WebP using filter
-		if ( method_exists( $image_editor, 'set_quality' ) ) {
-			$image_editor->set_quality( $quality );
 		}
 
 		return $webp_path;
@@ -102,9 +100,8 @@ class ArqamWeb_Image_Optimizer {
 			return $metadata;
 		}
 
-		// Get the upload directory for this attachment
-		$upload_dir = wp_upload_dir();
-		$file_path  = get_attached_file( $attachment_id );
+		// Get the file path for this attachment
+		$file_path = get_attached_file( $attachment_id );
 
 		if ( ! $file_path || ! file_exists( $file_path ) ) {
 			return $metadata;
