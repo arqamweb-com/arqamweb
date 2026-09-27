@@ -92,6 +92,90 @@ function arqamweb_get_breadcrumb(): void
 	}
 }
 
+/**
+ * Returns optimized <picture> element with WebP source and fallback.
+ * Escapes all dynamic values internally.
+ *
+ * @param int    $attachment_id WordPress attachment ID
+ * @param string $size          Image size (thumbnail, medium, large, full, or custom)
+ * @param array  $args          Optional. Additional attributes (alt, class, loading, fetchpriority, width, height)
+ * @return string               Picture element HTML or empty string on failure
+ */
+function arqamweb_get_optimized_image(int $attachment_id, string $size = 'full', array $args = []): string
+{
+	// Get the original image data
+	$image_src = wp_get_attachment_image_src($attachment_id, $size);
+	if (! $image_src) {
+		return '';
+	}
+
+	$image_url = $image_src[0];
+	$width = $image_src[1];
+	$height = $image_src[2];
+
+	// Parse arguments with defaults
+	$defaults = [
+		'alt' => get_post_meta($attachment_id, '_wp_attachment_image_alt', true) ?: '',
+		'class' => '',
+		'loading' => 'lazy',
+		'fetchpriority' => '',
+		'width' => $width,
+		'height' => $height,
+	];
+	$args = wp_parse_args($args, $defaults);
+
+	// Check for WebP version
+	$webp_url = '';
+	if (class_exists('ArqamWeb_Image_Optimizer') && ArqamWeb_Image_Optimizer::supports_webp()) {
+		// Convert URL to file path
+		$upload_dir = wp_upload_dir();
+		$image_path = str_replace($upload_dir['baseurl'], $upload_dir['basedir'], $image_url);
+
+		// Get WebP path and check if it exists
+		$webp_path = ArqamWeb_Image_Optimizer::get_webp_path($image_path);
+		if (file_exists($webp_path)) {
+			// Convert WebP file path back to URL
+			$webp_url = str_replace($upload_dir['basedir'], $upload_dir['baseurl'], $webp_path);
+		}
+	}
+
+	// Build picture element
+	$html = '<picture>';
+
+	// Add WebP source if available
+	if ($webp_url) {
+		$html .= '<source srcset="' . esc_url($webp_url) . '" type="image/webp">';
+	}
+
+	// Build img attributes
+	$img_attrs = [
+		'src="' . esc_url($image_url) . '"',
+		'alt="' . esc_attr($args['alt']) . '"',
+		'width="' . esc_attr($args['width']) . '"',
+		'height="' . esc_attr($args['height']) . '"',
+	];
+
+	if ($args['class']) {
+		$img_attrs[] = 'class="' . esc_attr($args['class']) . '"';
+	}
+
+	if ($args['loading']) {
+		$img_attrs[] = 'loading="' . esc_attr($args['loading']) . '"';
+	}
+
+	if ($args['fetchpriority']) {
+		$img_attrs[] = 'fetchpriority="' . esc_attr($args['fetchpriority']) . '"';
+	}
+
+	$img_attrs[] = 'decoding="async"';
+
+	// Add fallback img
+	$html .= '<img ' . implode(' ', $img_attrs) . '>';
+	$html .= '</picture>';
+
+	return $html;
+}
+
 
 /**
  * Arqam Web front page content.
