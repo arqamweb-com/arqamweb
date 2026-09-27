@@ -12,15 +12,7 @@ if (!defined('ABSPATH')) exit;
 			<div class="relative text-center">
 				<div
 					class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-[11px] font-semibold tracking-[0.18em] uppercase text-white/80 mb-6">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-					     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-					     stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3" aria-hidden="true">
-						<path
-							d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
-						<path d="M20 2v4"></path>
-						<path d="M22 4h-4"></path>
-						<circle cx="4" cy="20" r="2"></circle>
-					</svg>
+					<span class="w-3 h-3"><?php get_template_part('template-parts/icons/sparkles'); ?></span>
 					<?php esc_html_e('Let\'s talk', 'arqamweb'); ?>
 				</div>
 				<h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-[-0.025em] leading-[1.05]">
@@ -30,13 +22,7 @@ if (!defined('ABSPATH')) exit;
 				<div class="mt-10 flex flex-wrap justify-center gap-4">
 					<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 					   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary bg-white rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('Book a free call', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-						     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-						     aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a>
 					<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>"
 					   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full border border-white/30 hover:bg-white/10 transition-all">

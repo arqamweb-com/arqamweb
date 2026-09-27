@@ -35,12 +35,7 @@ if (!defined('ABSPATH')) exit;
 		<p class="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"><?php esc_html_e('Senior-team execution. Honest, outcome-based pricing. Trusted by brands across Saudi Arabia, the Gulf, and beyond — with no lock-ins and no surprise invoices.', 'arqamweb'); ?></p>
 		<div class="mt-10 flex flex-wrap items-center gap-4"><a href="#service-web"
 		                                                        class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary-foreground bg-gradient-primary rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('See all plans', 'arqamweb'); ?>
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-				     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-				     class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
-					<path d="M5 12h14"></path>
-					<path d="m12 5 7 7-7 7"></path>
-				</svg>
+				<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 			</a>
 			<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 			   class="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-foreground rounded-full border border-border hover:bg-accent transition-all">

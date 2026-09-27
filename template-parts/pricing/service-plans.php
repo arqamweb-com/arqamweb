@@ -17,13 +17,7 @@ if (!defined('ABSPATH')) exit;
 						<div
 							class="inline-flex flex-col gap-2 px-5 py-4 rounded-2xl bg-background border border-border shadow-card">
 							<div class="flex items-center gap-2 text-primary">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-								     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-								     stroke-linejoin="round" class="lucide lucide-globe w-5 h-5" aria-hidden="true">
-									<circle cx="12" cy="12" r="10"></circle>
-									<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-									<path d="M2 12h20"></path>
-								</svg>
+								<span class="w-5 h-5"><?php get_template_part('template-parts/icons/globe'); ?></span>
 								<span
 									class="text-xs font-bold tracking-[0.18em] uppercase"><?php esc_html_e('From', 'arqamweb'); ?> <!-- -->$1,305</span>
 							</div>
@@ -50,93 +44,43 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-border"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('5–10 page corporate site', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Fully custom UI/UX', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('WordPress CMS + admin training', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Bilingual AR/EN', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Advanced on-page SEO + schema', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Blog setup', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('2 rounds of revisions', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('30-day post-launch support', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Additional language: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Delivery: 3–4 weeks', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -144,13 +88,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=starter&amp;service=web"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow"><?php esc_html_e('Start with Starter', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-muted-foreground hover:text-primary"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -161,14 +99,7 @@ if (!defined('ABSPATH')) exit;
 							<div
 								class="absolute -inset-px rounded-3xl bg-gradient-to-br from-primary/40 via-primary/0 to-primary/30 opacity-60 -z-10 blur-sm"></div>
 							<div class="absolute -top-3 left-1/2 -translate-x-1/2"><span
-									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow"><svg
-										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-										stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3"
-										aria-hidden="true"><path
-											d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path
-											d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20"
-							                                                                     r="2"></circle></svg><?php esc_html_e('Most Popular', 'arqamweb'); ?></span>
+									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/sparkles'); ?></span><?php esc_html_e('Most Popular', 'arqamweb'); ?></span>
 							</div>
 							<div
 								class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
@@ -187,84 +118,39 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-white/15"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Up to 20 fully custom pages', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Advanced animations + micro-interactions', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Headless or custom WordPress', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('CRM / HubSpot integrations', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Sub-second loads on Saudi networks', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('3 rounds of revisions', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('60-day post-launch support', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Additional language: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Delivery: 5–7 weeks', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -272,13 +158,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=business&amp;service=web"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-white text-primary hover:shadow-glow"><?php esc_html_e('Start with Business', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-white/70 hover:text-white"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -300,75 +180,35 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-border"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Custom web application built with Laravel', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Tailored backend architecture & database design', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Custom admin dashboard & role-based permissions', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Third-party integrations (payment, CRM, ERP)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Bilingual AR/EN with full RTL support', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('90-day post-launch support', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Additional language: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Delivery: 8–12 weeks', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -376,13 +216,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=premium&amp;service=web"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow"><?php esc_html_e('Start with Premium', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-muted-foreground hover:text-primary"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -395,23 +229,13 @@ if (!defined('ABSPATH')) exit;
 					<p class="text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('Need an e-commerce store or a custom platform? We scope both as a clean, outcome-priced quote.', 'arqamweb'); ?></p>
 					<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 					   class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all whitespace-nowrap"><?php esc_html_e('Talk to us', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						     class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-3.5 h-3.5"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a></div>
 				<div class="mt-6 text-center"><a href="/services/web-development"
 				                                 class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"><?php esc_html_e('Explore', 'arqamweb'); ?>
 						<!-- -->
 						<?php esc_html_e('Website Design & Development', 'arqamweb'); ?><!-- --> <?php esc_html_e('service page', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						     class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-3.5 h-3.5"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a></div>
 			</div>
 		</section>
@@ -432,12 +256,7 @@ if (!defined('ABSPATH')) exit;
 						<div
 							class="inline-flex flex-col gap-2 px-5 py-4 rounded-2xl bg-background border border-border shadow-card">
 							<div class="flex items-center gap-2 text-primary">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-								     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-								     stroke-linejoin="round" class="lucide lucide-search w-5 h-5" aria-hidden="true">
-									<path d="m21 21-4.34-4.34"></path>
-									<circle cx="11" cy="11" r="8"></circle>
-								</svg>
+								<span class="w-5 h-5"><?php get_template_part('template-parts/icons/search'); ?></span>
 								<span
 									class="text-xs font-bold tracking-[0.18em] uppercase"><?php esc_html_e('From', 'arqamweb'); ?> <!-- -->$575</span>
 							</div>
@@ -465,66 +284,31 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-border"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Technical audit + fixes', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Google Business Profile optimization', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('10 keywords (single city)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('2 blog posts/mo (800+ words)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('5 backlinks/mo', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Monthly performance report', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Additional language: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -532,13 +316,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=local&amp;service=seo"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow"><?php esc_html_e('Start Local SEO', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-muted-foreground hover:text-primary"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -549,14 +327,7 @@ if (!defined('ABSPATH')) exit;
 							<div
 								class="absolute -inset-px rounded-3xl bg-gradient-to-br from-primary/40 via-primary/0 to-primary/30 opacity-60 -z-10 blur-sm"></div>
 							<div class="absolute -top-3 left-1/2 -translate-x-1/2"><span
-									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow"><svg
-										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-										stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3"
-										aria-hidden="true"><path
-											d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path
-											d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20"
-							                                                                     r="2"></circle></svg><?php esc_html_e('Most Popular', 'arqamweb'); ?></span>
+									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/sparkles'); ?></span><?php esc_html_e('Most Popular', 'arqamweb'); ?></span>
 							</div>
 							<div
 								class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
@@ -576,66 +347,31 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-white/15"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Everything in Local SEO', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('30 keywords KSA-wide AR + EN', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('4 blog posts/mo (1,200+ words)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('15 backlinks/mo', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Schema + rich snippets', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Bi-weekly strategy calls', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Additional language: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -643,13 +379,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=growth&amp;service=seo"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-white text-primary hover:shadow-glow"><?php esc_html_e('Start National Growth', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-white/70 hover:text-white"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -672,75 +402,35 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-border"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Everything in National Growth', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('80+ keywords', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('12 articles/mo', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('30 high-DR backlinks/mo', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Digital PR campaigns', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('AI search optimization (GEO / AEO)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Dedicated strategist + weekly calls + Slack', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Additional language: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -748,13 +438,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=authority&amp;service=seo"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow"><?php esc_html_e('Start Authority', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-muted-foreground hover:text-primary"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -767,23 +451,13 @@ if (!defined('ABSPATH')) exit;
 					<p class="text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('Multi-brand or multi-region SEO? We tailor a custom retainer.', 'arqamweb'); ?></p>
 					<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 					   class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all whitespace-nowrap"><?php esc_html_e('Talk to us', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						     class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-3.5 h-3.5"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a></div>
 				<div class="mt-6 text-center"><a href="/services/seo"
 				                                 class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"><?php esc_html_e('Explore', 'arqamweb'); ?>
 						<!-- -->
 						<?php esc_html_e('Search Engine Optimization', 'arqamweb'); ?><!-- --> <?php esc_html_e('service page', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						     class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-3.5 h-3.5"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a></div>
 			</div>
 		</section>
@@ -803,15 +477,7 @@ if (!defined('ABSPATH')) exit;
 						<div
 							class="inline-flex flex-col gap-2 px-5 py-4 rounded-2xl bg-background border border-border shadow-card">
 							<div class="flex items-center gap-2 text-primary">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-								     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-								     stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5" aria-hidden="true">
-									<path
-										d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
-									<path d="M20 2v4"></path>
-									<path d="M22 4h-4"></path>
-									<circle cx="4" cy="20" r="2"></circle>
-								</svg>
+								<span class="w-5 h-5"><?php get_template_part('template-parts/icons/sparkles'); ?></span>
 								<span
 									class="text-xs font-bold tracking-[0.18em] uppercase"><?php esc_html_e('From', 'arqamweb'); ?> <!-- -->$1,305</span>
 							</div>
@@ -838,84 +504,39 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-border"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('3 logo concepts', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Color palette', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Typography system (2 fonts)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('1-page brand guidelines', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Business card design', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Social profile kit', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Light / dark / mono versions', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Additional language wordmark: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Delivery: 10–14 days', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -923,13 +544,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=essential&amp;service=brand"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow"><?php esc_html_e('Start Essential', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-muted-foreground hover:text-primary"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -940,14 +555,7 @@ if (!defined('ABSPATH')) exit;
 							<div
 								class="absolute -inset-px rounded-3xl bg-gradient-to-br from-primary/40 via-primary/0 to-primary/30 opacity-60 -z-10 blur-sm"></div>
 							<div class="absolute -top-3 left-1/2 -translate-x-1/2"><span
-									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow"><svg
-										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-										stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3"
-										aria-hidden="true"><path
-											d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path
-											d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20"
-							                                                                     r="2"></circle></svg><?php esc_html_e('Most Popular', 'arqamweb'); ?></span>
+									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/sparkles'); ?></span><?php esc_html_e('Most Popular', 'arqamweb'); ?></span>
 							</div>
 							<div
 								class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
@@ -966,93 +574,43 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-white/15"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Everything in Essential', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Logo lockups + variations', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Full type scale', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Iconography + patterns', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('30-page guidelines PDF', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Letterhead + email signature', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Presentation template (PPT/Keynote)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('10 social templates (Canva)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Additional language wordmark: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Delivery: 3–4 weeks', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -1060,13 +618,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=brand-system&amp;service=brand"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-white text-primary hover:shadow-glow"><?php esc_html_e('Start Brand System', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-white/70 hover:text-white"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -1088,93 +640,43 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-border"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Everything in Brand System Pro', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('3 strategy workshops (90 min)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Positioning + value prop', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Brand voice & tone', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Competitor & market analysis', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Naming / tagline (if needed)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Persona definition', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Launch plan', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Additional language wordmark: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Delivery: 6–8 weeks', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -1182,13 +684,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=strategy&amp;service=brand"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow"><?php esc_html_e('Start Strategy + Identity', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-muted-foreground hover:text-primary"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -1202,23 +698,13 @@ if (!defined('ABSPATH')) exit;
 						<strong><?php esc_html_e('1,900 SAR', 'arqamweb'); ?></strong>.</p><a
 						href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 						class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all whitespace-nowrap"><?php esc_html_e('Talk to us', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						     class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-3.5 h-3.5"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a></div>
 				<div class="mt-6 text-center"><a href="/services/branding"
 				                                 class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"><?php esc_html_e('Explore', 'arqamweb'); ?>
 						<!-- -->
 						<?php esc_html_e('Brand Identity', 'arqamweb'); ?><!-- --> <?php esc_html_e('service page', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						     class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-3.5 h-3.5"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a></div>
 			</div>
 		</section>
@@ -1239,16 +725,7 @@ if (!defined('ABSPATH')) exit;
 						<div
 							class="inline-flex flex-col gap-2 px-5 py-4 rounded-2xl bg-background border border-border shadow-card">
 							<div class="flex items-center gap-2 text-primary">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-								     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-								     stroke-linejoin="round" class="lucide lucide-share2 lucide-share-2 w-5 h-5"
-								     aria-hidden="true">
-									<circle cx="18" cy="5" r="3"></circle>
-									<circle cx="6" cy="12" r="3"></circle>
-									<circle cx="18" cy="19" r="3"></circle>
-									<line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
-									<line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
-								</svg>
+								<span class="w-5 h-5"><?php get_template_part('template-parts/icons/share2'); ?></span>
 								<span
 									class="text-xs font-bold tracking-[0.18em] uppercase"><?php esc_html_e('From', 'arqamweb'); ?> <!-- -->$775</span>
 							</div>
@@ -1276,75 +753,35 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-border"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('2 platforms (e.g. Instagram + TikTok)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('12 posts/mo (8 feed + 4 stories)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('4 reels/mo (basic editing)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Monthly content calendar', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('AR + EN captions', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Hashtag strategy', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('1 strategy call/mo + monthly report', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Additional language content: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -1352,13 +789,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=starter&amp;service=social"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow"><?php esc_html_e('Start Starter', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-muted-foreground hover:text-primary"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -1369,14 +800,7 @@ if (!defined('ABSPATH')) exit;
 							<div
 								class="absolute -inset-px rounded-3xl bg-gradient-to-br from-primary/40 via-primary/0 to-primary/30 opacity-60 -z-10 blur-sm"></div>
 							<div class="absolute -top-3 left-1/2 -translate-x-1/2"><span
-									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow"><svg
-										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-										stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3"
-										aria-hidden="true"><path
-											d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path
-											d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20"
-							                                                                     r="2"></circle></svg><?php esc_html_e('Most Popular', 'arqamweb'); ?></span>
+									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-primary text-primary-foreground text-[10px] font-bold tracking-[0.18em] uppercase shadow-glow"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/sparkles'); ?></span><?php esc_html_e('Most Popular', 'arqamweb'); ?></span>
 							</div>
 							<div
 								class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
@@ -1396,75 +820,35 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-white/15"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Everything in Starter', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('3 platforms (IG, TikTok, LinkedIn or X)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('20 posts/mo + 8 reels (motion edits)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Paid ads management (up to 5,000 SAR spend)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Community management (<4h response)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('A/B testing on ads', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Bi-weekly strategy calls', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-white/85"><?php esc_html_e('Additional language content: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -1472,13 +856,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=growth&amp;service=social"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-white text-primary hover:shadow-glow"><?php esc_html_e('Start Growth', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-white/70 hover:text-white"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -1501,75 +879,35 @@ if (!defined('ABSPATH')) exit;
 								<div class="mt-7 h-px bg-border"></div>
 								<ul class="mt-7 space-y-3.5">
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Everything in Growth', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('4 platforms (incl. YouTube Shorts)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('30 posts/mo + 16 reels', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('1 monthly photoshoot day (Cairo/Riyadh)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Up to 20,000 SAR ad spend managed', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Up to 3 influencer outreaches/mo', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Dedicated account manager + weekly calls', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
-											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
-												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
-													d="M20 6 9 17l-5-5"></path></svg></span><span
+											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><span class="w-3 h-3"><?php get_template_part('template-parts/icons/check'); ?></span></span><span
 											class="text-foreground/85"><?php esc_html_e('Additional language content: +30% of plan price', 'arqamweb'); ?></span>
 									</li>
 								</ul>
@@ -1577,13 +915,7 @@ if (!defined('ABSPATH')) exit;
 							<div class="relative mt-8 pt-2 flex flex-col gap-3"><a
 									href="/quote?plan=authority&amp;service=social"
 									class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow"><?php esc_html_e('Start Authority', 'arqamweb'); ?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
-									     aria-hidden="true">
-										<path d="M5 12h14"></path>
-										<path d="m12 5 7 7-7 7"></path>
-									</svg>
+									<span class="w-4 h-4"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 								</a><a
 									href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 									class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold transition-colors text-muted-foreground hover:text-primary"><?php esc_html_e('or talk to us →', 'arqamweb'); ?></a>
@@ -1596,23 +928,13 @@ if (!defined('ABSPATH')) exit;
 					<p class="text-sm text-muted-foreground leading-relaxed"><?php esc_html_e('Multi-brand or regional accounts? We build a custom plan.', 'arqamweb'); ?></p>
 					<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_CONTACT_PAGE_SLUG)); ?>"
 					   class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all whitespace-nowrap"><?php esc_html_e('Talk to us', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						     class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-3.5 h-3.5"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a></div>
 				<div class="mt-6 text-center"><a href="/services/social-media"
 				                                 class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"><?php esc_html_e('Explore', 'arqamweb'); ?>
 						<!-- -->
 						<?php esc_html_e('Social Media Marketing', 'arqamweb'); ?><!-- --> <?php esc_html_e('service page', 'arqamweb'); ?>
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						     class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
+						<span class="w-3.5 h-3.5"><?php get_template_part('template-parts/icons/arrow-right'); ?></span>
 					</a></div>
 			</div>
 		</section>
