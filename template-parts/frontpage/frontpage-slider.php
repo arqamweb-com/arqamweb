@@ -75,8 +75,21 @@ $heroVideoId = 'QndT75SOP-I';
 		<div class="grid gap-12 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:gap-10 lg:items-center">
 			<div class="min-w-0 lg:pr-6">
 				<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/25 bg-primary/10 backdrop-blur text-xs font-semibold mb-7" style="color:#5e646c">
-					<span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-60 animate-ping"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-primary"></span></span>
-					<?php esc_html_e('Web Design & SEO Agency · Egypt & the Gulf · Since 2010', 'arqamweb'); ?>
+					<span class="relative flex h-2 w-2">
+						<span class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-60 animate-ping"></span>
+						<span class="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
+					</span>
+
+					<span>
+						<?php
+						// %1$s و %2$s مكان علم مصر وعلم أمريكا، لازم يفضلوا موجودين في الترجمة.
+						printf(
+							esc_html__('Web Design & SEO Agency · Registered in %1$s Egypt & %2$s the USA', 'arqamweb'),
+							'<img src="https://flagcdn.com/w40/eg.png" alt="' . esc_attr__('Egypt', 'arqamweb') . '" width="14" height="9" class="inline-block w-3.5 mx-0.5 rounded-sm align-middle">',
+							'<img src="https://flagcdn.com/w40/us.png" alt="' . esc_attr__('United States', 'arqamweb') . '" width="14" height="9" class="inline-block w-3.5 mx-0.5 rounded-sm align-middle">'
+						);
+						?>
+					</span>
 				</div>
 				<h1 class="font-semibold tracking-[-0.035em] max-w-[760px]">
 					<span class="block text-[2.25rem] sm:text-[2.75rem] lg:whitespace-nowrap lg:text-[3.25rem] xl:text-[3.5rem] leading-[1.06] font-bold text-foreground"><?php esc_html_e('We build websites that', 'arqamweb'); ?></span>

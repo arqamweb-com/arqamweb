@@ -286,6 +286,16 @@ document.addEventListener("DOMContentLoaded", function () {
     initHeroWordRotator(heroWord, reducedMotion);
   }
 
+  const serviceDetail = document.querySelector("[data-service-detail]");
+  if (serviceDetail) {
+    initServiceDetail(serviceDetail, reducedMotion);
+  }
+
+  const servicesCards = document.querySelectorAll("[data-services-card]");
+  if (servicesCards.length && !reducedMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    initServicesCards(servicesCards);
+  }
+
   const magneticButtons = document.querySelectorAll("[data-arqam-magnetic]");
   if (magneticButtons.length && !reducedMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
     initMagneticButtons(magneticButtons);
@@ -758,6 +768,199 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("beforeunload", function () {
       window.clearTimeout(timeoutId);
     }, { once: true });
+  }
+
+  // صفحة الخدمة: القايمة الجانبية، صورة الهيرو، المقارنة، الخطوات، الأعمال، الآراء، والأسئلة.
+  function initServiceDetail(page, shouldReduceMotion) {
+    const isRtl = document.documentElement.dir === "rtl";
+
+    // القايمة الجانبية: نعلّم القسم اللي في نص الشاشة.
+    const navLinks = Array.from(page.querySelectorAll("[data-service-nav]"));
+    if (navLinks.length && "IntersectionObserver" in window) {
+      const navObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          navLinks.forEach(function (link) {
+            link.classList.toggle("is-active", link.dataset.serviceNav === entry.target.id);
+          });
+        });
+      }, { rootMargin: "-35% 0px -55% 0px" });
+      navLinks.forEach(function (link) {
+        const section = document.getElementById(link.dataset.serviceNav);
+        if (section) navObserver.observe(section);
+      });
+    }
+
+    // صورة الهيرو بتتحرك شوية مع الماوس.
+    const heroObject = page.querySelector("[data-service-hero-object]");
+    const floating = heroObject ? heroObject.querySelector(".detail-object") : null;
+    if (heroObject && floating && !shouldReduceMotion) {
+      heroObject.addEventListener("pointermove", function (event) {
+        const box = heroObject.getBoundingClientRect();
+        floating.style.setProperty("--object-x", (((event.clientX - box.left) / box.width - 0.5) * 16).toFixed(1) + "px");
+        floating.style.setProperty("--object-y", (((event.clientY - box.top) / box.height - 0.5) * 12).toFixed(1) + "px");
+      });
+      heroObject.addEventListener("pointerleave", function () {
+        floating.style.setProperty("--object-x", "0px");
+        floating.style.setProperty("--object-y", "0px");
+      });
+    }
+
+    // تابات المقارنة.
+    const compare = page.querySelector("[data-service-compare]");
+    if (compare) {
+      const tabs = Array.from(compare.querySelectorAll("[data-compare-tab]"));
+      const panels = Array.from(compare.querySelectorAll("[data-compare-panel]"));
+      const thumb = compare.querySelector("[data-compare-thumb]");
+      const select = function (index) {
+        tabs.forEach(function (tab, i) { tab.setAttribute("aria-selected", i === index ? "true" : "false"); });
+        panels.forEach(function (panel, i) { panel.hidden = i !== index; });
+        if (thumb) thumb.style.transform = "translateX(" + (isRtl ? -index : index) * 100 + "%)";
+      };
+      tabs.forEach(function (tab, i) {
+        tab.addEventListener("click", function () { select(i); });
+      });
+    }
+
+    // خط الخطوات بيتملى مع السكرول، والخطوة اللي عدّاها بتتلوّن.
+    const processTrack = page.querySelector("[data-service-process]");
+    if (processTrack) {
+      const fill = processTrack.querySelector("[data-process-fill]");
+      const tiles = Array.from(processTrack.querySelectorAll("[data-process-tile]"));
+      let processFrame = 0;
+      const updateProcess = function () {
+        processFrame = 0;
+        const rect = processTrack.getBoundingClientRect();
+        const progress = shouldReduceMotion ? 100 : Math.max(0, Math.min(100, (window.innerHeight * 0.7 - rect.top) / rect.height * 100));
+        if (fill) fill.style.height = progress + "%";
+        tiles.forEach(function (tile, i) {
+          tile.classList.toggle("is-passed", progress >= ((i + 0.5) / tiles.length) * 100);
+        });
+      };
+      const requestProcess = function () {
+        if (!processFrame) processFrame = window.requestAnimationFrame(updateProcess);
+      };
+      updateProcess();
+      window.addEventListener("scroll", requestProcess, { passive: true });
+      window.addEventListener("resize", requestProcess, { passive: true });
+    }
+
+    // كاروسيل الأعمال: أزرار، نقط، أسهم الكيبورد، وسحب على الموبايل.
+    const work = page.querySelector("[data-service-work]");
+    if (work) {
+      const slides = Array.from(work.querySelectorAll("[data-work-slide]"));
+      const dots = Array.from(work.querySelectorAll("[data-work-dot]"));
+      const peekPrev = work.querySelector('[data-work-peek="prev"]');
+      const peekNext = work.querySelector('[data-work-peek="next"]');
+      let index = 0;
+      let touchX = null;
+      const show = function (next) {
+        index = (next + slides.length) % slides.length;
+        slides.forEach(function (slide, i) {
+          slide.hidden = i !== index;
+          slide.classList.toggle("animate-fade-in", i === index);
+        });
+        dots.forEach(function (dot, i) {
+          dot.toggleAttribute("aria-current", i === index);
+          const mark = dot.querySelector(".work-dot");
+          if (mark) {
+            mark.classList.toggle("bg-primary", i === index);
+            mark.classList.toggle("bg-primary-foreground/40", i !== index);
+          }
+        });
+        if (peekPrev) peekPrev.src = slides[(index - 1 + slides.length) % slides.length].dataset.workImage;
+        if (peekNext) peekNext.src = slides[(index + 1) % slides.length].dataset.workImage;
+      };
+      const go = function (dir) { show(index + dir); };
+      work.querySelectorAll("[data-work-go]").forEach(function (button) {
+        button.addEventListener("click", function () { go(Number(button.dataset.workGo)); });
+      });
+      dots.forEach(function (dot, i) {
+        dot.addEventListener("click", function () { show(i); });
+      });
+      work.addEventListener("keydown", function (event) {
+        if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+        event.preventDefault();
+        const forward = event.key === "ArrowRight" ? 1 : -1;
+        go(isRtl ? -forward : forward);
+      });
+      work.addEventListener("touchstart", function (event) {
+        touchX = event.touches[0] ? event.touches[0].clientX : null;
+      }, { passive: true });
+      work.addEventListener("touchend", function (event) {
+        const x = event.changedTouches[0] ? event.changedTouches[0].clientX : null;
+        if (touchX !== null && x !== null && Math.abs(x - touchX) > 40) {
+          const forward = x < touchX ? 1 : -1;
+          go(isRtl ? -forward : forward);
+        }
+        touchX = null;
+      }, { passive: true });
+    }
+
+    // أزرار سكرول الآراء.
+    const rail = page.querySelector("[data-reviews-rail]");
+    if (rail) {
+      page.querySelectorAll("[data-reviews-go]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          const dir = Number(button.dataset.reviewsGo) * (isRtl ? -1 : 1);
+          rail.scrollBy({ left: dir * 330, behavior: shouldReduceMotion ? "auto" : "smooth" });
+        });
+      });
+    }
+
+    // الأسئلة: سؤال واحد مفتوح في المرة.
+    const faq = page.querySelector("[data-service-faq]");
+    if (faq) {
+      const triggers = Array.from(faq.querySelectorAll("[data-faq-trigger]"));
+      triggers.forEach(function (trigger) {
+        trigger.addEventListener("click", function () {
+          const willOpen = trigger.getAttribute("aria-expanded") !== "true";
+          triggers.forEach(function (other) {
+            const open = other === trigger && willOpen;
+            other.setAttribute("aria-expanded", open ? "true" : "false");
+            const panel = document.getElementById(other.getAttribute("aria-controls"));
+            if (panel) panel.hidden = !open;
+          });
+        });
+      });
+    }
+  }
+
+  // كروت الخدمات: بقعة ضوء بتتبع المؤشر، والأيقونة بتميل وتتحرك معاه.
+  function initServicesCards(cards) {
+    cards.forEach(function (card) {
+      let frameId = 0;
+      let pointer = null;
+
+      const update = function () {
+        frameId = 0;
+        if (!pointer) return;
+        const rect = card.getBoundingClientRect();
+        const px = (pointer.clientX - rect.left) / rect.width;
+        const py = (pointer.clientY - rect.top) / rect.height;
+        card.style.setProperty("--x", (px * 100).toFixed(1) + "%");
+        card.style.setProperty("--y", (py * 100).toFixed(1) + "%");
+        card.style.setProperty("--tx", ((px - 0.5) * 20).toFixed(1) + "px");
+        card.style.setProperty("--ty", ((py - 0.5) * 20).toFixed(1) + "px");
+        card.style.setProperty("--rx", ((0.5 - py) * 12).toFixed(1) + "deg");
+        card.style.setProperty("--ry", ((px - 0.5) * 12).toFixed(1) + "deg");
+      };
+
+      card.addEventListener("pointermove", function (event) {
+        pointer = event;
+        if (!frameId) frameId = window.requestAnimationFrame(update);
+      });
+
+      card.addEventListener("pointerleave", function () {
+        pointer = null;
+        if (frameId) {
+          window.cancelAnimationFrame(frameId);
+          frameId = 0;
+        }
+        ["--tx", "--ty"].forEach(function (name) { card.style.setProperty(name, "0px"); });
+        ["--rx", "--ry"].forEach(function (name) { card.style.setProperty(name, "0deg"); });
+      });
+    });
   }
 
   // الزرار بيتحرك ناحية المؤشر شوية وهو فوقه، ويرجع مكانه لما المؤشر يخرج.

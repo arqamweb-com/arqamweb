@@ -2173,3 +2173,186 @@ body.aw-video-modal-open {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Front page services — bento grid (Lovable ServicesV3, contrast theme) */
+@media (min-width: 1024px) {
+  .services-v3-grid {
+    grid-template-areas: var(--services-areas);
+    grid-template-rows: repeat(var(--services-rows, 3), minmax(0, 1fr));
+    height: calc(var(--services-rows, 3) * 200px + (var(--services-rows, 3) - 1) * 1rem);
+  }
+
+  .services-v3-grid:hover .services-v3-card:not(:hover) {
+    opacity: 0.7;
+  }
+}
+
+.services-v3-spotlight {
+  background: radial-gradient(360px circle at var(--x, 50%) var(--y, 50%), color-mix(in oklab, #3198d4 18%, transparent), transparent 65%);
+}
+
+.services-v3-object {
+  transform: translate3d(var(--tx, 0), var(--ty, 0), 0) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+  transform-style: preserve-3d;
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.services-v3-object img {
+  animation: servicesV3Float 7s ease-in-out var(--float-delay, 0s) infinite;
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.services-v3-card:hover .services-v3-object img {
+  transform: scale(1.06);
+}
+
+.reveal.is-visible .services-v3-card {
+  animation: servicesV3In 0.72s backwards;
+}
+
+@keyframes servicesV3In {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}
+
+@keyframes servicesV3Float {
+  0%,
+  100% {
+    translate: 0 -5px;
+    rotate: -1.5deg;
+  }
+  50% {
+    translate: 0 6px;
+    rotate: 1.5deg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-v3-card,
+  .services-v3-object img {
+    animation: none !important;
+  }
+
+  .services-v3-object,
+  .services-v3-card:hover .services-v3-object img {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Single service page (Lovable service detail design) */
+/* الكلاسات زي grid بتغلب على attribute الـ hidden، فبنرجّعه هنا للتابات والكاروسيل. */
+.service-detail [hidden] {
+  display: none !important;
+}
+
+.detail-reveal.is-visible .detail-stagger {
+  animation: detailRise 0.7s backwards;
+  animation-delay: var(--stagger, 0ms);
+}
+
+.detail-card {
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 18px 40px -26px rgba(15, 23, 42, 0.2);
+}
+
+.detail-object {
+  animation: detailFloat 7s ease-in-out infinite;
+  translate: var(--object-x, 0px) var(--object-y, 0px);
+  transition: translate 450ms;
+}
+
+.cta-bubble {
+  overflow: visible;
+  border-radius: 9999px;
+  border: 3px solid white;
+  background: white;
+  box-shadow: 0 12px 30px -12px rgba(15, 23, 42, 0.28);
+  animation: bubbleDrift var(--bubble-speed) ease-in-out var(--bubble-delay) infinite;
+  transition: scale 0.25s;
+}
+
+.cta-bubble:hover {
+  scale: 1.1;
+}
+
+[data-service-nav].is-active .service-nav-line {
+  width: 22px;
+  background-color: hsl(var(--primary));
+}
+
+.process-tile.is-passed {
+  background-color: hsl(var(--primary));
+  box-shadow: 0 0 0 6px hsl(var(--primary) / 0.15);
+}
+
+[data-faq-trigger][aria-expanded="true"] .faq-plus,
+[data-faq-trigger][aria-expanded="false"] .faq-minus {
+  display: none;
+}
+
+[data-compare-tab][aria-selected="false"] {
+  color: hsl(var(--muted-foreground));
+}
+
+[dir="rtl"] .sp-dir-icon {
+  scale: -1 1;
+}
+
+@keyframes detailRise {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}
+
+@keyframes bubbleDrift {
+  0%,
+  100% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@keyframes detailFloat {
+  0%,
+  100% {
+    transform: translateY(-6px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(6px) rotate(1deg);
+  }
+}
+
+@media (max-width: 1023px) {
+  .cta-bubble:nth-of-type(2) { left: 9% !important; top: 36px !important; }
+  .cta-bubble:nth-of-type(3) { left: 31% !important; top: 62px !important; }
+  .cta-bubble:nth-of-type(4) { left: auto !important; right: 31% !important; top: 62px !important; }
+  .cta-bubble:nth-of-type(5) { left: auto !important; right: 9% !important; top: 36px !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail-reveal.is-visible .detail-stagger,
+  .detail-object,
+  .cta-bubble {
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

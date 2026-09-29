@@ -21,7 +21,7 @@ function arqamweb_get_text_field( string $key, int $post_id, string $fallback = 
  * Returns a normalized image array or null.
  * Handles both ACF "Image Array" and "Image URL" return formats.
  *
- * @return array{url:string,alt:string,width:int,height:int}|null
+ * @return array{id:int,url:string,alt:string,width:int,height:int}|null
  */
 function arqamweb_get_image_field( string $key, int $post_id ): ?array {
 	if ( ! function_exists( 'get_field' ) ) return null;
@@ -30,6 +30,7 @@ function arqamweb_get_image_field( string $key, int $post_id ): ?array {
 
 	if ( is_array( $value ) && ! empty( $value['url'] ) ) {
 		return [
+			'id'     => (int) ( $value['ID'] ?? $value['id'] ?? 0 ),
 			'url'    => (string) $value['url'],
 			'alt'    => (string) ( $value['alt'] ?? '' ),
 			'width'  => (int) ( $value['width'] ?? 0 ),
@@ -39,6 +40,7 @@ function arqamweb_get_image_field( string $key, int $post_id ): ?array {
 
 	if ( is_string( $value ) && ! empty( $value ) ) {
 		return [
+			'id'     => 0,
 			'url'    => $value,
 			'alt'    => '',
 			'width'  => 0,
