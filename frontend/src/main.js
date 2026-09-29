@@ -286,6 +286,11 @@ document.addEventListener("DOMContentLoaded", function () {
     initHeroWordRotator(heroWord, reducedMotion);
   }
 
+  const magneticButtons = document.querySelectorAll("[data-arqam-magnetic]");
+  if (magneticButtons.length && !reducedMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    initMagneticButtons(magneticButtons);
+  }
+
   const founderVideoButton = document.querySelector("[data-founder-video-open]");
   if (founderVideoButton) {
     initFounderVideo(founderVideoButton);
@@ -701,7 +706,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (parseError) {
       words = [];
     }
-    if (!words.length) words = ["Grow.", "Scale.", "Convert."];
+    if (!words.length) words = [wordElement.textContent.trim()];
     let wordIndex = 0;
     let phase = "typing";
     let text = "";
@@ -755,6 +760,37 @@ document.addEventListener("DOMContentLoaded", function () {
     }, { once: true });
   }
 
+  // الزرار بيتحرك ناحية المؤشر شوية وهو فوقه، ويرجع مكانه لما المؤشر يخرج.
+  function initMagneticButtons(buttons) {
+    buttons.forEach(function (button) {
+      let frameId = 0;
+      let pointer = null;
+
+      const update = function () {
+        frameId = 0;
+        if (!pointer) return;
+        const rect = button.getBoundingClientRect();
+        const x = pointer.clientX - (rect.left + rect.width / 2);
+        const y = pointer.clientY - (rect.top + rect.height / 2);
+        button.style.transform = "translate(" + (x * 0.25).toFixed(1) + "px, " + (y * 0.35).toFixed(1) + "px)";
+      };
+
+      button.addEventListener("pointermove", function (event) {
+        pointer = event;
+        if (!frameId) frameId = window.requestAnimationFrame(update);
+      });
+
+      button.addEventListener("pointerleave", function () {
+        pointer = null;
+        if (frameId) {
+          window.cancelAnimationFrame(frameId);
+          frameId = 0;
+        }
+        button.style.transform = "";
+      });
+    });
+  }
+
   // يدير سلايدر صور الـ mockup في الهيرو مع النقاط والـ hover pause.
   function initHeroMockup(card, shouldReduceMotion) {
     const image = card.querySelector("[data-arqam-hero-slide]");
@@ -762,6 +798,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const caption = card.querySelector("[data-arqam-hero-caption]");
     const title = card.querySelector("[data-arqam-hero-title]");
     const copy = card.querySelector("[data-arqam-hero-copy]");
+    const live = card.querySelector("[data-arqam-hero-live]");
     const dots = Array.from(card.querySelectorAll("[data-arqam-hero-dot]"));
     // الصورة هي العنصر الأساسي للسلايدر، لذلك نوقف الدالة لو مش موجودة.
     if (!image) return;
@@ -834,9 +871,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // بعد بداية الانتقال نبدل بيانات الصورة والنص.
         image.src = current.src;
         image.alt = current.title || "";
-        image.style.objectPosition = current.focus || "center 30%";
+        image.style.objectPosition = current.focus || "";
         image.style.opacity = "1";
         if (path) path.textContent = current.path || "";
+        if (live && current.url) {
+          live.href = current.url;
+          live.setAttribute("aria-label", current.live_label || current.title || "");
+        }
         if (title) title.textContent = current.title || "";
         if (copy) copy.textContent = current.caption || "";
         if (caption) {
@@ -885,6 +926,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateDots();
     preloadSlide(activeIndex + 1);
+
+    // الضغط على أي نقطة ينقل للسلايد بتاعها ويعيد تشغيل العداد من الأول.
+    dots.forEach(function (dot, index) {
+      dot.addEventListener("click", function () {
+        if (index === activeIndex) return;
+        const wasRunning = Boolean(intervalId);
+        if (intervalId) {
+          window.clearInterval(intervalId);
+          intervalId = 0;
+        }
+        setSlide(index);
+        if (wasRunning) start();
+      });
+    });
 
     if ("IntersectionObserver" in window) {
       const mockupObserver = new IntersectionObserver(function (entries) {

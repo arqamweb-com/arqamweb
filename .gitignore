@@ -37,3 +37,5 @@ wp-config-local.php
 .worktrees/
 .security-key
 logs/security/
+.auto-claude-security.json
+.claude_settings.json

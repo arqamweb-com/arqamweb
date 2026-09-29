@@ -53,7 +53,7 @@ class ArqamWeb_Assets {
 		if ( is_front_page() ) {
 			echo "\t" . '<link rel="preload" as="font" href="' . esc_url( get_template_directory_uri() ) . '/frontend/fonts/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">' . "\n";
 			echo "\t" . '<link rel="preload" as="font" href="' . esc_url( get_template_directory_uri() ) . '/frontend/fonts/SpaceGrotesk-Light.woff2" type="font/woff2" crossorigin="anonymous">' . "\n";
-			echo "\t" . '<link rel="preload" as="image" href="' . esc_url( get_template_directory_uri() ) . '/frontend/img/ascend/gsc1.webp" type="image/webp" fetchpriority="high">' . "\n";
+			echo "\t" . '<link rel="preload" as="image" href="' . esc_url( get_template_directory_uri() ) . '/frontend/img/hero-shots/masar.webp" type="image/webp" fetchpriority="high">' . "\n";
 		} else {
 			echo "\t" . '<link rel="preload" as="font" href="' . esc_url( get_template_directory_uri() ) . '/frontend/fonts/Dubai-Regular.woff2" type="font/woff2" crossorigin="anonymous">' . "\n";
 			echo "\t" . '<link rel="preload" as="font" href="' . esc_url( get_template_directory_uri() ) . '/frontend/fonts/Dubai-Bold.woff2" type="font/woff2" crossorigin="anonymous">' . "\n";
