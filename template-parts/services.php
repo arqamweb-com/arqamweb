@@ -89,18 +89,18 @@ $bubble_positions = ['lg:left-[5%] lg:top-[24%]', 'lg:right-[8%] lg:top-[69%]', 
 					$price = arqamweb_sp_text('sp_card_price', $sid);
 					$object = arqamweb_get_image_field('service_icon', $sid);
 				?>
-					<a href="<?php echo esc_url(get_permalink($sid)); ?>" class="detail-stagger group relative min-h-[310px] overflow-hidden rounded-[22px] border border-slate-900/[.06] bg-[linear-gradient(160deg,#fff_0%,#eef3f9_100%)] p-7 shadow-[0_1px_2px_rgba(15,23,42,.04),0_18px_40px_-24px_rgba(15,23,42,.18)] transition-all hover:-translate-y-1 hover:border-primary/30 <?php echo esc_attr($wide[$i] ?? ''); ?>" style="--stagger:<?php echo esc_attr($i * 80); ?>ms">
+					<a href="<?php echo esc_url(get_permalink($sid)); ?>" class="detail-stagger group relative min-h-[310px] overflow-hidden rounded-[22px] border border-white/[0.08] bg-[linear-gradient(160deg,#15305a_0%,#0b1a33_100%)] p-7 shadow-[0_24px_50px_-28px_rgba(11,26,51,.55)] transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_30px_70px_-30px_rgba(49,152,212,.55)] <?php echo esc_attr($wide[$i] ?? ''); ?>" style="--stagger:<?php echo esc_attr($i * 80); ?>ms">
 						<?php if ($price) : ?>
-							<span class="relative z-10 inline-flex rounded-full border border-primary/15 bg-background/85 px-3 py-1.5 text-[10px] font-semibold text-primary"><?php echo esc_html($price); ?></span>
+							<span class="relative z-10 inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[10px] font-semibold text-[#7cc4ef]"><?php echo esc_html($price); ?></span>
 						<?php endif; ?>
 						<div class="relative z-10 mt-5 max-w-[58%]">
-							<h3 class="text-xl font-semibold"><?php echo esc_html(arqamweb_sp_text('sp_eyebrow', $sid) ?: get_the_title($sid)); ?></h3>
-							<p class="mt-2 text-sm leading-relaxed text-muted-foreground"><?php echo esc_html(arqamweb_sp_text('sp_summary', $sid) ?: get_the_excerpt($sid)); ?></p>
-							<span class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary"><?php esc_html_e('Learn more', 'arqamweb'); ?> <?php echo arqamweb_sp_icon('arrow-right', 'h-4 w-4 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1'); ?></span>
+							<h3 class="text-xl font-semibold text-white"><?php echo esc_html(arqamweb_sp_text('sp_eyebrow', $sid) ?: get_the_title($sid)); ?></h3>
+							<p class="mt-2 text-sm leading-relaxed text-white/65"><?php echo esc_html(arqamweb_sp_text('sp_summary', $sid) ?: get_the_excerpt($sid)); ?></p>
+							<span class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#7cc4ef] transition-colors group-hover:text-white"><?php esc_html_e('Learn more', 'arqamweb'); ?> <?php echo arqamweb_sp_icon('arrow-right', 'h-4 w-4 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1'); ?></span>
 						</div>
-						<div aria-hidden="true" class="absolute -bottom-16 -right-10 h-64 w-64 rounded-full bg-primary/15 blur-3xl"></div>
+						<div aria-hidden="true" class="absolute -bottom-16 -right-10 h-64 w-64 rounded-full bg-primary/25 blur-3xl"></div>
 						<?php if ($object) :
-							$object_attrs = ['class' => 'absolute -bottom-10 -right-12 w-[58%] max-w-[260px] object-contain drop-shadow-[0_24px_35px_rgba(15,23,42,.18)] transition-transform group-hover:scale-105', 'alt' => '', 'loading' => $i < 2 ? 'eager' : 'lazy', 'sizes' => '260px'];
+							$object_attrs = ['class' => 'absolute -bottom-10 -right-12 w-[58%] max-w-[260px] object-contain drop-shadow-[0_24px_35px_rgba(0,0,0,0.45)] transition-transform group-hover:scale-105', 'alt' => '', 'loading' => $i < 2 ? 'eager' : 'lazy', 'sizes' => '260px'];
 							echo $object['id'] ? wp_get_attachment_image($object['id'], 'medium_large', false, $object_attrs) : '<img src="' . esc_url($object['url']) . '" alt="" class="' . esc_attr($object_attrs['class']) . '">';
 						endif; ?>
 					</a>

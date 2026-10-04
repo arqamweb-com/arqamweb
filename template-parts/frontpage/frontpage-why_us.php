@@ -1,11 +1,11 @@
 <?php
 $whyItems = [
-	['title' => 'Custom-built, never templated', 'copy' => 'Every line of code, every pixel of design — written for your business, not pulled from a theme library.', 'icon' => 'code'],
-	['title' => 'SEO-ready from day one', 'copy' => 'Schema, semantic HTML, Core Web Vitals, indexable architecture — search-engine fundamentals are baked in, not bolted on.', 'icon' => 'search'],
-	['title' => 'Conversion-focused UX', 'copy' => 'We design for the action, not just the aesthetic. Every section is engineered to move the user one step closer to yes.', 'icon' => 'spark'],
-	['title' => 'Performance you can measure', 'copy' => 'Sub-second loads, 95+ Lighthouse scores, and infrastructure that scales — performance is a feature, not a luxury.', 'icon' => 'bolt'],
-	['title' => 'Long-term growth mindset', 'copy' => "We're not a one-and-done vendor. We partner with clients for years, optimizing as the market — and your business — evolves.", 'icon' => 'growth'],
-	['title' => 'Senior team, no hand-offs', 'copy' => 'The strategist who scopes your project also ships it. No junior shuffling, no broken telephone — direct access to expertise.', 'icon' => 'team'],
+	['title' => __('Custom-built, never templated', 'arqamweb'), 'copy' => __('Every line of code, every pixel of design — written for your business, not pulled from a theme library.', 'arqamweb'), 'icon' => 'code'],
+	['title' => __('SEO-ready from day one', 'arqamweb'), 'copy' => __('Schema, semantic HTML, Core Web Vitals, indexable architecture — search-engine fundamentals are baked in, not bolted on.', 'arqamweb'), 'icon' => 'search'],
+	['title' => __('Conversion-focused UX', 'arqamweb'), 'copy' => __('We design for the action, not just the aesthetic. Every section is engineered to move the user one step closer to yes.', 'arqamweb'), 'icon' => 'spark'],
+	['title' => __('Performance you can measure', 'arqamweb'), 'copy' => __('Sub-second loads, 95+ Lighthouse scores, and infrastructure that scales — performance is a feature, not a luxury.', 'arqamweb'), 'icon' => 'bolt'],
+	['title' => __('Long-term growth mindset', 'arqamweb'), 'copy' => __("We're not a one-and-done vendor. We partner with clients for years, optimizing as the market — and your business — evolves.", 'arqamweb'), 'icon' => 'growth'],
+	['title' => __('Senior team, no hand-offs', 'arqamweb'), 'copy' => __('The strategist who scopes your project also ships it. No junior shuffling, no broken telephone — direct access to expertise.', 'arqamweb'), 'icon' => 'team'],
 ];
 ?>
 
@@ -26,8 +26,8 @@ $whyItems = [
 						class="group rounded-2xl border border-border bg-card p-6 hover:border-primary/40 hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 shadow-card">
 						<div
 							class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 transition-all duration-300 group-hover:text-primary-foreground group-hover:scale-110 group-hover:shadow-glow group-hover:[background:#31415a]"><?php echo arqam_icon($item['icon']); ?></div>
-						<h3 class="font-semibold text-base group-hover:text-primary transition-colors"><?php echo esc_html(__($item['title'], 'arqamweb')); ?></h3>
-						<p class="mt-1.5 text-sm text-muted-foreground leading-relaxed"><?php echo esc_html(__($item['copy'], 'arqamweb')); ?></p>
+						<h3 class="font-semibold text-base group-hover:text-primary transition-colors"><?php echo esc_html($item['title']); ?></h3>
+						<p class="mt-1.5 text-sm text-muted-foreground leading-relaxed"><?php echo esc_html($item['copy']); ?></p>
 					</div>
 				<?php endforeach; ?>
 			</div>

@@ -1,6 +1,7 @@
 <?php
 $testimonial_posts = get_posts([
 	'post_type' => 'testimonial',
+	'suppress_filters' => false,
 	'posts_per_page' => 3,
 	'post_status' => 'publish',
 	'orderby' => 'menu_order',

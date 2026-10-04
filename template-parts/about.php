@@ -730,6 +730,7 @@ get_header();
 			<?php
 			$about_reviews = get_posts([
 				'post_type' => 'review',
+				'suppress_filters' => false,
 				'posts_per_page' => 6,
 				'post_status' => 'publish',
 				'orderby' => 'menu_order',

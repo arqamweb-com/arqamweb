@@ -72,8 +72,8 @@ $heroVideoId = 'QndT75SOP-I';
 	</div>
 
 	<div class="container relative">
-		<div class="grid gap-12 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:gap-10 lg:items-center">
-			<div class="min-w-0 lg:pr-6">
+		<div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+			<div class="min-w-0 lg:col-span-7">
 				<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/25 bg-primary/10 backdrop-blur text-xs font-semibold mb-7" style="color:#5e646c">
 					<span class="relative flex h-2 w-2">
 						<span class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-60 animate-ping"></span>
@@ -92,8 +92,9 @@ $heroVideoId = 'QndT75SOP-I';
 					</span>
 				</div>
 				<h1 class="font-semibold tracking-[-0.035em] max-w-[760px]">
-					<span class="block text-[2.25rem] sm:text-[2.75rem] lg:whitespace-nowrap lg:text-[3.25rem] xl:text-[3.5rem] leading-[1.06] font-bold text-foreground"><?php esc_html_e('We build websites that', 'arqamweb'); ?></span>
-					<span class="block text-[2.25rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] leading-[1.06] font-bold text-foreground mt-1"><?php esc_html_e('bring you', 'arqamweb'); ?> <span class="relative inline-flex items-baseline"><span data-arqam-hero-word data-words="<?php echo esc_attr(wp_json_encode($heroWords)); ?>" class="hero-word-rotator text-gradient font-semibold"><?php echo esc_html($heroWords[0]); ?></span><span class="inline-block w-[3px] h-[0.78em] align-[-0.06em] ml-1 bg-primary animate-pulse"></span></span></span>
+					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold"><?php esc_html_e('We build websites', 'arqamweb'); ?></span>
+					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold mt-1"><?php esc_html_e('that bring you', 'arqamweb'); ?></span>
+					<span class="block text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.04] font-bold mt-1"><span class="relative inline-flex items-baseline"><span data-arqam-hero-word data-words="<?php echo esc_attr(wp_json_encode($heroWords)); ?>" class="hero-word-rotator text-gradient font-semibold"><?php echo esc_html($heroWords[0]); ?></span><span class="inline-block w-[3px] h-[0.78em] align-[-0.06em] ml-1 bg-primary animate-pulse"></span></span></span>
 				</h1>
 				<p class="mt-8 text-base lg:text-lg text-muted-foreground max-w-lg leading-relaxed"><?php esc_html_e('Arqam Web designs, codes and ranks websites for businesses in Egypt, Saudi Arabia and the Gulf. Custom-built with no templates, structured for Google and AI search, and handed over fully in your name.', 'arqamweb'); ?></p>
 				<div class="mt-9 flex flex-wrap items-center gap-3">
@@ -117,11 +118,14 @@ $heroVideoId = 'QndT75SOP-I';
 				</div>
 			</div>
 
-			<div class="relative min-w-0">
+			<div class="relative min-w-0 lg:col-span-5">
+				<div class="relative lg:scale-[1.1] lg:origin-right lg:-ml-6 xl:-ml-10">
 				<div class="relative animate-float">
 					<div data-arqam-hero-mockup data-slide-images="<?php echo esc_attr(wp_json_encode($heroSlides)); ?>" class="hero-mockup-card relative rounded-3xl bg-gradient-to-br from-[oklch(0.19_0.03_250)] to-[oklch(0.11_0.025_250)] border border-white/[0.08] p-3 lg:p-4 overflow-hidden shadow-[0_50px_100px_-30px_rgba(0,0,0,0.85),0_25px_50px_-20px_rgba(0,0,0,0.6),inset_0_1px_0_0_rgba(255,255,255,0.08)]">
 						<div aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+						<div aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.08),transparent_55%)]"></div>
 						<div aria-hidden="true" class="pointer-events-none absolute -top-20 -right-16 w-72 h-72 rounded-full bg-[color:var(--brand-primary)]/15 blur-2xl"></div>
+						<div aria-hidden="true" class="pointer-events-none absolute -bottom-24 -left-20 w-72 h-72 rounded-full bg-[oklch(0.55_0.18_280)]/10 blur-2xl"></div>
 						<div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-[0.08] overflow-hidden">
 							<div class="hero-sweep absolute -inset-[100%] bg-[linear-gradient(115deg,transparent_30%,white_50%,transparent_70%)]"></div>
 						</div>
@@ -133,6 +137,7 @@ $heroVideoId = 'QndT75SOP-I';
 						<div class="relative aspect-[16/11] rounded-2xl overflow-hidden bg-black/40">
 							<img data-arqam-hero-slide src="<?php echo esc_url($heroSlides[0]['src']); ?>" alt="<?php echo esc_attr($heroSlides[0]['title']); ?>" width="1280" height="800" loading="eager" decoding="async" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover object-top scale-110 duration-[6000ms]">
 							<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/30"></div>
+							<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(49,152,212,0.25),transparent_55%)]"></div>
 							<div class="absolute left-3 right-3 bottom-3">
 								<div data-arqam-hero-caption class="px-3 py-2 rounded-xl bg-black/55 backdrop-blur-md border border-white/10 text-white animate-fade-in">
 									<div data-arqam-hero-title class="text-[10px] uppercase tracking-wider opacity-70"><?php echo esc_html($heroSlides[0]['title']); ?></div>
@@ -172,6 +177,7 @@ $heroVideoId = 'QndT75SOP-I';
 							</span>
 						</button>
 					<?php endforeach; ?>
+				</div>
 				</div>
 			</div>
 		</div>

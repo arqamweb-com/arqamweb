@@ -124,7 +124,7 @@ $card_gradients = [
 					data-filter="all"
 					role="tab"
 					aria-selected="true"
-					class="relative shrink-0 px-5 py-2.5 rounded-full text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 will-change-transform text-primary-foreground bg-gradient-primary shadow-glow">
+					class="relative shrink-0 px-5 py-2.5 rounded-full text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 will-change-transform aria-selected:hover:text-white text-primary-foreground bg-gradient-primary shadow-glow">
 					<?php esc_html_e('All', 'arqamweb'); ?>
 				</button>
 				<?php foreach ($project_categories as $cat) : ?>
@@ -132,7 +132,7 @@ $card_gradients = [
 						data-filter="<?php echo esc_attr($cat->slug); ?>"
 						role="tab"
 						aria-selected="false"
-						class="relative shrink-0 px-5 py-2.5 rounded-full text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 will-change-transform text-foreground/70 border border-border bg-background hover:text-foreground hover:border-primary/40">
+						class="relative shrink-0 px-5 py-2.5 rounded-full text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 will-change-transform aria-selected:hover:text-white text-foreground/70 border border-border bg-background hover:text-foreground hover:border-primary/40">
 						<?php echo esc_html($cat->name); ?>
 					</button>
 				<?php endforeach; ?>

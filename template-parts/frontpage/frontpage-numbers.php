@@ -1,10 +1,10 @@
 <?php
 
 $stats = [
-	['value' => '15+', 'label' => 'Years of experience', 'note' => 'since 2010'],
-	['value' => '10+', 'label' => 'Countries served', 'note' => 'GCC · MENA · UK · USA'],
-	['value' => '92%', 'label' => 'Client retention', 'note' => 'long-term partnerships'],
-	['value' => '4.9★', 'label' => 'Average client rating', 'note' => 'out of 5.0'],
+	['value' => '15+', 'label' => __('Years of experience', 'arqamweb'), 'note' => __('since 2010', 'arqamweb')],
+	['value' => '10+', 'label' => __('Countries served', 'arqamweb'), 'note' => __('GCC · MENA · UK · USA', 'arqamweb')],
+	['value' => '92%', 'label' => __('Client retention', 'arqamweb'), 'note' => __('long-term partnerships', 'arqamweb')],
+	['value' => '4.9★', 'label' => __('Average client rating', 'arqamweb'), 'note' => __('out of 5.0', 'arqamweb')],
 ];
 
 ?>
@@ -53,8 +53,8 @@ $stats = [
 								class="bg-gradient-to-br from-[color:var(--brand-primary)] to-[color:var(--brand-secondary)] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(49,152,212,0.5)]"><?php echo esc_html($stat_suffix); ?></span>
 						</div>
 						<div
-							class="relative mt-5 text-base font-semibold text-primary-foreground"><?php echo esc_html(__($stat['label'], 'arqamweb')); ?></div>
-						<div class="relative text-sm text-primary-foreground/55 mt-1"><?php echo esc_html(__($stat['note'], 'arqamweb')); ?></div>
+							class="relative mt-5 text-base font-semibold text-primary-foreground"><?php echo esc_html($stat['label']); ?></div>
+						<div class="relative text-sm text-primary-foreground/55 mt-1"><?php echo esc_html($stat['note']); ?></div>
 					</div>
 				</div>
 			<?php endforeach; ?>

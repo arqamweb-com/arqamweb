@@ -293,6 +293,7 @@ get_header();
 	<?php
 	$_video_testimonial_posts = get_posts([
 		'post_type' => 'testimonial',
+		'suppress_filters' => false,
 		'posts_per_page' => 3,
 		'post_status' => 'publish',
 		'orderby' => 'menu_order',
@@ -634,7 +635,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-border">
+				<div class="mt-8 grid grid-cols-3 gap-4 pt-8 border-t border-border">
 					<div>
 						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">10+</div>
 						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Countries', 'arqamweb'); ?></div>
@@ -646,10 +647,6 @@ get_header();
 					<div>
 						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">320+</div>
 						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Projects', 'arqamweb'); ?></div>
-					</div>
-					<div>
-						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">24/7</div>
-						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Support', 'arqamweb'); ?></div>
 					</div>
 				</div>
 			</div>
@@ -663,6 +660,7 @@ get_header();
 		<?php
 		$_marquee_reviews = get_posts([
 			'post_type' => 'review',
+			'suppress_filters' => false,
 			'posts_per_page' => -1,
 			'post_status' => 'publish',
 			'orderby' => 'menu_order',
@@ -718,6 +716,7 @@ get_header();
 			<?php
 			$_grid_reviews = get_posts([
 				'post_type' => 'review',
+			'suppress_filters' => false,
 				'posts_per_page' => -1,
 				'post_status' => 'publish',
 				'orderby' => 'menu_order',
@@ -796,7 +795,7 @@ get_header();
 		<div class="container-x max-w-5xl mx-auto relative text-center">
 			<div
 				class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md text-[11px] font-bold tracking-[0.22em] text-white/85 mb-8">
-				<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><?php esc_html_e('NOW BOOKING Q2 PROJECTS', 'arqamweb'); ?>
+				<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><?php esc_html_e('NOW BOOKING NEW PROJECTS', 'arqamweb'); ?>
 			</div>
 			<h2 class="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] leading-[1.02]"><?php esc_html_e('Ready to become our', 'arqamweb'); ?> <span
 					class="bg-gradient-to-r from-white via-white to-[color:var(--brand-primary)] bg-clip-text text-transparent"><?php esc_html_e('next success story?', 'arqamweb'); ?></span>

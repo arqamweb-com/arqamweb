@@ -4,17 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arqam Web 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Arqam-Web-main\n"
+"POT-Creation-Date: 2026-09-30T00:13:30+00:00\n"
+"PO-Revision-Date: 2026-09-30 12:00+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-21T19:51:02+00:00\n"
-"PO-Revision-Date: 2026-06-21T19:51:02+00:00\n"
-"X-Generator: WP-CLI 2.11.0\n"
-"X-Domain: arqamweb\n"
-"Language: ar\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+"X-Domain: arqamweb\n"
+"X-Generator: WP-CLI 2.11.0\n"
 
 #. Theme Name of the theme
 #: style.css
@@ -40,6 +40,7 @@ msgstr ""
 
 #. Author of the theme
 #: style.css template-parts/frontpage/frontpage-founder.php:30
+#: template-parts/service/service-compare.php:41
 msgid "Arqam Web"
 msgstr "Arqam Web"
 
@@ -60,7 +61,8 @@ msgid ""
 "The page you're looking for doesn't exist, was moved, or the URL might be "
 "mistyped."
 msgstr ""
-"الصفحة التي تبحث عنها غير موجودة، أو تم نقلها، أو ربما كُتب الرابط بشكل خاطئ."
+"الصفحة التي تبحث عنها غير موجودة، أو تم نقلها، أو ربما كُتب الرابط بشكل "
+"خاطئ."
 
 #: 404.php:63 archive.php:218
 msgid "Back to home"
@@ -78,7 +80,7 @@ msgstr "بحث…"
 msgid "Search"
 msgstr "بحث"
 
-#: 404.php:107 home.php:163 home.php:171
+#: 404.php:107 home.php:164 home.php:172
 msgid "Journal"
 msgstr "المجلة"
 
@@ -86,7 +88,7 @@ msgstr "المجلة"
 msgid "Essays & insights"
 msgstr "مقالات ورؤى"
 
-#: 404.php:124 template-parts/reviews.php:648
+#: 404.php:124 template-parts/reviews.php:649
 msgid "Projects"
 msgstr "المشاريع"
 
@@ -98,7 +100,7 @@ msgstr "أعمالنا"
 msgid "Contact"
 msgstr "تواصل"
 
-#: 404.php:142 footer.php:53
+#: 404.php:142 footer.php:74
 msgid "Get in touch"
 msgstr "تواصل معنا"
 
@@ -110,15 +112,15 @@ msgstr "تصفّح حسب الموضوع"
 msgid "While you're here"
 msgstr "ما دمت هنا"
 
-#: 404.php:179 home.php:251 template-parts/frontpage/frontpage-blog.php:14
+#: 404.php:179 home.php:252 template-parts/frontpage/frontpage-blog.php:17
 msgid "Latest from the"
 msgstr "أحدث ما في"
 
-#: 404.php:179 home.php:252 template-parts/frontpage/frontpage-blog.php:14
+#: 404.php:179 home.php:253 template-parts/frontpage/frontpage-blog.php:17
 msgid "studio."
 msgstr "الاستوديو."
 
-#: 404.php:229 archive.php:166 author.php:145 home.php:341 search.php:173
+#: 404.php:229 archive.php:166 author.php:145 home.php:342 search.php:173
 #: single.php:322
 msgid "Read"
 msgstr "اقرأ"
@@ -149,11 +151,11 @@ msgstr[3] "مقالات"
 msgstr[4] "مقالاً"
 msgstr[5] "مقال"
 
-#: archive.php:139 home.php:314
+#: archive.php:139 home.php:315
 msgid "Trending"
 msgstr "الأكثر رواجاً"
 
-#: archive.php:163 home.php:337
+#: archive.php:163 home.php:338
 msgid "By"
 msgstr "بقلم"
 
@@ -170,6 +172,7 @@ msgid "Nothing published here yet. Check back soon."
 msgstr "لا يوجد محتوى منشور هنا بعد. عُد قريباً."
 
 #: author.php:23
+#, php-format
 msgid "Posts by %s"
 msgstr "مقالات بقلم %s"
 
@@ -179,6 +182,7 @@ msgstr "تنقّل مقالات الكاتب"
 
 #. translators: %s: author name
 #: author.php:200
+#, php-format
 msgid "%s hasn't published anything yet."
 msgstr "لم ينشر %s أي شيء بعد."
 
@@ -199,6 +203,7 @@ msgid "Reply"
 msgstr "رد"
 
 #: comments.php:92
+#, php-format
 msgid "%s response"
 msgid_plural "%s responses"
 msgstr[0] "%s ردّ"
@@ -210,6 +215,7 @@ msgstr[5] "%s ردّ"
 
 #. translators: 1: current page, 2: total pages
 #: comments.php:104
+#, php-format
 msgid "Page %1$s of %2$s"
 msgstr "الصفحة %1$s من %2$s"
 
@@ -226,6 +232,7 @@ msgid "Leave a reply"
 msgstr "اترك رداً"
 
 #: comments.php:170
+#, php-format
 msgid "Reply to %s"
 msgstr "الرد على %s"
 
@@ -241,8 +248,8 @@ msgstr "الاسم"
 msgid "Your name"
 msgstr "اسمك"
 
-#: comments.php:188 template-parts/contact.php:269
-#: template-parts/contact.php:276
+#: comments.php:188 template-parts/partials/floating-contact.php:20
+#: template-parts/partials/floating-contact.php:27
 msgid "Email"
 msgstr "البريد الإلكتروني"
 
@@ -260,7 +267,8 @@ msgstr "https://"
 
 #: comments.php:202
 msgid "Save my name and email in this browser for the next time I comment."
-msgstr "احفظ اسمي وبريدي الإلكتروني في هذا المتصفح للمرة القادمة التي أعلّق فيها."
+msgstr ""
+"احفظ اسمي وبريدي الإلكتروني في هذا المتصفح للمرة القادمة التي أعلّق فيها."
 
 #: comments.php:208
 msgid "Comment"
@@ -275,6 +283,7 @@ msgid "Post comment"
 msgstr "نشر التعليق"
 
 #: comments.php:218
+#, php-format
 msgid "Logged in as %s."
 msgstr "مسجّل الدخول باسم %s."
 
@@ -292,59 +301,58 @@ msgstr "مسجّل الدخول لنشر تعليق"
 
 #: footer.php:21
 msgid ""
-"A senior digital studio building high-performance websites, SEO strategies, "
-"brand identities and social-first content for ambitious brands across +10 "
-"countries — since 2010."
+"A senior digital marketing agency building high-performance websites, SEO "
+"strategies, brand identities and social-first content for ambitious brands "
+"across +10 countries — since 2010."
 msgstr ""
-"استوديو رقمي محترف يبني مواقع عالية الأداء واستراتيجيات تحسين محركات البحث "
-"وهويات بصرية ومحتوى يركّز على السوشيال ميديا للعلامات الطموحة في +10 دول — منذ "
-"عام 2010."
+"وكالة تسويق رقمي بفريق خبير، نبني مواقع عالية الأداء واستراتيجيات سيو وهويات"
+" بصرية ومحتوى للسوشيال ميديا لعلامات طموحة في أكثر من 10 دول، منذ 2010."
 
-#: footer.php:22
+#: footer.php:24
 msgid "Facebook"
 msgstr "Facebook"
 
-#: footer.php:24
+#: footer.php:31
 msgid "Instagram"
 msgstr "Instagram"
 
-#: footer.php:26
+#: footer.php:38
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: footer.php:28
+#: footer.php:45
 msgid "YouTube"
 msgstr "YouTube"
 
-#: footer.php:33
+#: footer.php:54
 msgid "Company"
 msgstr "الشركة"
 
-#: footer.php:43
+#: footer.php:64
 msgid "Services"
 msgstr "الخدمات"
 
-#: footer.php:65
+#: footer.php:86
 msgid "44 Almehwar Almarkazi, Alsaraya"
 msgstr "44 المحور المركزي، السرايا"
 
-#: footer.php:65
+#: footer.php:86
 msgid "Mall, Sheikh Zayed, Giza, Egypt."
 msgstr "مول، الشيخ زايد، الجيزة، مصر."
 
-#: footer.php:70
+#: footer.php:91
 msgid "Arqam Web. All rights reserved."
 msgstr "Arqam Web. جميع الحقوق محفوظة."
 
-#: footer.php:72
+#: footer.php:93
 msgid "Privacy Policy"
 msgstr "سياسة الخصوصية"
 
-#: footer.php:73
+#: footer.php:94
 msgid "Terms of Service"
 msgstr "شروط الخدمة"
 
-#: footer.php:74
+#: footer.php:95
 msgid "Cookies"
 msgstr "ملفات تعريف الارتباط"
 
@@ -360,9 +368,8 @@ msgstr "القائمة الرئيسية"
 msgid "Language switcher"
 msgstr "مبدّل اللغة"
 
-#: header.php:69 header.php:134
-#: template-parts/frontpage/frontpage-slider.php:75
-#: template-parts/services.php:304
+#: header.php:69 header.php:134 template-parts/pricing-v2.php:438
+#: template-parts/pricing-v2.php:1275 template-parts/pricing.php:2454
 msgid "Request a Quote"
 msgstr "اطلب عرض سعر"
 
@@ -390,59 +397,59 @@ msgstr "التنقّل"
 msgid "Crafted by Arqam Web - Premium Digital Agency"
 msgstr "صُنع بإتقان من Arqam Web - وكالة رقمية متميّزة"
 
-#: home.php:161
+#: home.php:162
 msgid "Home"
 msgstr "الرئيسية"
 
-#: home.php:168
+#: home.php:169
 msgid "Issue"
 msgstr "العدد"
 
-#: home.php:168
+#: home.php:169
 msgid "Field Notes"
 msgstr "ملاحظات ميدانية"
 
-#: home.php:170 template-parts/about.php:281
+#: home.php:171 template-parts/about.php:281
 msgid "The"
 msgstr "ال"
 
-#: home.php:171
+#: home.php:172
 msgid "Ideas worth"
 msgstr "أفكار تستحق"
 
-#: home.php:171
+#: home.php:172
 msgid "building on."
 msgstr "البناء عليها."
 
-#: home.php:175
+#: home.php:176
 msgid ""
 "Essays, breakdowns and field reports from the studio — on design that "
 "converts, SEO that compounds, and brands that age well."
 msgstr ""
-"مقالات وتحليلات وتقارير ميدانية من الاستوديو — عن تصميم يحقّق التحويل، وتحسين "
-"محركات بحث تتراكم نتائجه، وعلامات تجارية تصمد مع الزمن."
+"مقالات وتحليلات وتقارير ميدانية من الاستوديو — عن تصميم يحقّق التحويل، "
+"وتحسين محركات بحث تتراكم نتائجه، وعلامات تجارية تصمد مع الزمن."
 
-#: home.php:177
+#: home.php:178
 msgid "essays"
 msgstr "مقالات"
 
-#: home.php:179
+#: home.php:180
 msgid "Weekly"
 msgstr "أسبوعياً"
 
-#: home.php:194
+#: home.php:195
 msgid "Featured story"
 msgstr "القصة المميّزة"
 
-#: home.php:233
+#: home.php:234
 msgid "Read the essay"
 msgstr "اقرأ المقال"
 
-#: home.php:250
+#: home.php:251
 msgid "The library"
 msgstr "المكتبة"
 
-#: home.php:253
+#: home.php:254
 msgid ""
 "A growing archive of essays, teardowns and frameworks from fifteen years of "
 "shipping high-performance digital work."
@@ -450,69 +457,70 @@ msgstr ""
 "أرشيف متنامٍ من المقالات والتحليلات وأطر العمل من خمسة عشر عاماً من تنفيذ "
 "أعمال رقمية عالية الأداء."
 
-#: home.php:262 template-parts/projects.php:116 template-parts/services.php:115
+#: home.php:263 template-parts/projects.php:128
 msgid "All"
 msgstr "الكل"
 
-#: home.php:365
+#: home.php:366
 msgid "Trending this month"
 msgstr "الأكثر رواجاً هذا الشهر"
 
-#: home.php:366
+#: home.php:367
 msgid "What the studio is"
 msgstr "ما الذي يقرؤه"
 
-#: home.php:367 single.php:267
+#: home.php:368 single.php:267
 msgid "reading."
 msgstr "الاستوديو."
 
-#: home.php:432
+#: home.php:433
 msgid "The dispatch"
 msgstr "النشرة"
 
-#: home.php:434
+#: home.php:435
 msgid "One essay. Every Sunday."
 msgstr "مقال واحد. كل أحد."
 
-#: home.php:436
+#: home.php:437
 msgid "Nothing else."
 msgstr "لا شيء غير ذلك."
 
-#: home.php:439
+#: home.php:440
 msgid ""
-"Join 8,400+ founders, designers and operators reading the quietest, sharpest "
-"newsletter on digital craft."
+"Join 8,400+ founders, designers and operators reading the quietest, sharpest"
+" newsletter on digital craft."
 msgstr ""
 "انضم إلى أكثر من 8,400 مؤسّس ومصمّم وممارس يقرؤون أهدأ وأذكى نشرة بريدية عن "
 "الحرفة الرقمية."
 
-#: home.php:447
+#: home.php:448
 msgid "you@studio.com"
 msgstr "you@studio.com"
 
-#: home.php:452
+#: home.php:453
 msgid "Subscribe"
 msgstr "اشترك"
 
-#: home.php:456
+#: home.php:457
 msgid ""
 "No spam. Unsubscribe in one click. Read by teams at Aramco, Noon and STC."
 msgstr ""
-"بدون رسائل مزعجة. إلغاء الاشتراك بنقرة واحدة. تقرؤها فرق في Aramco وNoon وSTC."
+"بدون رسائل مزعجة. إلغاء الاشتراك بنقرة واحدة. تقرؤها فرق في Aramco وNoon "
+"وSTC."
 
-#: home.php:483
+#: home.php:484
 msgid "Beyond the essay"
 msgstr "ما وراء المقال"
 
-#: home.php:485
+#: home.php:486
 msgid "Ideas are easy."
 msgstr "الأفكار سهلة."
 
-#: home.php:487
+#: home.php:488
 msgid "Execution is the craft."
 msgstr "التنفيذ هو الحرفة."
 
-#: home.php:490
+#: home.php:491
 msgid ""
 "If something here sparked an idea for your brand, let's turn it into a "
 "system that ships, ranks and converts."
@@ -520,16 +528,16 @@ msgstr ""
 "إن أشعل شيء هنا فكرة لعلامتك التجارية، فلنحوّلها إلى نظام يُطلَق ويتصدّر "
 "ويحقّق التحويل."
 
-#: home.php:495 single-service.php:77 single-service.php:149
-#: template-parts/frontpage/frontpage-why_us.php:21
+#: home.php:496 template-parts/frontpage/frontpage-why_us.php:21
 msgid "Start a project"
 msgstr "ابدأ مشروعاً"
 
-#: home.php:503
+#: home.php:504
 msgid "View our projects"
 msgstr "اطّلع على مشاريعنا"
 
 #: inc/class-project.php:68
+#, php-format
 msgid "%s project preview"
 msgstr "معاينة مشروع %s"
 
@@ -538,6 +546,7 @@ msgid "Blog"
 msgstr "المدوّنة"
 
 #: inc/class-schema.php:693
+#, php-format
 msgid "Search results for: %s"
 msgstr "نتائج البحث عن: %s"
 
@@ -570,8 +579,8 @@ msgid ""
 "SVG uploads are disabled in the theme for security. Install the Safe SVG "
 "plugin if you need sanitized SVG support."
 msgstr ""
-"رفع ملفات SVG معطّل في القالب لأسباب أمنية. ثبّت إضافة Safe SVG إن كنت بحاجة "
-"إلى دعم SVG آمن."
+"رفع ملفات SVG معطّل في القالب لأسباب أمنية. ثبّت إضافة Safe SVG إن كنت بحاجة"
+" إلى دعم SVG آمن."
 
 #: inc/class-walker-nav-menu.php:127
 msgid "Toggle submenu"
@@ -598,6 +607,7 @@ msgid "Uploaded files must be 8 MB or smaller."
 msgstr "يجب ألا يتجاوز حجم الملفات المرفوعة 8 ميجابايت."
 
 #: inc/helpers/ajax-handlers.php:102
+#, php-format
 msgid "New Quote Request – %s from %s"
 msgstr "طلب عرض سعر جديد – %s من %s"
 
@@ -613,14 +623,20 @@ msgstr "تعذّر إرسال طلبك. يرجى مراسلتنا عبر الب�
 msgid "Digital Marketing Agency in Egypt, Cairo | Arqam Web"
 msgstr "وكالة تسويق رقمي في مصر، القاهرة | Arqam Web"
 
+#: inc/helpers/template-helpers.php:288
+msgid "Project"
+msgstr "مشروع"
+
 #. translators: %s: post date.
 #: inc/template-tags.php:31
+#, php-format
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "نُشر في %s"
 
 #. translators: %s: post author.
 #: inc/template-tags.php:47
+#, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr "بقلم %s"
@@ -632,6 +648,7 @@ msgstr "، "
 
 #. translators: 1: list of categories.
 #: inc/template-tags.php:67
+#, php-format
 msgid "Posted in %1$s"
 msgstr "نُشر في %1$s"
 
@@ -643,16 +660,19 @@ msgstr "، "
 
 #. translators: 1: list of tags.
 #: inc/template-tags.php:74
+#, php-format
 msgid "Tagged %1$s"
 msgstr "موسوم بـ %1$s"
 
 #. translators: %s: post title
 #: inc/template-tags.php:84
+#, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "اترك تعليقاً<span class=\"screen-reader-text\"> على %s</span>"
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:101
+#, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "تحرير <span class=\"screen-reader-text\">%s</span>"
 
@@ -666,6 +686,7 @@ msgstr "نتائج البحث"
 
 #. translators: %s: search query
 #: search.php:50
+#, php-format
 msgid "Results for \"%s\""
 msgstr "نتائج \"%s\""
 
@@ -674,6 +695,7 @@ msgid "Search the journal"
 msgstr "ابحث في المجلة"
 
 #: search.php:66
+#, php-format
 msgid "%d result found"
 msgid_plural "%d results found"
 msgstr[0] "تم العثور على %d نتيجة"
@@ -693,6 +715,7 @@ msgstr "تنقّل نتائج البحث"
 
 #. translators: %s: search query
 #: search.php:231
+#, php-format
 msgid "No results for \"%s\""
 msgstr "لا نتائج لـ \"%s\""
 
@@ -720,27 +743,37 @@ msgstr "تواصل معنا"
 msgid "Popular topics"
 msgstr "المواضيع الرائجة"
 
-#: single-project.php:134
+#: single-project.php:23
+msgid "Ready to Build a Website That Actually Makes You Money?"
+msgstr "جاهز لموقع يجلب لك أرباحًا فعلًا؟"
+
+#: single-project.php:26
+msgid ""
+"We build high-performance websites engineered for growth, revenue, and "
+"measurable business results."
+msgstr "نبني مواقع عالية الأداء مصممة للنمو والمبيعات ونتائج يمكن قياسها."
+
+#: single-project.php:140
 msgid "The numbers speak for themselves"
 msgstr "الأرقام تتحدث عن نفسها"
 
-#: single-project.php:220
+#: single-project.php:259
 msgid "Visual Showcase"
 msgstr "عرض بصري"
 
-#: single-project.php:221
+#: single-project.php:260
 msgid "Crafted with precision, down to the pixel"
 msgstr "صُنع بدقة، حتى آخر بكسل"
 
-#: single-project.php:420
+#: single-project.php:474
 msgid "See It In Action"
 msgstr "شاهده أثناء العمل"
 
-#: single-project.php:421
+#: single-project.php:475
 msgid "Watch the full project walkthrough"
 msgstr "شاهد الجولة الكاملة للمشروع"
 
-#: single-project.php:422
+#: single-project.php:476
 msgid ""
 "A detailed look at the design decisions, interactions, and results that "
 "brought this project to life."
@@ -748,142 +781,157 @@ msgstr ""
 "نظرة مفصّلة على قرارات التصميم والتفاعلات والنتائج التي بثّت الحياة في هذا "
 "المشروع."
 
-#: single-project.php:429
+#: single-project.php:483
 msgid "Play video"
 msgstr "تشغيل الفيديو"
 
-#: single-project.php:528
+#: single-project.php:582 single-service.php:19
 msgid "Overview"
 msgstr "نظرة عامة"
 
-#: single-project.php:529
+#: single-project.php:583
 msgid "How we transformed this business"
 msgstr "كيف حوّلنا هذا النشاط التجاري"
 
-#: single-project.php:536 template-parts/services.php:174
+#: single-project.php:590
+#, php-format
 msgid "%s icon"
 msgstr "أيقونة %s"
 
-#: single-project.php:581
+#: single-project.php:635
 msgid "Project Story"
 msgstr "قصة المشروع"
 
-#: single-project.php:582
+#: single-project.php:636
 msgid "From vision to launch — every step, intentional"
 msgstr "من الرؤية إلى الإطلاق — كل خطوة مدروسة"
 
-#: single-project.php:636
+#: single-project.php:690
+#, php-format
 msgid "Phase %s"
 msgstr "المرحلة %s"
 
-#: single-project.php:719
+#: single-project.php:773
 msgid "What We Built"
 msgstr "ما الذي بنيناه"
 
-#: single-project.php:720
+#: single-project.php:774
 msgid "Performance"
 msgstr "الأداء"
 
-#: single-project.php:720
+#: single-project.php:774 template-parts/service/service-hero.php:65
 msgid "Delivery"
 msgstr "التسليم"
 
-#: single-project.php:760
+#: single-project.php:814
 msgid "Behind the Results"
 msgstr "وراء النتائج"
 
-#: single-project.php:761
+#: single-project.php:815
 msgid "Why this project succeeded"
 msgstr "لماذا نجح هذا المشروع"
 
-#: single-project.php:798
+#: single-project.php:852
 msgid "Sound Familiar?"
 msgstr "يبدو مألوفاً؟"
 
-#: single-project.php:799
+#: single-project.php:853
 msgid "What This Means For You"
 msgstr "ماذا يعني هذا لك"
 
-#: single-project.php:805
+#: single-project.php:859
 msgid "Struggling with low traffic and zero visibility?"
 msgstr "تعاني من زيارات منخفضة وانعدام الظهور؟"
 
-#: single-project.php:811
+#: single-project.php:865
 msgid "Poor conversion rates despite good products?"
 msgstr "معدلات تحويل ضعيفة رغم جودة المنتجات؟"
 
-#: single-project.php:817
+#: single-project.php:871
 msgid "Slow, outdated website hurting your credibility?"
 msgstr "موقع بطيء وقديم يضرّ بمصداقيتك؟"
 
-#: single-project.php:823
+#: single-project.php:877
 msgid "Competitors outranking you on every search?"
 msgstr "منافسون يتصدّرونك في كل عملية بحث؟"
 
-#: single-project.php:826
+#: single-project.php:880
 msgid "Let's achieve similar results for your business."
 msgstr "لنحقّق نتائج مماثلة لنشاطك التجاري."
 
-#: single-project.php:850
+#: single-project.php:904
 msgid "Start Your Project"
 msgstr "ابدأ مشروعك"
 
-#: single-project.php:856
+#: single-project.php:910
 msgid "Get a Proposal"
 msgstr "احصل على عرض"
 
-#: single-project.php:871
+#: single-project.php:925
 msgid "More work"
 msgstr "المزيد من الأعمال"
 
-#: single-project.php:873
+#: single-project.php:927
 msgid "Related"
 msgstr "مشاريع"
 
-#: single-project.php:873
+#: single-project.php:927
 msgid "projects."
 msgstr "ذات صلة."
 
-#: single-project.php:937 single-service.php:240
+#: single-project.php:991
 msgid "View all projects"
 msgstr "عرض كل المشاريع"
 
-#: single-service.php:85
-msgid "View our work"
-msgstr "اطّلع على أعمالنا"
+#: single-service.php:20
+msgid "Problem"
+msgstr "المشكلة"
 
-#: single-service.php:136
-msgid "Ready to get started?"
-msgstr "مستعد للبدء؟"
+#: single-service.php:21
+msgid "Included"
+msgstr "ما تشمله الخدمة"
 
-#: single-service.php:138 template-parts/about.php:825
-#: template-parts/contact.php:40
-msgid "Let's build something"
-msgstr "لنبنِ شيئاً"
+#: single-service.php:22
+msgid "Details"
+msgstr "التفاصيل"
 
-#: single-service.php:140
-msgid "remarkable together."
-msgstr "استثنائياً معاً."
+#: single-service.php:23
+msgid "Compare"
+msgstr "المقارنة"
 
-#: single-service.php:143
-msgid "Tell us about your project and we'll get back to you within 24 hours."
-msgstr "أخبرنا عن مشروعك وسنعاود التواصل معك خلال 24 ساعة."
+#: single-service.php:24
+msgid "Process"
+msgstr "مراحل العمل"
 
-#: single-service.php:157
-msgid "View our portfolio"
-msgstr "اطّلع على أعمالنا"
-
-#: single-service.php:171
-msgid "Our work"
+#: single-service.php:25
+msgid "Work"
 msgstr "أعمالنا"
 
-#: single-service.php:173
-msgid "See it in"
-msgstr "شاهدها على"
+#: single-service.php:26 template-parts/pricing-v2.php:542
+#: template-parts/service/service-pricing.php:16
+msgid "Pricing"
+msgstr "الأسعار"
 
-#: single-service.php:174
-msgid "action."
-msgstr "أرض الواقع."
+#: single-service.php:27
+msgid "Reviews"
+msgstr "آراء العملاء"
+
+#: single-service.php:28 template-parts/pricing-v2.php:1245
+#: template-parts/pricing.php:2402 template-parts/service/service-faq.php:15
+msgid "FAQ"
+msgstr "الأسئلة الشائعة"
+
+#: single-service.php:29
+msgid "Start"
+msgstr "ابدأ"
+
+#: single-service.php:30
+msgid "More services"
+msgstr "خدمات أخرى"
+
+#: single-service.php:43
+msgid "Page sections"
+msgstr "أقسام الصفحة"
 
 #: single.php:83
 msgid "read"
@@ -891,6 +939,7 @@ msgstr "قراءة"
 
 #. translators: %s: date
 #: single.php:108
+#, php-format
 msgid "Updated %s"
 msgstr "تم التحديث %s"
 
@@ -958,22 +1007,24 @@ msgstr ""
 "Arqam Web استوديو رقمي محترف ينفّذ أعمال الويب والعلامات والنمو عبر ثلاث "
 "قارات. حرفة هادئة، ونتائج صاخبة."
 
-#: template-parts/about.php:89 template-parts/services.php:58
+#: template-parts/about.php:89
 msgid "Years of craft"
 msgstr "سنوات من الحرفة"
 
 #: template-parts/about.php:96 template-parts/contact.php:160
-#: template-parts/services.php:62
 msgid "Projects shipped"
 msgstr "مشاريع منجزة"
 
-#: template-parts/about.php:103 template-parts/reviews.php:499
-#: template-parts/services.php:66
+#: template-parts/about.php:103
+#: template-parts/frontpage/frontpage-numbers.php:5
+#: template-parts/frontpage/frontpage-slider.php:61
+#: template-parts/reviews.php:500 template-parts/services.php:33
 msgid "Countries served"
 msgstr "دول خدمناها"
 
-#: template-parts/about.php:110 template-parts/reviews.php:483
-#: template-parts/services.php:70
+#: template-parts/about.php:110
+#: template-parts/frontpage/frontpage-numbers.php:6
+#: template-parts/reviews.php:484
 msgid "Client retention"
 msgstr "الاحتفاظ بالعملاء"
 
@@ -992,8 +1043,7 @@ msgstr "هوس واحد."
 #: template-parts/about.php:122
 msgid ""
 "From a teenager's first line of code to a studio trusted by global brands."
-msgstr ""
-"من أول سطر برمجي لمراهق إلى استوديو تثق به علامات تجارية عالمية."
+msgstr "من أول سطر برمجي لمراهق إلى استوديو تثق به علامات تجارية عالمية."
 
 #: template-parts/about.php:143
 msgid "The first line of code"
@@ -1003,8 +1053,7 @@ msgstr "أول سطر برمجي"
 msgid ""
 "Youssef Salah Hassanein starts building websites at 16. The seed of Arqam "
 "Web is planted."
-msgstr ""
-"يوسف صلاح حسانين يبدأ ببناء المواقع في سن 16. وتُزرع بذرة Arqam Web."
+msgstr "يوسف صلاح حسانين يبدأ ببناء المواقع في سن 16. وتُزرع بذرة Arqam Web."
 
 #: template-parts/about.php:163
 msgid "Foundation"
@@ -1026,8 +1075,8 @@ msgid ""
 "Projects begin shipping to the GCC, UK and Egypt. The agency starts "
 "attracting senior brands."
 msgstr ""
-"بدأت المشاريع تُنفَّذ في دول الخليج والمملكة المتحدة ومصر. وبدأت الوكالة تجذب "
-"علامات تجارية كبرى."
+"بدأت المشاريع تُنفَّذ في دول الخليج والمملكة المتحدة ومصر. وبدأت الوكالة "
+"تجذب علامات تجارية كبرى."
 
 #: template-parts/about.php:203
 msgid "Scaling the craft"
@@ -1046,7 +1095,8 @@ msgid "Global recognition"
 msgstr "اعتراف عالمي"
 
 #: template-parts/about.php:225
-msgid "Awards, case studies and 100+ projects shipped across three continents."
+msgid ""
+"Awards, case studies and 100+ projects shipped across three continents."
 msgstr "جوائز ودراسات حالة وأكثر من 100 مشروع منجز عبر ثلاث قارات."
 
 #: template-parts/about.php:243
@@ -1131,9 +1181,9 @@ msgstr "واجهات، علامات تجارية، أنظمة."
 
 #: template-parts/about.php:286
 msgid ""
-"We named the studio after the only thing that matters when the meeting's over"
-msgstr ""
-"سمّينا الاستوديو على الشيء الوحيد الذي يهم عندما ينتهي الاجتماع"
+"We named the studio after the only thing that matters when the meeting's "
+"over"
+msgstr "سمّينا الاستوديو على الشيء الوحيد الذي يهم عندما ينتهي الاجتماع"
 
 #: template-parts/about.php:287
 msgid "the numbers."
@@ -1165,8 +1215,8 @@ msgstr "توازن رياضي"
 
 #: template-parts/about.php:357
 msgid ""
-"Constructed on an 8-point grid with golden-ratio proportions. The mark reads "
-"as one shape from any distance — billboard or favicon."
+"Constructed on an 8-point grid with golden-ratio proportions. The mark reads"
+" as one shape from any distance — billboard or favicon."
 msgstr ""
 "مبني على شبكة من 8 نقاط بنسب النسبة الذهبية. تُقرأ العلامة كشكل واحد من أي "
 "مسافة — لوحة إعلانية أو أيقونة مفضّلة."
@@ -1197,8 +1247,8 @@ msgstr "مصمّم للحركة"
 
 #: template-parts/about.php:367
 msgid ""
-"Designed to flex across formats — animated intros, dark/light themes, single-"
-"color print. One identity, infinite contexts."
+"Designed to flex across formats — animated intros, dark/light themes, "
+"single-color print. One identity, infinite contexts."
 msgstr ""
 "مصمّم ليتكيّف عبر الصيغ — مقدّمات متحركة، وأنماط داكنة/فاتحة، وطباعة بلون "
 "واحد. هوية واحدة، وسياقات لا نهائية."
@@ -1228,8 +1278,8 @@ msgid ""
 "Not just consumption — creation. A region exporting design and engineering "
 "at the level the world watches for."
 msgstr ""
-"ليس مجرد استهلاك — بل إبداع. منطقة تصدّر التصميم والهندسة بالمستوى الذي يترقّبه "
-"العالم."
+"ليس مجرد استهلاك — بل إبداع. منطقة تصدّر التصميم والهندسة بالمستوى الذي "
+"يترقّبه العالم."
 
 #: template-parts/about.php:422
 msgid "Mission"
@@ -1244,8 +1294,8 @@ msgid ""
 "Every project leaves behind compounding traffic, conversion or equity. We "
 "sell outcomes, not retainers."
 msgstr ""
-"يخلّف كل مشروع وراءه زيارات أو تحويلات أو قيمة متراكمة. نحن نبيع النتائج، لا "
-"العقود الشهرية."
+"يخلّف كل مشروع وراءه زيارات أو تحويلات أو قيمة متراكمة. نحن نبيع النتائج، لا"
+" العقود الشهرية."
 
 #: template-parts/about.php:446
 msgid "Values"
@@ -1257,8 +1307,8 @@ msgstr "حرفة محترفة. مشورة صادقة. تميّز هادئ."
 
 #: template-parts/about.php:450
 msgid ""
-"We'd rather lose a project than pad a team. The work — and the people behind "
-"it — speak louder than the pitch."
+"We'd rather lose a project than pad a team. The work — and the people behind"
+" it — speak louder than the pitch."
 msgstr ""
 "نفضّل خسارة مشروع على تضخيم فريق. العمل — ومن يقف وراءه — أبلغ من أي عرض."
 
@@ -1281,8 +1331,7 @@ msgstr "محترفون، دائماً"
 msgid ""
 "No juniors hidden behind invoices. The people who pitch you are the people "
 "who build for you."
-msgstr ""
-"لا مبتدئين مختبئين خلف الفواتير. من يقدّمون لك العرض هم من يبنون لك."
+msgstr "لا مبتدئين مختبئين خلف الفواتير. من يقدّمون لك العرض هم من يبنون لك."
 
 #: template-parts/about.php:492
 msgid "Speed with substance"
@@ -1315,35 +1364,27 @@ msgstr "المؤسس"
 msgid "CEO"
 msgstr "الرئيس التنفيذي"
 
-#: template-parts/about.php:545
-msgid "Recognized"
-msgstr "مُكرَّم"
-
-#: template-parts/about.php:546
-msgid "Top 50 MENA founders"
-msgstr "أفضل 50 مؤسّساً في الشرق الأوسط وشمال أفريقيا"
-
-#: template-parts/about.php:563
+#: template-parts/about.php:548
 msgid "Building since"
 msgstr "يبني منذ"
 
-#: template-parts/about.php:564
+#: template-parts/about.php:549
 msgid "Age 16 · 2010"
 msgstr "سن 16 · 2010"
 
-#: template-parts/about.php:569
+#: template-parts/about.php:554
 msgid "The founder"
 msgstr "المؤسس"
 
-#: template-parts/about.php:571
+#: template-parts/about.php:556
 msgid "One founder."
 msgstr "مؤسّس واحد."
 
-#: template-parts/about.php:573
+#: template-parts/about.php:558
 msgid "A 15-year obsession."
 msgstr "هوس استمر 15 عاماً."
 
-#: template-parts/about.php:577
+#: template-parts/about.php:562
 msgid ""
 "is an Egyptian entrepreneur and web technology specialist with 15+ years of "
 "experience in design and development."
@@ -1351,134 +1392,141 @@ msgstr ""
 "رائد أعمال مصري ومتخصص في تقنيات الويب يمتلك أكثر من 15 عاماً من الخبرة في "
 "التصميم والتطوير."
 
-#: template-parts/about.php:578
+#: template-parts/about.php:563
 msgid ""
 "He started building at 16. Founded Arqam Web after military service. Has "
 "since led IT initiatives at the Ministry of Education and served as "
 "Executive Director of the Egyptian Inventors Association."
 msgstr ""
-"بدأ البناء في سن 16. وأسّس Arqam Web بعد الخدمة العسكرية. ومنذ ذلك الحين قاد "
-"مبادرات تقنية المعلومات في وزارة التربية والتعليم وشغل منصب المدير التنفيذي "
-"لجمعية المخترعين المصرية."
+"بدأ البناء في سن 16. وأسّس Arqam Web بعد الخدمة العسكرية. ومنذ ذلك الحين قاد"
+" مبادرات تقنية المعلومات في وزارة التربية والتعليم وشغل منصب المدير التنفيذي"
+" لجمعية المخترعين المصرية."
 
-#: template-parts/about.php:579
+#: template-parts/about.php:564
 msgid "Today he leads the studio with one rule:"
 msgstr "اليوم يقود الاستوديو بقاعدة واحدة:"
 
-#: template-parts/about.php:579
+#: template-parts/about.php:564
 msgid "ship work that compounds."
 msgstr "تنفيذ أعمال تتراكم نتائجها."
 
-#: template-parts/about.php:592
+#: template-parts/about.php:577
 msgid "Years"
 msgstr "سنوات"
 
-#: template-parts/about.php:608 template-parts/reviews.php:640
+#: template-parts/about.php:593 template-parts/reviews.php:641
 msgid "Countries"
 msgstr "دول"
 
-#: template-parts/about.php:623
+#: template-parts/about.php:608
 msgid "Clients"
 msgstr "عملاء"
 
-#: template-parts/about.php:637
+#: template-parts/about.php:622
 msgid "Awards"
 msgstr "جوائز"
 
-#: template-parts/about.php:642 template-parts/about.php:651
+#: template-parts/about.php:627 template-parts/about.php:636
 #: template-parts/frontpage/frontpage-founder.php:40
 #: template-parts/frontpage/frontpage-founder.php:50
 msgid "Watch the founder's biography"
 msgstr "شاهد السيرة الذاتية للمؤسس"
 
-#: template-parts/about.php:657
+#: template-parts/about.php:642
 #: template-parts/frontpage/frontpage-founder.php:56
 msgid "Founder story video"
 msgstr "فيديو قصة المؤسس"
 
-#: template-parts/about.php:660
+#: template-parts/about.php:645
 #: template-parts/frontpage/frontpage-founder.php:59
-#: template-parts/frontpage/frontpage-testimonials.php:212
-#: template-parts/reviews.php:431
+#: template-parts/frontpage/frontpage-testimonials.php:213
+#: template-parts/reviews.php:432
 msgid "Close video"
 msgstr "إغلاق الفيديو"
 
-#: template-parts/about.php:688
+#: template-parts/about.php:673
 msgid "Our Services"
 msgstr "خدماتنا"
 
-#: template-parts/about.php:691
+#: template-parts/about.php:676
 msgid "Web · SEO · Branding · Social"
 msgstr "ويب · تحسين محركات البحث · هوية بصرية · سوشيال ميديا"
 
-#: template-parts/about.php:694
+#: template-parts/about.php:679
 msgid "Senior teams shipping growth systems."
 msgstr "فرق محترفة تنفّذ أنظمة نمو."
 
-#: template-parts/about.php:697 template-parts/about.php:727
+#: template-parts/about.php:682 template-parts/about.php:712
+#: template-parts/pricing.php:955 template-parts/pricing.php:1327
+#: template-parts/pricing.php:1762 template-parts/pricing.php:2156
 msgid "Explore"
 msgstr "استكشف"
 
-#: template-parts/about.php:721
+#: template-parts/about.php:706
 msgid "Our Projects"
 msgstr "مشاريعنا"
 
-#: template-parts/about.php:724
+#: template-parts/about.php:709
 msgid "320+ shipped, 10+ countries."
 msgstr "أكثر من 320 منجزاً، وأكثر من 10 دول."
 
-#: template-parts/about.php:725
+#: template-parts/about.php:710
 msgid "A portfolio that travels."
 msgstr "أعمال تعبر الحدود."
 
-#: template-parts/about.php:741
+#: template-parts/about.php:726
 msgid "In their words"
 msgstr "بكلماتهم"
 
-#: template-parts/about.php:743
+#: template-parts/about.php:728
 msgid "The most honest"
 msgstr "أصدق"
 
-#: template-parts/about.php:744
+#: template-parts/about.php:729
 msgid "version of us"
 msgstr "صورة لنا"
 
-#: template-parts/about.php:744
+#: template-parts/about.php:729
 msgid "is told by clients."
 msgstr "يرويها العملاء."
 
-#: template-parts/about.php:792
+#: template-parts/about.php:778
 msgid "Read all reviews"
 msgstr "اقرأ كل التقييمات"
 
-#: template-parts/about.php:823
+#: template-parts/about.php:809
 msgid "NOW BOOKING · LIMITED SLOTS"
 msgstr "الحجز متاح الآن · أماكن محدودة"
 
-#: template-parts/about.php:826
+#: template-parts/about.php:811 template-parts/contact.php:40
+#: template-parts/service/service-cta.php:10
+msgid "Let's build something"
+msgstr "لنبنِ شيئاً"
+
+#: template-parts/about.php:812
 msgid "worth remembering."
 msgstr "يستحق أن يُتذكَّر."
 
-#: template-parts/about.php:828
+#: template-parts/about.php:814
 msgid ""
 "A 30-minute conversation. Zero pressure. Walk away with a clear plan — "
 "whether you work with us or not."
 msgstr ""
 "محادثة مدتها 30 دقيقة. دون أي ضغط. واخرج بخطة واضحة — سواء عملت معنا أم لا."
 
-#: template-parts/about.php:833
+#: template-parts/about.php:819
 msgid "Start a conversation with us on WhatsApp"
 msgstr "ابدأ محادثة معنا عبر WhatsApp"
 
-#: template-parts/about.php:834
+#: template-parts/about.php:820
 msgid "Start a conversation on WhatsApp"
 msgstr "ابدأ محادثة عبر WhatsApp"
 
-#: template-parts/about.php:837
+#: template-parts/about.php:823
 msgid "Start a conversation"
 msgstr "ابدأ محادثة"
 
-#: template-parts/about.php:856 template-parts/reviews.php:819
+#: template-parts/about.php:842 template-parts/reviews.php:818
 msgid "See our projects"
 msgstr "شاهد مشاريعنا"
 
@@ -1499,8 +1547,8 @@ msgid ""
 "Whether you're scoping a new flagship site, replatforming, or chasing a "
 "market — we'd love to hear what you're building."
 msgstr ""
-"سواء كنت تخطّط لموقع رئيسي جديد، أو تنتقل إلى منصة أخرى، أو تسعى لاقتحام سوق — "
-"يسعدنا أن نسمع عمّا تبنيه."
+"سواء كنت تخطّط لموقع رئيسي جديد، أو تنتقل إلى منصة أخرى، أو تسعى لاقتحام سوق"
+" — يسعدنا أن نسمع عمّا تبنيه."
 
 #: template-parts/contact.php:50
 msgid "— Reach the studio"
@@ -1514,7 +1562,7 @@ msgstr "أربع طرق للتواصل."
 msgid "Pick yours."
 msgstr "اختر ما يناسبك."
 
-#: template-parts/contact.php:69 template-parts/contact.php:308
+#: template-parts/contact.php:69 template-parts/contact.php:292
 msgid "Email the studio"
 msgstr "راسل الاستوديو"
 
@@ -1522,8 +1570,9 @@ msgstr "راسل الاستوديو"
 msgid "Call us directly"
 msgstr "اتصل بنا مباشرة"
 
-#: template-parts/contact.php:116 template-parts/contact.php:261
-#: template-parts/contact.php:268
+#: template-parts/contact.php:116
+#: template-parts/partials/floating-contact.php:12
+#: template-parts/partials/floating-contact.php:19
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
@@ -1536,7 +1585,6 @@ msgid "Average reply"
 msgstr "متوسط الرد"
 
 #: template-parts/contact.php:165
-#: template-parts/frontpage/frontpage-slider.php:133
 msgid "Client rating"
 msgstr "تقييم العملاء"
 
@@ -1568,59 +1616,64 @@ msgstr "أخبرنا عن المشروع."
 msgid "Encrypted"
 msgstr "مُشفّر"
 
-#: template-parts/contact.php:204
+#: template-parts/contact.php:200
+msgid "Selected plan:"
+msgstr "الباقة المختارة:"
+
+#: template-parts/contact.php:201
+msgid "Change plan"
+msgstr "تغيير الباقة"
+
+#: template-parts/contact.php:214
 msgid "— Find the studio"
 msgstr "— اعثر على الاستوديو"
 
-#: template-parts/contact.php:206
+#: template-parts/contact.php:216
 msgid "Sheikh Zayed,"
 msgstr "الشيخ زايد،"
 
-#: template-parts/contact.php:207
+#: template-parts/contact.php:217
 msgid "Giza."
 msgstr "الجيزة."
 
-#: template-parts/contact.php:210
+#: template-parts/contact.php:220
 msgid "Open in Google Maps"
 msgstr "افتح في Google Maps"
 
-#: template-parts/contact.php:218
+#: template-parts/contact.php:228
 msgid "Arqam Web studio location"
 msgstr "موقع استوديو Arqam Web"
 
-#: template-parts/contact.php:240
+#: template-parts/contact.php:250
 msgid "Arqam Web · HQ"
 msgstr "Arqam Web · المقر الرئيسي"
 
-#: template-parts/contact.php:249
+#: template-parts/contact.php:259
 msgid "Get directions"
 msgstr "احصل على الاتجاهات"
 
-#: template-parts/contact.php:277 template-parts/contact.php:284
-msgid "Call"
-msgstr "اتصل"
-
-#: template-parts/contact.php:302
+#: template-parts/contact.php:286
 msgid "— One more step"
 msgstr "— خطوة أخيرة"
 
-#: template-parts/contact.php:303
+#: template-parts/contact.php:287
 msgid "The next great brand"
 msgstr "العلامة العظيمة القادمة"
 
-#: template-parts/contact.php:303
+#: template-parts/contact.php:287
 msgid "starts with a message."
 msgstr "تبدأ برسالة."
 
-#: template-parts/contact.php:304
+#: template-parts/contact.php:288
 msgid ""
 "Send a brief, jump on WhatsApp, or pick up the phone. However you want to "
 "start — we're a reply away."
 msgstr ""
-"أرسل موجزاً، أو تواصل عبر WhatsApp، أو ارفع الهاتف. مهما كانت طريقتك للبدء — "
-"نحن على بُعد رد."
+"أرسل موجزاً، أو تواصل عبر WhatsApp، أو ارفع الهاتف. مهما كانت طريقتك للبدء —"
+" نحن على بُعد رد."
 
-#: template-parts/contact.php:316
+#: template-parts/contact.php:300 template-parts/service/service-cta.php:57
+#: template-parts/services.php:143
 msgid "Chat on WhatsApp"
 msgstr "تحدّث عبر WhatsApp"
 
@@ -1630,10 +1683,9 @@ msgstr "لم يُعثر على شيء"
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content/content-none.php:31
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"مستعد لنشر أول مقال لك؟ <a href=\"%1$s\">ابدأ من هنا</a>."
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "مستعد لنشر أول مقال لك؟ <a href=\"%1$s\">ابدأ من هنا</a>."
 
 #: template-parts/content/content-none.php:44
 msgid ""
@@ -1647,27 +1699,22 @@ msgstr ""
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-"يبدو أننا لا نستطيع العثور على ما تبحث عنه. ربما يساعدك البحث."
+msgstr "يبدو أننا لا نستطيع العثور على ما تبحث عنه. ربما يساعدك البحث."
 
 #: template-parts/content/content-project.php:32
-#: template-parts/frontpage/frontpage-projects.php:191
+#: template-parts/partials/featured-projects-hero.php:85
 msgid "View Project"
 msgstr "عرض المشروع"
-
-#: template-parts/content/content-review.php:25
-msgid "CEO · Riyadh, Saudi Arabia"
-msgstr "الرئيس التنفيذي · الرياض، السعودية"
 
 #: template-parts/content/content.php:38
 msgid "اقرأ المزيد"
 msgstr "اقرأ المزيد"
 
-#: template-parts/frontpage/frontpage-blog.php:11
+#: template-parts/frontpage/frontpage-blog.php:14
 msgid "Field notes"
 msgstr "ملاحظات ميدانية"
 
-#: template-parts/frontpage/frontpage-blog.php:18
+#: template-parts/frontpage/frontpage-blog.php:21
 msgid "All articles"
 msgstr "كل المقالات"
 
@@ -1689,8 +1736,8 @@ msgstr "نحن هنا لمساعدتك."
 
 #: template-parts/frontpage/frontpage-contact.php:24
 msgid ""
-"Whether it's a quick question or a full project brief — our team is ready to "
-"help you all week. Tell us what you're trying to grow."
+"Whether it's a quick question or a full project brief — our team is ready to"
+" help you all week. Tell us what you're trying to grow."
 msgstr ""
 "سواء كان سؤالاً سريعاً أو موجزاً كاملاً لمشروع — فريقنا جاهز لمساعدتك طوال "
 "الأسبوع. أخبرنا بما تسعى لتنميته."
@@ -1698,6 +1745,30 @@ msgstr ""
 #: template-parts/frontpage/frontpage-contact.php:27
 msgid "Chat via WhatsApp"
 msgstr "تحدّث عبر WhatsApp"
+
+#: template-parts/frontpage/frontpage-contact.php:36
+msgid "Avg. response time"
+msgstr "متوسط وقت الرد"
+
+#: template-parts/frontpage/frontpage-contact.php:36
+msgid "7 days"
+msgstr "7 أيام"
+
+#: template-parts/frontpage/frontpage-contact.php:36
+msgid "Available all week"
+msgstr "متاحون طوال الأسبوع"
+
+#: template-parts/frontpage/frontpage-contact.php:36
+msgid "Bilingual team"
+msgstr "فريق يتحدث اللغتين"
+
+#: template-parts/frontpage/frontpage-contact.php:36
+msgid "Free"
+msgstr "مجانية"
+
+#: template-parts/frontpage/frontpage-contact.php:36
+msgid "Discovery call"
+msgstr "مكالمة تعارف"
 
 #: template-parts/frontpage/frontpage-faqs.php:12
 msgid "Questions, answered"
@@ -1712,26 +1783,52 @@ msgid "questions"
 msgstr "الشائعة"
 
 #: template-parts/frontpage/frontpage-find_us.php:25
+#: template-parts/pricing-v2.php:614 template-parts/pricing.php:57
 msgid "Trusted globally"
 msgstr "موثوق عالمياً"
 
 #: template-parts/frontpage/frontpage-find_us.php:26
+#: template-parts/pricing-v2.php:616 template-parts/pricing.php:59
 msgid "Partnering with brands across"
 msgstr "نتشارك مع علامات تجارية في"
 
 #: template-parts/frontpage/frontpage-find_us.php:26
+#: template-parts/pricing-v2.php:617 template-parts/pricing.php:60
 msgid "+10 countries"
 msgstr "+10 دول"
 
 #: template-parts/frontpage/frontpage-find_us.php:28
+#: template-parts/pricing-v2.php:619 template-parts/pricing.php:62
 msgid ""
 "From Riyadh and Dubai to London, New York, Cairo and beyond — we ship "
 "websites that perform across every market we touch."
 msgstr ""
-"من الرياض ودبي إلى لندن ونيويورك والقاهرة وما بعدها — ننفّذ مواقع تحقّق الأداء "
-"في كل سوق نلامسه."
+"من الرياض ودبي إلى لندن ونيويورك والقاهرة وما بعدها — ننفّذ مواقع تحقّق "
+"الأداء في كل سوق نلامسه."
 
 #: template-parts/frontpage/frontpage-find_us.php:39
+#: template-parts/pricing-v2.php:637 template-parts/pricing-v2.php:659
+#: template-parts/pricing-v2.php:681 template-parts/pricing-v2.php:703
+#: template-parts/pricing-v2.php:725 template-parts/pricing-v2.php:747
+#: template-parts/pricing-v2.php:769 template-parts/pricing-v2.php:791
+#: template-parts/pricing-v2.php:813 template-parts/pricing-v2.php:835
+#: template-parts/pricing-v2.php:857 template-parts/pricing-v2.php:879
+#: template-parts/pricing-v2.php:901 template-parts/pricing-v2.php:923
+#: template-parts/pricing-v2.php:945 template-parts/pricing-v2.php:967
+#: template-parts/pricing-v2.php:989 template-parts/pricing-v2.php:1011
+#: template-parts/pricing-v2.php:1033 template-parts/pricing-v2.php:1055
+#: template-parts/pricing-v2.php:1077 template-parts/pricing-v2.php:1099
+#: template-parts/pricing.php:80 template-parts/pricing.php:102
+#: template-parts/pricing.php:124 template-parts/pricing.php:146
+#: template-parts/pricing.php:168 template-parts/pricing.php:190
+#: template-parts/pricing.php:212 template-parts/pricing.php:234
+#: template-parts/pricing.php:256 template-parts/pricing.php:278
+#: template-parts/pricing.php:300 template-parts/pricing.php:322
+#: template-parts/pricing.php:344 template-parts/pricing.php:366
+#: template-parts/pricing.php:388 template-parts/pricing.php:410
+#: template-parts/pricing.php:432 template-parts/pricing.php:454
+#: template-parts/pricing.php:476 template-parts/pricing.php:498
+#: template-parts/pricing.php:520 template-parts/pricing.php:542
 msgid "Clients in"
 msgstr "عملاء في"
 
@@ -1758,8 +1855,8 @@ msgstr "المؤسس وراء"
 
 #: template-parts/frontpage/frontpage-founder.php:33
 msgid ""
-"is an Egyptian entrepreneur and web technology specialist with over 15 years "
-"of experience in web design and development."
+"is an Egyptian entrepreneur and web technology specialist with over 15 years"
+" of experience in web design and development."
 msgstr ""
 "رائد أعمال مصري ومتخصص في تقنيات الويب يمتلك أكثر من 15 عاماً من الخبرة في "
 "تصميم وتطوير الويب."
@@ -1768,8 +1865,7 @@ msgstr ""
 msgid ""
 "He started his journey at the age of 16 and later founded Arqam Web after "
 "completing his military service."
-msgstr ""
-"بدأ مسيرته في سن 16 ثم أسّس Arqam Web بعد إكمال خدمته العسكرية."
+msgstr "بدأ مسيرته في سن 16 ثم أسّس Arqam Web بعد إكمال خدمته العسكرية."
 
 #: template-parts/frontpage/frontpage-founder.php:35
 msgid ""
@@ -1779,8 +1875,8 @@ msgid ""
 "Executive Director of the Egyptian Inventors Association."
 msgstr ""
 "شغل طوال مسيرته مناصب قيادية في مؤسسات علمية وتقنية في مصر — من بينها مدير "
-"تقنية المعلومات باللجنة العليا للبحث العلمي بوزارة التربية والتعليم، والمدير "
-"التنفيذي لجمعية المخترعين المصرية."
+"تقنية المعلومات باللجنة العليا للبحث العلمي بوزارة التربية والتعليم، والمدير"
+" التنفيذي لجمعية المخترعين المصرية."
 
 #: template-parts/frontpage/frontpage-founder.php:36
 msgid ""
@@ -1793,6 +1889,34 @@ msgstr ""
 #: template-parts/frontpage/frontpage-founder.php:65
 msgid "Founder Story — Youssef Salah Hassanein"
 msgstr "قصة المؤسس — يوسف صلاح حسانين"
+
+#: template-parts/frontpage/frontpage-numbers.php:4
+msgid "Years of experience"
+msgstr "سنوات الخبرة"
+
+#: template-parts/frontpage/frontpage-numbers.php:4
+#: template-parts/reviews.php:517
+msgid "since 2010"
+msgstr "منذ 2010"
+
+#: template-parts/frontpage/frontpage-numbers.php:5
+#: template-parts/reviews.php:501
+msgid "GCC · MENA · UK · USA"
+msgstr ""
+"دول الخليج · الشرق الأوسط وشمال أفريقيا · المملكة المتحدة · الولايات المتحدة"
+
+#: template-parts/frontpage/frontpage-numbers.php:6
+#: template-parts/reviews.php:485
+msgid "long-term partnerships"
+msgstr "شراكات طويلة الأمد"
+
+#: template-parts/frontpage/frontpage-numbers.php:7
+msgid "Average client rating"
+msgstr "متوسط تقييم العملاء"
+
+#: template-parts/frontpage/frontpage-numbers.php:7
+msgid "out of 5.0"
+msgstr "من 5.0"
 
 #: template-parts/frontpage/frontpage-numbers.php:20
 msgid "By the numbers"
@@ -1830,46 +1954,22 @@ msgstr ""
 "نبني وننفّذ وننمو على نفس التقنيات التي تثق بها علامات تجارية عالمية — من "
 "المدفوعات والبنية التحتية إلى التجارة والبحث."
 
-#: template-parts/frontpage/frontpage-projects.php:90
-msgid "Project"
-msgstr "مشروع"
-
-#: template-parts/frontpage/frontpage-projects.php:133
-msgid "Featured work"
-msgstr "أعمال مميّزة"
-
-#: template-parts/frontpage/frontpage-projects.php:134
-msgid "Projects we're"
-msgstr "مشاريع"
-
-#: template-parts/frontpage/frontpage-projects.php:135
-msgid "proud to ship"
-msgstr "نفخر بتنفيذها"
-
-#: template-parts/frontpage/frontpage-projects.php:156
-#: template-parts/projects.php:250
-msgid "Featured"
-msgstr "مميّز"
-
-#: template-parts/frontpage/frontpage-projects.php:179
-msgid "Case study"
-msgstr "دراسة حالة"
-
-#: template-parts/frontpage/frontpage-projects.php:239
+#: template-parts/frontpage/frontpage-projects.php:92
 msgid "View All Projects"
 msgstr "عرض كل المشاريع"
 
 #: template-parts/frontpage/frontpage-reviews.php:11
+#: template-parts/service/service-reviews.php:14
 msgid "Client voices"
 msgstr "أصوات العملاء"
 
 #: template-parts/frontpage/frontpage-reviews.php:12
-#: template-parts/reviews.php:715
+#: template-parts/reviews.php:713
 msgid "The reviews we're"
 msgstr "التقييمات التي"
 
 #: template-parts/frontpage/frontpage-reviews.php:13
-#: template-parts/reviews.php:716
+#: template-parts/reviews.php:714
 msgid "most proud of."
 msgstr "نفخر بها أكثر."
 
@@ -1881,131 +1981,329 @@ msgstr "بناءً على أكثر من 80 تقييماً"
 msgid "View All Reviews"
 msgstr "عرض كل التقييمات"
 
-#: template-parts/frontpage/frontpage-services.php:42
-#: template-parts/services.php:94
+#: template-parts/frontpage/frontpage-services.php:7
+#: template-parts/pricing.php:560
+msgid "Website Design"
+msgstr "تصميم المواقع"
+
+#: template-parts/frontpage/frontpage-services.php:8
+#: template-parts/pricing.php:974 template-parts/pricing.php:977
+#: template-parts/pricing.php:1329
+msgid "Search Engine Optimization"
+msgstr "تحسين محركات البحث"
+
+#: template-parts/frontpage/frontpage-services.php:9
+#: template-parts/pricing.php:1346 template-parts/pricing.php:1348
+#: template-parts/pricing.php:1764
+msgid "Brand Identity"
+msgstr "الهوية البصرية"
+
+#: template-parts/frontpage/frontpage-services.php:10
+#: template-parts/pricing-v2.php:321 template-parts/pricing.php:1781
+#: template-parts/pricing.php:1784 template-parts/pricing.php:2158
+msgid "Social Media Marketing"
+msgstr "التسويق عبر السوشيال ميديا"
+
+#: template-parts/frontpage/frontpage-services.php:24
+#: template-parts/services.php:83
 msgid "What we do"
 msgstr "ما الذي نقدّمه"
 
-#: template-parts/frontpage/frontpage-services.php:43
-#: template-parts/services.php:97
-msgid "Four disciplines."
-msgstr "أربعة تخصصات."
+#: template-parts/frontpage/frontpage-services.php:27
+msgid "What we do best"
+msgstr "ما نتقنه"
 
-#: template-parts/frontpage/frontpage-services.php:43
-#: template-parts/services.php:97
-msgid "One growth engine."
-msgstr "محرك نمو واحد."
-
-#: template-parts/frontpage/frontpage-services.php:46
+#: template-parts/frontpage/frontpage-services.php:28
 msgid ""
-"We don't sell deliverables — we ship outcomes. Every engagement is a senior "
-"team obsessing over how design, code, search and social work together."
+"From the first line of code to the monthly report: six services, one team, "
+"and everything handed over in your name."
 msgstr ""
-"لا نبيع مخرجات — بل نحقّق نتائج. كل تعاقد هو فريق محترف يهتم بكيفية تكامل "
-"التصميم والبرمجة والبحث والسوشيال ميديا معاً."
+"من أول سطر كود حتى التقرير الشهري: ست خدمات، وفريق واحد، وكل شيء يُسلَّم "
+"باسمك."
 
-#: template-parts/frontpage/frontpage-services.php:52
+#: template-parts/frontpage/frontpage-services.php:34
 msgid "View All Services"
 msgstr "كل الخدمات"
 
-#: template-parts/frontpage/frontpage-slider.php:63
-msgid "Global Digital Agency · Est. 2010"
-msgstr "وكالة رقمية عالمية · تأسست عام 2010"
+#: template-parts/frontpage/frontpage-slider.php:14
+msgid "Masar Law · Saudi Arabia"
+msgstr "مسار للمحاماة · السعودية"
 
-#: template-parts/frontpage/frontpage-slider.php:66
-msgid "Digital Marketing"
-msgstr "تسويق رقمي"
+#: template-parts/frontpage/frontpage-slider.php:15
+msgid "Bilingual website for a Riyadh law firm"
+msgstr "موقع بلغتين لشركة محاماة في الرياض"
 
-#: template-parts/frontpage/frontpage-slider.php:67
-msgid "Agency Helping"
-msgstr "وكالة تساعد"
+#: template-parts/frontpage/frontpage-slider.php:20
+#: template-parts/service/service-cta.php:17 template-parts/services.php:43
+msgid "Kidana Travel"
+msgstr "كدانة للسفر"
 
-#: template-parts/frontpage/frontpage-slider.php:68
-msgid "Brands"
-msgstr "العلامات التجارية"
+#: template-parts/frontpage/frontpage-slider.php:21
+msgid "Hajj & Umrah booking platform, custom Laravel"
+msgstr "منصة حجز حج وعمرة مبنية خصيصًا على Laravel"
 
-#: template-parts/frontpage/frontpage-slider.php:68
-msgid "Grow."
-msgstr "على النمو."
+#: template-parts/frontpage/frontpage-slider.php:26
+msgid "CID Group · Egypt"
+msgstr "مجموعة CID · مصر"
 
-#: template-parts/frontpage/frontpage-slider.php:69
-msgid "across"
-msgstr "في"
+#: template-parts/frontpage/frontpage-slider.php:27
+msgid "Export site for a natural-stone manufacturer"
+msgstr "موقع تصدير لمصنع أحجار طبيعية"
 
-#: template-parts/frontpage/frontpage-slider.php:69
-msgid "+10 markets"
-msgstr "+10 أسواق"
+#: template-parts/frontpage/frontpage-slider.php:32
+msgid "SportReach · Saudi Arabia"
+msgstr "سبورت ريتش · السعودية"
 
-#: template-parts/frontpage/frontpage-slider.php:69
-msgid "worldwide."
-msgstr "حول العالم."
+#: template-parts/frontpage/frontpage-slider.php:33
+msgid "Sports-services brand site, Arabic first"
+msgstr "موقع علامة خدمات رياضية، العربية أولًا"
 
-#: template-parts/frontpage/frontpage-slider.php:71
+#: template-parts/frontpage/frontpage-slider.php:38
+msgid "Mr Clone · Dubai"
+msgstr "مستر كلون · دبي"
+
+#: template-parts/frontpage/frontpage-slider.php:39
+msgid "Custom-coded single page for an AI twin studio"
+msgstr "صفحة واحدة مبرمجة خصيصًا لاستوديو توائم الذكاء الاصطناعي"
+
+#: template-parts/frontpage/frontpage-slider.php:44
+msgid "Rahati Spa · Saudi Arabia"
+msgstr "راحتي سبا · السعودية"
+
+#: template-parts/frontpage/frontpage-slider.php:45
+msgid "Men's spa with eight branches in Riyadh"
+msgstr "سبا رجالي بثمانية فروع في الرياض"
+
+#: template-parts/frontpage/frontpage-slider.php:52
+#, php-format
+msgid "Open %s live site"
+msgstr "افتح موقع %s المباشر"
+
+#: template-parts/frontpage/frontpage-slider.php:56
+msgid "customers."
+msgstr "عملاء."
+
+#: template-parts/frontpage/frontpage-slider.php:56
+msgid "bookings."
+msgstr "حجوزات."
+
+#: template-parts/frontpage/frontpage-slider.php:56
+msgid "orders."
+msgstr "طلبات."
+
+#: template-parts/frontpage/frontpage-slider.php:56
+msgid "enquiries."
+msgstr "استفسارات."
+
+#: template-parts/frontpage/frontpage-slider.php:58
+#: template-parts/services.php:30
+msgid "Years building websites"
+msgstr "سنة في بناء المواقع"
+
+#: template-parts/frontpage/frontpage-slider.php:59
+msgid "Live projects you can open"
+msgstr "مشروعًا منشورًا يمكنك زيارته"
+
+#: template-parts/frontpage/frontpage-slider.php:60
+msgid "From 80+ client reviews"
+msgstr "من أكثر من 80 تقييمًا"
+
+#: template-parts/frontpage/frontpage-slider.php:87
+#, php-format
+msgid "Web Design & SEO Agency · Registered in %1$s Egypt & %2$s the USA"
+msgstr "وكالة تصميم مواقع وسيو · مسجلة في %1$s مصر و%2$s الولايات المتحدة"
+
+#: template-parts/frontpage/frontpage-slider.php:88
+#: template-parts/pricing-v2.php:640 template-parts/pricing-v2.php:882
+#: template-parts/pricing.php:83 template-parts/pricing.php:325
+#: template-parts/service/service-cta.php:24 template-parts/services.php:47
+msgid "Egypt"
+msgstr "مصر"
+
+#: template-parts/frontpage/frontpage-slider.php:89
+#: template-parts/pricing-v2.php:772 template-parts/pricing-v2.php:1014
+#: template-parts/pricing.php:215 template-parts/pricing.php:457
+msgid "United States"
+msgstr "الولايات المتحدة"
+
+#: template-parts/frontpage/frontpage-slider.php:95
+msgid "We build websites that"
+msgstr "نبني مواقع"
+
+#: template-parts/frontpage/frontpage-slider.php:96
+msgid "bring you"
+msgstr "تجلب لك"
+
+#: template-parts/frontpage/frontpage-slider.php:98
 msgid ""
-"Arqam Web designs, develops, and optimizes high-performance websites built "
-"to rank, convert, and scale your business — from the Gulf to Europe and the "
-"Americas."
+"Arqam Web designs, codes and ranks websites for businesses in Egypt, Saudi "
+"Arabia and the Gulf. Custom-built with no templates, structured for Google "
+"and AI search, and handed over fully in your name."
 msgstr ""
-"تصمّم Arqam Web وتطوّر وتحسّن مواقع عالية الأداء مبنية لتتصدّر وتحقّق التحويل "
-"وتوسّع نشاطك التجاري — من الخليج إلى أوروبا والأمريكتين."
+"أرقام ويب تصمم وتبرمج وتتصدر بمواقع الشركات في مصر والسعودية والخليج. كل "
+"موقع مبني خصيصًا دون قوالب، ومهيأ لجوجل ومحركات البحث بالذكاء الاصطناعي، "
+"ويُسلَّم بالكامل باسمك."
 
-#: template-parts/frontpage/frontpage-slider.php:77
-msgid "View Our Projects"
-msgstr "اطّلع على مشاريعنا"
+#: template-parts/frontpage/frontpage-slider.php:103
+msgid "Get Your Quote in 24 Hours"
+msgstr "احصل على عرض السعر خلال 24 ساعة"
 
-#: template-parts/frontpage/frontpage-slider.php:104
+#: template-parts/frontpage/frontpage-slider.php:105
+msgid "See 30+ Live Projects"
+msgstr "شاهد أكثر من 30 مشروعًا"
+
+#: template-parts/frontpage/frontpage-slider.php:108
+msgid "Free discovery call"
+msgstr "مكالمة تعارف مجانية"
+
+#: template-parts/frontpage/frontpage-slider.php:108
+msgid "Arabic & English"
+msgstr "عربي وإنجليزي"
+
+#: template-parts/frontpage/frontpage-slider.php:108
+msgid "No templates, ever"
+msgstr "بدون قوالب إطلاقًا"
+
+#: template-parts/frontpage/frontpage-slider.php:131
 msgid "LIVE"
 msgstr "مباشر"
 
-#: template-parts/frontpage/frontpage-slider.php:128
+#: template-parts/frontpage/frontpage-slider.php:143
+#, php-format
+msgid "Show slide %d"
+msgstr "عرض الشريحة %d"
+
+#: template-parts/frontpage/frontpage-slider.php:156
 msgid "Organic Growth"
 msgstr "نمو عضوي"
 
-#: template-parts/frontpage/frontpage-slider.php:134
-msgid "4.9 / 5 average"
-msgstr "متوسط 4.9 / 5"
+#: template-parts/frontpage/frontpage-slider.php:162
+msgid "Watch the client video testimonial"
+msgstr "شاهد فيديو رأي العميل"
 
-#: template-parts/frontpage/frontpage-testimonials.php:46
+#: template-parts/frontpage/frontpage-slider.php:170
+msgid "Client story"
+msgstr "قصة عميل"
+
+#: template-parts/frontpage/frontpage-slider.php:171
+msgid "Watch the video"
+msgstr "شاهد الفيديو"
+
+#: template-parts/frontpage/frontpage-testimonials.php:47
 msgid "VIDEO TESTIMONIALS"
 msgstr "شهادات بالفيديو"
 
-#: template-parts/frontpage/frontpage-testimonials.php:49
+#: template-parts/frontpage/frontpage-testimonials.php:50
 msgid "Trusted by Clients Across"
 msgstr "موثوق من عملاء في"
 
-#: template-parts/frontpage/frontpage-testimonials.php:50
+#: template-parts/frontpage/frontpage-testimonials.php:51
 msgid "Multiple Industries"
 msgstr "قطاعات متعددة"
 
-#: template-parts/frontpage/frontpage-testimonials.php:53
+#: template-parts/frontpage/frontpage-testimonials.php:54
 msgid ""
 "Real feedback from business owners and brands that worked with Arqam Web on "
 "web design, SEO, branding, and digital growth."
 msgstr ""
-"آراء حقيقية من أصحاب الأعمال والعلامات التجارية الذين تعاملوا مع Arqam Web في "
-"تصميم الويب وتحسين محركات البحث والهوية البصرية والنمو الرقمي."
+"آراء حقيقية من أصحاب الأعمال والعلامات التجارية الذين تعاملوا مع Arqam Web "
+"في تصميم الويب وتحسين محركات البحث والهوية البصرية والنمو الرقمي."
 
-#: template-parts/frontpage/frontpage-testimonials.php:92
-#: template-parts/frontpage/frontpage-testimonials.php:162
+#: template-parts/frontpage/frontpage-testimonials.php:93
+#: template-parts/frontpage/frontpage-testimonials.php:163
 #: template-parts/partials/video-testimonial-card.php:29
-#: template-parts/reviews.php:352 template-parts/reviews.php:398
+#: template-parts/reviews.php:353 template-parts/reviews.php:399
+#, php-format
 msgid "Play testimonial: %s"
 msgstr "تشغيل الشهادة: %s"
 
-#: template-parts/frontpage/frontpage-testimonials.php:110
-#: template-parts/frontpage/frontpage-testimonials.php:177
+#: template-parts/frontpage/frontpage-testimonials.php:111
+#: template-parts/frontpage/frontpage-testimonials.php:178
 #: template-parts/partials/video-testimonial-card.php:47
-#: template-parts/reviews.php:361 template-parts/reviews.php:406
+#: template-parts/reviews.php:362 template-parts/reviews.php:407
 msgid "Verified Client"
 msgstr "عميل موثّق"
 
-#: template-parts/frontpage/frontpage-testimonials.php:219
-#: template-parts/frontpage/frontpage-testimonials.php:221
-#: template-parts/reviews.php:438 template-parts/reviews.php:440
+#: template-parts/frontpage/frontpage-testimonials.php:220
+#: template-parts/frontpage/frontpage-testimonials.php:222
+#: template-parts/reviews.php:439 template-parts/reviews.php:441
 msgid "Video testimonial"
 msgstr "شهادة بالفيديو"
 
+#: template-parts/frontpage/frontpage-why_us.php:3
+msgid "Custom-built, never templated"
+msgstr "مصمَّم خصيصًا، مش قوالب جاهزة"
+
+#: template-parts/frontpage/frontpage-why_us.php:3
+msgid ""
+"Every line of code, every pixel of design — written for your business, not "
+"pulled from a theme library."
+msgstr ""
+"كل سطر كود وكل بكسل في التصميم مكتوب لمشروعك تحديدًا، مش مسحوب من مكتبة "
+"قوالب."
+
+#: template-parts/frontpage/frontpage-why_us.php:4
+msgid "SEO-ready from day one"
+msgstr "جاهز للسيو من أول يوم"
+
+#: template-parts/frontpage/frontpage-why_us.php:4
+msgid ""
+"Schema, semantic HTML, Core Web Vitals, indexable architecture — search-"
+"engine fundamentals are baked in, not bolted on."
+msgstr ""
+"سكيما، وHTML دلالي، وCore Web Vitals، وبنية قابلة للأرشفة — أساسيات محركات "
+"البحث مدمجة من الأساس مش مضافة لاحقًا."
+
+#: template-parts/frontpage/frontpage-why_us.php:5
+msgid "Conversion-focused UX"
+msgstr "تجربة استخدام مركّزة على التحويل"
+
+#: template-parts/frontpage/frontpage-why_us.php:5
+msgid ""
+"We design for the action, not just the aesthetic. Every section is "
+"engineered to move the user one step closer to yes."
+msgstr ""
+"بنصمّم من أجل الفعل مش الشكل بس. كل قسم مهندَس عشان يقرّب المستخدم خطوة من "
+"قرار الموافقة."
+
+#: template-parts/frontpage/frontpage-why_us.php:6
+msgid "Performance you can measure"
+msgstr "أداء تقدر تقيسه"
+
+#: template-parts/frontpage/frontpage-why_us.php:6
+msgid ""
+"Sub-second loads, 95+ Lighthouse scores, and infrastructure that scales — "
+"performance is a feature, not a luxury."
+msgstr ""
+"تحميل في أقل من ثانية، ونتائج Lighthouse فوق 95، وبنية تحتية قابلة للتوسّع —"
+" الأداء ميزة مش رفاهية."
+
+#: template-parts/frontpage/frontpage-why_us.php:7
+msgid "Long-term growth mindset"
+msgstr "عقلية نمو طويلة المدى"
+
+#: template-parts/frontpage/frontpage-why_us.php:7
+msgid ""
+"We're not a one-and-done vendor. We partner with clients for years, "
+"optimizing as the market — and your business — evolves."
+msgstr ""
+"إحنا مش مورّد لمرة واحدة. بنشارك عملاءنا لسنين، ونحسّن مع تطوّر السوق "
+"ومشروعك."
+
+#: template-parts/frontpage/frontpage-why_us.php:8
+msgid "Senior team, no hand-offs"
+msgstr "فريق خبير بدون تنقّلات"
+
+#: template-parts/frontpage/frontpage-why_us.php:8
+msgid ""
+"The strategist who scopes your project also ships it. No junior shuffling, "
+"no broken telephone — direct access to expertise."
+msgstr ""
+"نفس الخبير اللي بيحدّد نطاق مشروعك هو اللي بينفّذه. مفيش تنقّل بين مبتدئين "
+"ولا تشويش — وصول مباشر للخبرة."
+
 #: template-parts/frontpage/frontpage-why_us.php:16
+#: template-parts/service/service-compare.php:26
 msgid "Why Arqam Web"
 msgstr "لماذا Arqam Web"
 
@@ -2022,8 +2320,8 @@ msgid ""
 "For 15+ years we've helped ambitious teams turn their websites from cost "
 "centers into their most reliable growth channel — across +10 countries."
 msgstr ""
-"على مدى أكثر من 15 عاماً ساعدنا فرقاً طموحة على تحويل مواقعها من مراكز تكلفة "
-"إلى قناة النمو الأكثر موثوقية لديها — في +10 دول."
+"على مدى أكثر من 15 عاماً ساعدنا فرقاً طموحة على تحويل مواقعها من مراكز تكلفة"
+" إلى قناة النمو الأكثر موثوقية لديها — في +10 دول."
 
 #: template-parts/headers/header-page.php:27
 msgid ""
@@ -2032,6 +2330,1605 @@ msgid ""
 msgstr ""
 "شركة تسويق رقمي مصرية بخبرة تتجاوز 14 عاماً، تساعد الشركات على تحقيق أرقام "
 "حقيقية في المبيعات منذ عام 2010."
+
+#: template-parts/partials/featured-projects-hero.php:29
+#: template-parts/service/service-work.php:21
+msgid "Featured work"
+msgstr "أعمال مميّزة"
+
+#: template-parts/partials/featured-projects-hero.php:30
+msgid "Projects we're"
+msgstr "مشاريع"
+
+#: template-parts/partials/featured-projects-hero.php:31
+msgid "proud to ship"
+msgstr "نفخر بتنفيذها"
+
+#: template-parts/partials/featured-projects-hero.php:57
+#: template-parts/projects.php:262
+msgid "Featured"
+msgstr "مميّز"
+
+#: template-parts/partials/featured-projects-hero.php:75
+msgid "Case study"
+msgstr "دراسة حالة"
+
+#: template-parts/partials/floating-contact.php:28
+#: template-parts/partials/floating-contact.php:35
+msgid "Call"
+msgstr "اتصل"
+
+#: template-parts/pricing-v2.php:98
+msgid "Websites pricing"
+msgstr ""
+
+#: template-parts/pricing-v2.php:99
+msgid "Websites"
+msgstr ""
+
+#: template-parts/pricing-v2.php:100
+msgid ""
+"Fixed-specification websites, custom-coded and live in one week — the same "
+"price for every client, in every market."
+msgstr ""
+
+#: template-parts/pricing-v2.php:103
+msgid "Live in 5 working days"
+msgstr ""
+
+#: template-parts/pricing-v2.php:108
+msgid "Launch — Informative"
+msgstr ""
+
+#: template-parts/pricing-v2.php:109
+msgid "A complete site, live in one week."
+msgstr ""
+
+#: template-parts/pricing-v2.php:111 template-parts/pricing-v2.php:129
+#: template-parts/pricing.php:596 template-parts/pricing.php:733
+#: template-parts/pricing.php:846 template-parts/pricing.php:1384
+#: template-parts/pricing.php:1512 template-parts/pricing.php:1634
+msgid "one-time"
+msgstr ""
+
+#: template-parts/pricing-v2.php:113
+msgid "Buy Launch now"
+msgstr ""
+
+#: template-parts/pricing-v2.php:115
+msgid "Fixed proven structure, shown as a live demo before you buy"
+msgstr ""
+
+#: template-parts/pricing-v2.php:116
+msgid "Custom-coded, no templates and no page builders"
+msgstr ""
+
+#: template-parts/pricing-v2.php:117
+msgid "Up to 5 pages"
+msgstr ""
+
+#: template-parts/pricing-v2.php:118
+msgid "Your logo, two colours, one font, your images and text"
+msgstr ""
+
+#: template-parts/pricing-v2.php:119
+msgid "1 content review round, on content only"
+msgstr ""
+
+#: template-parts/pricing-v2.php:120
+msgid "Domain and first year of hosting included"
+msgstr ""
+
+#: template-parts/pricing-v2.php:121 template-parts/pricing-v2.php:140
+msgid "Delivery: 5 working days from receiving your content"
+msgstr ""
+
+#: template-parts/pricing-v2.php:126
+msgid "Launch — E-commerce"
+msgstr ""
+
+#: template-parts/pricing-v2.php:127
+msgid "A working store, live in one week."
+msgstr ""
+
+#: template-parts/pricing-v2.php:132
+msgid "Buy Launch Store now"
+msgstr ""
+
+#: template-parts/pricing-v2.php:134
+msgid "Everything in Launch Informative"
+msgstr ""
+
+#: template-parts/pricing-v2.php:135
+msgid "Full store with cart and checkout"
+msgstr ""
+
+#: template-parts/pricing-v2.php:136
+msgid "Cash on delivery and one payment gateway"
+msgstr ""
+
+#: template-parts/pricing-v2.php:137
+msgid "Customer accounts and order history"
+msgstr ""
+
+#: template-parts/pricing-v2.php:138
+msgid "First 20 products entered by us"
+msgstr ""
+
+#: template-parts/pricing-v2.php:139
+msgid "Admin dashboard for products, stock and orders"
+msgstr ""
+
+#: template-parts/pricing-v2.php:145
+msgid "Need more than a Launch site?"
+msgstr ""
+
+#: template-parts/pricing-v2.php:146
+msgid ""
+"Most businesses do. Corporate sites, full online stores and custom web "
+"platforms are built to your requirements — the number of pages, the "
+"languages, the integrations and the systems you need to connect. Tell us "
+"what you're working with and we'll map the exact specification your project "
+"needs, then send you the price for it. It takes one conversation, and "
+"there's no obligation at the end of it."
+msgstr ""
+
+#: template-parts/pricing-v2.php:147
+msgid "Tell us about your project"
+msgstr ""
+
+#: template-parts/pricing-v2.php:150
+msgid ""
+"We take on a limited number of Launch projects each month to protect "
+"delivery quality. When the month is full, new projects move to the following"
+" month, and a deposit reserves your slot in the queue. Need it sooner? A "
+"rush slot is available at +50%."
+msgstr ""
+
+#: template-parts/pricing-v2.php:155
+msgid "SEO / AEO pricing"
+msgstr ""
+
+#: template-parts/pricing-v2.php:156
+msgid "SEO / AEO"
+msgstr ""
+
+#: template-parts/pricing-v2.php:157
+msgid ""
+"Search engine optimisation and AI answer optimisation — so your business is "
+"found in Google, and cited by AI assistants when people ask."
+msgstr ""
+
+#: template-parts/pricing-v2.php:160
+msgid "Foundation work starts in week one"
+msgstr ""
+
+#: template-parts/pricing-v2.php:165 template-parts/pricing-v2.php:201
+msgid "Essential"
+msgstr ""
+
+#: template-parts/pricing-v2.php:166
+msgid "The steady baseline that compounds."
+msgstr ""
+
+#: template-parts/pricing-v2.php:168 template-parts/pricing-v2.php:205
+#: template-parts/pricing-v2.php:242 template-parts/pricing.php:1010
+#: template-parts/pricing.php:1121 template-parts/pricing.php:1217
+#: template-parts/pricing.php:1821 template-parts/pricing.php:1941
+#: template-parts/pricing.php:2046
+msgid "/month"
+msgstr ""
+
+#: template-parts/pricing-v2.php:170
+msgid "3-month commitment, paid upfront"
+msgstr ""
+
+#: template-parts/pricing-v2.php:171
+msgid ""
+"Available for up to 6 months, then we review and recommend the right tier"
+msgstr ""
+
+#: template-parts/pricing-v2.php:172
+msgid "2 articles per month"
+msgstr ""
+
+#: template-parts/pricing-v2.php:173
+msgid "3 external links from vetted sources"
+msgstr ""
+
+#: template-parts/pricing-v2.php:174
+msgid "25 tracked keywords"
+msgstr ""
+
+#: template-parts/pricing-v2.php:175
+msgid "1 hour of technical follow-up per month"
+msgstr ""
+
+#: template-parts/pricing-v2.php:176 template-parts/pricing.php:1068
+msgid "Monthly performance report"
+msgstr ""
+
+#: template-parts/pricing-v2.php:180
+msgid ""
+"At this size, expect meaningful movement in nine to twelve months. If your "
+"competitors publish four times this much, Essential keeps you in the race "
+"rather than moving you up it."
+msgstr ""
+
+#: template-parts/pricing-v2.php:182
+msgid "Most brands need more than Essential."
+msgstr ""
+
+#: template-parts/pricing-v2.php:183
+msgid ""
+"How much more depends on your market, your competitors, and how far ahead or"
+" behind you already are. And there is a real cost to starting too small: six"
+" months on a plan below what your situation needs is six months you then "
+"spend catching up — and in most businesses, time is customers. We look at "
+"your site and the people you're competing with, define the level of coverage"
+" that will actually move you, and send you the price for exactly that."
+msgstr ""
+
+#: template-parts/pricing-v2.php:184
+msgid "Get your SEO plan priced"
+msgstr ""
+
+#: template-parts/pricing-v2.php:187
+msgid ""
+"AI search optimisation (AEO) can be added to any tier. We do not sell "
+"guaranteed rankings — we are accountable for executing every item in the "
+"plan, measurably and reviewably."
+msgstr ""
+
+#: template-parts/pricing-v2.php:192
+msgid "Hosting pricing"
+msgstr ""
+
+#: template-parts/pricing-v2.php:193
+msgid "Managed Hosting"
+msgstr ""
+
+#: template-parts/pricing-v2.php:194
+msgid ""
+"Monitored, backed-up hosting with human support in Arabic and English — "
+"billed annually."
+msgstr ""
+
+#: template-parts/pricing-v2.php:197
+msgid "Free migration up to 10 GB"
+msgstr ""
+
+#: template-parts/pricing-v2.php:202
+msgid "for an informative site"
+msgstr ""
+
+#: template-parts/pricing-v2.php:203
+msgid "Monitored hosting for a simple site."
+msgstr ""
+
+#: template-parts/pricing-v2.php:206
+msgid "billed annually — 12 months"
+msgstr ""
+
+#: template-parts/pricing-v2.php:208
+msgid "Up to 5 GB"
+msgstr ""
+
+#: template-parts/pricing-v2.php:209
+msgid "SSL certificate"
+msgstr ""
+
+#: template-parts/pricing-v2.php:210
+msgid "Daily backup, 30-day retention"
+msgstr ""
+
+#: template-parts/pricing-v2.php:211
+msgid "Full site copy handed to you at launch"
+msgstr ""
+
+#: template-parts/pricing-v2.php:212
+msgid "Automated uptime check every minute"
+msgstr ""
+
+#: template-parts/pricing-v2.php:213
+msgid "Email on your own domain"
+msgstr ""
+
+#: template-parts/pricing-v2.php:214
+msgid "WhatsApp support in Arabic and English"
+msgstr ""
+
+#: template-parts/pricing-v2.php:215
+msgid "24-hour response time"
+msgstr ""
+
+#: template-parts/pricing-v2.php:220
+msgid "A bigger site needs a bigger home."
+msgstr ""
+
+#: template-parts/pricing-v2.php:221
+msgid ""
+"If your site outgrows Essential — more storage, more traffic, a store that "
+"needs staging and hourly database backups — we'll look at what you're "
+"actually running and recommend the plan that fits it, with its price. We "
+"won't move you up a level you don't need."
+msgstr ""
+
+#: template-parts/pricing-v2.php:222
+msgid "Ask about larger plans"
+msgstr ""
+
+#: template-parts/pricing-v2.php:225
+msgid ""
+"Hosting faults — the server, the certificate, email, downtime — are always "
+"fixed in full at no cost. That is our responsibility, not yours. Work on the"
+" site itself, including plugin updates, content changes and new features, is"
+" covered by a Care & Support plan. Moving your site from your current "
+"provider is free with an annual plan, up to 10 GB; larger sites are quoted "
+"by size and type."
+msgstr ""
+
+#: template-parts/pricing-v2.php:230
+msgid "Care & Support pricing"
+msgstr ""
+
+#: template-parts/pricing-v2.php:231
+msgid "Care & Support"
+msgstr ""
+
+#: template-parts/pricing-v2.php:232
+msgid ""
+"An hours-based retainer with published task pricing — every request "
+"estimated and approved first."
+msgstr ""
+
+#: template-parts/pricing-v2.php:235
+msgid "Tasks scheduled the same week"
+msgstr ""
+
+#: template-parts/pricing-v2.php:239
+msgid "Essentials"
+msgstr ""
+
+#: template-parts/pricing-v2.php:240
+msgid "Your site, quietly looked after."
+msgstr ""
+
+#: template-parts/pricing-v2.php:244
+msgid "Buy Essentials now"
+msgstr ""
+
+#: template-parts/pricing-v2.php:246
+msgid "A weekly check that your site is up and working"
+msgstr ""
+
+#: template-parts/pricing-v2.php:247
+msgid "Plugin, theme and core updates kept current"
+msgstr ""
+
+#: template-parts/pricing-v2.php:248
+msgid "A backup taken before every update"
+msgstr ""
+
+#: template-parts/pricing-v2.php:249
+msgid "If an update causes a problem, we roll the site back straight away"
+msgstr ""
+
+#: template-parts/pricing-v2.php:250
+msgid "Security and uptime monitoring"
+msgstr ""
+
+#: template-parts/pricing-v2.php:251
+msgid "A short monthly summary of what was done"
+msgstr ""
+
+#: template-parts/pricing-v2.php:252
+msgid "Up to 1 hour per month of routine care"
+msgstr ""
+
+#: template-parts/pricing-v2.php:253
+msgid "Development work is estimated and quoted separately"
+msgstr ""
+
+#: template-parts/pricing-v2.php:258
+msgid "When you need more than routine care."
+msgstr ""
+
+#: template-parts/pricing-v2.php:259
+msgid ""
+"Larger retainers give you a monthly bank of hours for real development work "
+"— every task estimated and approved by you before it starts, and charged at "
+"the approved estimate whether it takes us more time or less. We'll look at "
+"what you've actually been asking for over a few months and recommend the "
+"size that fits."
+msgstr ""
+
+#: template-parts/pricing-v2.php:260
+msgid "Ask about larger retainers"
+msgstr ""
+
+#: template-parts/pricing-v2.php:263
+msgid ""
+"Essentials covers routine care, not development. If an update causes a "
+"problem we roll the site back at no cost, but fixing the underlying conflict"
+" is development work and is quoted separately. For larger sites we agree the"
+" visit frequency that suits them. Anything above 8 hours becomes its own "
+"quoted project."
+msgstr ""
+
+#: template-parts/pricing-v2.php:268
+msgid "AI video production pricing"
+msgstr ""
+
+#: template-parts/pricing-v2.php:269
+msgid "AI Video Production"
+msgstr ""
+
+#: template-parts/pricing-v2.php:270
+msgid ""
+"Finished video, produced with AI direction and human editing — priced per "
+"video, the same everywhere."
+msgstr ""
+
+#: template-parts/pricing-v2.php:273
+msgid "Most clips delivered in 2–4 days"
+msgstr ""
+
+#: template-parts/pricing-v2.php:277
+msgid "Spark"
+msgstr ""
+
+#: template-parts/pricing-v2.php:278
+msgid "A steady stream of social clips."
+msgstr ""
+
+#: template-parts/pricing-v2.php:280
+msgid "per video"
+msgstr ""
+
+#: template-parts/pricing-v2.php:282
+msgid "Single-concept clip"
+msgstr ""
+
+#: template-parts/pricing-v2.php:283
+msgid "Simple, energetic movement"
+msgstr ""
+
+#: template-parts/pricing-v2.php:284
+msgid "Native background sound"
+msgstr ""
+
+#: template-parts/pricing-v2.php:285
+msgid "720p HD"
+msgstr ""
+
+#: template-parts/pricing-v2.php:286
+msgid "Best for Reels, TikTok and Stories"
+msgstr ""
+
+#: template-parts/pricing-v2.php:287
+msgid "Revisions $5 per 5-second segment"
+msgstr ""
+
+#: template-parts/pricing-v2.php:292
+msgid "When a clip needs to be a film."
+msgstr ""
+
+#: template-parts/pricing-v2.php:293
+msgid ""
+"Higher tiers add real dialogue with lip-sync, consistent characters and "
+"products across every shot, full sound design and 4K. Tell us what the video"
+" has to do and we'll recommend the right level and price it for you."
+msgstr ""
+
+#: template-parts/pricing-v2.php:294
+msgid "Discuss your video"
+msgstr ""
+
+#: template-parts/pricing-v2.php:297
+msgid ""
+"Spark is priced per finished video for the 0–15 second bracket; longer clips"
+" are quoted to your brief. On-location filming at your premises is quoted "
+"separately."
+msgstr ""
+
+#: template-parts/pricing-v2.php:302
+msgid "Mobile apps pricing"
+msgstr ""
+
+#: template-parts/pricing-v2.php:303
+msgid "Mobile Apps"
+msgstr ""
+
+#: template-parts/pricing-v2.php:304
+msgid ""
+"iOS and Android apps built with Flutter, published under your own store "
+"accounts and followed up until acceptance."
+msgstr ""
+
+#: template-parts/pricing-v2.php:307
+msgid "Typically 2–10 weeks"
+msgstr ""
+
+#: template-parts/pricing-v2.php:310
+msgid "Every app starts with a specification."
+msgstr ""
+
+#: template-parts/pricing-v2.php:311
+msgid ""
+"Whether you need your existing store on the app stores quickly, or a "
+"complete app built from the ground up with its own API, the work is defined "
+"before it's priced. We write a detailed scope document first — screens, "
+"features, what's included and what isn't — and the price follows from it. "
+"Your store accounts and source code stay in your name throughout."
+msgstr ""
+
+#: template-parts/pricing-v2.php:312
+msgid "Scope your app"
+msgstr ""
+
+#: template-parts/pricing-v2.php:315
+msgid ""
+"Annual maintenance applies from year two. Google requires an annual Target "
+"API update — without it an app stops appearing in the store."
+msgstr ""
+
+#: template-parts/pricing-v2.php:320
+msgid "Social media marketing pricing"
+msgstr ""
+
+#: template-parts/pricing-v2.php:322
+msgid ""
+"Reels, designs and shoots produced on a monthly rhythm by a dedicated "
+"account team."
+msgstr ""
+
+#: template-parts/pricing-v2.php:325 template-parts/pricing.php:1805
+msgid "First content live within 7–10 days"
+msgstr ""
+
+#: template-parts/pricing-v2.php:329
+msgid "Priced to your brand, not to a package."
+msgstr ""
+
+#: template-parts/pricing-v2.php:330
+msgid ""
+"Content volume, video production, shooting sessions and community management"
+" vary enormously between brands — a single-location business and a national "
+"retailer need very different things. We look at where you are now, agree "
+"what a month should look like, and price that. You will see exactly what "
+"each part costs before anything starts."
+msgstr ""
+
+#: template-parts/pricing-v2.php:331
+msgid "Tell us about your brand"
+msgstr ""
+
+#: template-parts/pricing-v2.php:334
+msgid ""
+"Paid media management is quoted separately from ad spend, which you pay "
+"directly to the platform. Ad accounts and pages are created in your name and"
+" remain yours."
+msgstr ""
+
+#: template-parts/pricing-v2.php:362 template-parts/pricing.php:720
+#: template-parts/pricing.php:1108 template-parts/pricing.php:1499
+#: template-parts/pricing.php:1928
+msgid "Most Popular"
+msgstr ""
+
+#: template-parts/pricing-v2.php:387 template-parts/pricing-v2.php:1147
+#: template-parts/service/service-pricing.php:38
+msgid "Quoted to scope"
+msgstr "حسب نطاق المشروع"
+
+#: template-parts/pricing-v2.php:391 template-parts/pricing.php:593
+#: template-parts/pricing.php:730 template-parts/pricing.php:843
+#: template-parts/pricing.php:1007 template-parts/pricing.php:1118
+#: template-parts/pricing.php:1214 template-parts/pricing.php:1381
+#: template-parts/pricing.php:1509 template-parts/pricing.php:1631
+#: template-parts/pricing.php:1818 template-parts/pricing.php:1938
+#: template-parts/pricing.php:2043
+msgid "Starting from"
+msgstr ""
+
+#: template-parts/pricing-v2.php:433
+msgid "Get started"
+msgstr ""
+
+#: template-parts/pricing-v2.php:445
+msgid "or talk to us"
+msgstr ""
+
+#. translators: %s: service name, e.g. "SEO / AEO".
+#: template-parts/pricing-v2.php:512
+#, php-format
+msgid "Explore the %s page"
+msgstr ""
+
+#: template-parts/pricing-v2.php:546
+msgid "Prices in"
+msgstr ""
+
+#: template-parts/pricing-v2.php:576
+msgid "Clear prices where we can."
+msgstr ""
+
+#: template-parts/pricing-v2.php:577
+msgid "Honest quotes where we should."
+msgstr ""
+
+#: template-parts/pricing-v2.php:579
+msgid ""
+"Our productised services carry one published price worldwide — the same for "
+"a client in Cairo, Riyadh or London. Everything custom is scoped and quoted,"
+" because no two custom projects are the same."
+msgstr ""
+
+#: template-parts/pricing-v2.php:583
+msgid ""
+"All prices are shown in USD as a reference currency. You can pay in Egyptian"
+" Pounds, Saudi Riyal, UAE Dirham, Euro or US Dollar — whichever is easiest "
+"for you."
+msgstr ""
+
+#: template-parts/pricing-v2.php:588 template-parts/pricing.php:37
+msgid "See all plans"
+msgstr ""
+
+#: template-parts/pricing-v2.php:593 template-parts/pricing.php:47
+msgid "Talk to a strategist"
+msgstr ""
+
+#: template-parts/pricing-v2.php:597
+msgid "Pricing sections"
+msgstr ""
+
+#: template-parts/pricing-v2.php:631 template-parts/pricing-v2.php:873
+#: template-parts/pricing.php:74 template-parts/pricing.php:316
+msgid "Egypt flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:653 template-parts/pricing-v2.php:895
+#: template-parts/pricing.php:96 template-parts/pricing.php:338
+msgid "Saudi Arabia flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:662 template-parts/pricing-v2.php:904
+#: template-parts/pricing.php:105 template-parts/pricing.php:347
+#: template-parts/service/service-cta.php:22 template-parts/services.php:46
+msgid "Saudi Arabia"
+msgstr "السعودية"
+
+#: template-parts/pricing-v2.php:675 template-parts/pricing-v2.php:917
+#: template-parts/pricing.php:118 template-parts/pricing.php:360
+msgid "United Arab Emirates flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:684 template-parts/pricing-v2.php:926
+#: template-parts/pricing.php:127 template-parts/pricing.php:369
+#: template-parts/service/service-cta.php:23
+msgid "United Arab Emirates"
+msgstr "الإمارات العربية المتحدة"
+
+#: template-parts/pricing-v2.php:697 template-parts/pricing-v2.php:939
+#: template-parts/pricing.php:140 template-parts/pricing.php:382
+msgid "Kuwait flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:706 template-parts/pricing-v2.php:948
+#: template-parts/pricing.php:149 template-parts/pricing.php:391
+msgid "Kuwait"
+msgstr ""
+
+#: template-parts/pricing-v2.php:719 template-parts/pricing-v2.php:961
+#: template-parts/pricing.php:162 template-parts/pricing.php:404
+msgid "Oman flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:728 template-parts/pricing-v2.php:970
+#: template-parts/pricing.php:171 template-parts/pricing.php:413
+msgid "Oman"
+msgstr ""
+
+#: template-parts/pricing-v2.php:741 template-parts/pricing-v2.php:983
+#: template-parts/pricing.php:184 template-parts/pricing.php:426
+msgid "Qatar flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:750 template-parts/pricing-v2.php:992
+#: template-parts/pricing.php:193 template-parts/pricing.php:435
+msgid "Qatar"
+msgstr ""
+
+#: template-parts/pricing-v2.php:763 template-parts/pricing-v2.php:1005
+#: template-parts/pricing.php:206 template-parts/pricing.php:448
+msgid "United States flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:785 template-parts/pricing-v2.php:1027
+#: template-parts/pricing.php:228 template-parts/pricing.php:470
+msgid "United Kingdom flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:794 template-parts/pricing-v2.php:1036
+#: template-parts/pricing.php:237 template-parts/pricing.php:479
+#: template-parts/service/service-cta.php:25
+msgid "United Kingdom"
+msgstr "المملكة المتحدة"
+
+#: template-parts/pricing-v2.php:807 template-parts/pricing-v2.php:1049
+#: template-parts/pricing.php:250 template-parts/pricing.php:492
+msgid "Ireland flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:816 template-parts/pricing-v2.php:1058
+#: template-parts/pricing.php:259 template-parts/pricing.php:501
+msgid "Ireland"
+msgstr ""
+
+#: template-parts/pricing-v2.php:829 template-parts/pricing-v2.php:1071
+#: template-parts/pricing.php:272 template-parts/pricing.php:514
+msgid "Germany flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:838 template-parts/pricing-v2.php:1080
+#: template-parts/pricing.php:281 template-parts/pricing.php:523
+msgid "Germany"
+msgstr ""
+
+#: template-parts/pricing-v2.php:851 template-parts/pricing-v2.php:1093
+#: template-parts/pricing.php:294 template-parts/pricing.php:536
+msgid "Spain flag"
+msgstr ""
+
+#: template-parts/pricing-v2.php:860 template-parts/pricing-v2.php:1102
+#: template-parts/pricing.php:303 template-parts/pricing.php:545
+msgid "Spain"
+msgstr ""
+
+#. translators: %s: lowest published price for the service.
+#: template-parts/pricing-v2.php:1145
+#, php-format
+msgid "From %s"
+msgstr ""
+
+#: template-parts/pricing-v2.php:1194
+msgid ""
+"Prices exclude VAT. 50% deposit to start, 50% on delivery (one-time "
+"services) or monthly upfront (retainers). Prices are subject to update. Any "
+"change is communicated by email at least 60 days before renewal and never "
+"affects a contract term already in progress."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1201 template-parts/pricing.php:2344
+msgid "Why it works"
+msgstr ""
+
+#: template-parts/pricing-v2.php:1204
+msgid "Priced on scope,"
+msgstr ""
+
+#: template-parts/pricing-v2.php:1205
+msgid "confirmed in writing."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1213
+msgid "Senior team on every engagement."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1214
+msgid ""
+"The people who scope your project are the ones who build it — no hand-off to"
+" a junior bench after the kickoff call."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1218
+msgid "Scope-priced, not hour-priced."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1219
+msgid ""
+"We count the units of work — templates, languages, integrations, roles — and"
+" quote the exact figure before anything starts."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1223 template-parts/pricing.php:2392
+msgid "Built to scale, not to lock you in."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1224
+msgid ""
+"Short minimum terms, published task pricing, and accounts and source code "
+"that stay in your name."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1247 template-parts/pricing.php:2404
+msgid "Questions, answered."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1267 template-parts/pricing.php:2435
+msgid "Let's talk"
+msgstr "لنتحدث"
+
+#: template-parts/pricing-v2.php:1270 template-parts/pricing.php:2438
+msgid "Not sure which plan"
+msgstr ""
+
+#: template-parts/pricing-v2.php:1271 template-parts/pricing.php:2439
+msgid "fits your brand?"
+msgstr ""
+
+#: template-parts/pricing-v2.php:1272
+msgid ""
+"Book a free 30-minute call. We'll recommend the right tier and send a "
+"written quote with the exact figure."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1280 template-parts/pricing.php:2443
+#: template-parts/service/service-pricing.php:61
+msgid "Book a free call"
+msgstr "احجز مكالمة مجانية"
+
+#: template-parts/pricing-v2.php:1290
+msgid "Client Partnership Program"
+msgstr ""
+
+#: template-parts/pricing-v2.php:1291
+msgid "Clients who grow with us, grow with us."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1292
+msgid ""
+"Clients who share their experience — a short video, a case study, or a "
+"referral — take part in our partnership program. Ask us about it when we "
+"scope your project."
+msgstr ""
+
+#: template-parts/pricing-v2.php:1294 template-parts/pricing.php:946
+#: template-parts/pricing.php:1318 template-parts/pricing.php:1753
+#: template-parts/pricing.php:2147
+msgid "Talk to us"
+msgstr ""
+
+#: template-parts/pricing.php:33
+msgid "Transparent pricing for"
+msgstr ""
+
+#: template-parts/pricing.php:34
+msgid "ambitious brands."
+msgstr ""
+
+#: template-parts/pricing.php:35
+msgid ""
+"Senior-team execution. Honest, outcome-based pricing. Trusted by brands "
+"across Saudi Arabia, the Gulf, and beyond — with no lock-ins and no surprise"
+" invoices."
+msgstr ""
+
+#: template-parts/pricing.php:554
+msgid "Web Development pricing"
+msgstr ""
+
+#: template-parts/pricing.php:562
+msgid "Website Design &amp; Development"
+msgstr "تصميم وتطوير المواقع الإلكترونية"
+
+#: template-parts/pricing.php:563
+msgid "Fast, bilingual, conversion-tuned sites your competitors can't match."
+msgstr ""
+
+#: template-parts/pricing.php:577 template-parts/pricing.php:991
+#: template-parts/pricing.php:1365 template-parts/pricing.php:1802
+msgid "From"
+msgstr ""
+
+#: template-parts/pricing.php:580
+msgid "Most projects ship in 1–7 weeks"
+msgstr ""
+
+#: template-parts/pricing.php:589 template-parts/pricing.php:1814
+msgid "Starter"
+msgstr ""
+
+#: template-parts/pricing.php:590
+msgid "5–10 page corporate site, bilingual, SEO-ready."
+msgstr ""
+
+#: template-parts/pricing.php:608
+msgid "5–10 page corporate site"
+msgstr ""
+
+#: template-parts/pricing.php:617
+msgid "Fully custom UI/UX"
+msgstr ""
+
+#: template-parts/pricing.php:626
+msgid "WordPress CMS + admin training"
+msgstr ""
+
+#: template-parts/pricing.php:635
+msgid "Bilingual AR/EN"
+msgstr ""
+
+#: template-parts/pricing.php:644
+msgid "Advanced on-page SEO + schema"
+msgstr ""
+
+#: template-parts/pricing.php:653
+msgid "Blog setup"
+msgstr ""
+
+#: template-parts/pricing.php:662
+msgid "2 rounds of revisions"
+msgstr ""
+
+#: template-parts/pricing.php:671
+msgid "30-day post-launch support"
+msgstr ""
+
+#: template-parts/pricing.php:680 template-parts/pricing.php:808
+#: template-parts/pricing.php:912 template-parts/pricing.php:1077
+#: template-parts/pricing.php:1188 template-parts/pricing.php:1293
+msgid "Additional language: +30% of plan price"
+msgstr ""
+
+#: template-parts/pricing.php:689 template-parts/pricing.php:1605
+msgid "Delivery: 3–4 weeks"
+msgstr ""
+
+#: template-parts/pricing.php:695
+msgid "Start with Starter"
+msgstr ""
+
+#: template-parts/pricing.php:705 template-parts/pricing.php:833
+#: template-parts/pricing.php:937 template-parts/pricing.php:1093
+#: template-parts/pricing.php:1204 template-parts/pricing.php:1309
+#: template-parts/pricing.php:1484 template-parts/pricing.php:1621
+#: template-parts/pricing.php:1743 template-parts/pricing.php:1913
+#: template-parts/pricing.php:2033 template-parts/pricing.php:2138
+msgid "or talk to us →"
+msgstr ""
+
+#: template-parts/pricing.php:726
+msgid "Business"
+msgstr ""
+
+#: template-parts/pricing.php:727
+msgid "Custom build with animation + integrations."
+msgstr ""
+
+#: template-parts/pricing.php:745
+msgid "Up to 20 fully custom pages"
+msgstr ""
+
+#: template-parts/pricing.php:754
+msgid "Advanced animations + micro-interactions"
+msgstr ""
+
+#: template-parts/pricing.php:763
+msgid "Headless or custom WordPress"
+msgstr ""
+
+#: template-parts/pricing.php:772
+msgid "CRM / HubSpot integrations"
+msgstr ""
+
+#: template-parts/pricing.php:781
+msgid "Sub-second loads on Saudi networks"
+msgstr ""
+
+#: template-parts/pricing.php:790
+msgid "3 rounds of revisions"
+msgstr ""
+
+#: template-parts/pricing.php:799
+msgid "60-day post-launch support"
+msgstr ""
+
+#: template-parts/pricing.php:817
+msgid "Delivery: 5–7 weeks"
+msgstr ""
+
+#: template-parts/pricing.php:823
+msgid "Start with Business"
+msgstr ""
+
+#: template-parts/pricing.php:839
+msgid "Premium"
+msgstr ""
+
+#: template-parts/pricing.php:840
+msgid "Custom Laravel web application engineered for scale."
+msgstr ""
+
+#: template-parts/pricing.php:858
+msgid "Custom web application built with Laravel"
+msgstr ""
+
+#: template-parts/pricing.php:867
+msgid "Tailored backend architecture & database design"
+msgstr ""
+
+#: template-parts/pricing.php:876
+msgid "Custom admin dashboard & role-based permissions"
+msgstr ""
+
+#: template-parts/pricing.php:885
+msgid "Third-party integrations (payment, CRM, ERP)"
+msgstr ""
+
+#: template-parts/pricing.php:894
+msgid "Bilingual AR/EN with full RTL support"
+msgstr ""
+
+#: template-parts/pricing.php:903
+msgid "90-day post-launch support"
+msgstr ""
+
+#: template-parts/pricing.php:921
+msgid "Delivery: 8–12 weeks"
+msgstr ""
+
+#: template-parts/pricing.php:927
+msgid "Start with Premium"
+msgstr ""
+
+#: template-parts/pricing.php:944
+msgid ""
+"Need an e-commerce store or a custom platform? We scope both as a clean, "
+"outcome-priced quote."
+msgstr ""
+
+#: template-parts/pricing.php:957
+msgid "Website Design & Development"
+msgstr "تصميم وتطوير المواقع"
+
+#: template-parts/pricing.php:957 template-parts/pricing.php:1329
+#: template-parts/pricing.php:1764 template-parts/pricing.php:2158
+msgid "service page"
+msgstr ""
+
+#: template-parts/pricing.php:967
+msgid "SEO pricing"
+msgstr ""
+
+#: template-parts/pricing.php:978
+msgid "Rankings, traffic, and qualified leads — compounding month over month."
+msgstr ""
+
+#: template-parts/pricing.php:994
+msgid "Results typically compound from month 3"
+msgstr ""
+
+#: template-parts/pricing.php:1003
+msgid "Local SEO"
+msgstr ""
+
+#: template-parts/pricing.php:1004
+msgid "Own one city. Dominate local search and Maps."
+msgstr ""
+
+#: template-parts/pricing.php:1012 template-parts/pricing.php:1123
+#: template-parts/pricing.php:1823 template-parts/pricing.php:1943
+msgid "3-month minimum"
+msgstr ""
+
+#: template-parts/pricing.php:1023
+msgid "Technical audit + fixes"
+msgstr ""
+
+#: template-parts/pricing.php:1032
+msgid "Google Business Profile optimization"
+msgstr ""
+
+#: template-parts/pricing.php:1041
+msgid "10 keywords (single city)"
+msgstr ""
+
+#: template-parts/pricing.php:1050
+msgid "2 blog posts/mo (800+ words)"
+msgstr ""
+
+#: template-parts/pricing.php:1059
+msgid "5 backlinks/mo"
+msgstr ""
+
+#: template-parts/pricing.php:1083
+msgid "Start Local SEO"
+msgstr ""
+
+#: template-parts/pricing.php:1114
+msgid "National Growth"
+msgstr ""
+
+#: template-parts/pricing.php:1115
+msgid "KSA-wide visibility in AR + EN."
+msgstr ""
+
+#: template-parts/pricing.php:1134
+msgid "Everything in Local SEO"
+msgstr ""
+
+#: template-parts/pricing.php:1143
+msgid "30 keywords KSA-wide AR + EN"
+msgstr ""
+
+#: template-parts/pricing.php:1152
+msgid "4 blog posts/mo (1,200+ words)"
+msgstr ""
+
+#: template-parts/pricing.php:1161
+msgid "15 backlinks/mo"
+msgstr ""
+
+#: template-parts/pricing.php:1170
+msgid "Schema + rich snippets"
+msgstr ""
+
+#: template-parts/pricing.php:1179 template-parts/pricing.php:2008
+msgid "Bi-weekly strategy calls"
+msgstr ""
+
+#: template-parts/pricing.php:1194
+msgid "Start National Growth"
+msgstr ""
+
+#: template-parts/pricing.php:1210 template-parts/pricing.php:2039
+msgid "Authority"
+msgstr ""
+
+#: template-parts/pricing.php:1211
+msgid "Category leader across Google + AI search."
+msgstr ""
+
+#: template-parts/pricing.php:1219 template-parts/pricing.php:2048
+msgid "6-month minimum"
+msgstr ""
+
+#: template-parts/pricing.php:1230
+msgid "Everything in National Growth"
+msgstr ""
+
+#: template-parts/pricing.php:1239
+msgid "80+ keywords"
+msgstr ""
+
+#: template-parts/pricing.php:1248
+msgid "12 articles/mo"
+msgstr ""
+
+#: template-parts/pricing.php:1257
+msgid "30 high-DR backlinks/mo"
+msgstr ""
+
+#: template-parts/pricing.php:1266
+msgid "Digital PR campaigns"
+msgstr ""
+
+#: template-parts/pricing.php:1275
+msgid "AI search optimization (GEO / AEO)"
+msgstr ""
+
+#: template-parts/pricing.php:1284
+msgid "Dedicated strategist + weekly calls + Slack"
+msgstr ""
+
+#: template-parts/pricing.php:1299 template-parts/pricing.php:2128
+msgid "Start Authority"
+msgstr ""
+
+#: template-parts/pricing.php:1316
+msgid "Multi-brand or multi-region SEO? We tailor a custom retainer."
+msgstr ""
+
+#: template-parts/pricing.php:1339
+msgid "Branding pricing"
+msgstr ""
+
+#: template-parts/pricing.php:1349
+msgid "Strategy-led identities that scale across markets and languages."
+msgstr ""
+
+#: template-parts/pricing.php:1368
+msgid "Most identities ship in 2–8 weeks"
+msgstr ""
+
+#: template-parts/pricing.php:1377
+msgid "Essential Identity"
+msgstr ""
+
+#: template-parts/pricing.php:1378
+msgid "Logo, palette, type — clean and ready to launch."
+msgstr ""
+
+#: template-parts/pricing.php:1396
+msgid "3 logo concepts"
+msgstr ""
+
+#: template-parts/pricing.php:1405
+msgid "Color palette"
+msgstr ""
+
+#: template-parts/pricing.php:1414
+msgid "Typography system (2 fonts)"
+msgstr ""
+
+#: template-parts/pricing.php:1423
+msgid "1-page brand guidelines"
+msgstr ""
+
+#: template-parts/pricing.php:1432
+msgid "Business card design"
+msgstr ""
+
+#: template-parts/pricing.php:1441
+msgid "Social profile kit"
+msgstr ""
+
+#: template-parts/pricing.php:1450
+msgid "Light / dark / mono versions"
+msgstr ""
+
+#: template-parts/pricing.php:1459 template-parts/pricing.php:1596
+#: template-parts/pricing.php:1718
+msgid "Additional language wordmark: +30% of plan price"
+msgstr ""
+
+#: template-parts/pricing.php:1468
+msgid "Delivery: 10–14 days"
+msgstr ""
+
+#: template-parts/pricing.php:1474
+msgid "Start Essential"
+msgstr ""
+
+#: template-parts/pricing.php:1505
+msgid "Brand System Pro"
+msgstr ""
+
+#: template-parts/pricing.php:1506
+msgid "Full visual system, ready for every touchpoint."
+msgstr ""
+
+#: template-parts/pricing.php:1524
+msgid "Everything in Essential"
+msgstr ""
+
+#: template-parts/pricing.php:1533
+msgid "Logo lockups + variations"
+msgstr ""
+
+#: template-parts/pricing.php:1542
+msgid "Full type scale"
+msgstr ""
+
+#: template-parts/pricing.php:1551
+msgid "Iconography + patterns"
+msgstr ""
+
+#: template-parts/pricing.php:1560
+msgid "30-page guidelines PDF"
+msgstr ""
+
+#: template-parts/pricing.php:1569
+msgid "Letterhead + email signature"
+msgstr ""
+
+#: template-parts/pricing.php:1578
+msgid "Presentation template (PPT/Keynote)"
+msgstr ""
+
+#: template-parts/pricing.php:1587
+msgid "10 social templates (Canva)"
+msgstr ""
+
+#: template-parts/pricing.php:1611
+msgid "Start Brand System"
+msgstr ""
+
+#: template-parts/pricing.php:1627
+msgid "Strategy + Identity"
+msgstr ""
+
+#: template-parts/pricing.php:1628
+msgid "Positioning, voice, and identity — built together."
+msgstr ""
+
+#: template-parts/pricing.php:1646
+msgid "Everything in Brand System Pro"
+msgstr ""
+
+#: template-parts/pricing.php:1655
+msgid "3 strategy workshops (90 min)"
+msgstr ""
+
+#: template-parts/pricing.php:1664
+msgid "Positioning + value prop"
+msgstr ""
+
+#: template-parts/pricing.php:1673
+msgid "Brand voice & tone"
+msgstr ""
+
+#: template-parts/pricing.php:1682
+msgid "Competitor & market analysis"
+msgstr ""
+
+#: template-parts/pricing.php:1691
+msgid "Naming / tagline (if needed)"
+msgstr ""
+
+#: template-parts/pricing.php:1700
+msgid "Persona definition"
+msgstr ""
+
+#: template-parts/pricing.php:1709
+msgid "Launch plan"
+msgstr ""
+
+#: template-parts/pricing.php:1727
+msgid "Delivery: 6–8 weeks"
+msgstr ""
+
+#: template-parts/pricing.php:1733
+msgid "Start Strategy + Identity"
+msgstr ""
+
+#: template-parts/pricing.php:1750
+msgid "Just need a logo? Our logo-only package starts at"
+msgstr ""
+
+#: template-parts/pricing.php:1751
+msgid "1,900 SAR"
+msgstr ""
+
+#: template-parts/pricing.php:1774
+msgid "Social pricing"
+msgstr ""
+
+#: template-parts/pricing.php:1785
+msgid "Bilingual content, real reels, paid ads, and community — done right."
+msgstr ""
+
+#: template-parts/pricing.php:1815
+msgid "2 platforms, organic-only. Build the rhythm."
+msgstr ""
+
+#: template-parts/pricing.php:1834
+msgid "2 platforms (e.g. Instagram + TikTok)"
+msgstr ""
+
+#: template-parts/pricing.php:1843
+msgid "12 posts/mo (8 feed + 4 stories)"
+msgstr ""
+
+#: template-parts/pricing.php:1852
+msgid "4 reels/mo (basic editing)"
+msgstr ""
+
+#: template-parts/pricing.php:1861
+msgid "Monthly content calendar"
+msgstr ""
+
+#: template-parts/pricing.php:1870
+msgid "AR + EN captions"
+msgstr ""
+
+#: template-parts/pricing.php:1879
+msgid "Hashtag strategy"
+msgstr ""
+
+#: template-parts/pricing.php:1888
+msgid "1 strategy call/mo + monthly report"
+msgstr ""
+
+#: template-parts/pricing.php:1897 template-parts/pricing.php:2017
+#: template-parts/pricing.php:2122
+msgid "Additional language content: +30% of plan price"
+msgstr ""
+
+#: template-parts/pricing.php:1903
+msgid "Start Starter"
+msgstr ""
+
+#: template-parts/pricing.php:1934
+msgid "Growth"
+msgstr ""
+
+#: template-parts/pricing.php:1935
+msgid "3 platforms + ad management. Scale what works."
+msgstr ""
+
+#: template-parts/pricing.php:1954
+msgid "Everything in Starter"
+msgstr ""
+
+#: template-parts/pricing.php:1963
+msgid "3 platforms (IG, TikTok, LinkedIn or X)"
+msgstr ""
+
+#: template-parts/pricing.php:1972
+msgid "20 posts/mo + 8 reels (motion edits)"
+msgstr ""
+
+#: template-parts/pricing.php:1981
+msgid "Paid ads management (up to 5,000 SAR spend)"
+msgstr ""
+
+#: template-parts/pricing.php:1990
+msgid "Community management (<4h response)"
+msgstr ""
+
+#: template-parts/pricing.php:1999
+msgid "A/B testing on ads"
+msgstr ""
+
+#: template-parts/pricing.php:2023
+msgid "Start Growth"
+msgstr ""
+
+#: template-parts/pricing.php:2040
+msgid "Full content production + paid + influencer."
+msgstr ""
+
+#: template-parts/pricing.php:2059
+msgid "Everything in Growth"
+msgstr ""
+
+#: template-parts/pricing.php:2068
+msgid "4 platforms (incl. YouTube Shorts)"
+msgstr ""
+
+#: template-parts/pricing.php:2077
+msgid "30 posts/mo + 16 reels"
+msgstr ""
+
+#: template-parts/pricing.php:2086
+msgid "1 monthly photoshoot day (Cairo/Riyadh)"
+msgstr ""
+
+#: template-parts/pricing.php:2095
+msgid "Up to 20,000 SAR ad spend managed"
+msgstr ""
+
+#: template-parts/pricing.php:2104
+msgid "Up to 3 influencer outreaches/mo"
+msgstr ""
+
+#: template-parts/pricing.php:2113
+msgid "Dedicated account manager + weekly calls"
+msgstr ""
+
+#: template-parts/pricing.php:2145
+msgid "Multi-brand or regional accounts? We build a custom plan."
+msgstr ""
+
+#: template-parts/pricing.php:2169
+msgid ""
+"Prices exclude VAT. 50% deposit to start, 50% on delivery (one-time "
+"services) or monthly upfront (retainers)."
+msgstr ""
+
+#: template-parts/pricing.php:2182
+msgid "Bundles"
+msgstr ""
+
+#: template-parts/pricing.php:2185
+msgid "Save when you"
+msgstr ""
+
+#: template-parts/pricing.php:2186
+msgid "combine services."
+msgstr ""
+
+#: template-parts/pricing.php:2187
+msgid ""
+"Three combos our clients pick most often. Same senior team, locked-in "
+"savings."
+msgstr ""
+
+#: template-parts/pricing.php:2197
+msgid "Brand Identity + Website"
+msgstr ""
+
+#: template-parts/pricing.php:2199 template-parts/pricing.php:2226
+msgid "Launch Bundle"
+msgstr ""
+
+#: template-parts/pricing.php:2200
+msgid "Brand-new businesses going to market."
+msgstr ""
+
+#: template-parts/pricing.php:2218 template-parts/pricing.php:2275
+#: template-parts/pricing.php:2319
+msgid "Save"
+msgstr ""
+
+#: template-parts/pricing.php:2222
+msgid "Essential Identity + Business Website — bundled & shipped together."
+msgstr ""
+
+#: template-parts/pricing.php:2225 template-parts/pricing.php:2282
+#: template-parts/pricing.php:2326
+msgid "Get"
+msgstr ""
+
+#: template-parts/pricing.php:2250
+msgid "Popular"
+msgstr ""
+
+#: template-parts/pricing.php:2254
+msgid "Website + SEO (3 months)"
+msgstr ""
+
+#: template-parts/pricing.php:2256 template-parts/pricing.php:2283
+msgid "Growth Bundle"
+msgstr ""
+
+#: template-parts/pricing.php:2257
+msgid "Brands that want traffic from day one."
+msgstr ""
+
+#: template-parts/pricing.php:2279
+msgid "Business Website + 3 months National Growth SEO."
+msgstr ""
+
+#: template-parts/pricing.php:2298
+msgid "Brand + Social (3 months)"
+msgstr ""
+
+#: template-parts/pricing.php:2300 template-parts/pricing.php:2327
+msgid "Brand Presence Bundle"
+msgstr ""
+
+#: template-parts/pricing.php:2301
+msgid "Existing businesses needing a refresh + visibility."
+msgstr ""
+
+#: template-parts/pricing.php:2323
+msgid "Brand System Pro + 3 months Growth Social Media."
+msgstr ""
+
+#: template-parts/pricing.php:2347
+msgid "Why this pricing works for"
+msgstr ""
+
+#: template-parts/pricing.php:2348
+msgid "Saudi & Gulf brands."
+msgstr ""
+
+#: template-parts/pricing.php:2365
+msgid "Senior team. Local-market rates."
+msgstr ""
+
+#: template-parts/pricing.php:2366
+msgid ""
+"You get a senior-led team without paying agency-of-record retainers — 30–40%"
+" below comparable Riyadh and Jeddah studios."
+msgstr ""
+
+#: template-parts/pricing.php:2379
+msgid "Outcome-priced, not hour-priced."
+msgstr ""
+
+#: template-parts/pricing.php:2380
+msgid ""
+"Plans are scoped around what you ship, not how many hours we logged. No "
+"timesheets. No surprise invoices, ever."
+msgstr ""
+
+#: template-parts/pricing.php:2393
+msgid ""
+"3-month retainers, not 12-month contracts. Upgrade, downgrade, or pause "
+"anytime after the minimum term."
+msgstr ""
+
+#: template-parts/pricing.php:2440
+msgid ""
+"Book a free 30-minute strategy call. We'll recommend the right tier and a "
+"clear path forward."
+msgstr ""
 
 #: template-parts/projects.php:94
 msgid "Selected work · 2023–2026"
@@ -2058,50 +3955,50 @@ msgid ""
 "A small, considered collection. Websites, brands and platforms shipped with "
 "senior teams — measured in rankings, revenue and reputation."
 msgstr ""
-"مجموعة صغيرة ومدروسة. مواقع وعلامات تجارية ومنصات نُفّذت بفرق محترفة — تُقاس "
-"بالترتيب والإيرادات والسمعة."
+"مجموعة صغيرة ومدروسة. مواقع وعلامات تجارية ومنصات نُفّذت بفرق محترفة — تُقاس"
+" بالترتيب والإيرادات والسمعة."
 
-#: template-parts/projects.php:110
+#: template-parts/projects.php:122
 msgid "Filter projects by category"
 msgstr "تصفية المشاريع حسب التصنيف"
 
-#: template-parts/projects.php:183
+#: template-parts/projects.php:195
+#, php-format
 msgid "View %s case study"
 msgstr "عرض دراسة حالة %s"
 
-#: template-parts/projects.php:303
+#: template-parts/projects.php:315 template-parts/service/service-work.php:70
 msgid "View case study"
 msgstr "عرض دراسة الحالة"
 
-#: template-parts/projects.php:326
+#: template-parts/projects.php:338
 msgid "No projects found."
 msgstr "لم يُعثر على مشاريع."
 
-#: template-parts/projects.php:357
+#: template-parts/projects.php:369
 msgid "Next chapter"
 msgstr "الفصل التالي"
 
-#: template-parts/projects.php:360
+#: template-parts/projects.php:372
 msgid "Let's build the next"
 msgstr "لنبنِ قصة"
 
-#: template-parts/projects.php:360
+#: template-parts/projects.php:372
 msgid "success story."
 msgstr "النجاح القادمة."
 
-#: template-parts/projects.php:361
+#: template-parts/projects.php:373
 msgid ""
 "We take on a small number of new engagements each quarter. Tell us about "
 "yours."
-msgstr ""
-"نقبل عدداً محدوداً من التعاقدات الجديدة كل ربع سنة. أخبرنا عن مشروعك."
+msgstr "نقبل عدداً محدوداً من التعاقدات الجديدة كل ربع سنة. أخبرنا عن مشروعك."
 
-#: template-parts/projects.php:365 template-parts/quote.php:40
-#: template-parts/reviews.php:808 template-parts/services.php:52
+#: template-parts/projects.php:377 template-parts/quote.php:40
+#: template-parts/reviews.php:807
 msgid "Start your project"
 msgstr "ابدأ مشروعك"
 
-#: template-parts/projects.php:374 template-parts/services.php:53
+#: template-parts/projects.php:386 template-parts/services.php:66
 msgid "Explore services"
 msgstr "استكشف الخدمات"
 
@@ -2171,8 +4068,8 @@ msgid ""
 "page is verified, unedited, and earned the slow way — through work that "
 "actually moved the needle."
 msgstr ""
-"خمسة عشر عاماً. عشر دول. ثلاثمائة علامة تجارية. كل تقييم على هذه الصفحة موثّق "
-"وغير معدّل، اكتُسب بالطريق الطويل — عبر عمل أحدث فرقاً حقيقياً."
+"خمسة عشر عاماً. عشر دول. ثلاثمائة علامة تجارية. كل تقييم على هذه الصفحة "
+"موثّق وغير معدّل، اكتُسب بالطريق الطويل — عبر عمل أحدث فرقاً حقيقياً."
 
 #: template-parts/reviews.php:93
 msgid "80+ verified reviews"
@@ -2210,421 +4107,628 @@ msgstr "الشريك المؤسس"
 msgid "Senior, strategic, honest."
 msgstr "محترفون، استراتيجيون، صادقون."
 
-#: template-parts/reviews.php:323
+#: template-parts/reviews.php:324
 msgid "Video Testimonials"
 msgstr "شهادات بالفيديو"
 
-#: template-parts/reviews.php:325
+#: template-parts/reviews.php:326
 msgid "See clients tell the story"
 msgstr "شاهد العملاء يروون القصة"
 
-#: template-parts/reviews.php:326
+#: template-parts/reviews.php:327
 msgid "in their own words."
 msgstr "بكلماتهم الخاصة."
 
-#: template-parts/reviews.php:328
+#: template-parts/reviews.php:329
 msgid ""
 "Hover any card to preview silently. Click to watch the full conversation."
-msgstr ""
-"مرّر فوق أي بطاقة للمعاينة بصمت. انقر لمشاهدة المحادثة كاملة."
+msgstr "مرّر فوق أي بطاقة للمعاينة بصمت. انقر لمشاهدة المحادثة كاملة."
 
-#: template-parts/reviews.php:451
+#: template-parts/reviews.php:452
 msgid "Trust by the numbers"
 msgstr "الثقة في الأرقام"
 
-#: template-parts/reviews.php:453
+#: template-parts/reviews.php:454
 msgid "Reputation isn't claimed."
 msgstr "السمعة لا تُدّعى."
 
-#: template-parts/reviews.php:454
+#: template-parts/reviews.php:455
 msgid "It's measured."
 msgstr "بل تُقاس."
 
-#: template-parts/reviews.php:467
+#: template-parts/reviews.php:468
 msgid "Average rating"
 msgstr "متوسط التقييم"
 
-#: template-parts/reviews.php:468
+#: template-parts/reviews.php:469
 msgid "out of 5.0 — 80+ reviews"
 msgstr "من 5.0 — أكثر من 80 تقييماً"
 
-#: template-parts/reviews.php:484
-msgid "long-term partnerships"
-msgstr "شراكات طويلة الأمد"
-
-#: template-parts/reviews.php:500
-msgid "GCC · MENA · UK · USA"
-msgstr "دول الخليج · الشرق الأوسط وشمال أفريقيا · المملكة المتحدة · الولايات المتحدة"
-
-#: template-parts/reviews.php:515
+#: template-parts/reviews.php:516
 msgid "Projects delivered"
 msgstr "مشاريع مُسلّمة"
 
-#: template-parts/reviews.php:516
-msgid "since 2010"
-msgstr "منذ 2010"
-
-#: template-parts/reviews.php:526
+#: template-parts/reviews.php:527
 msgid "Global footprint"
 msgstr "حضور عالمي"
 
-#: template-parts/reviews.php:527
+#: template-parts/reviews.php:528
 msgid "Clients across"
 msgstr "عملاء عبر"
 
-#: template-parts/reviews.php:528
+#: template-parts/reviews.php:529
 msgid "three continents."
 msgstr "ثلاث قارات."
 
-#: template-parts/reviews.php:529
+#: template-parts/reviews.php:530
 msgid "From Riyadh to New York — Arqam Web ships work that travels."
 msgstr "من الرياض إلى نيويورك — تنفّذ Arqam Web أعمالاً تعبر الحدود."
 
-#: template-parts/reviews.php:562
+#: template-parts/reviews.php:563
 msgid "Riyadh"
 msgstr "الرياض"
 
-#: template-parts/reviews.php:563
+#: template-parts/reviews.php:564
 msgid "Saudi Arabia · 42 clients"
 msgstr "السعودية · 42 عميلاً"
 
-#: template-parts/reviews.php:572
+#: template-parts/reviews.php:573
 msgid "Dubai"
 msgstr "دبي"
 
-#: template-parts/reviews.php:573
+#: template-parts/reviews.php:574
 msgid "UAE · 38 clients"
 msgstr "الإمارات · 38 عميلاً"
 
-#: template-parts/reviews.php:582
+#: template-parts/reviews.php:583
 msgid "Jeddah"
 msgstr "جدة"
 
-#: template-parts/reviews.php:583
+#: template-parts/reviews.php:584
 msgid "KSA · 21 clients"
 msgstr "السعودية · 21 عميلاً"
 
-#: template-parts/reviews.php:592
+#: template-parts/reviews.php:593
 msgid "Cairo"
 msgstr "القاهرة"
 
-#: template-parts/reviews.php:593
+#: template-parts/reviews.php:594
 msgid "Egypt · 29 clients"
 msgstr "مصر · 29 عميلاً"
 
-#: template-parts/reviews.php:602
+#: template-parts/reviews.php:603
 msgid "London"
 msgstr "لندن"
 
-#: template-parts/reviews.php:603
+#: template-parts/reviews.php:604
 msgid "UK · 14 clients"
 msgstr "المملكة المتحدة · 14 عميلاً"
 
-#: template-parts/reviews.php:612
+#: template-parts/reviews.php:613
 msgid "New York"
 msgstr "نيويورك"
 
-#: template-parts/reviews.php:613
+#: template-parts/reviews.php:614
 msgid "USA · 11 clients"
 msgstr "الولايات المتحدة · 11 عميلاً"
 
-#: template-parts/reviews.php:622
+#: template-parts/reviews.php:623
 msgid "Doha"
 msgstr "الدوحة"
 
-#: template-parts/reviews.php:623
+#: template-parts/reviews.php:624
 msgid "Qatar · 9 clients"
 msgstr "قطر · 9 عملاء"
 
-#: template-parts/reviews.php:632
+#: template-parts/reviews.php:633
 msgid "Kuwait City"
 msgstr "مدينة الكويت"
 
-#: template-parts/reviews.php:633
+#: template-parts/reviews.php:634
 msgid "Kuwait · 7 clients"
 msgstr "الكويت · 7 عملاء"
 
-#: template-parts/reviews.php:644
+#: template-parts/reviews.php:645
 msgid "Continents"
 msgstr "قارات"
 
-#: template-parts/reviews.php:652
-msgid "Support"
-msgstr "الدعم"
-
-#: template-parts/reviews.php:660
+#: template-parts/reviews.php:657
 msgid "In motion"
 msgstr "في حركة"
 
-#: template-parts/reviews.php:661
+#: template-parts/reviews.php:658
 msgid "A constant stream of"
 msgstr "تدفّق مستمر من"
 
-#: template-parts/reviews.php:662
+#: template-parts/reviews.php:659
 msgid "kind words."
 msgstr "الكلمات الطيبة."
 
-#: template-parts/reviews.php:714
+#: template-parts/reviews.php:712
 msgid "Written reviews"
 msgstr "تقييمات مكتوبة"
 
-#: template-parts/reviews.php:717
+#: template-parts/reviews.php:715
 msgid "Verified clients. Unedited words. Real outcomes."
 msgstr "عملاء موثّقون. كلمات غير معدّلة. نتائج حقيقية."
 
-#: template-parts/reviews.php:799
-msgid "NOW BOOKING Q2 PROJECTS"
-msgstr "الحجز متاح الآن لمشاريع الربع الثاني"
+#: template-parts/reviews.php:798
+msgid "NOW BOOKING NEW PROJECTS"
+msgstr "نستقبل مشاريع جديدة الآن"
 
-#: template-parts/reviews.php:801
+#: template-parts/reviews.php:800
 msgid "Ready to become our"
 msgstr "مستعد لتصبح"
 
-#: template-parts/reviews.php:802
+#: template-parts/reviews.php:801
 msgid "next success story?"
 msgstr "قصة نجاحنا القادمة؟"
 
-#: template-parts/reviews.php:804
+#: template-parts/reviews.php:803
 msgid ""
 "A 30-minute call. Zero pressure. Walk away with a clear plan — whether you "
 "work with us or not."
 msgstr ""
 "مكالمة مدتها 30 دقيقة. دون أي ضغط. واخرج بخطة واضحة — سواء عملت معنا أم لا."
 
-#: template-parts/services.php:48
-msgid "Services that"
-msgstr "خدمات"
+#: template-parts/service/service-compare.php:27
+msgid "How we"
+msgstr "كيف"
 
-#: template-parts/services.php:48
-msgid "grow"
-msgstr "تنمّي"
+#: template-parts/service/service-compare.php:27
+msgid "compare."
+msgstr "نختلف عن غيرنا."
 
-#: template-parts/services.php:48
-msgid "your business"
-msgstr "نشاطك التجاري"
-
-#: template-parts/services.php:48
-msgid "define"
-msgstr "وتُعرّف"
-
-#: template-parts/services.php:48
-msgid "your brand."
-msgstr "علامتك التجارية."
-
-#: template-parts/services.php:50
+#: template-parts/service/service-compare.php:28
 msgid ""
-"Web design, SEO, brand identity and social media — engineered by senior "
-"teams for ambitious brands across SA, UAE, UK and USA."
-msgstr ""
-"تصميم الويب، وتحسين محركات البحث، والهوية البصرية، والسوشيال ميديا — مصمّمة "
-"بإتقان من فرق محترفة لعلامات تجارية طموحة في السعودية والإمارات والمملكة "
-"المتحدة والولايات المتحدة."
+"The honest difference between hiring us, a freelancer, or a typical agency."
+msgstr "الفرق بصراحة بين العمل معنا ومع مستقل أو وكالة تقليدية."
 
-#: template-parts/services.php:102
-msgid ""
-"Each service has a dedicated page with full deliverables, process and case "
-"studies — click any card to dive in."
-msgstr ""
-"لكل خدمة صفحة مخصّصة بكامل المخرجات والمنهجية ودراسات الحالة — انقر أي بطاقة "
-"للتعمّق."
+#: template-parts/service/service-compare.php:32
+msgid "Compare Arqam Web"
+msgstr "قارن أرقام ويب"
 
-#: template-parts/services.php:109
-msgid "Filter services by category"
-msgstr "تصفية الخدمات حسب التصنيف"
+#: template-parts/service/service-content.php:12
+msgid "In detail"
+msgstr "بالتفصيل"
 
-#: template-parts/services.php:159
-msgid "View %s service"
-msgstr "عرض خدمة %s"
+#: template-parts/service/service-cta.php:9
+msgid "Ready to get started?"
+msgstr "مستعد للبدء؟"
 
-#: template-parts/services.php:220
-#: template-parts/services/custom-loop-services.php:84
+#: template-parts/service/service-cta.php:11
+msgid "that brings you business."
+msgstr "يجلب لك العملاء."
+
+#: template-parts/service/service-cta.php:12
+msgid "Tell us about your project and we'll get back to you within 24 hours."
+msgstr "أخبرنا عن مشروعك وسنعاود التواصل معك خلال 24 ساعة."
+
+#: template-parts/service/service-cta.php:16 template-parts/services.php:42
+msgid "Masar Law"
+msgstr "مسار للمحاماة"
+
+#: template-parts/service/service-cta.php:18 template-parts/services.php:44
+msgid "CID Group"
+msgstr "مجموعة CID"
+
+#: template-parts/service/service-cta.php:19 template-parts/services.php:45
+msgid "SportReach"
+msgstr "سبورت ريتش"
+
+#: template-parts/service/service-cta.php:20
+msgid "Mr Clone"
+msgstr "مستر كلون"
+
+#: template-parts/service/service-cta.php:21
+msgid "Rahati Spa"
+msgstr "راحتي سبا"
+
+#: template-parts/service/service-cta.php:56
+#: template-parts/service/service-hero.php:38 template-parts/services.php:65
+#: template-parts/services.php:142
+msgid "Get your quote"
+msgstr "احصل على عرض السعر"
+
+#: template-parts/service/service-faq.php:16
+msgid "Common questions"
+msgstr "أسئلة متكررة"
+
+#: template-parts/service/service-faq.php:31
+msgid "Have more questions?"
+msgstr "عندك أسئلة أخرى؟"
+
+#: template-parts/service/service-faq.php:31
+msgid "Contact us"
+msgstr "تواصل معنا"
+
+#: template-parts/service/service-hero.php:40
+msgid "See the work"
+msgstr "شاهد أعمالنا"
+
+#: template-parts/service/service-included.php:17
+msgid "What's included"
+msgstr "ما تشمله الخدمة"
+
+#: template-parts/service/service-pricing.php:9
+msgid "Clear prices. Honest quotes."
+msgstr "أسعار واضحة. وعروض صادقة."
+
+#: template-parts/service/service-pricing.php:25
+msgid "Most popular"
+msgstr "الأكثر طلبًا"
+
+#: template-parts/service/service-pricing.php:57
+msgid "Not sure what fits your business?"
+msgstr "لست متأكدًا مما يناسب نشاطك؟"
+
+#: template-parts/service/service-pricing.php:58
+msgid "A free 30-minute call, then a written scope and price."
+msgstr "مكالمة مجانية لمدة 30 دقيقة، ثم نطاق عمل وسعر مكتوبان."
+
+#: template-parts/service/service-problem.php:17
+msgid "The problem"
+msgstr "المشكلة"
+
+#: template-parts/service/service-process.php:10
+msgid "Six steps. No surprises."
+msgstr "ست خطوات. بلا مفاجآت."
+
+#: template-parts/service/service-process.php:11
+msgid "Six clear steps, from the first brief to a handover in your name."
+msgstr "ست خطوات واضحة، من أول اجتماع حتى التسليم باسمك."
+
+#: template-parts/service/service-process.php:17
+msgid "How we work"
+msgstr "طريقة عملنا"
+
+#: template-parts/service/service-related.php:31
+msgid "Other services"
+msgstr "خدمات أخرى"
+
+#: template-parts/service/service-related.php:32
+msgid "Work that fits together."
+msgstr "خدمات تكمل بعضها."
+
+#: template-parts/service/service-related.php:43
+#: template-parts/services.php:99
+#: template-parts/services/custom-loop-services.php:68
 msgid "Learn more"
 msgstr "اعرف المزيد"
 
-#: template-parts/services.php:237
-msgid "No services found."
-msgstr "لم يُعثر على خدمات."
+#: template-parts/service/service-reviews.php:15
+msgid "What clients say"
+msgstr "ماذا يقول عملاؤنا"
 
-#: template-parts/services.php:252
-msgid "Why Arqam"
-msgstr "لماذا Arqam"
+#: template-parts/service/service-reviews.php:15
+msgid "after working with us."
+msgstr "بعد العمل معنا."
 
-#: template-parts/services.php:255
-msgid "Built differently."
-msgstr "مبنيون بشكل مختلف."
+#: template-parts/service/service-reviews.php:22
+msgid "from 80+ client reviews"
+msgstr "من أكثر من 80 تقييمًا"
 
-#: template-parts/services.php:255
-msgid "For brands that mean it."
-msgstr "للعلامات التجارية الجادّة."
+#: template-parts/service/service-reviews.php:42
+msgid "Previous reviews"
+msgstr "التقييمات السابقة"
 
-#: template-parts/services.php:260
+#: template-parts/service/service-reviews.php:43
+msgid "Next reviews"
+msgstr "التقييمات التالية"
+
+#: template-parts/service/service-work.php:22
+msgid "Sites we host & look after"
+msgstr "مواقع نستضيفها ونرعاها"
+
+#: template-parts/service/service-work.php:22
+msgid "What we've built"
+msgstr "ما بنيناه"
+
+#: template-parts/service/service-work.php:25
+msgid "Case studies carousel"
+msgstr "عرض دراسات الحالة"
+
+#: template-parts/service/service-work.php:49
+#, php-format
+msgid "%s project"
+msgstr "مشروع %s"
+
+#: template-parts/service/service-work.php:53
+#, php-format
+msgid "Case study · %02d"
+msgstr "دراسة حالة · %02d"
+
+#: template-parts/service/service-work.php:70
+msgid "Visit live site"
+msgstr "زيارة الموقع"
+
+#: template-parts/service/service-work.php:79
+msgid "Previous project"
+msgstr "المشروع السابق"
+
+#: template-parts/service/service-work.php:82
+#, php-format
+msgid "Show %s"
+msgstr "عرض %s"
+
+#: template-parts/service/service-work.php:85
+msgid "Next project"
+msgstr "المشروع التالي"
+
+#: template-parts/services.php:31
+msgid "Live projects"
+msgstr "مشروع منشور"
+
+#: template-parts/services.php:32
+msgid "From 80+ reviews"
+msgstr "من أكثر من 80 تقييمًا"
+
+#: template-parts/services.php:36
+msgid "The people who scope it build it"
+msgstr "من يخطط لمشروعك هو من ينفذه"
+
+#: template-parts/services.php:37
+msgid "Published prices where we can"
+msgstr "أسعار معلنة حيثما أمكن"
+
+#: template-parts/services.php:38
+msgid "Everything handed over in your name"
+msgstr "كل شيء يُسلَّم باسمك"
+
+#: template-parts/services.php:62
+msgid "Seven services."
+msgstr "سبع خدمات."
+
+#: template-parts/services.php:62
+msgid "One team that builds, ranks and grows your business."
+msgstr "فريق واحد يبني نشاطك ويتصدر به وينميه."
+
+#: template-parts/services.php:63
 msgid ""
-"Three principles shape every engagement — from the first call to the day we "
-"hand over the keys. They're why our clients stay with us for years, not "
-"sprints."
+"Websites, search, social, identity, video, apps and care, planned together "
+"and handed over in your name."
 msgstr ""
-"ثلاثة مبادئ تشكّل كل تعاقد — من المكالمة الأولى إلى يوم تسليم المفاتيح. هي "
-"السبب في بقاء عملائنا معنا سنوات، لا أسابيع."
+"مواقع، وظهور في البحث، وسوشيال ميديا، وهوية، وفيديو، وتطبيقات، ورعاية "
+"مستمرة، نخطط لها معًا ونسلمها باسمك."
 
-#: template-parts/services.php:269
-msgid "Senior teams only"
-msgstr "فرق محترفة فقط"
+#: template-parts/services.php:84
+msgid "Everything your business needs to"
+msgstr "كل ما يحتاجه نشاطك"
 
-#: template-parts/services.php:270
-msgid "No juniors, no handoffs. The team that pitches you ships your project."
-msgstr "لا مبتدئين، ولا تنقّلات. الفريق الذي يقدّم لك العرض هو من ينفّذ مشروعك."
+#: template-parts/services.php:84
+msgid "grow online."
+msgstr "لينمو على الإنترنت."
 
-#: template-parts/services.php:276
-msgid "Built for speed"
-msgstr "مبني للسرعة"
+#: template-parts/services.php:138
+msgid "Not sure where to start?"
+msgstr "لا تعرف من أين تبدأ؟"
 
-#: template-parts/services.php:277
-msgid "Performance is a design decision — not a final-week cleanup task."
-msgstr "الأداء قرار تصميمي — لا مهمة تنظيف في الأسبوع الأخير."
+#: template-parts/services.php:139
+msgid "Tell us what you need."
+msgstr "أخبرنا بما تحتاجه."
 
-#: template-parts/services.php:283
-msgid "Outcomes, not outputs"
-msgstr "نتائج، لا مخرجات"
+#: template-parts/services.php:139
+msgid "We'll map the right mix."
+msgstr "ونرسم لك المزيج المناسب."
 
-#: template-parts/services.php:284
-msgid "Every engagement is tied to KPIs your CFO actually cares about."
-msgstr "كل تعاقد مرتبط بمؤشرات أداء يهتم بها مديرك المالي فعلاً."
+#: template-parts/services.php:140
+msgid "One conversation, then a written scope and a clear price."
+msgstr "محادثة واحدة، ثم نطاق عمل مكتوب وسعر واضح."
 
-#: template-parts/services.php:299
-msgid "Let's talk"
-msgstr "لنتحدث"
+#~ msgid ""
+#~ "A senior digital studio building high-performance websites, SEO strategies, "
+#~ "brand identities and social-first content for ambitious brands across +10 "
+#~ "countries — since 2010."
+#~ msgstr ""
+#~ "استوديو رقمي محترف يبني مواقع عالية الأداء واستراتيجيات تحسين محركات البحث "
+#~ "وهويات بصرية ومحتوى يركّز على السوشيال ميديا للعلامات الطموحة في +10 دول — "
+#~ "منذ عام 2010."
 
-#: template-parts/services.php:301
-msgid "Ready to build something"
-msgstr "مستعد لبناء شيء"
+#~ msgid "View our work"
+#~ msgstr "اطّلع على أعمالنا"
 
-#: template-parts/services.php:301
-msgid "worth shipping?"
-msgstr "يستحق التنفيذ؟"
+#~ msgid "remarkable together."
+#~ msgstr "استثنائياً معاً."
 
-#: template-parts/services.php:302
-msgid ""
-"Tell us about your goals. We'll come back with a clear plan, timeline and "
-"investment."
-msgstr ""
-"أخبرنا عن أهدافك. وسنعود إليك بخطة واضحة وجدول زمني وتكلفة."
+#~ msgid "View our portfolio"
+#~ msgstr "اطّلع على أعمالنا"
 
-#: template-parts/services.php:305
-msgid "Back to Home"
-msgstr "العودة إلى الرئيسية"
+#~ msgid "Our work"
+#~ msgstr "أعمالنا"
 
-#: template-parts/frontpage/frontpage-slider.php
-msgid "Scale."
-msgstr "على التوسّع."
+#~ msgid "See it in"
+#~ msgstr "شاهدها على"
 
-#: template-parts/frontpage/frontpage-slider.php
-msgid "Convert."
-msgstr "على التحويل."
+#~ msgid "action."
+#~ msgstr "أرض الواقع."
 
-#: template-parts/frontpage (auto-added)
-msgid "Custom-built, never templated"
-msgstr "مصمَّم خصيصًا، مش قوالب جاهزة"
+#~ msgid "Recognized"
+#~ msgstr "مُكرَّم"
 
-#: template-parts/frontpage (auto-added)
-msgid "SEO-ready from day one"
-msgstr "جاهز للسيو من أول يوم"
+#~ msgid "Top 50 MENA founders"
+#~ msgstr "أفضل 50 مؤسّساً في الشرق الأوسط وشمال أفريقيا"
 
-#: template-parts/frontpage (auto-added)
-msgid "Conversion-focused UX"
-msgstr "تجربة استخدام مركّزة على التحويل"
+#~ msgid "CEO · Riyadh, Saudi Arabia"
+#~ msgstr "الرئيس التنفيذي · الرياض، السعودية"
 
-#: template-parts/frontpage (auto-added)
-msgid "Performance you can measure"
-msgstr "أداء تقدر تقيسه"
+#~ msgid "Four disciplines."
+#~ msgstr "أربعة تخصصات."
 
-#: template-parts/frontpage (auto-added)
-msgid "Long-term growth mindset"
-msgstr "عقلية نمو طويلة المدى"
+#~ msgid "One growth engine."
+#~ msgstr "محرك نمو واحد."
 
-#: template-parts/frontpage (auto-added)
-msgid "Senior team, no hand-offs"
-msgstr "فريق خبير بدون تنقّلات"
+#~ msgid ""
+#~ "We don't sell deliverables — we ship outcomes. Every engagement is a senior "
+#~ "team obsessing over how design, code, search and social work together."
+#~ msgstr ""
+#~ "لا نبيع مخرجات — بل نحقّق نتائج. كل تعاقد هو فريق محترف يهتم بكيفية تكامل "
+#~ "التصميم والبرمجة والبحث والسوشيال ميديا معاً."
 
-#: template-parts/frontpage (auto-added)
-msgid "Every line of code, every pixel of design — written for your business, not pulled from a theme library."
-msgstr "كل سطر كود وكل بكسل في التصميم مكتوب لمشروعك تحديدًا، مش مسحوب من مكتبة قوالب."
+#~ msgid "Global Digital Agency · Est. 2010"
+#~ msgstr "وكالة رقمية عالمية · تأسست عام 2010"
 
-#: template-parts/frontpage (auto-added)
-msgid "Schema, semantic HTML, Core Web Vitals, indexable architecture — search-engine fundamentals are baked in, not bolted on."
-msgstr "سكيما، وHTML دلالي، وCore Web Vitals، وبنية قابلة للأرشفة — أساسيات محركات البحث مدمجة من الأساس مش مضافة لاحقًا."
+#~ msgid "Digital Marketing"
+#~ msgstr "تسويق رقمي"
 
-#: template-parts/frontpage (auto-added)
-msgid "We design for the action, not just the aesthetic. Every section is engineered to move the user one step closer to yes."
-msgstr "بنصمّم من أجل الفعل مش الشكل بس. كل قسم مهندَس عشان يقرّب المستخدم خطوة من قرار الموافقة."
+#~ msgid "Agency Helping"
+#~ msgstr "وكالة تساعد"
 
-#: template-parts/frontpage (auto-added)
-msgid "Sub-second loads, 95+ Lighthouse scores, and infrastructure that scales — performance is a feature, not a luxury."
-msgstr "تحميل في أقل من ثانية، ونتائج Lighthouse فوق 95، وبنية تحتية قابلة للتوسّع — الأداء ميزة مش رفاهية."
+#~ msgid "Brands"
+#~ msgstr "العلامات التجارية"
 
-#: template-parts/frontpage (auto-added)
-msgid "We're not a one-and-done vendor. We partner with clients for years, optimizing as the market — and your business — evolves."
-msgstr "إحنا مش مورّد لمرة واحدة. بنشارك عملاءنا لسنين، ونحسّن مع تطوّر السوق ومشروعك."
+#~ msgid "Grow."
+#~ msgstr "على النمو."
 
-#: template-parts/frontpage (auto-added)
-msgid "The strategist who scopes your project also ships it. No junior shuffling, no broken telephone — direct access to expertise."
-msgstr "نفس الخبير اللي بيحدّد نطاق مشروعك هو اللي بينفّذه. مفيش تنقّل بين مبتدئين ولا تشويش — وصول مباشر للخبرة."
+#~ msgid "across"
+#~ msgstr "في"
 
-#: template-parts/frontpage (auto-added)
-msgid "Website Design & Development"
-msgstr "تصميم وتطوير المواقع"
+#~ msgid "+10 markets"
+#~ msgstr "+10 أسواق"
 
-#: template-parts/frontpage (auto-added)
-msgid "Search Engine Optimization"
-msgstr "تحسين محركات البحث"
+#~ msgid "worldwide."
+#~ msgstr "حول العالم."
 
-#: template-parts/frontpage (auto-added)
-msgid "Brand Identity"
-msgstr "الهوية البصرية"
+#~ msgid ""
+#~ "Arqam Web designs, develops, and optimizes high-performance websites built "
+#~ "to rank, convert, and scale your business — from the Gulf to Europe and the "
+#~ "Americas."
+#~ msgstr ""
+#~ "تصمّم Arqam Web وتطوّر وتحسّن مواقع عالية الأداء مبنية لتتصدّر وتحقّق "
+#~ "التحويل وتوسّع نشاطك التجاري — من الخليج إلى أوروبا والأمريكتين."
 
-#: template-parts/frontpage (auto-added)
-msgid "Social Media Marketing"
-msgstr "التسويق عبر السوشيال ميديا"
+#~ msgid "View Our Projects"
+#~ msgstr "اطّلع على مشاريعنا"
 
-#: template-parts/frontpage (auto-added)
-msgid "Years of experience"
-msgstr "سنوات الخبرة"
+#~ msgid "4.9 / 5 average"
+#~ msgstr "متوسط 4.9 / 5"
 
-#: template-parts/frontpage (auto-added)
-msgid "Average client rating"
-msgstr "متوسط تقييم العملاء"
+#~ msgid "Support"
+#~ msgstr "الدعم"
 
-#: template-parts/frontpage (auto-added)
-msgid "out of 5.0"
-msgstr "من 5.0"
+#~ msgid "NOW BOOKING Q2 PROJECTS"
+#~ msgstr "الحجز متاح الآن لمشاريع الربع الثاني"
 
-#: template-parts/frontpage (auto-added)
-msgid "Years experience"
-msgstr "سنوات خبرة"
+#~ msgid "Services that"
+#~ msgstr "خدمات"
 
-#: template-parts/frontpage (auto-added)
-msgid "Global client rating"
-msgstr "تقييم العملاء عالميًا"
+#~ msgid "grow"
+#~ msgstr "تنمّي"
 
-#: template-parts/frontpage (auto-added)
-msgid "Branding · Social"
-msgstr "هوية · سوشيال"
+#~ msgid "your business"
+#~ msgstr "نشاطك التجاري"
 
-#: template-parts/frontpage (auto-added)
-msgid "Organic visibility growth across competitive markets"
-msgstr "نمو الظهور العضوي في أسواق تنافسية"
+#~ msgid "define"
+#~ msgstr "وتُعرّف"
 
-#: template-parts/frontpage (auto-added)
-msgid "Custom UI/UX engineered for speed, precision, and product growth"
-msgstr "واجهة وتجربة استخدام مخصّصة، مهندَسة للسرعة والدقة ونمو المنتج"
+#~ msgid "your brand."
+#~ msgstr "علامتك التجارية."
 
-#: template-parts/frontpage (auto-added)
-msgid "Conversion-focused travel experience designed for global audiences"
-msgstr "تجربة سفر مركّزة على التحويل، مصمّمة لجمهور عالمي"
+#~ msgid ""
+#~ "Web design, SEO, brand identity and social media — engineered by senior "
+#~ "teams for ambitious brands across SA, UAE, UK and USA."
+#~ msgstr ""
+#~ "تصميم الويب، وتحسين محركات البحث، والهوية البصرية، والسوشيال ميديا — مصمّمة "
+#~ "بإتقان من فرق محترفة لعلامات تجارية طموحة في السعودية والإمارات والمملكة "
+#~ "المتحدة والولايات المتحدة."
 
-#: template-parts/frontpage (auto-added)
-msgid "Bold branding and immersive web experience built for engagement"
-msgstr "هوية جريئة وتجربة ويب غامرة مبنية للتفاعل"
+#~ msgid ""
+#~ "Each service has a dedicated page with full deliverables, process and case "
+#~ "studies — click any card to dive in."
+#~ msgstr ""
+#~ "لكل خدمة صفحة مخصّصة بكامل المخرجات والمنهجية ودراسات الحالة — انقر أي بطاقة"
+#~ " للتعمّق."
 
-#: template-parts/frontpage (auto-added)
-msgid "Data-driven SEO campaigns focused on measurable business growth"
-msgstr "حملات سيو معتمدة على البيانات، مركّزة على نمو أعمال قابل للقياس"
+#~ msgid "Filter services by category"
+#~ msgstr "تصفية الخدمات حسب التصنيف"
+
+#~ msgid "View %s service"
+#~ msgstr "عرض خدمة %s"
+
+#~ msgid "No services found."
+#~ msgstr "لم يُعثر على خدمات."
+
+#~ msgid "Why Arqam"
+#~ msgstr "لماذا Arqam"
+
+#~ msgid "Built differently."
+#~ msgstr "مبنيون بشكل مختلف."
+
+#~ msgid "For brands that mean it."
+#~ msgstr "للعلامات التجارية الجادّة."
+
+#~ msgid ""
+#~ "Three principles shape every engagement — from the first call to the day we "
+#~ "hand over the keys. They're why our clients stay with us for years, not "
+#~ "sprints."
+#~ msgstr ""
+#~ "ثلاثة مبادئ تشكّل كل تعاقد — من المكالمة الأولى إلى يوم تسليم المفاتيح. هي "
+#~ "السبب في بقاء عملائنا معنا سنوات، لا أسابيع."
+
+#~ msgid "Senior teams only"
+#~ msgstr "فرق محترفة فقط"
+
+#~ msgid "No juniors, no handoffs. The team that pitches you ships your project."
+#~ msgstr ""
+#~ "لا مبتدئين، ولا تنقّلات. الفريق الذي يقدّم لك العرض هو من ينفّذ مشروعك."
+
+#~ msgid "Built for speed"
+#~ msgstr "مبني للسرعة"
+
+#~ msgid "Performance is a design decision — not a final-week cleanup task."
+#~ msgstr "الأداء قرار تصميمي — لا مهمة تنظيف في الأسبوع الأخير."
+
+#~ msgid "Outcomes, not outputs"
+#~ msgstr "نتائج، لا مخرجات"
+
+#~ msgid "Every engagement is tied to KPIs your CFO actually cares about."
+#~ msgstr "كل تعاقد مرتبط بمؤشرات أداء يهتم بها مديرك المالي فعلاً."
+
+#~ msgid "Ready to build something"
+#~ msgstr "مستعد لبناء شيء"
+
+#~ msgid "worth shipping?"
+#~ msgstr "يستحق التنفيذ؟"
+
+#~ msgid ""
+#~ "Tell us about your goals. We'll come back with a clear plan, timeline and "
+#~ "investment."
+#~ msgstr "أخبرنا عن أهدافك. وسنعود إليك بخطة واضحة وجدول زمني وتكلفة."
+
+#~ msgid "Back to Home"
+#~ msgstr "العودة إلى الرئيسية"
+
+#~ msgid "Scale."
+#~ msgstr "على التوسّع."
+
+#~ msgid "Convert."
+#~ msgstr "على التحويل."
+
+#~ msgid "Years experience"
+#~ msgstr "سنوات خبرة"
+
+#~ msgid "Global client rating"
+#~ msgstr "تقييم العملاء عالميًا"
+
+#~ msgid "Branding · Social"
+#~ msgstr "هوية · سوشيال"
+
+#~ msgid "Organic visibility growth across competitive markets"
+#~ msgstr "نمو الظهور العضوي في أسواق تنافسية"
+
+#~ msgid "Custom UI/UX engineered for speed, precision, and product growth"
+#~ msgstr "واجهة وتجربة استخدام مخصّصة، مهندَسة للسرعة والدقة ونمو المنتج"
+
+#~ msgid "Conversion-focused travel experience designed for global audiences"
+#~ msgstr "تجربة سفر مركّزة على التحويل، مصمّمة لجمهور عالمي"
+
+#~ msgid "Bold branding and immersive web experience built for engagement"
+#~ msgstr "هوية جريئة وتجربة ويب غامرة مبنية للتفاعل"
+
+#~ msgid "Data-driven SEO campaigns focused on measurable business growth"
+#~ msgstr "حملات سيو معتمدة على البيانات، مركّزة على نمو أعمال قابل للقياس"
+
+msgid "We build websites"
+msgstr "نبني مواقع"
+
+msgid "that bring you"
+msgstr "تجلب لك"

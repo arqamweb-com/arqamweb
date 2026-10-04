@@ -427,13 +427,13 @@ if (!function_exists('arqamweb_v2_card')) {
 					: 'bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-glow';
 				?>
 				<?php if (!empty($tier['checkout'])) : ?>
-					<a href="<?php echo esc_url(add_query_arg('plan', $tier['id'], $contact_url)); ?>"
+					<a href="<?php echo esc_url(add_query_arg(['plan' => $tier['id'], 'plan_name' => rawurlencode($tier['name'])], $contact_url) . '#brief'); ?>"
 					   class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 <?php echo esc_attr($cta_classes); ?>">
 						<?php echo arqamweb_v2_icon('shopping-cart'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						<?php echo esc_html($tier['checkout_label'] ?? __('Get started', 'arqamweb')); ?>
 					</a>
 				<?php else : ?>
-					<a href="<?php echo esc_url(add_query_arg('plan', $tier['id'], $contact_url)); ?>"
+					<a href="<?php echo esc_url(add_query_arg(['plan' => $tier['id'], 'plan_name' => rawurlencode($tier['name'])], $contact_url) . '#brief'); ?>"
 					   class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all hover:-translate-y-0.5 <?php echo esc_attr($cta_classes); ?>">
 						<?php esc_html_e('Request a Quote', 'arqamweb'); ?>
 						<?php echo arqamweb_v2_icon('arrow-right'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

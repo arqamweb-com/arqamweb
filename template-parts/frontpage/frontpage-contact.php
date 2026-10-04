@@ -33,13 +33,13 @@ if (!defined('ABSPATH')) {
 				</div>
 				<div class="lg:col-span-5">
 					<div class="grid grid-cols-2 gap-3">
-						<?php foreach ([['< 1m', 'Avg. response time'], ['7 days', 'Available all week'], ['AR · EN', 'Bilingual team'], ['Free', 'Discovery call']] as $contactStat) : ?>
+						<?php foreach ([['< 1m', __('Avg. response time', 'arqamweb')], [__('7 days', 'arqamweb'), __('Available all week', 'arqamweb')], ['AR · EN', __('Bilingual team', 'arqamweb')], [__('Free', 'arqamweb'), __('Discovery call', 'arqamweb')]] as $contactStat) : ?>
 							<div
 								class="rounded-2xl bg-white/10 backdrop-blur border border-white/15 p-5 text-primary-foreground">
 								<div
-									class="text-2xl lg:text-3xl font-semibold"><?php echo $contactStat[0]; ?></div>
+									class="text-2xl lg:text-3xl font-semibold"><?php echo esc_html($contactStat[0]); ?></div>
 								<div
-									class="text-xs text-primary-foreground/75 mt-0.5"><?php echo $contactStat[1]; ?></div>
+									class="text-xs text-primary-foreground/75 mt-0.5"><?php echo esc_html($contactStat[1]); ?></div>
 							</div>
 						<?php endforeach; ?>
 					</div>

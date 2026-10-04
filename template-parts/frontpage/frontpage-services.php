@@ -38,7 +38,7 @@ $servicesStrip = [
 	<div class="mt-24 overflow-hidden py-6 lg:mt-32" aria-hidden="true">
 		<div class="flex animate-marquee whitespace-nowrap" style="animation-duration:42s;width:max-content">
 			<?php for ($i = 0; $i < 4; $i++) : foreach ($servicesStrip as $label) : ?>
-					<span class="flex items-center gap-10 pr-10"><span class="text-5xl font-semibold tracking-[-0.025em] text-[#4674b0]/70 lg:text-7xl xl:text-8xl"><?php echo esc_html($label); ?></span><span class="text-5xl text-slate-300 lg:text-7xl xl:text-8xl">·</span></span>
+					<span class="flex items-center gap-10 pr-10"><span class="text-5xl font-semibold tracking-[-0.025em] text-[#4674b0] lg:text-7xl xl:text-8xl"><?php echo esc_html($label); ?></span><span class="text-5xl text-slate-300 lg:text-7xl xl:text-8xl">·</span></span>
 			<?php endforeach;
 			endfor; ?>
 		</div>

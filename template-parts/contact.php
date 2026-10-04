@@ -177,7 +177,7 @@ get_header();
 				</div>
 			</div>
 			<div class="lg:col-span-7">
-				<div class="relative rounded-[2rem] p-px overflow-hidden">
+				<div id="brief" class="relative scroll-mt-28 rounded-[2rem] p-px overflow-hidden">
 					<div aria-hidden="true" class="absolute inset-0 rounded-[2rem]"
 					     style="background: conic-gradient(from 140deg, color-mix(in oklab, var(--primary) 60%, transparent), color-mix(in oklab, var(--primary-deep) 60%, transparent), transparent 60%, color-mix(in oklab, var(--primary) 50%, transparent));"></div>
 					<div
@@ -191,6 +191,16 @@ get_header();
 									class="w-1.5 h-1.5 rounded-full bg-emerald-500 pulse-green"></span> <?php esc_html_e('Encrypted', 'arqamweb'); ?>
 							</div>
 						</div>
+						<?php
+						// الباقة اللي العميل داس عليها في صفحة الأسعار، بتتبعت مع الطلب في حقول CF7 المخفية plan و plan_name.
+						$selected_plan = isset($_GET['plan_name']) ? sanitize_text_field(wp_unslash($_GET['plan_name'])) : '';
+						if ($selected_plan !== '') :
+						?>
+							<div class="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-primary/25 bg-primary/10 px-4 py-3 text-sm">
+								<span><?php esc_html_e('Selected plan:', 'arqamweb'); ?> <strong class="text-foreground"><?php echo esc_html($selected_plan); ?></strong></span>
+								<a href="<?php echo esc_url(arqamweb_get_page_permalink('pricing')); ?>" class="font-semibold text-primary"><?php esc_html_e('Change plan', 'arqamweb'); ?></a>
+							</div>
+						<?php endif; ?>
 						<?php echo do_shortcode('[contact-form-7 id="4f85ced" title="Contact Us"]'); ?>
 					</div>
 				</div>

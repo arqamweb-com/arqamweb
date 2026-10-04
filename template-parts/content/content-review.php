@@ -5,6 +5,7 @@ if (!defined('ABSPATH')) {
 
 $rating = (float)get_post_meta(get_the_ID(), 'rating', true);
 $rating = max(0, min(5, $rating));
+$role = function_exists('get_field') ? trim((string) get_field('role_location', get_the_ID())) : '';
 ?>
 
 
@@ -17,13 +18,13 @@ $rating = max(0, min(5, $rating));
 	<div class="mt-6 flex items-center gap-3 pt-5 border-t border-border">
 		<div
 			class="w-11 h-11 rounded-full bg-gradient-primary text-primary-foreground flex items-center justify-center font-semibold">
-			sw
+			<?php echo esc_html(mb_strtoupper(arqamweb_sp_initials(get_the_title()))); ?>
 		</div>
 		<div>
 			<h3 class="font-semibold text-sm"><?php the_title(); ?></h3>
-			<div class="text-xs text-muted-foreground">
-				<?php esc_html_e('CEO · Riyadh, Saudi Arabia', 'arqamweb'); ?>
-			</div>
+			<?php if ($role) : ?>
+				<div class="text-xs text-muted-foreground"><?php echo esc_html($role); ?></div>
+			<?php endif; ?>
 		</div>
 	</div>
 </article>
