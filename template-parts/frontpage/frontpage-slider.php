@@ -60,7 +60,7 @@ $heroMetrics = [
 	['4.9★', __('From 80+ client reviews', 'arqamweb')],
 	['+10', __('Countries served', 'arqamweb')],
 ];
-$heroVideoId = 'QndT75SOP-I';
+$heroVideoId = 'FBU9w1yj82Q';
 ?>
 <section id="home" class="relative pt-32 lg:pt-40 pb-24 lg:pb-32 bg-hero overflow-hidden">
 	<div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
@@ -164,7 +164,7 @@ $heroVideoId = 'QndT75SOP-I';
 					// زرار فيديو رأي العميل: نسخة للديسكتوب فوق الـ mockup ونسخة للموبايل تحته، وبيفتح نفس مودال فيديوهات الآراء.
 					foreach (['desktop' => 'hidden md:flex absolute -right-3 -bottom-3', 'mobile' => 'md:hidden relative mx-auto mt-5 flex'] as $variant => $position) :
 					?>
-						<button type="button" data-video-testimonial-open data-youtube-id="<?php echo esc_attr($heroVideoId); ?>" data-video-short="true" aria-label="<?php esc_attr_e('Watch the client video testimonial', 'arqamweb'); ?>" class="<?php echo esc_attr($position); ?> items-center gap-2 rounded-xl p-2 pr-3 bg-background/90 backdrop-blur-xl border border-border shadow-elevated transition-transform hover:-translate-y-0.5">
+						<button type="button" data-video-testimonial-open data-youtube-id="<?php echo esc_attr($heroVideoId); ?>" data-video-short="false" aria-label="<?php esc_attr_e('Watch the client video testimonial', 'arqamweb'); ?>" class="<?php echo esc_attr($position); ?> items-center gap-2 rounded-xl p-2 pr-3 bg-background/90 backdrop-blur-xl border border-border shadow-elevated transition-transform hover:-translate-y-0.5">
 							<span class="relative h-10 w-10 shrink-0 rounded-full ring-2 ring-primary/60 animate-pulse">
 								<img src="https://i.ytimg.com/vi/<?php echo esc_attr($heroVideoId); ?>/hqdefault.jpg" alt="" width="40" height="40" loading="lazy" decoding="async" class="h-full w-full rounded-full object-cover">
 								<span class="absolute inset-0 grid place-items-center rounded-full bg-black/25">
