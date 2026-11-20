@@ -855,6 +855,11 @@ lets their headings keep inheriting that light colour instead of turning navy. *
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
+  /* Keeps anchor-jump targets (page-section nav, "See all plans", FAQ/CTA
+     deep links, etc.) from landing underneath the fixed header — without
+     this, the destination heading/button renders partly hidden behind
+     `.aw-header` right after the jump. */
+  scroll-padding-top: calc(var(--aw-header-height, 4.5rem) + 1rem);
 }
 
 /* Performance Optimizations */
@@ -937,6 +942,11 @@ body.front-page #page.site {
   top: var(--aw-header-top);
   inset-inline: 0;
   z-index: 50;
+  /* Own, self-contained stacking context so no descendant of the page
+     content can ever be painted above the fixed header, regardless of
+     any z-index set deeper in a section (CRO/UX: "Get your quote" button
+     stacking fix). */
+  isolation: isolate;
   padding: 1rem 0;
   background: transparent;
   border-bottom: 1px solid transparent;
