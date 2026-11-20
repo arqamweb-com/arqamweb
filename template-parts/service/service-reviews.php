@@ -19,7 +19,7 @@ $reviews = arqamweb_sp_lines('sp_reviews', $post_id, 3);
 				<div>
 					<div class="text-xl tracking-widest">★★★★★</div>
 					<div class="mt-6 text-[44px] font-semibold leading-none">4.9</div>
-					<p class="mt-3 text-sm text-primary-foreground/80"><?php esc_html_e('from 80+ client reviews', 'arqamweb'); ?></p>
+					<p class="mt-3 text-sm text-primary-foreground/80"><?php esc_html_e('from +80 client reviews', 'arqamweb'); ?></p>
 				</div>
 				<div class="flex -space-x-2 rtl:space-x-reverse">
 					<?php foreach ($reviews as [, $name]) : ?>

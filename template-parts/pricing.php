@@ -1047,7 +1047,7 @@ get_header();
 												stroke-linecap="round" stroke-linejoin="round"
 												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
 													d="M20 6 9 17l-5-5"></path></svg></span><span
-											class="text-foreground/85"><?php esc_html_e('2 blog posts/mo (800+ words)', 'arqamweb'); ?></span>
+											class="text-foreground/85"><?php esc_html_e('2 blog posts/mo (+800 words)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
 											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg
@@ -1149,7 +1149,7 @@ get_header();
 												stroke-linecap="round" stroke-linejoin="round"
 												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
 													d="M20 6 9 17l-5-5"></path></svg></span><span
-											class="text-white/85"><?php esc_html_e('4 blog posts/mo (1,200+ words)', 'arqamweb'); ?></span>
+											class="text-white/85"><?php esc_html_e('4 blog posts/mo (+1,200 words)', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
 											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-white/10 text-primary-foreground"><svg
@@ -1236,7 +1236,7 @@ get_header();
 												stroke-linecap="round" stroke-linejoin="round"
 												class="lucide lucide-check w-3 h-3" aria-hidden="true"><path
 													d="M20 6 9 17l-5-5"></path></svg></span><span
-											class="text-foreground/85"><?php esc_html_e('80+ keywords', 'arqamweb'); ?></span>
+											class="text-foreground/85"><?php esc_html_e('+80 keywords', 'arqamweb'); ?></span>
 									</li>
 									<li class="flex items-start gap-3 text-sm leading-relaxed"><span
 											class="inline-flex items-center justify-center w-5 h-5 rounded-full shrink-0 mt-0.5 bg-primary/10 text-primary"><svg

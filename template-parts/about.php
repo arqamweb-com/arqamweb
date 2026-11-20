@@ -222,7 +222,7 @@ get_header();
 						<div class="pl-12 lg:pl-0 lg:col-start-2 lg:pl-16"><h3
 								class="text-2xl lg:text-3xl font-semibold tracking-tight"><?php esc_html_e('Global recognition', 'arqamweb'); ?></h3>
 							<p class="mt-3 text-muted-foreground leading-relaxed text-base lg:text-lg max-w-md lg:max-w-none">
-								<?php esc_html_e('Awards, case studies and 100+ projects shipped across three continents.', 'arqamweb'); ?></p></div>
+								<?php esc_html_e('Awards, case studies and +100 projects shipped across three continents.', 'arqamweb'); ?></p></div>
 					</div>
 					<div
 						class="relative grid lg:grid-cols-2 gap-8 lg:gap-16 items-center" data-aos="fade-up"
@@ -242,7 +242,7 @@ get_header();
 						<div class="pl-12 lg:pl-0 lg:col-start-1 lg:row-start-1 lg:text-right lg:pr-16"><h3
 								class="text-2xl lg:text-3xl font-semibold tracking-tight"><?php esc_html_e('Today', 'arqamweb'); ?></h3>
 							<p class="mt-3 text-muted-foreground leading-relaxed text-base lg:text-lg max-w-md lg:max-w-none">
-								<?php esc_html_e('320+ projects. 10+ countries. 4.9★ from verified clients — and still obsessed with the work.', 'arqamweb'); ?></p></div>
+								<?php esc_html_e('+320 projects. +10 countries. 4.9★ from verified clients — and still obsessed with the work.', 'arqamweb'); ?></p></div>
 					</div>
 				</div>
 			</div>
@@ -559,7 +559,7 @@ get_header();
 					</h2>
 					<div
 						class="mt-8 space-y-5 text-base lg:text-lg text-primary-foreground/70 leading-relaxed max-w-2xl">
-						<p><span class="text-white font-medium">Youssef Salah Hassanein</span> <?php esc_html_e('is an Egyptian entrepreneur and web technology specialist with 15+ years of experience in design and development.', 'arqamweb'); ?></p>
+						<p><span class="text-white font-medium">Youssef Salah Hassanein</span> <?php esc_html_e('is an Egyptian entrepreneur and web technology specialist with +15 years of experience in design and development.', 'arqamweb'); ?></p>
 						<p><?php esc_html_e('He started building at 16. Founded Arqam Web after military service. Has since led IT initiatives at the Ministry of Education and served as Executive Director of the Egyptian Inventors Association.', 'arqamweb'); ?></p>
 						<p><?php esc_html_e('Today he leads the studio with one rule:', 'arqamweb'); ?> <em class="text-white"><?php esc_html_e('ship work that compounds.', 'arqamweb'); ?></em></p></div>
 					<div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-5" data-count-up-section>
@@ -706,7 +706,7 @@ get_header();
 						<div class="text-[11px] font-bold tracking-[0.22em] uppercase text-primary mb-4"><?php esc_html_e('Our Projects', 'arqamweb'); ?>
 						</div>
 						<h3 class="text-3xl lg:text-5xl font-semibold tracking-[-0.025em] leading-[1.05] max-w-md">
-							<?php esc_html_e('320+ shipped, 10+ countries.', 'arqamweb'); ?></h3>
+							<?php esc_html_e('+320 shipped, +10 countries.', 'arqamweb'); ?></h3>
 						<p class="mt-3 text-white/70 text-base lg:text-lg"><?php esc_html_e('A portfolio that travels.', 'arqamweb'); ?></p>
 						<div class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-white">
 							<span><?php esc_html_e('Explore', 'arqamweb'); ?></span><span

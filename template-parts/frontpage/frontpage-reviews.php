@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
 						<div class="flex gap-0.5 text-primary"><?php echo arqam_stars(); ?></div>
 						<span class="font-semibold text-foreground">4.9 / 5</span>
 					</div>
-					<span>·</span><span><?php esc_html_e('Based on 80+ reviews', 'arqamweb'); ?></span>
+					<span>·</span><span><?php esc_html_e('Based on +80 reviews', 'arqamweb'); ?></span>
 				</div>
 			</div>
 		</div>
