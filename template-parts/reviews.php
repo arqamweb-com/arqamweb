@@ -90,7 +90,7 @@ get_header();
 							</div>
 							<div>
 								<div class="text-2xl font-semibold tabular-nums">4.9 / 5</div>
-								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('80+ verified reviews', 'arqamweb'); ?></div>
+								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('+80 verified reviews', 'arqamweb'); ?></div>
 							</div>
 						</div>
 						<div class="h-12 w-px bg-white/10"></div>
@@ -118,7 +118,7 @@ get_header();
 								<circle cx="12" cy="10" r="3"></circle>
 							</svg>
 							<div>
-								<div class="text-2xl font-semibold tabular-nums">10+</div>
+								<div class="text-2xl font-semibold tabular-nums">+10</div>
 								<div class="text-xs text-primary-foreground/55"><?php esc_html_e('countries served', 'arqamweb'); ?></div>
 							</div>
 						</div>
@@ -466,7 +466,7 @@ get_header();
 									class="bg-gradient-to-br from-[color:var(--brand-primary)] to-[color:var(--brand-secondary)] bg-clip-text text-transparent">★</span>
 							</div>
 							<div class="mt-4 text-base font-semibold"><?php esc_html_e('Average rating', 'arqamweb'); ?></div>
-							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('out of 5.0 — 80+ reviews', 'arqamweb'); ?></div>
+							<div class="text-sm text-white/55 mt-1"><?php esc_html_e('out of 5.0 — +80 reviews', 'arqamweb'); ?></div>
 						</div>
 					</div>
 				</div>
@@ -637,7 +637,7 @@ get_header();
 				</div>
 				<div class="mt-8 grid grid-cols-3 gap-4 pt-8 border-t border-border">
 					<div>
-						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">10+</div>
+						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">+10</div>
 						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Countries', 'arqamweb'); ?></div>
 					</div>
 					<div>
@@ -645,7 +645,7 @@ get_header();
 						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Continents', 'arqamweb'); ?></div>
 					</div>
 					<div>
-						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">320+</div>
+						<div class="text-2xl font-semibold tracking-tight text-foreground tabular-nums">+320</div>
 						<div class="text-xs text-muted-foreground mt-1"><?php esc_html_e('Projects', 'arqamweb'); ?></div>
 					</div>
 				</div>

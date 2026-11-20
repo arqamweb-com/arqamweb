@@ -27,10 +27,10 @@ if ($count === 1) {
 }
 
 $stats = [
-	['15+', __('Years building websites', 'arqamweb')],
-	['30+', __('Live projects', 'arqamweb')],
-	['4.9★', __('From 80+ reviews', 'arqamweb')],
-	['10+', __('Countries served', 'arqamweb')],
+	['+15', __('Years building websites', 'arqamweb')],
+	['+30', __('Live projects', 'arqamweb')],
+	['4.9★', __('From +80 reviews', 'arqamweb')],
+	['+10', __('Countries served', 'arqamweb')],
 ];
 $trust = [
 	__('The people who scope it build it', 'arqamweb'),

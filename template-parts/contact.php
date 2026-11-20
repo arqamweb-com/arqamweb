@@ -156,7 +156,7 @@ get_header();
 						</div>
 					</div>
 					<div class="bg-card p-5 text-center">
-						<div class="text-2xl font-semibold tracking-tight text-gradient">120+</div>
+						<div class="text-2xl font-semibold tracking-tight text-gradient">+120</div>
 						<div class="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground"><?php esc_html_e('Projects shipped', 'arqamweb'); ?>
 						</div>
 					</div>

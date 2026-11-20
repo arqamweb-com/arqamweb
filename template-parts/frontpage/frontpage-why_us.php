@@ -3,7 +3,7 @@ $whyItems = [
 	['title' => __('Custom-built, never templated', 'arqamweb'), 'copy' => __('Every line of code, every pixel of design — written for your business, not pulled from a theme library.', 'arqamweb'), 'icon' => 'code'],
 	['title' => __('SEO-ready from day one', 'arqamweb'), 'copy' => __('Schema, semantic HTML, Core Web Vitals, indexable architecture — search-engine fundamentals are baked in, not bolted on.', 'arqamweb'), 'icon' => 'search'],
 	['title' => __('Conversion-focused UX', 'arqamweb'), 'copy' => __('We design for the action, not just the aesthetic. Every section is engineered to move the user one step closer to yes.', 'arqamweb'), 'icon' => 'spark'],
-	['title' => __('Performance you can measure', 'arqamweb'), 'copy' => __('Sub-second loads, 95+ Lighthouse scores, and infrastructure that scales — performance is a feature, not a luxury.', 'arqamweb'), 'icon' => 'bolt'],
+	['title' => __('Performance you can measure', 'arqamweb'), 'copy' => __('Sub-second loads, +95 Lighthouse scores, and infrastructure that scales — performance is a feature, not a luxury.', 'arqamweb'), 'icon' => 'bolt'],
 	['title' => __('Long-term growth mindset', 'arqamweb'), 'copy' => __("We're not a one-and-done vendor. We partner with clients for years, optimizing as the market — and your business — evolves.", 'arqamweb'), 'icon' => 'growth'],
 	['title' => __('Senior team, no hand-offs', 'arqamweb'), 'copy' => __('The strategist who scopes your project also ships it. No junior shuffling, no broken telephone — direct access to expertise.', 'arqamweb'), 'icon' => 'team'],
 ];
@@ -16,7 +16,7 @@ $whyItems = [
 				<div class="text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-3"><?php esc_html_e('Why Arqam Web', 'arqamweb'); ?></div>
 				<h2 class="text-4xl lg:text-5xl font-semibold tracking-tight"><?php esc_html_e('The studio clients call when', 'arqamweb'); ?> <span
 						class="text-gradient"><?php esc_html_e('it actually has to work.', 'arqamweb'); ?></span></h2>
-				<p class="mt-5 text-muted-foreground text-lg"><?php esc_html_e("For 15+ years we've helped ambitious teams turn their websites from cost centers into their most reliable growth channel — across +10 countries.", 'arqamweb'); ?></p>
+				<p class="mt-5 text-muted-foreground text-lg"><?php esc_html_e("For +15 years we've helped ambitious teams turn their websites from cost centers into their most reliable growth channel — across +10 countries.", 'arqamweb'); ?></p>
 				<a href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_QUOTE_PAGE_SLUG)); ?>"
 				   class="mt-8 inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold text-primary-foreground bg-gradient-primary rounded-full shadow-glow hover:-translate-y-0.5 transition-transform"><?php esc_html_e('Start a project', 'arqamweb'); ?> <?php echo arqam_icon('arrow'); ?></a>
 			</div>

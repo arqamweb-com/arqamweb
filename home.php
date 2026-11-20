@@ -437,7 +437,7 @@ $grid_layouts = [
 								class="text-white/70 font-light italic"><?php esc_html_e('Nothing else.', 'arqamweb'); ?></span>
 						</h2>
 						<p class="mt-5 text-white/70 text-base lg:text-lg leading-relaxed max-w-lg">
-							<?php esc_html_e('Join 8,400+ founders, designers and operators reading the quietest, sharpest newsletter on digital craft.', 'arqamweb'); ?>
+							<?php esc_html_e('Join +8,400 founders, designers and operators reading the quietest, sharpest newsletter on digital craft.', 'arqamweb'); ?>
 						</p>
 					</div>
 					<div class="lg:col-span-5">

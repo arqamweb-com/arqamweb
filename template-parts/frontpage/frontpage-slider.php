@@ -56,8 +56,8 @@ unset($heroSlide);
 $heroWords = [__('customers.', 'arqamweb'), __('bookings.', 'arqamweb'), __('orders.', 'arqamweb'), __('enquiries.', 'arqamweb')];
 $heroMetrics = [
 	['+15', __('Years building websites', 'arqamweb')],
-	['30+', __('Live projects you can open', 'arqamweb')],
-	['4.9★', __('From 80+ client reviews', 'arqamweb')],
+	['+30', __('Live projects you can open', 'arqamweb')],
+	['4.9★', __('From +80 client reviews', 'arqamweb')],
 	['+10', __('Countries served', 'arqamweb')],
 ];
 $heroVideoId = 'FBU9w1yj82Q';
@@ -103,7 +103,7 @@ $heroVideoId = 'FBU9w1yj82Q';
 						<span aria-hidden="true" class="pointer-events-none absolute inset-x-3 top-0 h-px bg-white/40"></span>
 						<span class="relative inline-flex items-center gap-2"><?php esc_html_e('Get Your Quote in 24 Hours', 'arqamweb'); ?> <?php echo arqam_icon('arrow'); ?></span>
 					</a>
-					<a data-arqam-magnetic href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>" class="group relative inline-flex items-center gap-2 px-7 py-4 text-sm font-semibold text-foreground bg-background/70 backdrop-blur border border-border rounded-full hover:border-primary/60 hover:text-primary transition-[color,border-color,box-shadow,transform] duration-300 ease-out will-change-transform"><?php esc_html_e('See 30+ Live Projects', 'arqamweb'); ?> <?php echo arqam_icon('arrow'); ?></a>
+					<a data-arqam-magnetic href="<?php echo esc_url(arqamweb_get_page_permalink(ARQAM_PROJECTS_PAGE_SLUG)); ?>" class="group relative inline-flex items-center gap-2 px-7 py-4 text-sm font-semibold text-foreground bg-background/70 backdrop-blur border border-border rounded-full hover:border-primary/60 hover:text-primary transition-[color,border-color,box-shadow,transform] duration-300 ease-out will-change-transform"><?php esc_html_e('See +30 Live Projects', 'arqamweb'); ?> <?php echo arqam_icon('arrow'); ?></a>
 				</div>
 				<div class="mt-4 max-w-[560px] text-xs sm:text-sm text-muted-foreground">
 					<?php esc_html_e('Free discovery call', 'arqamweb'); ?> <span class="mx-1 text-primary">•</span> <?php esc_html_e('Arabic & English', 'arqamweb'); ?> <span class="mx-1 text-primary">•</span> <?php esc_html_e('No templates, ever', 'arqamweb'); ?>

@@ -1,8 +1,8 @@
 <?php
 
 $stats = [
-	['value' => '15+', 'label' => __('Years of experience', 'arqamweb'), 'note' => __('since 2010', 'arqamweb')],
-	['value' => '10+', 'label' => __('Countries served', 'arqamweb'), 'note' => __('GCC · MENA · UK · USA', 'arqamweb')],
+	['value' => '+15', 'label' => __('Years of experience', 'arqamweb'), 'note' => __('since 2010', 'arqamweb')],
+	['value' => '+10', 'label' => __('Countries served', 'arqamweb'), 'note' => __('GCC · MENA · UK · USA', 'arqamweb')],
 	['value' => '92%', 'label' => __('Client retention', 'arqamweb'), 'note' => __('long-term partnerships', 'arqamweb')],
 	['value' => '4.9★', 'label' => __('Average client rating', 'arqamweb'), 'note' => __('out of 5.0', 'arqamweb')],
 ];

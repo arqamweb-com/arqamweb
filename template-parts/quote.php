@@ -103,7 +103,7 @@ get_header();
 						</svg>
 					</div>
 					<div>
-						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('120+ projects', 'arqamweb'); ?></div>
+						<div class="text-sm font-semibold tracking-tight"><?php esc_html_e('+120 projects', 'arqamweb'); ?></div>
 						<div class="text-xs text-muted-foreground"><?php esc_html_e('Across 32 countries', 'arqamweb'); ?></div>
 					</div>
 				</div>
