@@ -53,11 +53,13 @@ $gridRows = $gridLayouts[$the_query->post_count];
 				<div aria-hidden="true" class="services-v3-object pointer-events-none absolute <?php echo esc_attr($slot['object']); ?>">
 					<div class="absolute inset-[12%] rounded-full bg-primary/25 blur-[42px] transition-[opacity,transform,background-color] duration-500 group-hover/card:scale-110 group-hover/card:bg-primary/40"></div>
 					<?php
-					$service_image_attrs = array('class' => 'relative h-full w-full object-contain drop-shadow-[0_24px_35px_rgba(0,0,0,0.45)]', 'alt' => '', 'loading' => 'lazy', 'decoding' => 'async', 'sizes' => '(min-width: 1024px) 480px, 70vw');
+					/* translators: %s: service name, e.g. "Hosting & Care". */
+					$service_icon_alt = sprintf(__('%s service icon', 'arqamweb'), get_the_title());
+					$service_image_attrs = array('class' => 'relative h-full w-full object-contain drop-shadow-[0_24px_35px_rgba(0,0,0,0.45)]', 'alt' => $service_icon_alt, 'loading' => 'lazy', 'decoding' => 'async', 'sizes' => '(min-width: 1024px) 480px, 70vw');
 					if ($service_icon['id']) {
 						echo wp_get_attachment_image($service_icon['id'], 'medium_large', false, $service_image_attrs);
 					} else {
-						echo '<img src="' . esc_url($service_icon['url']) . '" alt="" loading="lazy" decoding="async" width="1024" height="1024" class="' . esc_attr($service_image_attrs['class']) . '">';
+						echo '<img src="' . esc_url($service_icon['url']) . '" alt="' . esc_attr($service_icon_alt) . '" loading="lazy" decoding="async" width="1024" height="1024" class="' . esc_attr($service_image_attrs['class']) . '">';
 					}
 					?>
 				</div>

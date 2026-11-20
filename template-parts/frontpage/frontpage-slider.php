@@ -166,7 +166,7 @@ $heroVideoId = 'FBU9w1yj82Q';
 					?>
 						<button type="button" data-video-testimonial-open data-youtube-id="<?php echo esc_attr($heroVideoId); ?>" data-video-short="false" aria-label="<?php esc_attr_e('Watch the client video testimonial', 'arqamweb'); ?>" class="<?php echo esc_attr($position); ?> items-center gap-2 rounded-xl p-2 pr-3 bg-background/90 backdrop-blur-xl border border-border shadow-elevated transition-transform hover:-translate-y-0.5">
 							<span class="relative h-10 w-10 shrink-0 rounded-full ring-2 ring-primary/60 animate-pulse">
-								<img src="https://i.ytimg.com/vi/<?php echo esc_attr($heroVideoId); ?>/hqdefault.jpg" alt="" width="40" height="40" loading="lazy" decoding="async" class="h-full w-full rounded-full object-cover">
+								<img src="https://i.ytimg.com/vi/<?php echo esc_attr($heroVideoId); ?>/hqdefault.jpg" alt="<?php esc_attr_e('Client video testimonial preview', 'arqamweb'); ?>" width="40" height="40" loading="lazy" decoding="async" class="h-full w-full rounded-full object-cover">
 								<span class="absolute inset-0 grid place-items-center rounded-full bg-black/25">
 									<svg width="12" height="12" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
 								</span>
