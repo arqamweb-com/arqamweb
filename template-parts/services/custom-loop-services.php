@@ -64,7 +64,7 @@ $gridRows = $gridLayouts[$the_query->post_count];
 			<?php endif; ?>
 			<div class="relative z-10 flex flex-col <?php echo esc_attr($slot['copy']); ?>">
 				<h3 class="<?php echo $isLarge ? 'text-xl lg:text-2xl' : 'text-[17px]'; ?> font-semibold leading-tight text-white"><?php echo esc_html(get_the_title()); ?></h3>
-				<p class="mt-2 text-[13px] leading-relaxed text-white/65"><?php echo esc_html(get_the_excerpt()); ?></p>
+				<p class="mt-2 text-[13px] leading-relaxed text-white/65"><?php echo esc_html(arqamweb_sp_text('sp_summary', get_the_ID()) ?: get_the_excerpt()); ?></p>
 				<span class="mt-3 inline-flex items-center gap-1 text-[13px] font-medium text-[#7cc4ef] transition-colors group-hover/card:text-white"><?php esc_html_e('Learn more', 'arqamweb'); ?> <span class="transition-transform duration-300 <?php echo is_rtl() ? 'group-hover/card:-translate-x-1' : 'group-hover/card:translate-x-1'; ?>" aria-hidden="true"><?php echo is_rtl() ? '←' : '→'; ?></span></span>
 			</div>
 		</a>
