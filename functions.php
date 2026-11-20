@@ -43,6 +43,7 @@ require get_template_directory() . '/inc/class-project.php';
 require get_template_directory() . '/inc/class-theme-setup.php';
 require get_template_directory() . '/inc/class-assets.php';
 require get_template_directory() . '/inc/class-schema.php';
+require get_template_directory() . '/inc/class-llms-txt.php';
 
 // ── Existing Theme Files ───────────────────────────────────────────────────────
 require get_template_directory() . '/inc/custom-header.php';

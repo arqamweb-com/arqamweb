@@ -45,6 +45,9 @@ add_action( 'wp_head', [ 'ArqamWeb_Schema', 'hreflang' ],                 3 );
 // Rank Math integration — upgrade Organization → LocalBusiness + inject Service schema
 add_filter( 'rank_math/json_ld', [ 'ArqamWeb_Schema', 'enhance_rank_math_schema' ], 20, 2 );
 
+// ── llms.txt (AI/LLM content discovery) ─────────────────────────────────────────
+add_action( 'template_redirect', [ 'ArqamWeb_LLMs_Txt', 'maybe_serve' ], 0 );
+
 // ── Customizer ─────────────────────────────────────────────────────────────────
 add_action( 'customize_register',       'arqam_web_customize_register' );
 add_action( 'customize_preview_init',   'arqam_web_customize_preview_js' );
