@@ -93,7 +93,7 @@ if (empty($videoTestimonials)) {
 				>
 					<img
 						src="<?php echo esc_url($thumb); ?>"
-						alt=""
+						alt="<?php echo esc_attr(sprintf(__('Video testimonial from %s', 'arqamweb'), $client)); ?>"
 						loading="lazy"
 						decoding="async"
 						class="aw-video-card__image"
@@ -161,7 +161,7 @@ if (empty($videoTestimonials)) {
 							data-video-short="<?php echo $is_short ? 'true' : 'false'; ?>"
 							aria-label="<?php echo esc_attr(sprintf(__('Play testimonial: %s', 'arqamweb'), $snippet)); ?>">
 							<img src="<?php echo esc_url($thumb); ?>"
-							     alt=""
+							     alt="<?php echo esc_attr(sprintf(__('Video testimonial from %s', 'arqamweb'), $client)); ?>"
 							     loading="lazy"
 							     decoding="async"
 							     class="aw-video-card__image"
