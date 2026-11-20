@@ -44,7 +44,7 @@ get_header();
 				<?php esc_html_e('Tell us about', 'arqamweb'); ?><br><span class="text-gradient"><?php esc_html_e('your project.', 'arqamweb'); ?></span>
 			</h1>
 			<p class="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-				<?php esc_html_e("Select your service, answer a few focused questions, and we'll come back with a clear plan, timeline and investment — usually within 24 hours.", 'arqamweb'); ?>
+				<?php esc_html_e("Just your name, WhatsApp number and what you need — we'll come back with a clear plan, timeline and investment, usually within 24 hours.", 'arqamweb'); ?>
 			</p>
 
 			<!-- Trust signals -->
