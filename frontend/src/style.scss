@@ -2174,6 +2174,103 @@ body.aw-video-modal-open {
   }
 }
 
+/*
+ * Floating contact CTA (single WhatsApp button).
+ * Was previously 3 stacked buttons (WhatsApp/Email/Call) that overlapped
+ * the Tawk chat bubble and, on mobile, sat on top of page headings/text.
+ * z-index is intentionally below the header (50) so it never fights the
+ * sticky nav, and the bottom offset respects iOS safe-area insets so it
+ * never covers the last line of body copy near the viewport edge.
+ */
+.aw-floating-contact {
+  position: fixed;
+  right: 1.5rem;
+  bottom: max(1.5rem, env(safe-area-inset-bottom) + 1rem);
+  z-index: 40;
+}
+
+.aw-floating-contact__btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 999px;
+  color: #fff;
+  background: #25d366;
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.aw-floating-contact__btn:hover,
+.aw-floating-contact__btn:focus-visible {
+  transform: scale(1.08);
+  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.42);
+  outline: 0;
+}
+
+.aw-floating-contact__tooltip {
+  pointer-events: none;
+  position: absolute;
+  right: 100%;
+  margin-right: 0.75rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: var(--aw-header-text, #27313d);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(4px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.aw-floating-contact__btn:hover .aw-floating-contact__tooltip,
+.aw-floating-contact__btn:focus-visible .aw-floating-contact__tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .aw-floating-contact {
+  right: auto;
+  left: 1.5rem;
+}
+
+html[dir="rtl"] .aw-floating-contact__tooltip {
+  right: auto;
+  left: 100%;
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .aw-floating-contact {
+    right: 1rem;
+    bottom: max(1.25rem, env(safe-area-inset-bottom) + 0.75rem);
+  }
+
+  html[dir="rtl"] .aw-floating-contact {
+    left: 1rem;
+  }
+
+  .aw-floating-contact__btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* Tooltip relies on hover, which mobile doesn't have reliably; hide it
+     there so it can never overlap adjacent heading/body text on tap. */
+  .aw-floating-contact__tooltip {
+    display: none;
+  }
+}
+
 /* Front page services — bento grid (Lovable ServicesV3, contrast theme) */
 @media (min-width: 1024px) {
   .services-v3-grid {
