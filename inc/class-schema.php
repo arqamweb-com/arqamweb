@@ -92,8 +92,18 @@ class ArqamWeb_Schema {
 	 * Pulls from the `faq` custom post type (title = question, content = answer).
 	 */
 	public static function faq_page(): void {
-		if ( ! is_front_page() ) return;
+		if ( is_front_page() ) {
+			self::front_page_faq();
+		} elseif ( self::is_service_singular() ) {
+			self::service_faq();
+		}
+	}
 
+	/**
+	 * FAQPage schema for the front page — pulls from the `faq` custom post type
+	 * (title = question, content = answer).
+	 */
+	private static function front_page_faq(): void {
 		$query = new WP_Query( [
 			'post_type'      => 'faq',
 			'posts_per_page' => 10,
@@ -122,6 +132,42 @@ class ArqamWeb_Schema {
 		self::print_jsonld( [
 			'@context'   => 'https://schema.org',
 			'@type'      => 'FAQPage',
+			'mainEntity' => $items,
+		] );
+	}
+
+	/**
+	 * FAQPage schema for single service pages — pulls from the `sp_faq` ACF
+	 * field, the same "Question | Answer" textarea already rendered by
+	 * template-parts/service/service-faq.php, so the schema always matches
+	 * what's visible on the page (scope/duration/price answers included).
+	 */
+	private static function service_faq(): void {
+		$post_id = get_the_ID();
+		if ( ! $post_id || ! function_exists( 'arqamweb_sp_lines' ) ) return;
+
+		$rows = arqamweb_sp_lines( 'sp_faq', $post_id, 2 );
+		if ( empty( $rows ) ) return;
+
+		$items = [];
+		foreach ( $rows as [ $question, $answer ] ) {
+			if ( $question === '' || $answer === '' ) continue;
+			$items[] = [
+				'@type'          => 'Question',
+				'name'           => wp_strip_all_tags( $question ),
+				'acceptedAnswer' => [
+					'@type' => 'Answer',
+					'text'  => wp_strip_all_tags( $answer ),
+				],
+			];
+		}
+
+		if ( empty( $items ) ) return;
+
+		self::print_jsonld( [
+			'@context'   => 'https://schema.org',
+			'@type'      => 'FAQPage',
+			'@id'        => get_permalink( $post_id ) . '#faq',
 			'mainEntity' => $items,
 		] );
 	}
@@ -807,6 +853,36 @@ class ArqamWeb_Schema {
 			if ( $img ) {
 				$service['image'] = $img;
 			}
+
+			// Scope/duration/price — only using the real values already
+			// published on the page (ACF "Service page card" / "Hero" tabs).
+			// Never invent numbers that aren't on the page.
+			if ( function_exists( 'arqamweb_sp_text' ) ) {
+				$price_text    = arqamweb_sp_text( 'sp_card_price', $post_id );
+				$delivery_text = arqamweb_sp_text( 'sp_chip_a', $post_id );
+
+				if ( $delivery_text ) {
+					$service['description'] = trim( $service['description'] . ' ' . sprintf(
+						/* translators: %s: delivery time already published on the page, e.g. "5 working days". */
+						__( 'Typical delivery: %s.', 'arqamweb' ),
+						$delivery_text
+					) );
+				}
+
+				if ( $price_text && false === stripos( $price_text, 'quoted' ) ) {
+					preg_match( '/[\d,.]+/', $price_text, $matches );
+					$offer = [
+						'@type'       => 'Offer',
+						'description' => $price_text,
+					];
+					if ( ! empty( $matches[0] ) ) {
+						$offer['price']         = str_replace( ',', '', $matches[0] );
+						$offer['priceCurrency'] = 'USD';
+					}
+					$service['offers'] = $offer;
+				}
+			}
+
 			$data['service'] = $service;
 		}
 
