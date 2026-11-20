@@ -93,7 +93,7 @@ $read_time_fn = function ( $pid ) {
 			<div class="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground border-t border-border/60 pt-6">
 				<div class="flex items-center gap-2">
 					<?php echo get_avatar( get_the_author_meta( 'ID' ), 32, '', esc_attr( $author_name ), [ 'class' => 'w-8 h-8 rounded-full object-cover border border-border' ] ); ?>
-					<span class="font-medium text-foreground"><?php echo esc_html( $author_name ); ?></span>
+					<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author" class="font-medium text-foreground hover:text-primary transition-colors"><?php echo esc_html( $author_name ); ?></a>
 				</div>
 				<span class="w-1 h-1 rounded-full bg-muted-foreground/50 hidden sm:block"></span>
 				<time datetime="<?php echo esc_attr( $date_iso ); ?>">
@@ -209,7 +209,7 @@ $read_time_fn = function ( $pid ) {
 					<p class="text-[11px] font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-1">
 						<?php esc_html_e( 'Written by', 'arqamweb' ); ?>
 					</p>
-					<p class="font-semibold text-foreground"><?php echo esc_html( $author_name ); ?></p>
+					<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author" class="font-semibold text-foreground hover:text-primary transition-colors"><?php echo esc_html( $author_name ); ?></a>
 					<?php
 					$bio = get_the_author_meta( 'description' );
 					if ( $bio ) :

@@ -832,6 +832,34 @@ class ArqamWeb_Schema {
 			}
 		}
 
+		// ── 1b. E-E-A-T: attach the real founder to the Organization node ──
+		// Done as its own pass (type-array aware) because Rank Math may emit
+		// '@type' as an array (e.g. ["LocalBusiness","Organization"]) rather
+		// than the plain string the block above matches on, and we don't
+		// want to touch/re-run the geo/openingHours/priceRange upgrade above
+		// for an unrelated fix. Uses only the name/title/photo already
+		// published on the About/Home founder sections. No `sameAs` is set
+		// here — no personal LinkedIn/social URL for the founder was found
+		// anywhere in the theme, ACF fields or the database (only the
+		// company LinkedIn page exists, already in `sameAs` above — it
+		// shouldn't be relabelled as the founder's personal profile). Add a
+		// real personal URL in wp-admin and extend this array with it;
+		// don't invent one.
+		foreach ( $data as $key => $node ) {
+			if ( ! is_array( $node ) ) continue;
+			$type      = $node['@type'] ?? '';
+			$type_list = is_array( $type ) ? $type : [ $type ];
+			if ( in_array( 'Organization', $type_list, true ) || in_array( 'Corporation', $type_list, true ) || in_array( 'LocalBusiness', $type_list, true ) ) {
+				$data[ $key ]['founder'] = [
+					'@type'    => 'Person',
+					'name'     => 'Youssef Salah Hassanein',
+					'jobTitle' => 'Founder and CEO',
+					'url'      => arqamweb_get_page_permalink( ARQAM_ABOUT_PAGE_SLUG ),
+					'image'    => 'https://www.arqamweb.com/wp-content/uploads/2026/05/Youssef-Salah-Hassanein-Photo.jpg',
+				];
+			}
+		}
+
 		// ── 2. Inject Service schema on single-service pages ──
 		if ( self::is_service_singular() ) {
 			$post_id = get_the_ID();
